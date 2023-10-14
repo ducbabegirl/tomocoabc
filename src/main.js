@@ -8,6 +8,7 @@ import "toastr/build/toastr.css";
 import "sweetalert2/dist/sweetalert2.css";
 import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
+import AdminCateListPage from "./pages/admin/category";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -34,6 +35,9 @@ router.on({
 
     "/admin": () => {
         print(DashboardPage);
+    },
+    "/admin/category": () => {
+        print(AdminCateListPage);
     },
    
 });
