@@ -1,8 +1,8 @@
-import { getUser, logout } from "../../utils";
+
 
 const HeaderTop = {
     render() {
-        const userLogin = getUser();
+       
 
         return /* html */ `
         <div class="bg-white border-b h-14 px-4 flex justify-between items-center">

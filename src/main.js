@@ -7,6 +7,7 @@ import "@fortawesome/fontawesome-free/js/fontawesome";
 import "toastr/build/toastr.css";
 import "sweetalert2/dist/sweetalert2.css";
 import ProductsPage from "./pages/user/products";
+import DashboardPage from "./pages/admin/dashboard";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -28,6 +29,11 @@ router.on({
 
     "/products": () => {
         print(ProductsPage);
+    },
+
+
+    "/admin": () => {
+        print(DashboardPage);
     },
    
 });

@@ -33,7 +33,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Bài viết</span>
-                                    <span class="block text-gray-500">${posts.length} Posts</span>
+                                    <span class="block text-gray-500"> Posts</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
@@ -45,7 +45,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Tài khoản</span>
-                                    <span class="block text-gray-500">${users.length} Members</span>
+                                    <span class="block text-gray-500">Members</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
@@ -57,7 +57,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Sản phẩm</span>
-                                    <span class="block text-gray-500">${products.length} Sản phẩm</span>
+                                    <span class="block text-gray-500"> Sản phẩm</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
@@ -69,7 +69,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Doanh thu</span>
-                                    <span class="block text-gray-500">${formatCurrency(totalPrice)}</span>
+                                    <span class="block text-gray-500"></span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
