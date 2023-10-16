@@ -1,5 +1,8 @@
 import Navigo from "navigo";
 import HomePage from "./pages/user/home";
+
+import AdminCateListPage from "./pages/admin/category";
+
 import "slick-carousel/slick/slick.css";
 import "@fortawesome/fontawesome-free/js/brands";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -24,6 +27,14 @@ router.on({
     "/": () => {
         print(HomePage);
     },
+
+    "/admin/category": () => {
+        print(AdminCateListPage);
+    },
+    "/admin/category/page/:page": ({ data }) => {
+        print(AdminCateListPage, data.page);
+    },
+
    
 });
 
