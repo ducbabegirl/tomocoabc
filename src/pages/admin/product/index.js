@@ -1,12 +1,22 @@
-
+import Swal from "sweetalert2";
+import $ from "jquery";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
+import { getAll } from "../../../api/product";
+import AdminProductList from "../../../components/admin/productList";
 
 const AdminProductListPage = {
     getTitle() {
         return "Product List | Administrator";
     },
     async render() {
+        const { data } = await getAll();
+        const total = data.length; // tổng số sp
+        const limit = 10;
+        const currentPage = pageNumber ?? 1; // lấy số trang hiện tại
+
+        // ds product theo limit
+        const { data: productList } = await getAll(currentPage, limit);
        
 
         return /* html */ `
@@ -50,9 +60,11 @@ const AdminProductListPage = {
                     <div class="flex flex-col">
                         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                               
-                            </div>
+                        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                        ${await AdminProductList.render(productList)}
+
+                       
+                    </div>
                         </div>
                         </div>
                     </div>
