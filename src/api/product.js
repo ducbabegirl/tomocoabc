@@ -1,6 +1,7 @@
 import instance from "./config";
 
-const TABLE_NAME = "categories";
+
+const TABLE_NAME = "products";
 
 export const getAll = (page, limit) => {
     let url = `/${TABLE_NAME}/?_sort=id&_order=desc`;
