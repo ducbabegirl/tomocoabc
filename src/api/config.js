@@ -1,8 +1,10 @@
+import axios from "axios";
 
-const TABLE_NAME = "categories";
+const instance = axios.create({
+    baseURL: " http://localhost:3003/",
+    headers: {
+        "Content-Type": "application/json",
+    },
+});
 
-export const getAll = (page, limit) => {
-    let url = `/${TABLE_NAME}/?_sort=id&_order=desc`;
-    if (limit) url += `&_page=${page}&_limit=${limit}`;
-    return instance.get(url);
-};
+export default instance;
