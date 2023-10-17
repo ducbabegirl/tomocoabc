@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import $ from "jquery";
-import {  getAll , remove } from "../../../api/product";
+import {  getAll , remove ,adminSearch } from "../../../api/product";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import Pagination from "../../../components/admin/pagination";
@@ -111,6 +111,46 @@ const AdminProductListPage = {
                     }
                 });
             });
+        });
+         // search
+         $("#product__form-search").on("input", async () => {
+            const key = $("#product__form-search-key").val();
+            const stt = $("#product__form-search-stt").val();
+
+            const { data: productList } = await adminSearch(key, stt);
+
+            $("#product__list").html(productList.map((item) => `
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.id}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="${item.image}" alt="">
+                            </div>
+                            <a href="/#/product/${item.id}" class="text-sm font-medium text-gray-900 ml-4 hover:underline">${item.name}</a>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${item.status ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}">
+                        ${item.status ? "Hiện" : "Ẩn"}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.view}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.favorites}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <a href="/#/admin/product/${item.id}/edit" class="h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Edit</a>
+                        <button data-id="${item.id}" class="product__list-btn-delete h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-3">Delete</button>
+                    </td>
+                </tr>
+            `).join(""));
+
+            $("#pagination").hide();
         });
 
        
