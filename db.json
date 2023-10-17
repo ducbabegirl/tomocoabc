@@ -11,6 +11,18 @@
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788664/vddkklnblgdlvk0klnik.jpg",
       "createdAt": "2023-06-03T10:37:45.387Z",
       "id": 6
+    },
+    {
+      "name": "logo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697553840/uo8sypaokrxqa8d3wvor.jpg",
+      "createdAt": "2023-10-17T14:43:59.675Z",
+      "id": 7
+    },
+    {
+      "name": "test2",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697562443/klfwlv4hy9zwqqdwuazb.jpg",
+      "createdAt": "2023-10-17T17:07:22.129Z",
+      "id": 9
     }
   ],
   "cateNews": [
