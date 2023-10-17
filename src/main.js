@@ -8,11 +8,17 @@ import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "toastr/build/toastr.css";
 import "sweetalert2/dist/sweetalert2.css";
+import FortgotPage from "./pages/auth/forgot";
+import LoginPage from "./pages/auth/login";
+import RegisterPage from "./pages/auth/register";
+import NotFoundPage from "./pages/user/notFound";
 import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
-
+import UpdateInfoPage from "./pages/user/my-account";
+import MyAccUpdatePass from "./pages/user/my-account/updatePass";
+import { getUser } from "./utils";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -56,7 +62,21 @@ router.on({
     "/admin/category": () => {
         print(AdminCateListPage);
     },
-
+    "/login": () => {
+        print(LoginPage);
+    },
+    "/register": () => {
+        print(RegisterPage);
+    },
+    "/forgot": () => {
+        print(FortgotPage);
+    },
+    "/my-account": () => {
+        print(UpdateInfoPage);
+    },
+    "/my-account/update-pass": () => {
+        print(MyAccUpdatePass);
+    },
    
    
 });
