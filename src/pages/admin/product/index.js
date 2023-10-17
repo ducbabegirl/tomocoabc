@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import $ from "jquery";
-import {  getAll } from "../../../api/product";
+import {  getAll , remove } from "../../../api/product";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import Pagination from "../../../components/admin/pagination";
@@ -81,6 +81,37 @@ const AdminProductListPage = {
     afterRender() {
         HeaderTop.afterRender();
         AdminNav.afterRender();
+        const btns = document.querySelectorAll(".product__list-btn-delete");
+
+        btns.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const { id } = e.target.dataset;
+
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn xóa không?",
+                    text: "Bạn không thể hoàn tác sau khi xóa!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        remove(id)
+                            .then(() => {
+                                Swal.fire(
+                                    "Thành công",
+                                    "Đã xóa danh mục.",
+                                    "success",
+                                );
+                            })
+                            .then(() => {
+                                reRender(AdminProductListPage, "#app");
+                            });
+                    }
+                });
+            });
+        });
 
        
 

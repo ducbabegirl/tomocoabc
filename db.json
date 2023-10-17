@@ -1,656 +1,630 @@
 {
-    "categories": [
-      {
-        "name": "Sách B",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685527404/ht8y05lwzlkvjeml8ge9.jpg",
-        "createdAt": "2023-05-31T10:03:24.422Z",
-        "id": 5
-      },
-      {
-        "name": "Sách A",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788664/vddkklnblgdlvk0klnik.jpg",
-        "createdAt": "2023-06-03T10:37:45.387Z",
-        "id": 6
-      },
-      {
-        "name": "Sách SN",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788698/pe31wqatns7lpt8wtult.jpg",
-        "createdAt": "2023-06-03T10:38:18.528Z",
-        "id": 7
-      }
-    ],
-    "cateNews": [
-      {
-        "name": "GROUP",
-        "createdAt": "2023-06-08T07:06:38.376Z",
-        "updatedAt": "2023-06-08T07:06:38.376Z",
-        "id": 1
-      },
-      {
-        "name": "SignalTrade",
-        "createdAt": "2023-06-08T07:08:19.780Z",
-        "updatedAt": "2023-06-08T07:08:19.780Z",
-        "id": 2
-      },
-      {
-        "name": "RobotTrader",
-        "createdAt": "2023-06-08T07:08:26.562Z",
-        "updatedAt": "2023-06-08T07:08:26.562Z",
-        "id": 3
-      },
-      {
-        "name": "CopyTrade",
-        "createdAt": "2023-06-08T07:08:36.099Z",
-        "updatedAt": "2023-06-08T07:08:36.099Z",
-        "id": 4
-      }
-    ],
-    "products": [
-      {
-        "name": "NICOLAS DARVAS ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911042/f9qqyao1xkfsusknyxn0.jpg",
-        "price": 500000,
-        "description": "<p>hay lắm</p>",
-        "categoryId": 7,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:23:59.988Z",
-        "updatedAt": "2023-06-16T10:23:59.988Z",
-        "id": 42
-      },
-      {
-        "name": "NAKED FOREX ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911173/ys0dyr5fjoqrtjznpsnb.jpg",
-        "price": 500000,
-        "description": "<p>OK</p>",
-        "categoryId": 6,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:26:11.323Z",
-        "updatedAt": "2023-06-16T10:26:11.323Z",
-        "id": 43
-      },
-      {
-        "name": "PHILIP A.FISHER",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911259/ccfm8bpwqthwv0jenwbw.jpg",
-        "price": 500000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:27:37.317Z",
-        "updatedAt": "2023-06-16T10:28:22.427Z",
-        "id": 44
-      },
-      {
-        "name": "JOHN HAYDEN",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911368/wnzpqcsi1ox3nzmguhik.jpg",
-        "price": 300000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 1,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:29:26.599Z",
-        "updatedAt": "2023-06-16T10:29:26.599Z",
-        "id": 45
-      },
-      {
-        "name": "MÔ HÌNH BIỂU ĐỒ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911464/kgodtckeuleqg5mfcwv8.jpg",
-        "price": 4500000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:31:02.635Z",
-        "updatedAt": "2023-06-16T10:31:02.635Z",
-        "id": 46
-      },
-      {
-        "name": "HƯỚNG DẪN GIAO DỊCH",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911497/cdljfnbytzobuumyo0ts.jpg",
-        "price": 399000,
-        "description": "<p>OK</p>",
-        "categoryId": 6,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:31:34.786Z",
-        "updatedAt": "2023-06-16T10:31:34.786Z",
-        "id": 47
-      },
-      {
-        "name": "GIAO DỊCH ICHIMOKU",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911558/ovedrlglativqihzdtp8.jpg",
-        "price": 499000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:32:36.835Z",
-        "updatedAt": "2023-06-16T10:32:36.835Z",
-        "id": 48
-      },
-      {
-        "name": "TRADINH",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912166/lck5s0ccimg0esbdxive.jpg",
-        "price": 2000000,
-        "description": "<p>OK</p>",
-        "categoryId": 7,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:42:44.377Z",
-        "updatedAt": "2023-06-16T10:42:44.377Z",
-        "id": 49
-      },
-      {
-        "name": "DEmo",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912195/w81zu7upykuzld1pkwra.jpg",
-        "price": 8888888,
-        "description": "<p>KK</p>",
-        "categoryId": 7,
-        "status": 0,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:43:13.191Z",
-        "updatedAt": "2023-06-16T10:43:45.381Z",
-        "id": 50
-      }
-    ],
-    "news": [],
-    "slider": [
-      {
-        "id": 1,
-        "title": "Slider 1",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "createdAt": "2022-02-09T15:42:22"
-      },
-      {
-        "title": "Slider 2",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
-        "createdAt": "2022-02-10T06:44:52.008Z",
-        "id": 2
-      },
-      {
-        "title": "Slider 3",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757540/assignment-js/bcrpldnvh7gqp8bsmpp4.jpg",
-        "createdAt": "2022-02-13T13:04:39.364Z",
-        "id": 3
-      }
-    ],
-    "sizes": [
-      {
-        "name": "M",
-        "priceIncrease": 7000,
-        "createdAt": "2022-02-14T13:08:17.543Z",
-        "updatedAt": "2022-02-14T13:08:17.543Z",
-        "id": 1
-      },
-      {
-        "name": "L",
-        "priceIncrease": 10000,
-        "createdAt": "2022-02-14T13:08:22.518Z",
-        "updatedAt": "2022-02-14T13:08:22.518Z",
-        "id": 2
-      }
-    ],
-    "toppings": [
-      {
-        "name": "Kem sữa Macchiato",
-        "price": 5000,
-        "id": 1
-      },
-      {
-        "name": "Pudding trứng",
-        "price": 6000,
-        "id": 2
-      },
-      {
-        "name": "Thạch nha đam",
-        "price": 7000,
-        "id": 3
-      },
-      {
-        "name": "Trân châu đen",
-        "price": 6000,
-        "id": 4
-      },
-      {
-        "name": "Trân châu trắng",
-        "price": 7000,
-        "id": 5
-      }
-    ],
-    "contact": [
-      {
-        "content": "ok",
-        "name": "Ninh",
-        "email": "ducvip123@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-14T03:11:27.370Z",
-        "id": 1
-      },
-      {
-        "content": "hhhh",
-        "name": "Ninhhahaa",
-        "email": "ducv23@gmail.com",
-        "phone": "0987541321",
-        "storeId": 6,
-        "createdAt": "2023-06-14T04:32:12.735Z",
-        "id": 2
-      },
-      {
-        "content": "abc",
-        "name": "Ninh",
-        "email": "ducv23@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-16T04:30:33.717Z",
-        "id": 3
-      },
-      {
-        "content": "em mua sachs",
-        "name": "vanh",
-        "email": "ducvip123@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-16T04:35:19.367Z",
-        "id": 4
-      }
-    ],
-    "voucher": [
-      {
-        "id": 1,
-        "code": "COVID",
-        "quantity": 998,
-        "condition": 0,
-        "conditionNumber": 10,
-        "status": 1,
-        "timeStart": "2022-02-19T15:42:22",
-        "timeEnd": "2022-02-28T15:42:22",
-        "createdAt": "2022-02-08T12:06:48.706Z",
-        "updatedAt": "2022-02-20T08:09:08.334Z",
-        "user_ids": [
-          1,
-          2
-        ]
-      },
-      {
-        "code": "COVID10",
-        "quantity": 10,
-        "condition": 1,
-        "conditionNumber": 10000,
-        "status": 0,
-        "timeStart": "2022-02-10T17:22",
-        "timeEnd": "2022-02-10T17:22",
-        "createdAt": "2022-02-10T10:22:46.553Z",
-        "updatedAt": "2022-02-10T10:46:22.588Z",
-        "user_ids": [],
-        "id": 2
-      },
-      {
-        "code": "COVID101",
-        "quantity": 0,
-        "condition": 0,
-        "conditionNumber": 10,
-        "status": 1,
-        "timeStart": "2022-02-17T13:37",
-        "timeEnd": "2022-02-19T13:37",
-        "user_ids": [
-          1
-        ],
-        "createdAt": "2022-02-17T06:37:58.837Z",
-        "updatedAt": "2022-02-17T06:37:58.837Z",
-        "id": 3
-      },
-      {
-        "code": "COVID102",
-        "quantity": 0,
-        "condition": 1,
-        "conditionNumber": 1000,
-        "status": 1,
-        "timeStart": "2022-02-20T10:52",
-        "timeEnd": "2022-02-21T10:53",
-        "user_ids": [
-          1
-        ],
-        "createdAt": "2022-02-20T03:53:36.661Z",
-        "updatedAt": "2022-02-20T03:57:07.455Z",
-        "id": 4
-      },
-      {
-        "code": "BGMAIDINH",
-        "quantity": 97,
-        "condition": 1,
-        "conditionNumber": 10000,
-        "status": 1,
-        "timeStart": "2022-02-20T14:45",
-        "timeEnd": "2022-02-28T14:45",
-        "user_ids": [
-          1,
-          2
-        ],
-        "createdAt": "2022-02-20T07:45:22.511Z",
-        "updatedAt": "2022-02-20T07:45:22.511Z",
-        "id": 5
-      },
-      {
-        "code": "BGMAIDINH1",
-        "quantity": 100,
-        "condition": 1,
-        "conditionNumber": 9999,
-        "status": 1,
-        "timeStart": "2022-02-21T18:32",
-        "timeEnd": "2022-02-28T18:32",
-        "user_ids": [],
-        "createdAt": "2022-02-21T11:32:16.036Z",
-        "updatedAt": "2022-02-21T11:32:16.036Z",
-        "id": 6
-      }
-    ],
-    "users": [
-      {
-        "email": "admin@gmail.com",
-        "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
-        "username": "admin",
-        "fullName": "admin",
-        "phone": "0347562365",
-        "wardsCode": 167,
-        "districtCode": 5,
-        "provinceCode": 1,
-        "address": "Bắc Giang",
-        "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645339820/assignment-js/edtav74kaqptfmzppp2i.jpg",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2022-02-10T10:46:22.588Z",
-        "id": 1
-      },
-      {
-        "email": "haivt@gmail.com",
-        "password": "$2a$10$hyggD0khNLlcCOD6MVr.keuC5Dnkf9XpdydkeqkB.aSZzz42uPqxm",
-        "username": "haivt",
-        "fullName": "Vũ Tuấn Hải",
-        "phone": "18456631430",
-        "wardsCode": 775,
-        "districtCode": 27,
-        "provinceCode": 2,
-        "address": "abc",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685782659/mss248jxsvbbbo7qg57y.jpg",
-        "role": 0,
-        "active": 0,
-        "createdAt": "2022-02-19T09:48:11.964Z",
-        "id": 8
-      },
-      {
-        "email": "demo2@gmail.com",
-        "password": "$2a$10$pmh9scuBEkKzWwk8Wnbq..5qhxEzt0cKgv3oHYarpqRxYbf5hR9Ny",
-        "username": "dem2",
-        "fullName": "Admin SN",
-        "phone": "0987543123",
-        "wardsCode": 1,
-        "districtCode": 1,
-        "provinceCode": 1,
-        "address": "187 Trần Bình",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685594376/tz4tb7gluogzlt2bs7d1.jpg",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2023-05-31T08:03:03.521Z",
-        "id": 11
-      },
-      {
-        "email": "demo@gmail.com",
-        "password": "$2a$10$LJKgnPa51R7hZzdqv5/3VeOqA2czlbEWz7z7EBqRXydJGF9wSTwAi",
-        "username": "demo",
-        "fullName": "Mai Thành",
-        "phone": "0987654321",
-        "wardsCode": 3387,
-        "districtCode": 105,
-        "provinceCode": 12,
-        "address": "Bắc từ liêm , Hà Nội",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685606777/m7orlxgx3amqarehqjcg.png",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2023-05-09T03:29:59.754Z",
-        "id": 12
-      },
-      {
-        "email": "assaj@gmail.com",
-        "password": "$2a$10$JVJyMvwIuxkkFtiKjxF.0uCP6oLEHmkcNSicocpnJbCzSvdDkiG/.",
-        "username": "dèm",
-        "fullName": "dd",
-        "phone": "0987654345",
-        "wardsCode": 8710,
-        "districtCode": 243,
-        "provinceCode": 26,
-        "address": "demo",
-        "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
-        "role": 0,
-        "active": 0,
-        "createdAt": "2023-05-31T08:34:08.048Z",
-        "id": 13
-      }
-    ],
-    "stores": [
-      {
-        "name": "Sách",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686710128/jdvkcmvhh4jgqfsak4pz.png",
-        "address": "abc123",
-        "phone": "0987654321",
-        "timeStart": "09:37",
-        "timeEnd": "12:36",
-        "map": "https://www.facebook.com/watch/?ref=tab",
-        "id": 5
-      },
-      {
-        "name": "Thành Đức",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686711940/qm3dolxglhn8hxw5gfxi.jpg",
-        "address": "abc123a",
-        "phone": "0987654321",
-        "timeStart": "10:04",
-        "timeEnd": "23:07",
-        "map": "fff",
-        "id": 6
-      }
-    ],
-    "favorites_product": [],
-    "orders": [
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 62728,
-        "price_decrease": 6272.8,
-        "message": "",
-        "status": 4,
-        "voucher": [
-          3
-        ],
-        "createdAt": "2022-02-17T12:28:57.357Z",
-        "updatedAt": "2022-02-17T17:06:36.086Z",
-        "id": 1
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 25000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-18T07:24:03.835Z",
-        "updatedAt": "2022-02-18T07:24:03.835Z",
-        "id": 2
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 14231,
-        "price_decrease": 0,
-        "message": "",
-        "status": 4,
-        "voucher": [],
-        "createdAt": "2022-02-18T07:25:17.530Z",
-        "updatedAt": "2022-02-18T07:58:02.865Z",
-        "id": 3
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Tân Mỹ, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 197000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-19T03:25:09.596Z",
-        "updatedAt": "2022-02-19T03:25:09.596Z",
-        "id": 8
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 204000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 3,
-        "voucher": [],
-        "createdAt": "2022-02-19T03:30:24.506Z",
-        "updatedAt": "2022-02-20T15:16:08.452Z",
-        "id": 9
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Xã Quang Huy, Huyện Phù Yên, Tỉnh Sơn La",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "total_price": 61000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 4,
-        "voucher": [],
-        "createdAt": "2022-02-19T08:20:36.137Z",
-        "updatedAt": "2023-05-09T10:07:27.084Z",
-        "id": 11
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 65000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 1,
-        "voucher": [],
-        "createdAt": "2022-02-20T06:57:20.734Z",
-        "updatedAt": "2022-02-20T07:13:42.363Z",
-        "id": 13
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 149000,
-        "price_decrease": 10000,
-        "message": "",
-        "status": 0,
-        "voucher": [
-          5
-        ],
-        "createdAt": "2022-02-20T07:46:10.431Z",
-        "updatedAt": "2022-02-20T07:46:10.431Z",
-        "id": 14
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 244000,
-        "price_decrease": 0,
-        "message": "Ship gấp nha",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-20T12:54:06.028Z",
-        "updatedAt": "2022-02-20T12:54:06.028Z",
-        "id": 19
-      }
-    ],
-    "orderDetails": [],
-    "comments": [],
-    "ratings": [
-      {
-        "userId": 1,
-        "ratingNumber": 3,
-        "createdAt": "2022-02-18T05:54:12.512Z",
-        "id": 2
-      }
-    ],
-    "address": [
-      {
-        "userId": 1,
-        "fullName": "Lê Tuân",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "provinceCode": 24,
-        "districtCode": 217,
-        "wardCode": 7411,
-        "address": "Tân Mỹ",
-        "id": 3
-      },
-      {
-        "userId": 1,
-        "fullName": "admin",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "provinceCode": 24,
-        "districtCode": 217,
-        "wardCode": 7375,
-        "address": "Bắc Giang",
-        "id": 4
-      },
-      {
-        "userId": 1,
-        "fullName": "admin",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "provinceCode": 14,
-        "districtCode": 122,
-        "wardCode": 3910,
-        "address": "Bắc Giang",
-        "id": 5
-      }
-    ]
-  }
+  "categories": [
+    {
+      "name": "Sách B",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685527404/ht8y05lwzlkvjeml8ge9.jpg",
+      "createdAt": "2023-05-31T10:03:24.422Z",
+      "id": 5
+    },
+    {
+      "name": "Sách A",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788664/vddkklnblgdlvk0klnik.jpg",
+      "createdAt": "2023-06-03T10:37:45.387Z",
+      "id": 6
+    },
+    {
+      "name": "Sách SN",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788698/pe31wqatns7lpt8wtult.jpg",
+      "createdAt": "2023-06-03T10:38:18.528Z",
+      "id": 7
+    }
+  ],
+  "cateNews": [
+    {
+      "name": "GROUP",
+      "createdAt": "2023-06-08T07:06:38.376Z",
+      "updatedAt": "2023-06-08T07:06:38.376Z",
+      "id": 1
+    },
+    {
+      "name": "SignalTrade",
+      "createdAt": "2023-06-08T07:08:19.780Z",
+      "updatedAt": "2023-06-08T07:08:19.780Z",
+      "id": 2
+    },
+    {
+      "name": "RobotTrader",
+      "createdAt": "2023-06-08T07:08:26.562Z",
+      "updatedAt": "2023-06-08T07:08:26.562Z",
+      "id": 3
+    },
+    {
+      "name": "CopyTrade",
+      "createdAt": "2023-06-08T07:08:36.099Z",
+      "updatedAt": "2023-06-08T07:08:36.099Z",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "PHILIP A.FISHER",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911259/ccfm8bpwqthwv0jenwbw.jpg",
+      "price": 500000,
+      "description": "<p>OK</p>",
+      "categoryId": 5,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:27:37.317Z",
+      "updatedAt": "2023-06-16T10:28:22.427Z",
+      "id": 44
+    },
+    {
+      "name": "JOHN HAYDEN",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911368/wnzpqcsi1ox3nzmguhik.jpg",
+      "price": 300000,
+      "description": "<p>OK</p>",
+      "categoryId": 5,
+      "status": 1,
+      "view": 1,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:29:26.599Z",
+      "updatedAt": "2023-06-16T10:29:26.599Z",
+      "id": 45
+    },
+    {
+      "name": "MÔ HÌNH BIỂU ĐỒ",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911464/kgodtckeuleqg5mfcwv8.jpg",
+      "price": 4500000,
+      "description": "<p>OK</p>",
+      "categoryId": 5,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:31:02.635Z",
+      "updatedAt": "2023-06-16T10:31:02.635Z",
+      "id": 46
+    },
+    {
+      "name": "HƯỚNG DẪN GIAO DỊCH",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911497/cdljfnbytzobuumyo0ts.jpg",
+      "price": 399000,
+      "description": "<p>OK</p>",
+      "categoryId": 6,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:31:34.786Z",
+      "updatedAt": "2023-06-16T10:31:34.786Z",
+      "id": 47
+    },
+    {
+      "name": "GIAO DỊCH ICHIMOKU",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911558/ovedrlglativqihzdtp8.jpg",
+      "price": 499000,
+      "description": "<p>OK</p>",
+      "categoryId": 5,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:32:36.835Z",
+      "updatedAt": "2023-06-16T10:32:36.835Z",
+      "id": 48
+    },
+    {
+      "name": "TRADINH",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912166/lck5s0ccimg0esbdxive.jpg",
+      "price": 2000000,
+      "description": "<p>OK</p>",
+      "categoryId": 7,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:42:44.377Z",
+      "updatedAt": "2023-06-16T10:42:44.377Z",
+      "id": 49
+    },
+    {
+      "name": "DEmo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912195/w81zu7upykuzld1pkwra.jpg",
+      "price": 8888888,
+      "description": "<p>KK</p>",
+      "categoryId": 7,
+      "status": 0,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-06-16T10:43:13.191Z",
+      "updatedAt": "2023-06-16T10:43:45.381Z",
+      "id": 50
+    }
+  ],
+  "news": [],
+  "slider": [
+    {
+      "id": 1,
+      "title": "Slider 1",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "createdAt": "2022-02-09T15:42:22"
+    },
+    {
+      "title": "Slider 2",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
+      "createdAt": "2022-02-10T06:44:52.008Z",
+      "id": 2
+    },
+    {
+      "title": "Slider 3",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757540/assignment-js/bcrpldnvh7gqp8bsmpp4.jpg",
+      "createdAt": "2022-02-13T13:04:39.364Z",
+      "id": 3
+    }
+  ],
+  "sizes": [
+    {
+      "name": "M",
+      "priceIncrease": 7000,
+      "createdAt": "2022-02-14T13:08:17.543Z",
+      "updatedAt": "2022-02-14T13:08:17.543Z",
+      "id": 1
+    },
+    {
+      "name": "L",
+      "priceIncrease": 10000,
+      "createdAt": "2022-02-14T13:08:22.518Z",
+      "updatedAt": "2022-02-14T13:08:22.518Z",
+      "id": 2
+    }
+  ],
+  "toppings": [
+    {
+      "name": "Kem sữa Macchiato",
+      "price": 5000,
+      "id": 1
+    },
+    {
+      "name": "Pudding trứng",
+      "price": 6000,
+      "id": 2
+    },
+    {
+      "name": "Thạch nha đam",
+      "price": 7000,
+      "id": 3
+    },
+    {
+      "name": "Trân châu đen",
+      "price": 6000,
+      "id": 4
+    },
+    {
+      "name": "Trân châu trắng",
+      "price": 7000,
+      "id": 5
+    }
+  ],
+  "contact": [
+    {
+      "content": "ok",
+      "name": "Ninh",
+      "email": "ducvip123@gmail.com",
+      "phone": "0987541321",
+      "storeId": 5,
+      "createdAt": "2023-06-14T03:11:27.370Z",
+      "id": 1
+    },
+    {
+      "content": "hhhh",
+      "name": "Ninhhahaa",
+      "email": "ducv23@gmail.com",
+      "phone": "0987541321",
+      "storeId": 6,
+      "createdAt": "2023-06-14T04:32:12.735Z",
+      "id": 2
+    },
+    {
+      "content": "abc",
+      "name": "Ninh",
+      "email": "ducv23@gmail.com",
+      "phone": "0987541321",
+      "storeId": 5,
+      "createdAt": "2023-06-16T04:30:33.717Z",
+      "id": 3
+    },
+    {
+      "content": "em mua sachs",
+      "name": "vanh",
+      "email": "ducvip123@gmail.com",
+      "phone": "0987541321",
+      "storeId": 5,
+      "createdAt": "2023-06-16T04:35:19.367Z",
+      "id": 4
+    }
+  ],
+  "voucher": [
+    {
+      "id": 1,
+      "code": "COVID",
+      "quantity": 998,
+      "condition": 0,
+      "conditionNumber": 10,
+      "status": 1,
+      "timeStart": "2022-02-19T15:42:22",
+      "timeEnd": "2022-02-28T15:42:22",
+      "createdAt": "2022-02-08T12:06:48.706Z",
+      "updatedAt": "2022-02-20T08:09:08.334Z",
+      "user_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "COVID10",
+      "quantity": 10,
+      "condition": 1,
+      "conditionNumber": 10000,
+      "status": 0,
+      "timeStart": "2022-02-10T17:22",
+      "timeEnd": "2022-02-10T17:22",
+      "createdAt": "2022-02-10T10:22:46.553Z",
+      "updatedAt": "2022-02-10T10:46:22.588Z",
+      "user_ids": [],
+      "id": 2
+    },
+    {
+      "code": "COVID101",
+      "quantity": 0,
+      "condition": 0,
+      "conditionNumber": 10,
+      "status": 1,
+      "timeStart": "2022-02-17T13:37",
+      "timeEnd": "2022-02-19T13:37",
+      "user_ids": [
+        1
+      ],
+      "createdAt": "2022-02-17T06:37:58.837Z",
+      "updatedAt": "2022-02-17T06:37:58.837Z",
+      "id": 3
+    },
+    {
+      "code": "COVID102",
+      "quantity": 0,
+      "condition": 1,
+      "conditionNumber": 1000,
+      "status": 1,
+      "timeStart": "2022-02-20T10:52",
+      "timeEnd": "2022-02-21T10:53",
+      "user_ids": [
+        1
+      ],
+      "createdAt": "2022-02-20T03:53:36.661Z",
+      "updatedAt": "2022-02-20T03:57:07.455Z",
+      "id": 4
+    },
+    {
+      "code": "BGMAIDINH",
+      "quantity": 97,
+      "condition": 1,
+      "conditionNumber": 10000,
+      "status": 1,
+      "timeStart": "2022-02-20T14:45",
+      "timeEnd": "2022-02-28T14:45",
+      "user_ids": [
+        1,
+        2
+      ],
+      "createdAt": "2022-02-20T07:45:22.511Z",
+      "updatedAt": "2022-02-20T07:45:22.511Z",
+      "id": 5
+    },
+    {
+      "code": "BGMAIDINH1",
+      "quantity": 100,
+      "condition": 1,
+      "conditionNumber": 9999,
+      "status": 1,
+      "timeStart": "2022-02-21T18:32",
+      "timeEnd": "2022-02-28T18:32",
+      "user_ids": [],
+      "createdAt": "2022-02-21T11:32:16.036Z",
+      "updatedAt": "2022-02-21T11:32:16.036Z",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
+      "username": "admin",
+      "fullName": "admin",
+      "phone": "0347562365",
+      "wardsCode": 167,
+      "districtCode": 5,
+      "provinceCode": 1,
+      "address": "Bắc Giang",
+      "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645339820/assignment-js/edtav74kaqptfmzppp2i.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2022-02-10T10:46:22.588Z",
+      "id": 1
+    },
+    {
+      "email": "haivt@gmail.com",
+      "password": "$2a$10$hyggD0khNLlcCOD6MVr.keuC5Dnkf9XpdydkeqkB.aSZzz42uPqxm",
+      "username": "haivt",
+      "fullName": "Vũ Tuấn Hải",
+      "phone": "18456631430",
+      "wardsCode": 775,
+      "districtCode": 27,
+      "provinceCode": 2,
+      "address": "abc",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685782659/mss248jxsvbbbo7qg57y.jpg",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2022-02-19T09:48:11.964Z",
+      "id": 8
+    },
+    {
+      "email": "demo2@gmail.com",
+      "password": "$2a$10$pmh9scuBEkKzWwk8Wnbq..5qhxEzt0cKgv3oHYarpqRxYbf5hR9Ny",
+      "username": "dem2",
+      "fullName": "Admin SN",
+      "phone": "0987543123",
+      "wardsCode": 1,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "187 Trần Bình",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685594376/tz4tb7gluogzlt2bs7d1.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-05-31T08:03:03.521Z",
+      "id": 11
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "$2a$10$LJKgnPa51R7hZzdqv5/3VeOqA2czlbEWz7z7EBqRXydJGF9wSTwAi",
+      "username": "demo",
+      "fullName": "Mai Thành",
+      "phone": "0987654321",
+      "wardsCode": 3387,
+      "districtCode": 105,
+      "provinceCode": 12,
+      "address": "Bắc từ liêm , Hà Nội",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685606777/m7orlxgx3amqarehqjcg.png",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-05-09T03:29:59.754Z",
+      "id": 12
+    },
+    {
+      "email": "assaj@gmail.com",
+      "password": "$2a$10$JVJyMvwIuxkkFtiKjxF.0uCP6oLEHmkcNSicocpnJbCzSvdDkiG/.",
+      "username": "dèm",
+      "fullName": "dd",
+      "phone": "0987654345",
+      "wardsCode": 8710,
+      "districtCode": 243,
+      "provinceCode": 26,
+      "address": "demo",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2023-05-31T08:34:08.048Z",
+      "id": 13
+    }
+  ],
+  "stores": [
+    {
+      "name": "Sách",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686710128/jdvkcmvhh4jgqfsak4pz.png",
+      "address": "abc123",
+      "phone": "0987654321",
+      "timeStart": "09:37",
+      "timeEnd": "12:36",
+      "map": "https://www.facebook.com/watch/?ref=tab",
+      "id": 5
+    },
+    {
+      "name": "Thành Đức",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686711940/qm3dolxglhn8hxw5gfxi.jpg",
+      "address": "abc123a",
+      "phone": "0987654321",
+      "timeStart": "10:04",
+      "timeEnd": "23:07",
+      "map": "fff",
+      "id": 6
+    }
+  ],
+  "favorites_product": [],
+  "orders": [
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 62728,
+      "price_decrease": 6272.8,
+      "message": "",
+      "status": 4,
+      "voucher": [
+        3
+      ],
+      "createdAt": "2022-02-17T12:28:57.357Z",
+      "updatedAt": "2022-02-17T17:06:36.086Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 25000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-18T07:24:03.835Z",
+      "updatedAt": "2022-02-18T07:24:03.835Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 14231,
+      "price_decrease": 0,
+      "message": "",
+      "status": 4,
+      "voucher": [],
+      "createdAt": "2022-02-18T07:25:17.530Z",
+      "updatedAt": "2022-02-18T07:58:02.865Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Tân Mỹ, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 197000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-19T03:25:09.596Z",
+      "updatedAt": "2022-02-19T03:25:09.596Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 204000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2022-02-19T03:30:24.506Z",
+      "updatedAt": "2022-02-20T15:16:08.452Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Xã Quang Huy, Huyện Phù Yên, Tỉnh Sơn La",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "total_price": 61000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 4,
+      "voucher": [],
+      "createdAt": "2022-02-19T08:20:36.137Z",
+      "updatedAt": "2023-05-09T10:07:27.084Z",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 65000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 1,
+      "voucher": [],
+      "createdAt": "2022-02-20T06:57:20.734Z",
+      "updatedAt": "2022-02-20T07:13:42.363Z",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 149000,
+      "price_decrease": 10000,
+      "message": "",
+      "status": 0,
+      "voucher": [
+        5
+      ],
+      "createdAt": "2022-02-20T07:46:10.431Z",
+      "updatedAt": "2022-02-20T07:46:10.431Z",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 244000,
+      "price_decrease": 0,
+      "message": "Ship gấp nha",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-20T12:54:06.028Z",
+      "updatedAt": "2022-02-20T12:54:06.028Z",
+      "id": 19
+    }
+  ],
+  "orderDetails": [],
+  "comments": [],
+  "ratings": [
+    {
+      "userId": 1,
+      "ratingNumber": 3,
+      "createdAt": "2022-02-18T05:54:12.512Z",
+      "id": 2
+    }
+  ],
+  "address": [
+    {
+      "userId": 1,
+      "fullName": "Lê Tuân",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "provinceCode": 24,
+      "districtCode": 217,
+      "wardCode": 7411,
+      "address": "Tân Mỹ",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "fullName": "admin",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "provinceCode": 24,
+      "districtCode": 217,
+      "wardCode": 7375,
+      "address": "Bắc Giang",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "fullName": "admin",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "provinceCode": 14,
+      "districtCode": 122,
+      "wardCode": 3910,
+      "address": "Bắc Giang",
+      "id": 5
+    }
+  ]
+}
