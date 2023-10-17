@@ -1,6 +1,6 @@
 import $ from "jquery"
 import Header from "../../components/user/header";
-
+import Footer from "../../components/user/footer";
 const HomePage = {
     getTitle() {
         return "Trang chủ - Trà Sữa Cocomoco";
@@ -41,7 +41,7 @@ const HomePage = {
         </main>
         <!-- end content -->
 
-      
+        ${Footer.render()}
         `;
     },
     afterRender() {
