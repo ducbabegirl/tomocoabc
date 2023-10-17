@@ -12,3 +12,9 @@ export const remove = (id) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.delete(url);
 };
+export const adminSearch = (key, stt = 0) => {
+    let url = `/${TABLE_NAME}/?q=${key}&_sort=id&_order=desc`;
+
+    if (stt) url += `&status=${stt}`;
+    return instance.get(url);
+};
