@@ -13,7 +13,7 @@ import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
 
-
+import AdminAddCatePage from "./pages/admin/category/add";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -53,10 +53,9 @@ router.on({
     "/admin/product/page/:page": ({ data }) => {
         print(AdminProductListPage, data.page);
     },
-    "/admin/category": () => {
-        print(AdminCateListPage);
+    "/admin/category/add": () => {
+        print(AdminAddCatePage);
     },
-
    
    
 });
