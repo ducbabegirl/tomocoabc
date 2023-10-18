@@ -18,3 +18,4 @@ export const adminSearch = (key, stt = 0) => {
     if (stt) url += `&status=${stt}`;
     return instance.get(url);
 };
+
