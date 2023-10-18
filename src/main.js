@@ -18,6 +18,8 @@ import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
 import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
+import AdminProfilePage from "./pages/admin/profile";
+import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
 import { getUser } from "./utils";
 
 
@@ -76,6 +78,12 @@ router.on({
     },
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
+    },
+    "/admin/profile": () => {
+        print(AdminProfilePage);
+    },
+    "/admin/profile/change-password": () => {
+        print(AdminUpdatePassPage);
     },
    
    
