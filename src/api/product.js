@@ -19,3 +19,12 @@ export const adminSearch = (key, stt = 0) => {
     return instance.get(url);
 };
 
+export const get = (id) => {
+    const url = `/${TABLE_NAME}/${id}/?_expand=category&_embed=ratings`;
+    return instance.get(url);
+};
+
+export const add = (data) => {
+    const url = `/${TABLE_NAME}`;
+    return instance.post(url, data);
+};
