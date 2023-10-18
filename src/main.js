@@ -16,6 +16,8 @@ import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
+import AdminProfilePage from "./pages/admin/profile";
+import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
 import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import AdminProfilePage from "./pages/admin/profile";
@@ -33,7 +35,29 @@ const print = async (content, id, pageNumber) => {
     // change title
     if (content.getTitle) document.title = await content.getTitle(id);
 };
+router.on("/admin/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
 
+        if (userInfo && userInfo.role) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
+
+router.on("/my-account/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
+
+        if (userInfo) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
 
 router.on({
     "/": () => {
