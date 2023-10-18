@@ -1,5 +1,7 @@
 import Navigo from "navigo";
 import HomePage from "./pages/user/home";
+
+
 import "slick-carousel/slick/slick.css";
 import "@fortawesome/fontawesome-free/js/brands";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -11,7 +13,8 @@ import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
 
-
+import AdminAddCatePage from "./pages/admin/category/add";
+import AdminEditCatePage from "./pages/admin/category/edit";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -30,6 +33,13 @@ router.on({
         print(HomePage);
     },
 
+    "/admin/category": () => {
+        print(AdminCateListPage);
+    },
+    "/admin/category/page/:page": ({ data }) => {
+        print(AdminCateListPage, data.page);
+    },
+
     "/products": () => {
         print(ProductsPage);
     },
@@ -44,11 +54,12 @@ router.on({
     "/admin/product/page/:page": ({ data }) => {
         print(AdminProductListPage, data.page);
     },
-    "/admin/category": () => {
-        print(AdminCateListPage);
+    "/admin/category/add": () => {
+        print(AdminAddCatePage);
     },
-
-   
+    "/admin/category/:id/edit": ({ data }) => {
+        print(AdminEditCatePage, data.id);
+    },
    
 });
 
