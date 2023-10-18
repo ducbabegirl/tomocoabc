@@ -17,6 +17,12 @@
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788698/pe31wqatns7lpt8wtult.jpg",
       "createdAt": "2023-06-03T10:38:18.528Z",
       "id": 7
+    },
+    {
+      "name": "RobotTrader",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697630005/oe0rfwvuxr3xwdlvnsm9.jpg",
+      "createdAt": "2023-10-18T11:53:22.059Z",
+      "id": 8
     }
   ],
   "cateNews": [
@@ -136,6 +142,19 @@
       "createdAt": "2023-06-16T10:43:13.191Z",
       "updatedAt": "2023-06-16T10:43:45.381Z",
       "id": 50
+    },
+    {
+      "name": "DEmo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697630464/gozo1ycmvviapuzitxjk.jpg",
+      "price": 111111111111,
+      "description": "<p>2222222dasfdf</p>",
+      "categoryId": 7,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-10-18T12:01:00.689Z",
+      "updatedAt": "2023-10-18T12:01:00.689Z",
+      "id": 51
     }
   ],
   "news": [],
