@@ -14,6 +14,7 @@ import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
 
 import AdminAddCatePage from "./pages/admin/category/add";
+import AdminEditCatePage from "./pages/admin/category/edit";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -56,7 +57,9 @@ router.on({
     "/admin/category/add": () => {
         print(AdminAddCatePage);
     },
-   
+    "/admin/category/:id/edit": ({ data }) => {
+        print(AdminEditCatePage, data.id);
+    },
    
 });
 

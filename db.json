@@ -13,16 +13,22 @@
       "id": 6
     },
     {
-      "name": "logo",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697553840/uo8sypaokrxqa8d3wvor.jpg",
-      "createdAt": "2023-10-17T14:43:59.675Z",
-      "id": 7
+      "name": "test update",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697627571/j8vfw0qai42jiivtlbmp.jpg",
+      "createdAt": "2023-10-18T11:12:51.363Z",
+      "id": 10
     },
     {
-      "name": "test2",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697562443/klfwlv4hy9zwqqdwuazb.jpg",
-      "createdAt": "2023-10-17T17:07:22.129Z",
-      "id": 9
+      "name": "test test2",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697627596/jaexnuclujm7qzabwuhq.jpg",
+      "createdAt": "2023-10-18T11:13:16.342Z",
+      "id": 11
+    },
+    {
+      "name": "hihi",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1697629078/crlozndawrib3jntaxar.jpg",
+      "createdAt": "2023-10-18T11:37:57.989Z",
+      "id": 12
     }
   ],
   "cateNews": [
