@@ -11,7 +11,6 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
-import NotFoundPage from "./pages/user/notFound";
 import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
