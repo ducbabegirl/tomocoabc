@@ -16,6 +16,7 @@ import AdminProductListPage from "./pages/admin/product";
 import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import AdminAddProductPage from "./pages/admin/product/add";
+import AdminEditProductPage from "./pages/admin/product/edit";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -34,12 +35,7 @@ router.on({
         print(HomePage);
     },
 
-    "/admin/category": () => {
-        print(AdminCateListPage);
-    },
-    "/admin/category/page/:page": ({ data }) => {
-        print(AdminCateListPage, data.page);
-    },
+    
 
     "/products": () => {
         print(ProductsPage);
@@ -49,6 +45,8 @@ router.on({
     "/admin": () => {
         print(DashboardPage);
     },
+
+    
     "/admin/product": () => {
         print(AdminProductListPage);
     },
@@ -57,6 +55,17 @@ router.on({
     },
     "/admin/product/page/:page": ({ data }) => {
         print(AdminProductListPage, data.page);
+    },
+    "/admin/product/:id/edit": ({ data }) => {
+        print(AdminEditProductPage, data.id);
+    },
+
+
+    "/admin/category": () => {
+        print(AdminCateListPage);
+    },
+    "/admin/category/page/:page": ({ data }) => {
+        print(AdminCateListPage, data.page);
     },
     "/admin/category/add": () => {
         print(AdminAddCatePage);

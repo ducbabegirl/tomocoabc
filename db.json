@@ -149,11 +149,11 @@
       "price": 111111111111,
       "description": "<p>2222222dasfdf</p>",
       "categoryId": 7,
-      "status": 1,
+      "status": 0,
       "view": 0,
       "favorites": 0,
       "createdAt": "2023-10-18T12:01:00.689Z",
-      "updatedAt": "2023-10-18T12:01:00.689Z",
+      "updatedAt": "2023-10-19T14:00:05.150Z",
       "id": 51
     }
   ],
