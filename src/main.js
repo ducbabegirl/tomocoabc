@@ -11,6 +11,7 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
+import NotFoundPage from "./pages/user/notFound";
 import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
@@ -21,6 +22,9 @@ import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
+import AdminAddCatePage from "./pages/admin/category/add";
+import AdminEditCatePage from "./pages/admin/category/edit";
+import AdminAddProductPage from "./pages/admin/product/add";
 import { getUser } from "./utils";
 
 
@@ -107,6 +111,15 @@ router.on({
     },
     "/admin/profile/change-password": () => {
         print(AdminUpdatePassPage);
+    },
+    "/admin/category/:id/edit": ({ data }) => {
+        print(AdminEditCatePage, data.id);
+    },
+    "/admin/category/add": () => {
+        print(AdminAddCatePage);
+    },
+    "/admin/product/add": () => {
+        print(AdminAddProductPage);
     },
    
    
