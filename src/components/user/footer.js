@@ -9,7 +9,7 @@ const Footer = {
                         <h3 class="text-white text-xl uppercase font-semibold mb-3">KẾT NỐI VỚI CHÚNG TÔI</h3>
                         <p class="text-gray-300 text-justify">
                             Chúng tôi mong muốn tạo nên hương vị thức uống tuyệt vời nhất.
-                            Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của tách Coffee
+                            Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của ly trà sữa.
                         </p>
                         <ul class="flex text-white">
                             <li class="mr-3 mt-3">
@@ -62,7 +62,7 @@ const Footer = {
                                     <i class="fab fa-facebook-f"></i>
                                 </div>
                                 Facebook:
-                                <a href="https://www.facebook.com/profile.php?id=100024122764151" target="_blank">&nbsp Dang Thi Hong</a>
+                                <a href="https://www.facebook.com/profile.php?id=100024122764151" target="_blank">&nbsp Cocomoco</a>
                             </li>
                         </ul>
                     </div>

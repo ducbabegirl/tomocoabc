@@ -1,6 +1,7 @@
 import $ from "jquery"
 import Header from "../../components/user/header";
 import Footer from "../../components/user/footer";
+import Banner from "../../components/user/home/banner";
 const HomePage = {
     getTitle() {
         return "Trang chủ - Trà Sữa Cocomoco";
@@ -12,7 +13,7 @@ const HomePage = {
         <!-- content -->
         <main>
             <!-- banner -->
-           
+            ${await Banner.render()}
             <!-- end banner -->
 
             <!-- category -->

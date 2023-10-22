@@ -12,6 +12,7 @@ import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
+import AdminSliderListPage from "./pages/admin/slider";
 
 
 
@@ -57,7 +58,13 @@ router.on({
         print(AdminCateListPage);
     },
 
-   
+    "/admin/slider": () => {
+        print(AdminSliderListPage);
+    },
+    "/admin/slider/page/:page": ({ data }) => {
+        print(AdminSliderListPage, data.page);
+    },
+    
    
 });
 
