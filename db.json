@@ -18,7 +18,7 @@
       "id": 3
     },
     {
-      "name": "Bakery",
+      "name": "Bakery1",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757277/assignment-js/hdp664y2nsbeeycxjrgm.jpg",
       "createdAt": "2022-02-09T16:38:10.591Z",
       "id": 4
@@ -236,19 +236,6 @@
         "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
         "id": 2
       }
-    },
-    {
-      "name": "Trà sữa Pudding Akako",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173256/assignment-js/mitu5h54f6iqewtncqud.png",
-      "price": 30000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
-      "status": 1,
-      "view": 0,
-      "favorites": 0,
-      "createdAt": "2022-02-18T08:34:18.269Z",
-      "updatedAt": "2022-02-18T08:34:18.269Z",
-      "id": 13
     },
     {
       "name": "Trà sữa cafe thượng hạng",
@@ -565,34 +552,6 @@
       "createdAt": "2022-02-21T02:47:10.990Z",
       "updatedAt": "2022-02-21T02:47:10.990Z",
       "id": 40
-    },
-    {
-      "name": "DEmo",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1695395266/assignment-js/me8gydzusowaetrqrzu2.jpg",
-      "price": 99999,
-      "description": "<p>ok</p>",
-      "categoryId": 4,
-      "status": 1,
-      "view": 14,
-      "favorites": 1,
-      "createdAt": "2023-09-22T15:07:47.054Z",
-      "updatedAt": "2023-09-22T15:07:47.054Z",
-      "id": 41,
-      "ratings": [
-        {
-          "userId": 11,
-          "productId": 41,
-          "ratingNumber": 5,
-          "createdAt": "2023-09-22T15:07:58.652Z",
-          "id": 18
-        }
-      ],
-      "category": {
-        "name": "Bakery",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757277/assignment-js/hdp664y2nsbeeycxjrgm.jpg",
-        "createdAt": "2022-02-09T16:38:10.591Z",
-        "id": 4
-      }
     }
   ],
   "news": [
@@ -1587,58 +1546,6 @@
       "toppingId": 5,
       "toppingPrice": 7000,
       "id": 21
-    },
-    {
-      "orderId": 20,
-      "productId": 39,
-      "productPrice": 40000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 4,
-      "ice": 70,
-      "sugar": 70,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 23
-    },
-    {
-      "orderId": 21,
-      "productId": 33,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 50,
-      "sugar": 50,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 24
-    },
-    {
-      "orderId": 22,
-      "productId": 35,
-      "productPrice": 35000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 5,
-      "toppingPrice": 7000,
-      "id": 25
-    },
-    {
-      "orderId": 22,
-      "productId": 34,
-      "productPrice": 35000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 3,
-      "ice": 50,
-      "sugar": 50,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 26
     }
   ],
   "comments": [
@@ -1735,13 +1642,6 @@
     },
     {
       "userId": 11,
-      "content": "ccccccc",
-      "productId": 41,
-      "createdAt": "2023-09-22T15:39:41.798Z",
-      "id": 36
-    },
-    {
-      "userId": 11,
       "content": "ôl",
       "productId": 33,
       "createdAt": "2023-09-22T15:44:01.025Z",
@@ -1796,13 +1696,6 @@
       "ratingNumber": 1,
       "createdAt": "2022-02-20T07:36:03.984Z",
       "id": 9
-    },
-    {
-      "userId": 11,
-      "productId": 41,
-      "ratingNumber": 5,
-      "createdAt": "2023-09-22T15:39:41.764Z",
-      "id": 13
     },
     {
       "userId": 11,
