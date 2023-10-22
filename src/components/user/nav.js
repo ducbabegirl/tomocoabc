@@ -2,7 +2,7 @@ const Nav = {
     async render(pageName){
 
         return /* html */`
-        <div class="container max-w-6xl mx-auto px-3 h-full">
+    <div class="container max-w-6xl mx-auto px-3 h-full">
         <div class="border-b flex items-center h-full">
              <!-- icon mobile -->
              <div class="flex-1 md:hidden">
@@ -26,9 +26,9 @@ const Nav = {
                     </div>
 
                 </a>
-                <ul class="z-20 invisible group-hover:visible absolute top-full left-0 bg-white shadow min-w-[150px] grid grid-cols-1 divide-y px-2 rounded-sm">
-               
-                </ul>
+                    <ul class="z-20 invisible group-hover:visible absolute top-full left-0 bg-white shadow min-w-[150px] grid grid-cols-1 divide-y px-2 rounded-sm">
+                
+                    </ul>
                 </li>
              </ul>
 
@@ -40,15 +40,15 @@ const Nav = {
 
              <ul class="flex-1 justify-end hidden md:flex">
                 <li class="${pageName === "news" ? "text-black" : ""} pl-4 font-semibold text-gray-500 transition ease-linear duration-200 hover:text-black">
-                <a href="/#/news">Tin tức</a>
+                  <a href="/#/news">Tin tức</a>
                 </li>
                 <li class="${pageName === "contact" ? "text-black" : ""} pl-4 font-semibold text-gray-500 transition ease-linear duration-200 hover:text-black">
-                <a href="/#/contact">Liên hệ</a>
+                   <a href="/#/contact">Liên hệ</a>
                 </li>
                 <li class="${pageName === "store" ? "text-black" : ""} pl-4 font-semibold text-gray-500 transition ease-linear duration-200 hover:text-black">
-                        <a href="/#/store">Cửa hàng</a>
+                    <a href="/#/store">Cửa hàng</a>
                 </li>
-                </ul>
+            </ul>
                 <!-- icon mobile -->
 
                 <ul class="flex flex-1 justify-end md:hidden">
@@ -65,10 +65,22 @@ const Nav = {
                         </a>
                     </li>
                 </ul>
-        </div>
+            </div>
         </div>
         
         `;
-    }
-}
+    },
+
+        afterRender(){
+            const bntBar = document.querySelector(".btn-toggle-nav");
+            const navMobile = document.querySelector(".nav__mobile");
+            const navMobileOverlay = navMobile.querySelector(".nav__mobile-overlay");
+            const navMobileClose = navMobile.querySelector(".nav__mobile-close");
+
+            bntBar.addEventListener("click", () => navMobile.classList.toggle("action"));
+            navMobileOverlay.addEventListener("click", () => navMobile.classList.toggle("action"));
+            navMobileClose.addEventListener("click", () => navMobile.classList.toggle("action"));
+        },
+
+};
 export default Nav;

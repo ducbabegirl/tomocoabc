@@ -7,7 +7,6 @@ import WishListLabel from "./wishlistLabel";
 const Header = {
     async render(pageName){
 
-
         return /* html */`
             <header>
             <!-- header top -->
@@ -49,25 +48,29 @@ const Header = {
                                 </div>
 
                             </li>
-                            <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:left-3 after:top-1/2 after:-translate-y-1/2 uppercase text-sm pl-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                            <a href="/#/login">Đăng nhập</a>
+
+                            <li class="header-icon-heart relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:left-3 after:top-1/2 after:-translate-y-1/2 uppercase text-base cursor-pointer pl-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
+                                  ${await WishListLabel.render()}
                             </li>
-                            <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:left-3 after:top-1/2 after:-translate-y-1/2 uppercase text-sm pl-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                            <a href="/#/register">Đăng ký</a>
+                            <li  id="header-cart-label" class="uppercase text-base pl-4 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
+                           
                             </li>
                         </ul>
                     </div>
                 </div>
                  <!-- end header top -->
+                 
                 <!-- header bottom -->
                     <div class="md:h-24 h-[70px] bg-white" id="header-bottom">
                     ${await Nav.render(pageName)}
                     </div>
                 <!-- end header bottom -->
+
                   <!-- nav on mobile -->
                   <section class="nav__mobile invisible transition-all duration-500 ease-linear fixed top-0 right-0 bottom-0 left-0 z-20">
                     <!-- overlay -->
                   <div class="nav__mobile-overlay invisible transition-all duration-400 ease-linear relative w-screen h-screen bg-[rgba(0,0,0,0.6)]"> </div>
+                
                   <nav class="nav__mobile-content -translate-x-full transition duration-500 ease absolute top-0 left-0 bottom-0 min-w-[260px] bg-[rgba(255,255,255,0.95)] shadow py-10" >
                   <form action="" class="flex px-3" id="nav__mobile-search">
                       <input type="text" class="shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc] min-w-[80px] border px-2 h-8 text-sm outline-none" placeholder="Nhập tên sản phẩm tìm kiếm">
@@ -96,6 +99,7 @@ const Header = {
                         </li>
                   </ul>
                 </nav>
+
                   <button class="nav__mobile-close fixed top-3 right-3 text-3xl text-gray-300 transition duration-200 ease-linear hover:text-white">
                       <i class="fas fa-times"></i>
                   </button>
@@ -103,11 +107,27 @@ const Header = {
                    <!-- nav on mobile -->
 
                    <!-- wishlist -->
-            <section id="wishlist" class="wishlist"></section>
+                  <section id="wishlist" class="wishlist"></section>
             </header>
 
         `;
 
     },
+            async afterRender() {
+                
+                Nav.afterRender();
+
+                const headerElement = document.querySelector("#header-bottom");
+                window.addEventListener("scroll", () => {
+                    const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (scrollHeight >= 600) {
+                        headerElement.classList.add("action");
+                    } else {
+                        headerElement.classList.remove("action");
+                    }
+                });
+
+
+            },
 };
 export default Header;

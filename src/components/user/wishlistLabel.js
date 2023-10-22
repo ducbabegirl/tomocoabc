@@ -8,6 +8,6 @@ const WishListLabel = {
             <i class="fas fa-heart"></i>
         </div>
         `;
-    }
+    },
 };
 export default WishListLabel;
