@@ -27,4 +27,10 @@ export const get = (id) => {
 export const add = (data) => {
     const url = `/${TABLE_NAME}`;
     return instance.post(url, data);
+
+};
+export const update = (id, data) => {
+    const url = `/${TABLE_NAME}/${id}`;
+    return instance.patch(url, data);
+
 };
