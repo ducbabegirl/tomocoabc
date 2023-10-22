@@ -1,656 +1,1872 @@
 {
-    "categories": [
-      {
-        "name": "Sách B",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685527404/ht8y05lwzlkvjeml8ge9.jpg",
-        "createdAt": "2023-05-31T10:03:24.422Z",
-        "id": 5
-      },
-      {
-        "name": "Sách A",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788664/vddkklnblgdlvk0klnik.jpg",
-        "createdAt": "2023-06-03T10:37:45.387Z",
-        "id": 6
-      },
-      {
-        "name": "Sách SN",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685788698/pe31wqatns7lpt8wtult.jpg",
-        "createdAt": "2023-06-03T10:38:18.528Z",
-        "id": 7
-      }
-    ],
-    "cateNews": [
-      {
-        "name": "GROUP",
-        "createdAt": "2023-06-08T07:06:38.376Z",
-        "updatedAt": "2023-06-08T07:06:38.376Z",
-        "id": 1
-      },
-      {
-        "name": "SignalTrade",
-        "createdAt": "2023-06-08T07:08:19.780Z",
-        "updatedAt": "2023-06-08T07:08:19.780Z",
-        "id": 2
-      },
-      {
-        "name": "RobotTrader",
-        "createdAt": "2023-06-08T07:08:26.562Z",
-        "updatedAt": "2023-06-08T07:08:26.562Z",
-        "id": 3
-      },
-      {
-        "name": "CopyTrade",
-        "createdAt": "2023-06-08T07:08:36.099Z",
-        "updatedAt": "2023-06-08T07:08:36.099Z",
-        "id": 4
-      }
-    ],
-    "products": [
-      {
-        "name": "NICOLAS DARVAS ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911042/f9qqyao1xkfsusknyxn0.jpg",
-        "price": 500000,
-        "description": "<p>hay lắm</p>",
-        "categoryId": 7,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:23:59.988Z",
-        "updatedAt": "2023-06-16T10:23:59.988Z",
-        "id": 42
-      },
-      {
-        "name": "NAKED FOREX ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911173/ys0dyr5fjoqrtjznpsnb.jpg",
-        "price": 500000,
-        "description": "<p>OK</p>",
-        "categoryId": 6,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:26:11.323Z",
-        "updatedAt": "2023-06-16T10:26:11.323Z",
-        "id": 43
-      },
-      {
-        "name": "PHILIP A.FISHER",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911259/ccfm8bpwqthwv0jenwbw.jpg",
-        "price": 500000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:27:37.317Z",
-        "updatedAt": "2023-06-16T10:28:22.427Z",
-        "id": 44
-      },
-      {
-        "name": "JOHN HAYDEN",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911368/wnzpqcsi1ox3nzmguhik.jpg",
-        "price": 300000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 1,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:29:26.599Z",
-        "updatedAt": "2023-06-16T10:29:26.599Z",
-        "id": 45
-      },
-      {
-        "name": "MÔ HÌNH BIỂU ĐỒ",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911464/kgodtckeuleqg5mfcwv8.jpg",
-        "price": 4500000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:31:02.635Z",
-        "updatedAt": "2023-06-16T10:31:02.635Z",
-        "id": 46
-      },
-      {
-        "name": "HƯỚNG DẪN GIAO DỊCH",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911497/cdljfnbytzobuumyo0ts.jpg",
-        "price": 399000,
-        "description": "<p>OK</p>",
-        "categoryId": 6,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:31:34.786Z",
-        "updatedAt": "2023-06-16T10:31:34.786Z",
-        "id": 47
-      },
-      {
-        "name": "GIAO DỊCH ICHIMOKU",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686911558/ovedrlglativqihzdtp8.jpg",
-        "price": 499000,
-        "description": "<p>OK</p>",
-        "categoryId": 5,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:32:36.835Z",
-        "updatedAt": "2023-06-16T10:32:36.835Z",
-        "id": 48
-      },
-      {
-        "name": "TRADINH",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912166/lck5s0ccimg0esbdxive.jpg",
-        "price": 2000000,
-        "description": "<p>OK</p>",
-        "categoryId": 7,
-        "status": 1,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:42:44.377Z",
-        "updatedAt": "2023-06-16T10:42:44.377Z",
-        "id": 49
-      },
-      {
-        "name": "DEmo",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686912195/w81zu7upykuzld1pkwra.jpg",
-        "price": 8888888,
-        "description": "<p>KK</p>",
-        "categoryId": 7,
-        "status": 0,
-        "view": 0,
-        "favorites": 0,
-        "createdAt": "2023-06-16T10:43:13.191Z",
-        "updatedAt": "2023-06-16T10:43:45.381Z",
-        "id": 50
-      }
-    ],
-    "news": [],
-    "slider": [
-      {
-        "id": 1,
-        "title": "Slider 1",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "createdAt": "2022-02-09T15:42:22"
-      },
-      {
-        "title": "Slider 2",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
-        "createdAt": "2022-02-10T06:44:52.008Z",
-        "id": 2
-      },
-      {
-        "title": "Slider 3",
-        "url": "https://www.facebook.com/LeVanTuan.Info/",
-        "status": 1,
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757540/assignment-js/bcrpldnvh7gqp8bsmpp4.jpg",
-        "createdAt": "2022-02-13T13:04:39.364Z",
-        "id": 3
-      }
-    ],
-    "sizes": [
-      {
-        "name": "M",
-        "priceIncrease": 7000,
-        "createdAt": "2022-02-14T13:08:17.543Z",
-        "updatedAt": "2022-02-14T13:08:17.543Z",
-        "id": 1
-      },
-      {
-        "name": "L",
-        "priceIncrease": 10000,
-        "createdAt": "2022-02-14T13:08:22.518Z",
-        "updatedAt": "2022-02-14T13:08:22.518Z",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Tea",
+      "createdAt": "2022-03-13T05:07:46.346Z",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757211/assignment-js/dydnuwy6d0f7man8fbsn.png"
+    },
+    {
+      "name": "Milk Tea",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+      "id": 2
+    },
+    {
+      "name": "Coffee",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757260/assignment-js/q9gmm4aneutfvgxtzxqf.png",
+      "createdAt": "2022-02-08T12:06:48.706Z",
+      "id": 3
+    },
+    {
+      "name": "Bakery",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757277/assignment-js/hdp664y2nsbeeycxjrgm.jpg",
+      "createdAt": "2022-02-09T16:38:10.591Z",
+      "id": 4
+    }
+  ],
+  "cateNews": [
+    {
+      "id": 1,
+      "name": "Tin tức",
+      "createdAt": "2022-03-13T05:07:46.346Z",
+      "updatedAt": "2022-02-12T14:13:17.404Z"
+    },
+    {
+      "id": 2,
+      "name": "Khuyến mãi",
+      "createdAt": "2022-03-13T05:07:46.346Z",
+      "updatedAt": "2022-02-12T14:13:29.413Z"
+    },
+    {
+      "name": "Yotea Story",
+      "createdAt": "2022-02-12T14:13:41.269Z",
+      "updatedAt": "2022-02-12T14:13:41.269Z",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Hồng trà macchiato",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172420/assignment-js/djdwuozkvtckmxo002qt.png",
+      "price": 42000,
+      "description": "<p>Trà tranh mô tả</p>",
+      "status": 1,
+      "view": 6,
+      "favorites": 0,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:59:05.730Z",
+      "id": 1,
+      "categoryId": 1
+    },
+    {
+      "name": "Trà vải nhiệt đới",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172596/assignment-js/civnoyzmvtambfsjlhnp.png",
+      "price": 42000,
+      "description": "<p>Sự kết hợp giữa vị chua của Cam cùng sự ngọt ngào của trái Vải. Dư vị thanh mát của hồng tra tô điểm hoản hảo cho một chút vị chua, một chút ngọt của của 2 loại trái cây, cho một thức uống trái cây bắt mắt và vừa miệng khó cưỡng.</p>",
+      "status": 1,
+      "view": 244,
+      "favorites": 14,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:23:16.641Z",
+      "id": 2,
+      "categoryId": 1,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
         "id": 2
       }
-    ],
-    "toppings": [
-      {
-        "name": "Kem sữa Macchiato",
-        "price": 5000,
-        "id": 1
-      },
-      {
-        "name": "Pudding trứng",
-        "price": 6000,
+    },
+    {
+      "name": "Trà cam kim quất",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172667/assignment-js/faa774aq8n4w8ax9flwf.png",
+      "price": 42000,
+      "description": "<p>Trà cam kim quất là sự kết hợp giữa vị chua chua của tắc, vị đậm của trà và kết hợp giữa hương thơm và vị ngọt ngọt của cam. Một ly hồng trà cam tắc sẽ giúp bạn giải khát và thư giãn hiệu quả.</p>",
+      "status": 1,
+      "view": 49,
+      "favorites": 12,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:24:27.786Z",
+      "id": 3,
+      "categoryId": 2,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà dâu nữ hoàng",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172713/assignment-js/z5bgto4mfwxh89b3s9ag.png",
+      "price": 42000,
+      "description": "<p>Dâu rừng có hình dáng dễ thương, màu sắc đẹp mắt và vị chua ngọt ăn hoài không ngán đã đốn tim nhiều bạn trẻ. Không chỉ dừng lại ở mức đẹp, ngon, dâu rừng còn là loại trái cây bổ dưỡng.</p><p>Trong dâu rừng chứa nhiều vitamin C – loại vitamin thần kì tăng sức đề kháng cho cơ thể và ngăn chặn quá trình lão hóa của cơ thể. Dâu rừng còn được xem là người bạn thân thiện của da. Các dưỡng chất có trong dâu tây giúp cho da luôn hồng hào, tươi trẻ.</p><p>Trà dâu nữ hoàng là sự kết hợp hài hòa giữa vị trà thanh mát cùng vị chua ngọt của trái dâu rừng sẽ tạo nên một thức uống tuyệt vời cho mọi người.</p>",
+      "status": 1,
+      "view": 68,
+      "favorites": 15,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:25:14.050Z",
+      "id": 4,
+      "categoryId": 1,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà đào gừng",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172791/assignment-js/fxbjbymklnxbobsrpjmo.png",
+      "price": 42000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p><p><br>&nbsp;</p>",
+      "status": 1,
+      "view": 90,
+      "favorites": 13,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:26:32.062Z",
+      "id": 5,
+      "categoryId": 1,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà đào cam sả",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172839/assignment-js/nn8ihjlm91ke9ea2ewdd.png",
+      "price": 30000,
+      "description": "<p>• Trà đào cam sả là một thức uống giải nhiệt cực tốt.</p><p>• Hương thơm từ sả rất hợp khi đi cùng cam, một phần cam để nguyên vỏ giữ được lượng tinh dầu trong vỏ cam để hòa quyện cùng sả tạo nên một hương thơm rất lạ. Khi thưởng thức bạn không chỉ bị mê bởi hương thơm đó mà bạn sẽ bị mê mẩn&nbsp;hương vị chua ngọt của ly trà đào quyện mùi sả độc đáo của Pozaa Tea.</p>",
+      "status": 1,
+      "view": 512,
+      "favorites": 20,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:27:19.775Z",
+      "id": 6,
+      "categoryId": 1,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà sữa ô long bạch kim",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172924/assignment-js/ntnmsjdifbepbbbelzvq.png",
+      "price": 37000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "status": 1,
+      "view": 6,
+      "favorites": 0,
+      "createdAt": "2022-02-09T14:58:57.401Z",
+      "updatedAt": "2022-02-18T08:28:43.945Z",
+      "id": 7,
+      "categoryId": 2
+    },
+    {
+      "name": "Trà sữa thạch dứa nhiệt đới",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173011/assignment-js/fymplkrpyrtwgmrboyc5.png",
+      "price": 20000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 2,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:30:12.380Z",
+      "updatedAt": "2022-02-18T08:30:12.380Z",
+      "id": 8
+    },
+    {
+      "name": "Trà sữa thạch Kiwi",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173071/assignment-js/anopomwnzuu8fxgn3wkr.png",
+      "price": 20000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 1,
+      "favorites": 1,
+      "createdAt": "2022-02-18T08:31:13.125Z",
+      "updatedAt": "2022-02-18T08:31:13.125Z",
+      "id": 9,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà sữa Thạch Nam việt quất",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173127/assignment-js/qctktruxgfj6gpqdwbfc.png",
+      "price": 34000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 2,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:32:08.852Z",
+      "updatedAt": "2022-02-18T08:32:08.852Z",
+      "id": 10
+    },
+    {
+      "name": "Trà sữa Thạch Đào Bồng Lai",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173183/assignment-js/edpmjjyd7yzhqw5nl9k2.png",
+      "price": 24000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:33:04.480Z",
+      "updatedAt": "2022-02-18T08:33:04.480Z",
+      "id": 11
+    },
+    {
+      "name": "Trà sữa nha đam Sahaki",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173219/assignment-js/dxvkdqcxlp81t7xu0r23.png",
+      "price": 30000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 4,
+      "favorites": 1,
+      "createdAt": "2022-02-18T08:33:41.389Z",
+      "updatedAt": "2022-02-18T08:33:41.389Z",
+      "id": 12,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà sữa Pudding Akako",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173256/assignment-js/mitu5h54f6iqewtncqud.png",
+      "price": 30000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:34:18.269Z",
+      "updatedAt": "2022-02-18T08:34:18.269Z",
+      "id": 13
+    },
+    {
+      "name": "Trà sữa cafe thượng hạng",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173289/assignment-js/yp5wmufjwhwpbcumnge4.png",
+      "price": 35000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 2,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:34:50.858Z",
+      "updatedAt": "2022-02-18T08:34:50.858Z",
+      "id": 14
+    },
+    {
+      "name": "Trà sữa caramel",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173839/assignment-js/jxofrse008bncyj6ejww.png",
+      "price": 34000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 1,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:44:00.649Z",
+      "updatedAt": "2022-02-18T08:44:00.649Z",
+      "id": 15
+    },
+    {
+      "name": "Trà sữa socola",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173898/assignment-js/zszteiclgqgnvcwtcgr7.png",
+      "price": 40000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 118,
+      "favorites": 3,
+      "createdAt": "2022-02-18T08:44:59.658Z",
+      "updatedAt": "2022-02-18T08:44:59.658Z",
+      "id": 39,
+      "ratings": [
+        {
+          "userId": 1,
+          "productId": 39,
+          "ratingNumber": 5,
+          "createdAt": "2022-02-20T07:35:39.985Z",
+          "id": 8
+        }
+      ],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": " Trà sữa dâu nữ hoàng",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173932/assignment-js/ij3btyfk7fwekvmmwbe6.png",
+      "price": 25000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 37,
+      "favorites": 1,
+      "createdAt": "2022-02-18T08:45:34.389Z",
+      "updatedAt": "2022-02-18T08:45:49.967Z",
+      "id": 38,
+      "ratings": [
+        {
+          "userId": 1,
+          "productId": 38,
+          "ratingNumber": 1,
+          "createdAt": "2022-02-20T07:36:03.984Z",
+          "id": 9
+        }
+      ],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Trà sữa ô long Bạc hà",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173990/assignment-js/rhp6jtqptdqxb3e00cjd.png",
+      "price": 45000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 31,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:46:32.004Z",
+      "updatedAt": "2022-02-18T08:46:32.004Z",
+      "id": 37
+    },
+    {
+      "name": "Trà sữa YoTea",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174023/assignment-js/fbcyvdf0y80ua73pbrkt.png",
+      "price": 24000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 7,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:47:04.929Z",
+      "updatedAt": "2022-02-18T08:47:04.929Z",
+      "id": 36
+    },
+    {
+      "name": "Trà sữa trân châu nghệ nhân",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174052/assignment-js/yw38phxe4qba8vmlxqtu.png",
+      "price": 35000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 17,
+      "favorites": 2,
+      "createdAt": "2022-02-18T08:47:34.029Z",
+      "updatedAt": "2022-02-18T08:47:34.029Z",
+      "id": 35,
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
         "id": 2
       },
-      {
-        "name": "Thạch nha đam",
-        "price": 7000,
-        "id": 3
-      },
-      {
-        "name": "Trân châu đen",
-        "price": 6000,
-        "id": 4
-      },
-      {
-        "name": "Trân châu trắng",
-        "price": 7000,
-        "id": 5
-      }
-    ],
-    "contact": [
-      {
-        "content": "ok",
-        "name": "Ninh",
-        "email": "ducvip123@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-14T03:11:27.370Z",
-        "id": 1
-      },
-      {
-        "content": "hhhh",
-        "name": "Ninhhahaa",
-        "email": "ducv23@gmail.com",
-        "phone": "0987541321",
-        "storeId": 6,
-        "createdAt": "2023-06-14T04:32:12.735Z",
+      "ratings": []
+    },
+    {
+      "name": "Trà sữa matcha Machiato",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174087/assignment-js/jsmtnckdg0dhchnsdayb.png",
+      "price": 35000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 18,
+      "favorites": 0,
+      "createdAt": "2022-02-18T08:48:09.048Z",
+      "updatedAt": "2022-02-18T08:48:09.048Z",
+      "id": 34
+    },
+    {
+      "name": " Sữa tươi trân châu đường đen",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174124/assignment-js/jhjaupfuamswq6v8vw9b.png",
+      "price": 28000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 23,
+      "favorites": 1,
+      "createdAt": "2022-02-18T08:48:45.769Z",
+      "updatedAt": "2022-02-18T08:48:45.769Z",
+      "id": 33,
+      "ratings": [
+        {
+          "userId": 6,
+          "productId": 22,
+          "ratingNumber": 5,
+          "createdAt": "2022-02-18T15:05:51.789Z",
+          "id": 6
+        }
+      ],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
         "id": 2
-      },
-      {
-        "content": "abc",
-        "name": "Ninh",
-        "email": "ducv23@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-16T04:30:33.717Z",
-        "id": 3
-      },
-      {
-        "content": "em mua sachs",
-        "name": "vanh",
-        "email": "ducvip123@gmail.com",
-        "phone": "0987541321",
-        "storeId": 5,
-        "createdAt": "2023-06-16T04:35:19.367Z",
-        "id": 4
       }
-    ],
-    "voucher": [
-      {
-        "id": 1,
-        "code": "COVID",
-        "quantity": 998,
-        "condition": 0,
-        "conditionNumber": 10,
-        "status": 1,
-        "timeStart": "2022-02-19T15:42:22",
-        "timeEnd": "2022-02-28T15:42:22",
+    },
+    {
+      "name": "Trà sữa khoai môn Macchiato",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174710/assignment-js/vizgnh3brvcvqkin1mfi.png",
+      "price": 25000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 2,
+      "status": 1,
+      "view": 16,
+      "favorites": 1,
+      "createdAt": "2022-02-18T08:58:32.229Z",
+      "updatedAt": "2022-02-18T08:58:32.229Z",
+      "id": 32,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
+    },
+    {
+      "name": "Cà phê Macchiato",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174832/assignment-js/t5zawg6znsphvslnm6kv.png",
+      "price": 32000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 1,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:00:33.976Z",
+      "updatedAt": "2022-02-18T09:00:33.976Z",
+      "id": 24
+    },
+    {
+      "name": "Bạc xỉu",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174868/assignment-js/w2ef831cpj2lhv6mrhbx.png",
+      "price": 40000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 3,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:01:09.743Z",
+      "updatedAt": "2022-02-18T09:01:09.743Z",
+      "id": 25
+    },
+    {
+      "name": "Cà phê sữa",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174898/assignment-js/yr9ckb2hene4en5rpquy.png",
+      "price": 35000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 2,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:01:40.108Z",
+      "updatedAt": "2022-02-18T09:01:40.108Z",
+      "id": 26
+    },
+    {
+      "name": "Cà phê Expresso",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174931/assignment-js/ladlnmosfnan9wor8nsw.png",
+      "price": 25000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 10,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:02:12.743Z",
+      "updatedAt": "2022-02-18T09:49:51.577Z",
+      "id": 27
+    },
+    {
+      "name": "Cà phê Americano",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174968/assignment-js/bkeqcbwtauxp4f0tqwqv.png",
+      "price": 38000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 1,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:02:49.854Z",
+      "updatedAt": "2022-02-18T09:02:49.854Z",
+      "id": 28
+    },
+    {
+      "name": "Cà phê đen",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174998/assignment-js/e9oxu0lw1rj86a4a7kjl.png",
+      "price": 32000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 12,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:03:19.524Z",
+      "updatedAt": "2022-02-18T09:03:19.524Z",
+      "id": 29
+    },
+    {
+      "name": "Cà phê Mocha",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645175030/assignment-js/ytwok9j9opoixqxuehee.png",
+      "price": 50000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 36,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:03:52.323Z",
+      "updatedAt": "2022-02-18T09:03:52.323Z",
+      "id": 30
+    },
+    {
+      "name": "Cà phê Latte",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645175065/assignment-js/gwoatpyyazwdplh5lrph.png",
+      "price": 45000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 31,
+      "favorites": 1,
+      "createdAt": "2022-02-18T09:04:27.177Z",
+      "updatedAt": "2022-02-18T09:04:27.177Z",
+      "id": 31,
+      "ratings": [
+        {
+          "userId": 1,
+          "productId": 31,
+          "ratingNumber": 2,
+          "createdAt": "2022-02-18T12:33:13.176Z",
+          "id": 4
+        }
+      ],
+      "category": {
+        "name": "Coffee",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757260/assignment-js/q9gmm4aneutfvgxtzxqf.png",
         "createdAt": "2022-02-08T12:06:48.706Z",
-        "updatedAt": "2022-02-20T08:09:08.334Z",
-        "user_ids": [
-          1,
-          2
-        ]
-      },
-      {
-        "code": "COVID10",
-        "quantity": 10,
-        "condition": 1,
-        "conditionNumber": 10000,
-        "status": 0,
-        "timeStart": "2022-02-10T17:22",
-        "timeEnd": "2022-02-10T17:22",
-        "createdAt": "2022-02-10T10:22:46.553Z",
-        "updatedAt": "2022-02-10T10:46:22.588Z",
-        "user_ids": [],
-        "id": 2
-      },
-      {
-        "code": "COVID101",
-        "quantity": 0,
-        "condition": 0,
-        "conditionNumber": 10,
-        "status": 1,
-        "timeStart": "2022-02-17T13:37",
-        "timeEnd": "2022-02-19T13:37",
-        "user_ids": [
-          1
-        ],
-        "createdAt": "2022-02-17T06:37:58.837Z",
-        "updatedAt": "2022-02-17T06:37:58.837Z",
         "id": 3
-      },
-      {
-        "code": "COVID102",
-        "quantity": 0,
-        "condition": 1,
-        "conditionNumber": 1000,
-        "status": 1,
-        "timeStart": "2022-02-20T10:52",
-        "timeEnd": "2022-02-21T10:53",
-        "user_ids": [
-          1
-        ],
-        "createdAt": "2022-02-20T03:53:36.661Z",
-        "updatedAt": "2022-02-20T03:57:07.455Z",
+      }
+    },
+    {
+      "name": "Trà tranh nek",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645411631/assignment-js/bl8ukr5uvtezwaavwx9k.jpg",
+      "price": 123,
+      "description": "<p>abc</p>",
+      "categoryId": 3,
+      "status": 0,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2022-02-21T02:47:10.990Z",
+      "updatedAt": "2022-02-21T02:47:10.990Z",
+      "id": 40
+    },
+    {
+      "name": "DEmo",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1695395266/assignment-js/me8gydzusowaetrqrzu2.jpg",
+      "price": 99999,
+      "description": "<p>ok</p>",
+      "categoryId": 4,
+      "status": 1,
+      "view": 14,
+      "favorites": 1,
+      "createdAt": "2023-09-22T15:07:47.054Z",
+      "updatedAt": "2023-09-22T15:07:47.054Z",
+      "id": 41,
+      "ratings": [
+        {
+          "userId": 11,
+          "productId": 41,
+          "ratingNumber": 5,
+          "createdAt": "2023-09-22T15:07:58.652Z",
+          "id": 18
+        }
+      ],
+      "category": {
+        "name": "Bakery",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757277/assignment-js/hdp664y2nsbeeycxjrgm.jpg",
+        "createdAt": "2022-02-09T16:38:10.591Z",
         "id": 4
-      },
-      {
-        "code": "BGMAIDINH",
-        "quantity": 97,
-        "condition": 1,
-        "conditionNumber": 10000,
-        "status": 1,
-        "timeStart": "2022-02-20T14:45",
-        "timeEnd": "2022-02-28T14:45",
-        "user_ids": [
-          1,
-          2
-        ],
-        "createdAt": "2022-02-20T07:45:22.511Z",
-        "updatedAt": "2022-02-20T07:45:22.511Z",
-        "id": 5
-      },
-      {
-        "code": "BGMAIDINH1",
-        "quantity": 100,
-        "condition": 1,
-        "conditionNumber": 9999,
-        "status": 1,
-        "timeStart": "2022-02-21T18:32",
-        "timeEnd": "2022-02-28T18:32",
-        "user_ids": [],
-        "createdAt": "2022-02-21T11:32:16.036Z",
-        "updatedAt": "2022-02-21T11:32:16.036Z",
-        "id": 6
       }
-    ],
-    "users": [
-      {
-        "email": "admin@gmail.com",
-        "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
-        "username": "admin",
-        "fullName": "admin",
-        "phone": "0347562365",
-        "wardsCode": 167,
-        "districtCode": 5,
-        "provinceCode": 1,
-        "address": "Bắc Giang",
-        "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645339820/assignment-js/edtav74kaqptfmzppp2i.jpg",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2022-02-10T10:46:22.588Z",
-        "id": 1
-      },
-      {
-        "email": "haivt@gmail.com",
-        "password": "$2a$10$hyggD0khNLlcCOD6MVr.keuC5Dnkf9XpdydkeqkB.aSZzz42uPqxm",
-        "username": "haivt",
-        "fullName": "Vũ Tuấn Hải",
-        "phone": "18456631430",
-        "wardsCode": 775,
-        "districtCode": 27,
-        "provinceCode": 2,
-        "address": "abc",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685782659/mss248jxsvbbbo7qg57y.jpg",
-        "role": 0,
-        "active": 0,
-        "createdAt": "2022-02-19T09:48:11.964Z",
-        "id": 8
-      },
-      {
-        "email": "demo2@gmail.com",
-        "password": "$2a$10$pmh9scuBEkKzWwk8Wnbq..5qhxEzt0cKgv3oHYarpqRxYbf5hR9Ny",
-        "username": "dem2",
-        "fullName": "Admin SN",
-        "phone": "0987543123",
-        "wardsCode": 1,
-        "districtCode": 1,
-        "provinceCode": 1,
-        "address": "187 Trần Bình",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685594376/tz4tb7gluogzlt2bs7d1.jpg",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2023-05-31T08:03:03.521Z",
-        "id": 11
-      },
-      {
-        "email": "demo@gmail.com",
-        "password": "$2a$10$LJKgnPa51R7hZzdqv5/3VeOqA2czlbEWz7z7EBqRXydJGF9wSTwAi",
-        "username": "demo",
-        "fullName": "Mai Thành",
-        "phone": "0987654321",
-        "wardsCode": 3387,
-        "districtCode": 105,
-        "provinceCode": 12,
-        "address": "Bắc từ liêm , Hà Nội",
-        "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1685606777/m7orlxgx3amqarehqjcg.png",
-        "role": 1,
-        "active": 1,
-        "createdAt": "2023-05-09T03:29:59.754Z",
-        "id": 12
-      },
-      {
-        "email": "assaj@gmail.com",
-        "password": "$2a$10$JVJyMvwIuxkkFtiKjxF.0uCP6oLEHmkcNSicocpnJbCzSvdDkiG/.",
-        "username": "dèm",
-        "fullName": "dd",
-        "phone": "0987654345",
-        "wardsCode": 8710,
-        "districtCode": 243,
-        "provinceCode": 26,
-        "address": "demo",
-        "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
-        "role": 0,
-        "active": 0,
-        "createdAt": "2023-05-31T08:34:08.048Z",
-        "id": 13
-      }
-    ],
-    "stores": [
-      {
-        "name": "Sách",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686710128/jdvkcmvhh4jgqfsak4pz.png",
-        "address": "abc123",
-        "phone": "0987654321",
-        "timeStart": "09:37",
-        "timeEnd": "12:36",
-        "map": "https://www.facebook.com/watch/?ref=tab",
-        "id": 5
-      },
-      {
-        "name": "Thành Đức",
-        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1686711940/qm3dolxglhn8hxw5gfxi.jpg",
-        "address": "abc123a",
-        "phone": "0987654321",
-        "timeStart": "10:04",
-        "timeEnd": "23:07",
-        "map": "fff",
-        "id": 6
-      }
-    ],
-    "favorites_product": [],
-    "orders": [
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 62728,
-        "price_decrease": 6272.8,
-        "message": "",
-        "status": 4,
-        "voucher": [
-          3
-        ],
-        "createdAt": "2022-02-17T12:28:57.357Z",
-        "updatedAt": "2022-02-17T17:06:36.086Z",
-        "id": 1
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 25000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-18T07:24:03.835Z",
-        "updatedAt": "2022-02-18T07:24:03.835Z",
-        "id": 2
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 14231,
-        "price_decrease": 0,
-        "message": "",
-        "status": 4,
-        "voucher": [],
-        "createdAt": "2022-02-18T07:25:17.530Z",
-        "updatedAt": "2022-02-18T07:58:02.865Z",
-        "id": 3
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Tân Mỹ, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 197000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-19T03:25:09.596Z",
-        "updatedAt": "2022-02-19T03:25:09.596Z",
-        "id": 8
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0347562365",
-        "email": "admin@gmail.com",
-        "total_price": 204000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 3,
-        "voucher": [],
-        "createdAt": "2022-02-19T03:30:24.506Z",
-        "updatedAt": "2022-02-20T15:16:08.452Z",
-        "id": 9
-      },
-      {
-        "userId": 1,
-        "customer_name": "admin",
-        "address": "Bắc Giang, Xã Quang Huy, Huyện Phù Yên, Tỉnh Sơn La",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "total_price": 61000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 4,
-        "voucher": [],
-        "createdAt": "2022-02-19T08:20:36.137Z",
-        "updatedAt": "2023-05-09T10:07:27.084Z",
-        "id": 11
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 65000,
-        "price_decrease": 0,
-        "message": "",
-        "status": 1,
-        "voucher": [],
-        "createdAt": "2022-02-20T06:57:20.734Z",
-        "updatedAt": "2022-02-20T07:13:42.363Z",
-        "id": 13
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 149000,
-        "price_decrease": 10000,
-        "message": "",
-        "status": 0,
-        "voucher": [
-          5
-        ],
-        "createdAt": "2022-02-20T07:46:10.431Z",
-        "updatedAt": "2022-02-20T07:46:10.431Z",
-        "id": 14
-      },
-      {
-        "userId": 1,
-        "customer_name": "Lê Tuân",
-        "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "total_price": 244000,
-        "price_decrease": 0,
-        "message": "Ship gấp nha",
-        "status": 0,
-        "voucher": [],
-        "createdAt": "2022-02-20T12:54:06.028Z",
-        "updatedAt": "2022-02-20T12:54:06.028Z",
-        "id": 19
-      }
-    ],
-    "orderDetails": [],
-    "comments": [],
-    "ratings": [
-      {
-        "userId": 1,
-        "ratingNumber": 3,
-        "createdAt": "2022-02-18T05:54:12.512Z",
-        "id": 2
-      }
-    ],
-    "address": [
-      {
-        "userId": 1,
-        "fullName": "Lê Tuân",
-        "phone": "0345263256",
-        "email": "admin@gmail.com",
-        "provinceCode": 24,
-        "districtCode": 217,
-        "wardCode": 7411,
-        "address": "Tân Mỹ",
-        "id": 3
-      },
-      {
-        "userId": 1,
-        "fullName": "admin",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "provinceCode": 24,
-        "districtCode": 217,
-        "wardCode": 7375,
-        "address": "Bắc Giang",
-        "id": 4
-      },
-      {
-        "userId": 1,
-        "fullName": "admin",
-        "phone": "0347562367",
-        "email": "admin@gmail.com",
-        "provinceCode": 14,
-        "districtCode": 122,
-        "wardCode": 3910,
-        "address": "Bắc Giang",
-        "id": 5
-      }
-    ]
-  }
+    }
+  ],
+  "news": [
+    {
+      "title": "YoTea Tưng Bừng Chào Đón 2 Cơ Sở Mới Tại VinCom Thái Hòa và Big C Nam Định vào ngày cuối năm 2019",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178042/assignment-js/lwnt7w1bsgrgemypkd6e.jpg",
+      "description": "<p>Trong không khí hối hả của ngày cuối năm, vào ngày 31/12/2019 YoTea chính thức khai trương Cửa hàng YoTea Vincom Thái Hòa (TTTM Vincom Thái Hòa khối 8, phường Long Sơn, Thái Hòa, Nghệ An) và YoTea Big C Nam Định (TTTM BigC Nam Định, xã Lộc Hòa, Nam Định) để phục vụ quý khách.</p>",
+      "content": "<p>Trong không khí hối hả của ngày cuối năm, vào ngày 31/12/2019 YoTea chính thức khai trương Cửa hàng YoTea Vincom Thái Hòa (TTTM Vincom Thái Hòa khối 8, phường Long Sơn, Thái Hòa, Nghệ An) và YoTea Big C Nam Định (TTTM BigC Nam Định, xã Lộc Hòa, Nam Định) để phục vụ quý khách.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>Sự kiện khai trương cửa hàng thu hút đông đảo khách hàng đến thăm quan, thưởng thức những ly trà trái cây, cà phê hảo hạng nguyên chất. YoTea Vincom Thái Hòa và YoTea Big C Nam Định là địa điểm được khách hàng lựa chọn để ăn uống, vui chơi ngày lễ tết.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>Tuy thời tiết tại Nghệ An ngày khai trương mưa lạnh nhưng&nbsp; lượng khách đến thưởng thức trà sữa rất đông.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>&nbsp;</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>Tại YoTea Big C Nam Định cũng không kém với lượng khách đông nghịt.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-300x224.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-768x574.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-1024x766.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-600x449.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-300x224.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-768x574.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-1024x766.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-600x449.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>YoTea cảm ơn những tình cảm khách hàng đã dành cho YoTea Vincom Thái Hòa và YoTea Big C Nam Định.</p><p>Hiện tại cửa hàng đang có chương trình khuyến mãi đồng giá 10k cho tất cả các loại trà sữa trong menu áp dụng từ ngày 31.12.- 7.1.2020.</p><p>Còn chần chờ gì nữa, tới YoTea Vincom Thái Hòa và YoTea Big C Nam Định nhận ưu đãi ngay thôi!</p><p>YoTea Vincom Thái Hòa</p><p>Địa chỉ: Gian hàng L1-01 TTTM Vincom Thái Hòa khối 8, phường Long Sơn, Thái Hòa, Nghệ An</p><p>YoTea Big C Nam Định</p><p>Địa chỉ: Gian hàng F&amp;B – TTTM BigC Nam Định, xã Lộc Hòa, Nam Định</p>",
+      "cateNewId": 1,
+      "status": 1,
+      "createdAt": "2022-02-09T15:42:22.570Z",
+      "updatedAt": "2022-02-18T09:54:02.426Z",
+      "id": 1
+    },
+    {
+      "title": "Tưng Bừng Khai Trương YoTea  Vincom Bắc Kạn",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178136/assignment-js/wvdb24aesn6ohl7dlkxm.jpg",
+      "description": "<p>Trong giai đoạn cuối năm, YoTea tiếp tục phát triển hệ thống cửa hàng nhượng quyền phủ rộng từ Bắc vào Nam. Vào ngày giáng sinh ( 24.12), cửa hàng YoTea đầu tiên tại Bắc Kạn chính thức khai trương tại TTTM Vincom Bắc Kạn.</p>",
+      "content": "<p>Trong giai đoạn cuối năm, YoTea tiếp tục phát triển hệ thống cửa hàng nhượng quyền phủ rộng từ Bắc vào Nam.<br>Vào ngày giáng sinh ( 24.12), cửa hàng YoTea đầu tiên tại Bắc Kạn chính thức khai trương tại TTTM Vincom Bắc Kạn.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0293.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0293.jpg 5472w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0293-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0293-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0293-1024x683.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0293-600x400.jpg 600w\" sizes=\"100vw\" width=\"5472\"></p><p>Trong ngày khai trương, cửa hàng thu hút đông đảo khách hàng, đặc biệt là giới trẻ đến checkin và thưởng thức trà sữa.</p><p>Lượng khách đến cửa hàng ngày khai trương như “vỡ trận”, tuy nhiên với quy trình phục vụ&nbsp; được đào tạo bài bản và chuyên nghiệp, YoTea đã làm hài lòng thực khách, chinh phục được những khách hàng khó tính nhất. Đem lại trải nghiệm tuyệt vời cho khách hàng.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0282.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0282.jpg 5472w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0282-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0282-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0282-1024x683.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0282-600x400.jpg 600w\" sizes=\"100vw\" width=\"5472\"></p><p>Cùng YoTea nhìn lại những hình ảnh khai trương tại cửa hàng tại Vincom Bắc Kạn:</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0302.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0302.jpg 5472w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0302-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0302-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0302-1024x683.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0302-600x400.jpg 600w\" sizes=\"100vw\" width=\"5472\"></p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0284.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/IMG_0284.jpg 5472w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0284-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0284-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0284-1024x683.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/IMG_0284-600x400.jpg 600w\" sizes=\"100vw\" width=\"5472\"><br>Hiện cửa hàng đang có chương trình khuyến mãi &nbsp;khai trương &nbsp;MUA TRÀ SỮA VỚI GIÁ 1OK&nbsp; áp dụng cho 1000 ly diễn ra từ 25.12 đến 31.12, quý khách nhanh chân đến cửa hàng để nhận ưu đãi nhé !</p><p>Địa chỉ: &nbsp;Địa chỉ : Lầu 3 TTTM Vincom Bắc Kạn, Tổ 8A, Phường Đức Xuân, Thành Phố Bắc Kạn, Tỉnh Bắc Kạn</p>",
+      "cateNewId": 1,
+      "status": 1,
+      "createdAt": "2022-02-09T15:42:22.570Z",
+      "updatedAt": "2022-02-18T09:55:37.507Z",
+      "id": 2
+    },
+    {
+      "title": "YoTea Tưng Bừng Chào Đón 2 Cơ Sở Mới Tại VinCom Thái Hòa và Big C Nam Định vào ngày cuối năm 2019",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645183277/assignment-js/vdahw1rwigusdy9yvwkj.jpg",
+      "description": "<p>Trong không khí hối hả của ngày cuối năm, vào ngày 31/12/2019 YoTea chính thức khai trương Cửa hàng YoTea Vincom Thái Hòa (TTTM Vincom Thái Hòa khối 8, phường Long Sơn, Thái Hòa, Nghệ An) và YoTea Big C Nam Định (TTTM BigC Nam Định, xã Lộc Hòa, Nam Định) để phục vụ quý khách.</p>",
+      "content": "<p>Sự kiện khai trương cửa hàng thu hút đông đảo khách hàng đến thăm quan, thưởng thức những ly trà trái cây, cà phê hảo hạng nguyên chất. YoTea Vincom Thái Hòa và YoTea Big C Nam Định là địa điểm được khách hàng lựa chọn để ăn uống, vui chơi ngày lễ tết.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/f04466eb5943a01df952-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>Tuy thời tiết tại Nghệ An ngày khai trương mưa lạnh nhưng&nbsp; lượng khách đến thưởng thức trà sữa rất đông.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/91cc0626388ec1d0989f-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>&nbsp;</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-300x225.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-768x576.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-1024x768.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/92ec1835269ddfc3868c-1-600x450.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>Tại YoTea Big C Nam Định cũng không kém với lượng khách đông nghịt.</p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-300x224.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-768x574.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-1024x766.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/0dfdfa59cef137af6ee0-600x449.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p><img src=\"https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2.jpg\" alt=\"\" srcset=\"https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2.jpg 1280w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-300x224.jpg 300w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-768x574.jpg 768w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-1024x766.jpg 1024w, https://pozaatea.vn/wp-content/uploads/2020/01/62f6916ba5c35c9d05d2-600x449.jpg 600w\" sizes=\"100vw\" width=\"1280\"></p><p>YoTea cảm ơn những tình cảm khách hàng đã dành cho YoTea Vincom Thái Hòa và YoTea Big C Nam Định.</p><p>Hiện tại cửa hàng đang có chương trình khuyến mãi đồng giá 10k cho tất cả các loại trà sữa trong menu áp dụng từ ngày 31.12.- 7.1.2020.</p><p>Còn chần chờ gì nữa, tới YoTea Vincom Thái Hòa và YoTea Big C Nam Định nhận ưu đãi ngay thôi!</p><p>YoTea Vincom Thái Hòa</p><p>Địa chỉ: Gian hàng L1-01 TTTM Vincom Thái Hòa khối 8, phường Long Sơn, Thái Hòa, Nghệ An</p><p>YoTea Big C Nam Định</p><p>Địa chỉ: Gian hàng F&amp;B – TTTM BigC Nam Định, xã Lộc Hòa, Nam Định</p><p>&nbsp;</p><p><br>&nbsp;</p>",
+      "cateNewId": 2,
+      "status": 1,
+      "createdAt": "2022-02-09T15:42:22.570Z",
+      "updatedAt": "2022-02-18T11:21:16.698Z",
+      "id": 3
+    },
+    {
+      "title": "TƯNG BỪNG KHAI TRƯƠNG CỬA HÀNG YOTEA THỨ 4 TẠI BÌNH DƯƠNG",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178208/assignment-js/zra28mcjzmz18peb1fot.jpg",
+      "description": "<p>Ngày 10/12/2019, YoTea tiếp tục khai trương cửa hàng YoTea Ngã tư Sở Sao tại địa chỉ số 320, đường Nguyễn Văn Thành, phường Định Hòa, Thành phố Thủ Dầu Một, tỉnh Bình Dương. Ngay trong ngày ra mắt, cửa hàng đã thu hút rất nhiều các bạn trẻ và gia đình đến ủng hộ.</p>",
+      "content": "<p>Ngày 10/12/2019, YoTea tiếp tục khai trương cửa hàng YoTea Ngã tư Sở Sao tại địa chỉ số 320, đường Nguyễn Văn Thành, phường Định Hòa, Thành phố Thủ Dầu Một, tỉnh Bình Dương. Ngay trong ngày ra mắt, cửa hàng đã thu hút rất nhiều các bạn trẻ và gia đình đến ủng hộ.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1.jpg 1276w, https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1-768x575.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1-1024x767.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/233bdcf57cc68598dcd7-1-600x450.jpg 600w\" sizes=\"100vw\" width=\"1276\"></p><p>&nbsp;</p><p>Khách hàng ghé cửa hàng tỏ ra rất thích thú và hào hứng vì được thưởng thức những món đồ uống thơm ngon, an toàn cho sức khỏe. Menu đa dạng với 40 món bao gồm trà trái cây, cà phê, trà sữa đáp ứng nhu cầu khách hàng ở mọi lứa tuổi, mọi sở thích. Điều đặc biệt, người dân quanh khu vực có thêm một địa điểm mới để hẹn hò, gặp mặt bạn bè, gia đình, đồng nghiệp.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0511.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0511.jpg 6016w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0511-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0511-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0511-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0511-600x401.jpg 600w\" sizes=\"100vw\" width=\"6016\"></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358.jpg 956w, https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358-225x300.jpg 225w, https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358-768x1025.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358-767x1024.jpg 767w, https://yotea.vn/wp-content/uploads/2019/12/c1f39d79a3495a170358-600x801.jpg 600w\" sizes=\"100vw\" width=\"956\"></figure><p>Với sứ mệnh mang đến khách hàng sự hoàn hảo nhất từ chất lượng đồ uống đến không gian sang trọng và quy trình phục vụ chuyên nghiệp, YoTea Ngã tư Sở Sao mong muốn mang đến sự trải nghiệm tuyệt vời cho khách hàng ghé thăm .</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e.jpg 1276w, https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e-768x575.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e-1024x767.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/66f46b7f554fac11f55e-600x450.jpg 600w\" sizes=\"100vw\" width=\"1276\"></p><p>&nbsp;</p><p>Nhân sự kiên khai trương, cửa hàng đang có chương trình khuyến mãi hấp dẫn như Mua 1 tặng 1, Mua 2 tặng 1 từ ngày 10/12 đến ngày 12/12/2019. Nhanh chân ghé YoTea để nhận ưu đãi siêu hấp dẫn nhé.</p><p>Địa chỉ: số 320, đường Nguyễn Văn Thành, phường Đinh Hòa, Thành phố Thủ Dầu Một, tỉnh Bình Dương.<br>Hotline: 079 233 2686</p>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-17T16:08:41.974Z",
+      "updatedAt": "2022-02-18T11:24:52.897Z",
+      "id": 4
+    },
+    {
+      "title": "Thị trường F&B sẽ biến động thế nào trước nhu cầu đồ uống biến động trong tương lai",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178303/assignment-js/oj9l0btzm5w1dbalcpl2.jpg",
+      "description": "<p>Năm 2019, đánh dấu sự thay đổi và biến động không ngừng của nền kinh tế Việt Nam , xu hướng tiêu dùng đồ uống của người Việt không hề giảm sút mà còn có dấu hiệu tăng trưởng. Khi thu nhập tăng cao, đời sống của người dân ngày một cải thiện, nhu cầu của con người về ăn uống và hưởng thụ ngày càng tăng. Đây là cơ hội và cũng là thách thức rất lớn đối với những người kinh doanh trong lĩnh vực F&amp;B.</p>",
+      "content": "<p><strong>Năm 2019, đánh dấu sự thay đổi và biến động không ngừng của nền kinh tế Việt Nam , xu hướng tiêu dùng đồ uống của người Việt không hề giảm sút mà còn có dấu hiệu tăng trưởng. Khi thu nhập tăng cao, đời sống của người dân ngày một cải thiện, nhu cầu của con người về ăn uống và hưởng thụ ngày càng tăng. Đây là cơ hội và cũng là thách thức rất lớn đối với những người kinh doanh trong lĩnh vực F&amp;B.</strong></p><h2><strong>Tại sao kinh doanh đồ uống chưa bao giờ hết “hot”</strong></h2><p>Ăn uống là nhu cầu cơ bản của con người. Nhu cầu ấy không bao giờ mất đi mà ngày một trở nên đa dạng và gia tăng theo sự phát triển của nền kinh tế. Để phù hợp với điều kiện sống và thị hiếu của khách hàng. Kinh doanh đồ uống là giải pháp khá bền vững và ổn định. Bởi lẽ chi phí bỏ ra để đầu tư một cửa hàng đồ uống khá thấp, nhu cầu sử dụng đồ uống của khách hàng cao. Khách hàng ghé thăm một cửa hàng đồ uống không chỉ để giải khát mà còn có là để tụ tập, chuyền trò, thư giãn và làm việc. Họ cần nhiều hơn giá trị của một ly đồ uống. Chính những lý do đó đã khiến cho những cửa hàng kinh doanh đồ uống trở thành mô hình kinh doanh ổn định và bền vững.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/10/Y1-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/10/Y1-600x400.jpg 600w, https://yotea.vn/wp-content/uploads/2019/10/Y1.jpg 960w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Đâu mới là giá trị cốt lõi của kinh doanh đồ uống</strong></h2><p>Chất lượng sản phẩm luôn là yếu tố cốt lõi của việc kinh doanh đồ uống. Sản phẩm luôn là yếu tố đầu tiên để đánh giá một cửa hàng đồ uống. Chính vì vậy, đây là yếu tố bắt buộc, người làm kinh doanh phải chú trọng. Đồ uống phải thơm ngon, hấp dẫn cả về hương vị lẫn hình thức mới làm thỏa mãn khách hàng. Không những thế, thức uống phải đa dạng và đặc biệt, đôi khi sự khác lạ so với những thương hiệu khác chính là điểm nhấn làm thương hiệu này trở nên khác biệt.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144-300x240.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144-300x240.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144.jpg 313w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Biến thương hiệu đồ uống trở nên khác biệt</strong></h2><p>Thị trường kinh doanh đồ uống tại Việt Nam là thị trường béo bở. Có thể dễ dàng nhận thấy ngay có nhiều thương hiệu đồ uống lớn nhỏ, trong và ngoài nước xuất hiện thời gian gần đây, điều này đã tạo nên sự cạnh tranh khá gay gắt trong lĩnh vực kinh doanh F&amp;B. Vậy tại sao rất nhiều thương hiệu lại tồn tại được, đó là do nhu cầu tiềm năng của thị trường tiêu dùng đồ uống tại Việt Nam. Sự gia tăng nhu cầu của khách hàng tỷ lệ thuận với sự gia tăng các thương hiệu và cửa hàng đồ uống. Trước sự cạnh tranh gay gắt như vậy, thương hiệu muốn thu hút được khách hàng cần phải trở nên khác biệt. Khác biệt vê chất lượng đồ uống, về không gian, về con người, về quy trình phục vụ. Ví dụ như Toco toco được biết đến với thương hiệu trà sữa được pha chế từ những nguyên liệu nông sản Việt, YoTea đã rất thành công trong việc xây dựng một mô hình kinh doanh trà và cà phê hướng đến một không gian mở hiện đại, trẻ trung sang trọng, đồ uống với nguyên liệu tự nhiên,… Điều quan trọng là tạo được dấu ân để khách hàng biết đến thương hiệu. Đó chính là yếu tố tiên quyết tạo nên một thương hiệu đồ uống thành công.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-238x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-238x300.jpg 238w, https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-300x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-300x300.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-150x150.jpg 150w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-100x100.jpg 100w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><p>Thương hiệu YoTea đã rất thành công trong việc xây dựng hình ảnh không gian thưởng thức trà và cà phê sang trọng với chất lượng đồ uống tuyệt hảo từ những nguyên liệu được chiết xuất từ nguyên liệu sạch, tự nhiên. Với mong muốn mang thương hiệu trà và cà phê Việt đến với nhiều người hơn. Thương hiệu <a href=\"https://yotea.vn/\"><strong>YoTea</strong> </a>đang tìm kiếm đối tác nhượng quyền thương hiệu.</p><p>Tìm hiểu thêm tại <a href=\"http://nhuongquyen.yotea.vn/\"><strong>Đây</strong></a></p>",
+      "cateNewId": 1,
+      "status": 1,
+      "createdAt": "2022-02-18T09:58:24.884Z",
+      "updatedAt": "2022-02-18T11:25:12.543Z",
+      "id": 5
+    },
+    {
+      "title": "YoTea Tưng Bừng Chào Đón Cơ Sở Mới Tại VinCom Cẩm Phả",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178419/assignment-js/nugny1e5dfoglfspz3cc.jpg",
+      "description": "<p>Hiện nay, trung tâm thương mại Vincom được xem là thiên đường ăn uống, vui chơi, giải trí của mọi người, đặc biệt là giới trẻ.<br>Để đáp ứng nhu cầu khách hàng, vào ngày 7/12/2019 YoTea chính thức khai trương cửa hàng tại Tầng 1 TTTM Vincom Cẩm Phả, phường Cẩm Bình, thành phố Cẩm Phả, tỉnh Quảng Ninh để phục vụ quý khách.</p>",
+      "content": "<figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0503-1024x684.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0503-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0503-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0503-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0503-600x401.jpg 600w\" sizes=\"100vw\" width=\"1020\"></figure><p>09<br>Th12</p><p>Hiện nay, trung tâm thương mại Vincom được xem là thiên đường ăn uống, vui chơi, giải trí của mọi người, đặc biệt là giới trẻ.<br>Để đáp ứng nhu cầu khách hàng, vào ngày 7/12/2019 YoTea chính thức khai trương cửa hàng tại Tầng 1 TTTM Vincom Cẩm Phả, phường Cẩm Bình, thành phố Cẩm Phả, tỉnh Quảng Ninh để phục vụ quý khách.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0500.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0500.jpg 6016w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0500-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0500-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0500-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0500-600x401.jpg 600w\" sizes=\"100vw\" width=\"6016\"></p><p>&nbsp;</p><p>Là thương hiệu đồ uống được thành lập từ năm 2014, trải qua 5 năm hoạt động và phát triển, YoTea đã có cho mình 12 cửa hàng tại các thành phố lớn như Hà Nội, Thành phố Hồ Chí Minh, Bình Dương, Hải Phòng…Với sứ mệnh mang đến những ly trà trái cây, cà phê hảo hạng và nguyên chất cùng với không gian sang trọng, YoTea đã đem đến cho khách hàng sự trải nghiệm tuyệt vời từ chất lượng đồ uống đến quy trình phục vụ chuyên nghiệp.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0490.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0490.jpg 6016w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0490-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0490-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0490-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0490-600x401.jpg 600w\" sizes=\"100vw\" width=\"6016\"></p><p>&nbsp;</p><p>Thời tiết ngoài trời lạnh nhưng không khí trong ngày khai trương ở YoTea rất nóng vì có rất đông khách hàng tới ủng hộ cửa hàng. YoTea Cẩm Phả nhận được rất nhiều tình cảm và những nụ cười hài lòng của khách hàng về chất lượng đồ uống và quy trình phục vụ. Đến với YoTea Cẩm Phả khách hàng có thể thoải mái lựa chọn đồ uống theo sở thích với menu đồ uống đa dạng bao gồm trà trái cây, cà phê và trà sữa.</p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0449.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0449.jpg 5661w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0449-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0449-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0449-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0449-600x401.jpg 600w\" sizes=\"100vw\" width=\"5661\"></p><p><img src=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0342.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/12/HIP_0342.jpg 6016w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0342-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0342-768x513.jpg 768w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0342-1024x684.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/12/HIP_0342-600x401.jpg 600w\" sizes=\"100vw\" width=\"6016\"></p><p>YoTea Vincom Cẩm Phả hứa hẹn sẽ là điểm dừng chân, mang lại những trải nghiệm tuyệt vời của quý khách hàng.</p><p>&nbsp;</p><p>Còn chần chờ gì nữa, trời lạnh mà tới YoTea Cẩm Phả là ấm áp ngay !</p><p>Địa chỉ: Lô L1-03, Tầng 1, TTTM Vincom Cẩm Phả, Phường Cẩm Bình, TP. Cẩm Phả, tỉnh Quảng Ninh</p><p>Hotline: 038 888 5588</p><p>&nbsp;</p>",
+      "cateNewId": 2,
+      "status": 1,
+      "createdAt": "2022-02-18T10:00:20.601Z",
+      "updatedAt": "2022-02-18T11:25:40.848Z",
+      "id": 6
+    },
+    {
+      "title": "Kinh doanh đồ uống cạnh tranh nhưng luôn là xu thế",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178483/assignment-js/p6bmugdt9bag0tczqhtz.jpg",
+      "description": "<h2>Thị trường kinh doanh đồ uống chưa bao giờ hạ nhiệt, nhất là khi đời sống người dân càng được nâng cao, con người càng có xu hướng tiêu dùng và mua sắm xa xỉ và đa dạng. Thưởng thức đồ uống luôn là nhu cầu thiết yếu của người Việt. Nhu cầu đa dạng cũng là cơ hội cho hàng loạt thương hiệu đồ uống thành lập và phát triển, gây nên sự cạnh tranh gay gắt, nhưng trước sự thay đổi và gia tăng về nhu cầu của người tiêu dùng, thị trường kinh doanh đồ uống</h2>",
+      "content": "<p><strong>Thị trường kinh doanh đồ uống chưa bao giờ hạ nhiệt, nhất là khi đời sống người dân càng được nâng cao, con người càng có xu hướng tiêu dùng và mua sắm xa xỉ và đa dạng. Thưởng thức đồ uống luôn là nhu cầu thiết yếu của người Việt. Nhu cầu đa dạng cũng là cơ hội cho hàng loạt thương hiệu đồ uống thành lập và phát triển, gây nên sự cạnh tranh gay gắt, nhưng trước sự thay đổi và gia tăng về nhu cầu của người tiêu dùng, thị trường kinh doanh đồ uống</strong></p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-300x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-300x300.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-150x150.jpg 150w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-768x768.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-1024x1024.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-600x600.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-100x100.jpg 100w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Kinh doanh đồ uống luôn là xu thế</strong></h2><p>Nhu cầu thưởng thức về đồ uống và đồ ăn của người Việt ngày càng cao trong xã hội hiện đại. Nền kinh tế càng phát triển, đời sống của người dân Việt đi lên, nhu cầu tiệu dùng cũng thay đổi. Ngoài giá trị cốt lõi là thỏa mãn nhu cầu giải khát. Khách hàng còn mong muốn nhiều hơn đó là giá trị gia tăng của sản phẩm là chất lượng dịch vụ và không gian cửa hàng đồ uống. Một không gian đẹp đẽ với thiết kế bắt mắt sẽ thu hút được khách hàng ghé thăm, họ có nhu cầu checkin , thư giãn và trò chuyện tán ngẫu. Khách hàng cũng đánh giá cao và có thiện cảm với chất lượng dịch vụ tại cửa hàng. Cửa hàng nào nhân viên ưa nhìn, nhã nhặn sẽ tạo được thiện cảm với khách hàng. Họ sẵn sàng mua một ly đồ uống với giá cao để đổi lại không chỉ hương vị đồ uống mà còn là sự trải nghiệm về không gian và chất lượng dịch vụ tại cửa hàng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Thay đổi để phù hợp với định hướng tiêu dùng của người Việt</strong></h2><p>Từ đó, các nhãn hàng cần phải có những chiến dịch thay đổi để đáp ứng được nhu cầu ngày càng đa dạng của khách hàng: những khó khăn phải đối mặt khi kinh doanh đồ uống như : chương trình khuyến mãi để hấp dẫn khách hàng , cải thiện sản phẩm để đa dạng phù hợp với thị hiếu của khách hàng, chất lượng đào tạo và quy chuẩn dịch vụ chuyên nghiệp và chuẩn chính. Để làm được những điều này đòi hỏi người kinh doanh phải am hiểu về thị trường, đối thủ cạnh tranh và các xu hướng kinh doanh hiện tại để có thể xây dựng các chương trình marketing , xúc tiến bán sao cho phù hợp. Có được sự thay đổi thường xuyên liên tục sẽ giúp thương hiệu đáp ứng được nhu cầu và thị hiếu của người tiêu dùng luôn biến động. Đây là một bài toán khó đòi hỏi người làm kinh doanh phải đi tìm lời giải để tạo được vị thế trên thị trường và thu hút được khách hàng</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1-238x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1-238x300.jpg 238w, https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><p>Đối với những người không có nhiều kinh nghiệm trong kinh doanh, thiếu hụt kiến thức chuyên môn về ngành hàng thì đây là một trở ngại lớn và đòi hỏi nguồn lực khá cao để giải quyết hết tất cả những vấn đề trên. Chính vì thế mà không ít những người kinh doanh nhỏ lẻ lựa chọn cho mình hướng đi sử dụng mô hình nhượng quyền thương hiệu</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/Y2-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/Y2-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/Y2-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/Y2-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/Y2-600x450.jpg 600w\" sizes=\"100vw\" width=\"600\"></figure><p>Khó khăn sẽ được gỡ nút khi hợp tác kinh doanh nhượng quyền: được hỗ trợ từ A – Z từ phía nhãn hàng và hưởng lợi ích từ thương hiệu. Thương hiệu YoTea được thành lập từ năm 2014, với cửa hàng đầu tiên tại Royal City, nhận thấy sự thành công từ cửa hàng đầu tiên, Founder của thương hiệu đã mở hàng loạt các cửa hàng tại các thành phố lớn Hà Nội, Thành phố Hồ Chí Minh , Bình Dương,.. Đến nay, YoTea đã có hơn 10 cửa hàng trên khắp cả nước. Trong thời điểm hiện tại, nhận thấy được sự thành công khi kinh doanh tại lĩnh vực trà và cà phê, thương hiệu <a href=\"https://yotea.vn/\"><strong>YoTea</strong></a> đang muốn tìm đối tác kinh doanh nhượng quyền trên toàn quốc nhằm mang thương hiệu trà và cà phê sạch, an toàn và quy trình dịch vụ chuyên nghiệp đến hàng ngàn khách hàng trên toàn quốc.</p><p>Tìm hiểu thêm tại <a href=\"http://nhuongquyen.yotea.vn/\"><strong>Đây</strong></a></p>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-18T10:01:25.350Z",
+      "updatedAt": "2022-02-18T11:25:52.331Z",
+      "id": 7
+    },
+    {
+      "title": "Cơ hội kinh doanh tiềm năng tại Vincom Mega Mall",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178583/assignment-js/bar7isn8osfkwqvigoxn.jpg",
+      "description": "<p>Không ít những người kinh doanh đã nắm bắt cơ hội và đầu tư mặt bằng tại khu trung tâm thương mại Vincom, đó là một lối đi tắt để thương hiệu kinh doanh của mình dễ dàng tiếp cận với nhiều khách hàng. Vì khách hàng đến với Vincom luôn đông đảo, đa phần là giới trẻ và gia đình có nhu cầu ăn uống, mua sắm và giải trí cao.</p>",
+      "content": "<figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a.jpg 643w, https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a-222x300.jpg 222w, https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a-600x810.jpg 600w\" sizes=\"100vw\" width=\"643\"></figure><p><strong>Không ít những người kinh doanh đã nắm bắt cơ hội và đầu tư mặt bằng tại khu trung tâm thương mại Vincom, đó là một lối đi tắt để thương hiệu kinh doanh của mình dễ dàng tiếp cận với nhiều khách hàng. Vì khách hàng đến với Vincom luôn đông đảo, đa phần là giới trẻ và gia đình có nhu cầu ăn uống, mua sắm và giải trí cao.</strong></p><h2><strong>Vincom Mega Mall mở cửa đồng loạt tại các thành phố lớn trên toàn quốc .</strong></h2><p>Vincom là hệ thống trung tâm thương mại với hàng tram chi nhánh tại các thành phố lớn như Hà Nội, Thành phố Hồ Chí Minh, Bình Dương,… Và hệ thống trung tâm thương mại này đã và đang dần dần xuất hiện tại các thành phố như Thị xã Thái Hòa (Nghệ An), Thành phố Tây Ninh, Thành phố Cẩm Phả ( Quảng Ninh), Thành phố Cao Lãnh (Đồng Tháp),… Việc Vincom khai phá thị trường tại các địa điểm này khiến cho người dân được tiếp xúc với sự văn minh, hiện đại. Vincom Mega Mall là một tụ điểm giải trí và mua sắm hiện đại đặc biệt phù hợp với những thành phố lớn đang trên đà phát triển.<br>&nbsp;</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a-222x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a-222x300.jpg 222w, https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a-600x810.jpg 600w, https://yotea.vn/wp-content/uploads/2019/10/4048c0a3d06b37356e7a.jpg 643w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Tại sao lại lựa chọn kinh doanh đồ uống ?</strong></h2><p>Khi nhắc đến tự kinh doanh nhiều người vẫn băn khoăn không biết nên kinh doanh mặt hàng gì, kinh doanh ra sao. Có không ít các lựa chọn về ngành hàng kinh doanh dành cho những người đang muốn tự mình khởi nghiệp và kinh doanh. Chúng ta có thể lựa chọn ngành hàng kinh doanh phụ thuộc vào mục tiêu kinh doanh hoặc kiến thức am hiểu của chủ đầu tư. Tuy nhiên đối với những người chưa xác vạch rõ được định hướng kinh doanh cho bản thân thì bài viết này sẽ phần nào giúp ích được cho các bạn.</p><p>Trung tâm thương mại là nơi hội tụ rất nhiều các mặt hàng kinh doanh khác nhau như : quần áo , trang sức, đồ nội thất, đồ gia dụng , nhà hàng và cửa hàng đồ uống nhưng tại sao kinh doanh đồ uống lại là một ý tưởng không tồi. Bởi lẽ, đồ uống là ngành dịch vụ khá đơn giản, mức chi phí đầu tư nhỏ, giá cốt để làm nên một ly đồ uống thông thường khá thấp, khả năng sinh lời cao. Bên cạnh đó các mặt hàng như quần áo có khả năng tồn hàng cao, các mặt hàng đố dung như đồ nội thất và đồ gia dụng lại có chi phí đầu tư khá cao. Có thể nói kinh doanh đồ uống là một hình thức kinh doanh khá an toàn và đơn giản nhất là cho những người kinh doanh có vốn đầu tư hạn hẹp.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/07/000277fcd73733696a26-300x201.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/07/000277fcd73733696a26-300x201.jpg 300w, https://yotea.vn/wp-content/uploads/2019/07/000277fcd73733696a26.jpg 600w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Cơ hội kinh doanh thành công cùng thương hiệu YoTea</strong></h2><p>Thương hiệu trà và trà sữa YoTea được thành lập vào năm 2014 với cửa hàng đầu tiên tại Royal City. Với triết lý kinh doanh không ngừng phát triển và đưa thương hiệu YoTea ngày càng lớn mạnh bằng hương vị trà và trà sữa hảo hạng, quy trình phục vụ chuyên nghiệp mà còn là không gian đẳng cấp sang trọng. Trong suốt thời gian qua, YoTea luôn khẳng định vị thế của mình trên thị trường và không ngừng mở rộng thương hiệu với 10 cửa hàng mang thương hiệu YoTea tại các thành phố lớn: Hà Nội, Hồ Chí Minh, Hải Phòng và Bình Dương.</p><p>Hiện nay, YoTea đang là đối tác chiến lược của Trung tâm thương mại Vincom và đang muốn tìm kiếm đối tác kinh doanh nhượng quyền thương hiệu YoTea. Với mục tiêu mang sản phẩm trà và trà sữa chất lương đến với đông đảo khách hàng.</p><p>Với sự chuẩn bị kỹ càng về chương trình marketing tổng thể và chương trình bán hàng hiệu quả cho từng cửa hàng, cộng thêm lợi thế vốn có tại khu Trung tâm thương mại Vincom, nơi thu hút được lượng khách tiềm năng của sản phẩm trà và trà sữa. Doanh thu của các cửa hàng thương hiệu YoTea luôn nằm trong mức ổn định từ 300.000.000đ với tỷ suất lợi nhuận 50 – 60%</p><p>Với mong muốn mang tới nhiều dòng sản phẩm đồ uống chất lượng và không gian với thiết kế sang trọng cho thực khách trên toàn quốc,<a href=\"https://yotea.vn/nhuong-quyen/\"><strong>&nbsp;YoTea</strong></a>&nbsp;tìm kiếm các đối tác đồng hành để có thể gặp gỡ, chia sẻ cơ hội và cùng nhau phát triển. Quý đối tác có nhu cầu kinh doanh trà sữa và muốn trở thành đại lý của YoTea tìm hiểu tại&nbsp;<a href=\"http://nhuongquyen.yotea.vn/\">ĐÂY&nbsp;&nbsp;</a></p><p>Hotline: 0911212823 (Ms Lan)</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/10/Y1-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/10/Y1-600x400.jpg 600w, https://yotea.vn/wp-content/uploads/2019/10/Y1.jpg 960w\" sizes=\"100vw\" width=\"600\"></figure>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-18T10:03:04.829Z",
+      "updatedAt": "2022-02-18T11:27:33.525Z",
+      "id": 8
+    },
+    {
+      "title": "Tưng bừng khai trương YoTea Trâu Qùy, Gia Lâm",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178700/assignment-js/wwklg3lmwtakqtn2vpby.jpg",
+      "description": "<p>Ngày 08/11/2019, YoTea Việt Nam lại tưng bừng đón chào cửa hàng mới là YoTea Châu Qùy , Gia Lâm tại&nbsp; L1, T93, KĐT 31ha, Trâu Quỳ, Gia Lâm, HN( ngõ 237, Ngô Xuân Quảng). Sự kiện khai trương lần này đã thu hút rất nhiều các bạn trẻ và gia đình ghé thăm cửa hàng lần này.</p>",
+      "content": "<p><strong>Ngày 08/11/2019, YoTea Việt Nam lại tưng bừng đón chào cửa hàng mới là YoTea Châu Qùy , Gia Lâm tại&nbsp; L1, T93, KĐT 31ha, Trâu Quỳ, Gia Lâm, HN( ngõ 237, Ngô Xuân Quảng). Sự kiện khai trương lần này đã thu hút rất nhiều các bạn trẻ và gia đình ghé thăm cửa hàng lần này.</strong></p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>Dù vừa mới ra mắt nhưng YoTea Trâu Qùy, Gia Lâm đã nhận được sự quan tâm và chào đóng nồng nhiệt của khách hàng, người dân quanh khu vực đều hào hứng ghé thăm của hàng mới toanh và thưởng thức những ly đồ uống thơm ngon hấp dẫn. Khách hàng tại YoTea Trâu Qùy đã có những trải nghiệm vô cùng tuyệt vời. Bởi không chỉ đồ uống ngon, quy trình phục vụ tại YoTea&nbsp; cũng vô cùng chuẩn chỉnh mà YoTea Trâu Qùy còn thu hút khách hàng bởi không gian tươi mới, hiện đại và sang trọng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/chau-quy-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/chau-quy-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>YoTea là thương hiệu đồ uống được thành lập từ năm 2014, trải qua 5 năm hoạt động và phát triển, YoTea đã có cho mình 11 cửa hàng tại các thành phố lớn như Hà Nội, Thành phố Hồ Chí Minh, Bình Dương, … Với sứ mệnh mang đến những ly trà sữa sạch, thơm ngon cùng với không gian sang trọng. YoTea đã mang đến sự trải nghiệm tuyệt vời cho hàng triệu khách hàng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/chau-quy-2.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>Nhân sự kiên khai trương lần này là hàng loạt các chương trình khuyến mãi như Mua 1 tặng 1, Mua 2 tặng 1kéo dài đến ngày 03/11. Cùng bạn bè ghé YoTea để đón nhận những chương trình khuyến mãi siêu hấp dẫn nhé</p>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-18T10:05:03.508Z",
+      "updatedAt": "2022-02-18T11:26:15.225Z",
+      "id": 9
+    },
+    {
+      "title": "Tưng bừng khai trương cửa hàng YoTea Quế Võ Bắc Ninh",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178760/assignment-js/dgpyh0d4y12ph9llndel.jpg",
+      "description": "<p>Ngày 31/10/2019, Cửa hàng YoTea Quế Võ, Bắc Ninh khai trương tại Xã Phượng Mao, huyện Quế Võ, tỉnh Bắc Ninh. Sự kiện khai trương lần này đã thu hút rất nhiều người trẻ và gia đình ghé thăm cửa hàng lần này. Khách hàng đầu tiên của YoTea Quế Võ, Bắc Ninh đã có những trải nghiệm vô cùng tuyệt vời.</p>",
+      "content": "<figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-1024x768.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e.jpg 1280w\" sizes=\"100vw\" width=\"1020\"></figure><p>Ngày 31/10/2019, Cửa hàng YoTea Quế Võ, Bắc Ninh khai trương tại Xã Phượng Mao, huyện Quế Võ, tỉnh Bắc Ninh. Sự kiện khai trương lần này đã thu hút rất nhiều người trẻ và gia đình ghé thăm cửa hàng lần này. Khách hàng đầu tiên của YoTea Quế Võ, Bắc Ninh đã có những trải nghiệm vô cùng tuyệt vời.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/36f3a1f8141ff241ab0e.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>Chỉ vừa mới khai trương nhưng ngay ngày đầu tiên, cửa hàng đã thu hút được sự chú ý của nhiều khách hàng. Mọi người đều hào hứng và ghé thăm cửa hàng để thưởng thức đồ uống và chương trình ca nhạc sống động nhân dịp khai trương.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>Trà sữa thơm ngon, độc đáo và cực kỳ sạch với quy trình chế biến vô cùng an toàn, hợp vệ sinh. Không gian cửa hàng vô cùng sang trọng với thiết kế hiện đại. Đây hứa hẹn sẽ là một tụ điểm vô cùng hot của các bạn trẻ tại Quế Võ, Bắc Ninh. Vừa là nơi để thư giãn, vừa là nơi lý tưởng để gặp gỡ, học tập và làm việc.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/b713cbf6d21634486d07.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>YoTea là thương hiệu đồ uống được thành lập từ năm 2014, trải qua 5 năm hoạt động và phát triển, YoTea đã có cho mình 11 cửa hàng tại các thành phố lớn như Hà Nội, Thành phố Hồ Chí Minh, Bình Dương, … Với sứ mệnh mang đến những ly trà sữa sạch, thơm ngon cùng với không gian sang trọng. YoTea đã mang đến sự trải nghiệm tuyệt vời cho hàng triệu khách hàng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/ec85fc7fe59f03c15a8e.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><p>Nhân sự kiên khai trương lần này là hàng loạt các chương trình khuyến mãi như Mua 1 tặng 1, Mua 2 tặng 1kéo dài đến ngày 03/11. Cùng bạn bè ghé YoTea để đón nhận những chương trình khuyến mãi siêu hấp dẫn nhé</p>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-18T10:06:01.725Z",
+      "updatedAt": "2022-02-18T11:26:46.658Z",
+      "id": 10
+    },
+    {
+      "title": "YoTea hoàn thành xuất sắc nhiệm vụ trong 1 ngày khai trương 2 cửa hàng nhượng quyền",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178919/assignment-js/nwmzdr9prukdzwnjp7eg.png",
+      "description": "<p>Trong cùng ngày 28/7, YoTea đã hoàn thành xuất sắc hỗ trợ khai trương 2 cơ sở nhượng quyền của YoTea</p><ol><li>YoTea Thuận Giao, Thuận An, Bình Dương</li><li>YoTea Hà Tĩnh</li></ol>",
+      "content": "<p>Trong cùng ngày 28/7, YoTea đã hoàn thành xuất sắc hỗ trợ khai trương 2 cơ sở nhượng quyền của YoTea</p><ol><li>YoTea Thuận Giao, Thuận An, Bình Dương</li><li>YoTea Hà Tĩnh</li></ol><p>Mặc dù thương hiệu chưa được nhiều người biết tới, nhưng ngay trong ngày khai trương của cả 2 cơ sở, YoTea được đón nhận nồng nhiệt.</p><p>Dưới đây là những hình ảnh được ghi lại trong ngày khai trương của cả 2 cơ sở nhượng quyền.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/07/YT-TA3-ed.png\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/07/YT-TA3-ed.png 450w, https://yotea.vn/wp-content/uploads/2019/07/YT-TA3-ed-225x300.png 225w\" sizes=\"100vw\" width=\"450\"></figure><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/07/YT-HT2-ed.png\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/07/YT-HT2-ed.png 800w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT2-ed-300x225.png 300w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT2-ed-768x576.png 768w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT2-ed-600x450.png 600w\" sizes=\"100vw\" width=\"800\"></figure><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/07/YT-HT-ed.png\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/07/YT-HT-ed.png 800w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT-ed-300x225.png 300w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT-ed-768x576.png 768w, https://yotea.vn/wp-content/uploads/2019/07/YT-HT-ed-600x450.png 600w\" sizes=\"100vw\" width=\"800\"></figure><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/07/YT-TA2-ed.png\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/07/YT-TA2-ed.png 800w, https://yotea.vn/wp-content/uploads/2019/07/YT-TA2-ed-300x225.png 300w, https://yotea.vn/wp-content/uploads/2019/07/YT-TA2-ed-768x576.png 768w, https://yotea.vn/wp-content/uploads/2019/07/YT-TA2-ed-600x450.png 600w\" sizes=\"100vw\" width=\"800\"></figure><p>&nbsp;</p><p>&nbsp;</p><p><br>&nbsp;</p>",
+      "cateNewId": 3,
+      "status": 1,
+      "createdAt": "2022-02-18T10:08:41.157Z",
+      "updatedAt": "2022-02-18T11:26:59.236Z",
+      "id": 11
+    },
+    {
+      "title": "Rộn ràng khai trương YoTea Ecolife – Hà Nội",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645178982/assignment-js/aezrbhdx39zxc7qvgvr2.png",
+      "description": "<p>Sau bao ngày vất vả chờ hoàn thiện cửa hàng, cũng gặp không ít khó khăn từ thời tiết, thi công,… tưởng rằng công trình không kịp hoàn thiện trước ngày khai trương, nhưng tất cả nỗ lực của đội ngũ nhân lực YoTea, từ các ban lãnh đạo, quản lý tới nhân vên vượt qua khó khăn này.</p>",
+      "content": "<p>Sau bao ngày vất vả chờ hoàn thiện cửa hàng, cũng gặp không ít khó khăn từ thời tiết, thi công,… tưởng rằng công trình không kịp hoàn thiện trước ngày khai trương, nhưng tất cả nỗ lực của đội ngũ nhân lực YoTea, từ các ban lãnh đạo, quản lý tới nhân vên vượt qua khó khăn này.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife.png\" alt=\"Khai trương YoTea Ecolife - Hà Nội\" srcset=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife.png 802w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-300x224.png 300w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-768x575.png 768w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-600x449.png 600w\" sizes=\"100vw\" width=\"802\"></figure><p>Ngay sau khi nhận được thông tin YoTea khai trương, đã có nhiều khách hàng ghé thăm trước giờ khai trương. Vì sự quan tâm và ủng hộ của khách hàng, cửa hàng đành chiều lòng khách trước giờ khai trương chính thức khoảng mấy tiếng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-2.png\" alt=\"Khách hàng trước giờ khai trương cửa hàng\" srcset=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-2.png 802w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-2-300x224.png 300w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-2-768x575.png 768w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-2-600x449.png 600w\" sizes=\"100vw\" width=\"802\"></figure><p>Mặc dù YoTea luôn có những quy chuẩn trong việc tạo ra những sản phẩm chất lượng, nhưng YoTea cũng không kém phần hiếu khách nếu như khách hàng quan tam và ủng hộ. YoTea có những ưu đãi đặc biệt trong ngày khai trương cửa hàng, tạo điều kiện khách hàng thân thiện với YoTea hơn cả.</p><p>Ngoài không gian sang chảnh bậc nhất để các bạn trẻ có thể check-in cùng bạn bè (Ecolife có lợi thế ngay dưới chân tòa nhà Trung tâm thương mại lớn ở Hà Nội), là đi kèm chất lượng sản phẩm cao của YoTea. Trong ngày khai trương, YoTea có những ưu đãi đặc biệt cho các bạn quan tâm:</p><ul><li>Từ ngày 23/6 đến ngày 24/6: Mua 1 tặng 1 (áp dụng cùng size đối với tất cả các loại trà sữa + trà trái cây có trong menu)</li><li>Từ ngày 25/6 đến ngày 29/6: Mua 2 tặng 1 (áp dụng cùng size đối với tất cả các loại trà sữa + trà trái cây có trong menu)</li></ul><p>&nbsp;</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-1.png\" alt=\"Khách hàng tới cửa hàng trước giờ khai trương\" srcset=\"https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-1.png 802w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-1-300x224.png 300w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-1-768x575.png 768w, https://yotea.vn/wp-content/uploads/2019/06/yotea-ecolife-1-600x449.png 600w\" sizes=\"100vw\" width=\"802\"></figure><p>&nbsp;</p><p><br>&nbsp;</p>",
+      "cateNewId": 1,
+      "status": 1,
+      "createdAt": "2022-02-18T10:09:44.573Z",
+      "updatedAt": "2022-02-18T11:27:09.517Z",
+      "id": 12
+    },
+    {
+      "title": "Thị trường F&B sẽ biến động thế nào trước nhu cầu đồ uống biến động trong tương lai",
+      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645273987/assignment-js/vyzudetjcx7vmfwy66kj.jpg",
+      "description": "<p>test edit</p>",
+      "content": "<p>test</p>",
+      "cateNewId": 2,
+      "status": 0,
+      "createdAt": "2022-02-19T12:33:09.573Z",
+      "updatedAt": "2022-02-19T12:52:42.505Z",
+      "id": 13
+    }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "title": "Slider 1",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "createdAt": "2022-02-09T15:42:22"
+    },
+    {
+      "title": "Slider 2",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
+      "createdAt": "2022-02-10T06:44:52.008Z",
+      "id": 2
+    },
+    {
+      "title": "Slider 3",
+      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "status": 1,
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757540/assignment-js/bcrpldnvh7gqp8bsmpp4.jpg",
+      "createdAt": "2022-02-13T13:04:39.364Z",
+      "id": 3
+    }
+  ],
+  "sizes": [
+    {
+      "name": "M",
+      "priceIncrease": 7000,
+      "createdAt": "2022-02-14T13:08:17.543Z",
+      "updatedAt": "2022-02-14T13:08:17.543Z",
+      "id": 1
+    },
+    {
+      "name": "L",
+      "priceIncrease": 10000,
+      "createdAt": "2022-02-14T13:08:22.518Z",
+      "updatedAt": "2022-02-14T13:08:22.518Z",
+      "id": 2
+    }
+  ],
+  "toppings": [
+    {
+      "name": "Kem sữa Macchiato",
+      "price": 5000,
+      "id": 1
+    },
+    {
+      "name": "Pudding trứng",
+      "price": 6000,
+      "id": 2
+    },
+    {
+      "name": "Thạch nha đam",
+      "price": 7000,
+      "id": 3
+    },
+    {
+      "name": "Trân châu đen",
+      "price": 6000,
+      "id": 4
+    },
+    {
+      "name": "Trân châu trắng",
+      "price": 7000,
+      "id": 5
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "content": "Rất oke",
+      "name": "Tuân",
+      "email": "admin@gmail.com",
+      "phone": "0347856325",
+      "storeId": 1,
+      "createdAt": "2022-02-09T15:42:22"
+    },
+    {
+      "id": 2,
+      "content": "Rất oke",
+      "name": "Tuân",
+      "email": "admin@gmail.com",
+      "phone": "0347856325",
+      "storeId": 2,
+      "createdAt": "2022-02-09T15:42:22"
+    },
+    {
+      "content": "Bắc Giang 98",
+      "name": "Lê Văn Tuân",
+      "email": "tuanlv@gmail.com",
+      "phone": "0345632563",
+      "storeId": 3,
+      "createdAt": "2022-02-12T10:28:55.185Z",
+      "id": 3
+    },
+    {
+      "content": "Ok lắm ạ",
+      "name": "Lê Tuấn Anh",
+      "email": "letuananh@gmail.com",
+      "phone": "0347856236",
+      "storeId": 4,
+      "createdAt": "2022-02-20T07:32:42.713Z",
+      "id": 4
+    },
+    {
+      "content": "okkkkkkkkkkkkkkkkkkk",
+      "name": "Ninh",
+      "email": "ducv23aaaaaaaaaaa@gmail.com",
+      "phone": "0987541321",
+      "storeId": 3,
+      "createdAt": "2023-09-08T02:26:30.348Z",
+      "id": 5
+    }
+  ],
+  "voucher": [
+    {
+      "id": 1,
+      "code": "COVID",
+      "quantity": 998,
+      "condition": 0,
+      "conditionNumber": 10,
+      "status": 1,
+      "timeStart": "2022-02-19T15:42:22",
+      "timeEnd": "2022-02-28T15:42:22",
+      "createdAt": "2022-02-08T12:06:48.706Z",
+      "updatedAt": "2022-02-20T08:09:08.334Z",
+      "user_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "COVID10",
+      "quantity": 10,
+      "condition": 1,
+      "conditionNumber": 10000,
+      "status": 0,
+      "timeStart": "2022-02-10T17:22",
+      "timeEnd": "2022-02-10T17:22",
+      "createdAt": "2022-02-10T10:22:46.553Z",
+      "updatedAt": "2022-02-10T10:46:22.588Z",
+      "user_ids": [],
+      "id": 2
+    },
+    {
+      "code": "COVID101",
+      "quantity": 0,
+      "condition": 0,
+      "conditionNumber": 10,
+      "status": 1,
+      "timeStart": "2022-02-17T13:37",
+      "timeEnd": "2022-02-19T13:37",
+      "user_ids": [
+        1
+      ],
+      "createdAt": "2022-02-17T06:37:58.837Z",
+      "updatedAt": "2022-02-17T06:37:58.837Z",
+      "id": 3
+    },
+    {
+      "code": "COVID102",
+      "quantity": 0,
+      "condition": 1,
+      "conditionNumber": 1000,
+      "status": 1,
+      "timeStart": "2022-02-20T10:52",
+      "timeEnd": "2022-02-21T10:53",
+      "user_ids": [
+        1
+      ],
+      "createdAt": "2022-02-20T03:53:36.661Z",
+      "updatedAt": "2022-02-20T03:57:07.455Z",
+      "id": 4
+    },
+    {
+      "code": "BGMAIDINH",
+      "quantity": 97,
+      "condition": 1,
+      "conditionNumber": 10000,
+      "status": 1,
+      "timeStart": "2022-02-20T14:45",
+      "timeEnd": "2022-02-28T14:45",
+      "user_ids": [
+        1,
+        2
+      ],
+      "createdAt": "2022-02-20T07:45:22.511Z",
+      "updatedAt": "2022-02-20T07:45:22.511Z",
+      "id": 5
+    },
+    {
+      "code": "BGMAIDINH1",
+      "quantity": 100,
+      "condition": 1,
+      "conditionNumber": 9999,
+      "status": 1,
+      "timeStart": "2022-02-21T18:32",
+      "timeEnd": "2022-02-28T18:32",
+      "user_ids": [],
+      "createdAt": "2022-02-21T11:32:16.036Z",
+      "updatedAt": "2022-02-21T11:32:16.036Z",
+      "id": 6
+    },
+    {
+      "code": "CONCAC",
+      "quantity": 99,
+      "condition": 1,
+      "conditionNumber": 100000,
+      "status": 1,
+      "timeStart": "2023-09-22T21:53",
+      "timeEnd": "2023-09-24T13:59",
+      "user_ids": [
+        11
+      ],
+      "createdAt": "2023-09-22T14:54:18.833Z",
+      "updatedAt": "2023-09-22T15:40:40.816Z",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
+      "username": "admin",
+      "fullName": "admin",
+      "phone": "0347562365",
+      "wardsCode": 167,
+      "districtCode": 5,
+      "provinceCode": 1,
+      "address": "Bắc Giang",
+      "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645339820/assignment-js/edtav74kaqptfmzppp2i.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2022-02-10T10:46:22.588Z",
+      "id": 1
+    },
+    {
+      "email": "khoint@gmail.com",
+      "password": "$2a$10$oUpfyN81lVHbkbj5MMORtuiyDQxF4dytYB9H5xyp18Kk3Wx7oqt.q",
+      "username": "khoint",
+      "fullName": "Nguyễn Trần Khôi",
+      "phone": "0345632563",
+      "wardsCode": 1290,
+      "districtCode": 42,
+      "provinceCode": 4,
+      "address": "abc",
+      "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1644565575/assignment-js/ivjftaf4oudxrkkvdowr.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2022-02-11T04:04:03.386Z",
+      "id": 3
+    },
+    {
+      "email": "anhht@gmail.com",
+      "password": "$2a$10$LejaQldB5Wc79eDG4q3YeuxniIxJb2sBeiiLOMeZJHnrHsakeZmI2",
+      "username": "anhht",
+      "fullName": "Hoàng Tuấn Anh",
+      "phone": "0345623652",
+      "wardsCode": 7525,
+      "districtCode": 219,
+      "provinceCode": 24,
+      "address": "abc",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 1,
+      "active": 0,
+      "createdAt": "2022-02-11T07:49:26.200Z",
+      "id": 4
+    },
+    {
+      "email": "quyetlv@gmail.com",
+      "password": "$2a$10$xaQUpmH5XqA4bxNOvUB1iOy9JPR9jdpsnL5rg6T9D/Xo9aczwm3fm",
+      "username": "quyetlv",
+      "fullName": "Lê Quyết",
+      "phone": "0345623656",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2022-02-16T13:07:35.999Z",
+      "id": 5
+    },
+    {
+      "email": "quynhdn@gmail.com",
+      "password": "$2a$10$h6c5.5a76gfl0uyukK..gO2FH9mYw6Ql0Pzuu..N0L7KkhviyB7b2",
+      "username": "quynhdn",
+      "fullName": "Đặng Ngọc Quỳnh",
+      "phone": "0345698563",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2022-02-18T12:10:47.605Z",
+      "id": 6
+    },
+    {
+      "email": "letuananh@gmail.com",
+      "password": "$2a$10$23hevilI622eDRYxU5Px..rfa1BXiExqECQxxGhv.rprM4HYRwl2y",
+      "username": "anhlt",
+      "fullName": "Lê Tuấn Anh",
+      "phone": "0345623652",
+      "wardsCode": 85,
+      "districtCode": 2,
+      "provinceCode": 1,
+      "address": "abc",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2022-02-19T09:41:32.618Z",
+      "id": 7
+    },
+    {
+      "email": "haivt@gmail.com",
+      "password": "$2a$10$hyggD0khNLlcCOD6MVr.keuC5Dnkf9XpdydkeqkB.aSZzz42uPqxm",
+      "username": "haivt",
+      "fullName": "Vũ Tuấn Hải",
+      "phone": "18456631430",
+      "wardsCode": 9358,
+      "districtCode": 260,
+      "provinceCode": 27,
+      "address": "abc",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2022-02-19T09:48:11.964Z",
+      "id": 8
+    },
+    {
+      "email": "anhlt@gmail.com",
+      "password": "$2a$10$0i7mGT/YHyrKgHeYcv8/NOFqd8/vU54W9HLsNOpfW7cjI/5A9iHX.",
+      "username": "anhlt",
+      "fullName": "Lê Tuấn Anh",
+      "phone": "0345236523",
+      "wardsCode": 715,
+      "districtCode": 26,
+      "provinceCode": 2,
+      "address": "abc",
+      "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645265074/assignment-js/apieysq06jlapqxcfykz.png",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2022-02-19T10:04:34.764Z",
+      "id": 9
+    },
+    {
+      "email": "viethq@gmail.com",
+      "password": "$2a$10$4UyRzvJNVYOBPrCsH3K./OHGPG8aep.ajojUgLFCNAGRnpHMJ/TQq",
+      "username": "viethq",
+      "fullName": "Hoàng Quốc Việt",
+      "phone": "18456631430",
+      "wardsCode": 2338,
+      "districtCode": 73,
+      "provinceCode": 8,
+      "address": "abc",
+      "avatar": "http://res.cloudinary.com/levantuan/image/upload/v1645266015/assignment-js/qrnjyeg4sopxoahxcome.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2022-02-19T10:05:26.599Z",
+      "id": 10
+    },
+    {
+      "email": "thanhduc@gmail.com",
+      "password": "$2a$10$6bDQ1fhyutV8.gkL5is/I.UvwFBFvzuKKwPGnvqSt8LhTW/Zuwnl2",
+      "username": "thanhduc",
+      "fullName": "thanhduc",
+      "phone": "0987543123",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 1,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-09-22T15:21:11.030Z",
+      "id": 1
+    },
+    {
+      "email": "demo2@gmail.com",
+      "password": "$2a$10$sTXa4CEYQmeW.90ASrTku.Mazjse4kLD19clMlaokYhkLxr3McaA2",
+      "username": "demo2",
+      "fullName": "demo2",
+      "phone": "0987543123",
+      "wardsCode": 8707,
+      "districtCode": 243,
+      "provinceCode": 26,
+      "address": "888",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-09-22T15:39:26.642Z",
+      "id": 11
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "name": "Yotea Bắc Giang",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177222/assignment-js/ekkpofluy69wvmzhgwde.jpg",
+      "address": "Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347568965",
+      "timeStart": "08:00",
+      "timeEnd": "21:00",
+      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951661.0175172024!2d105.97790793868236!3d21.294183074578676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314b01db4929fe35%3A0x41fd89dae82687f0!2sYOTEA%20COFFEE!5e0!3m2!1svi!2s!4v1645177208936!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "id": 2,
+      "name": "Yotea Bắc Ninh",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644595526/assignment-js/kqcvijzpvdgmrq6uu5mh.jpg",
+      "address": "544W+Q72, Phượng Mao, Quế Võ, Bắc Ninh, Việt Nam",
+      "phone": "0345632563",
+      "timeStart": "08:03",
+      "timeEnd": "21:00",
+      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119123.91725720058!2d106.10322212964464!3d21.087737850260655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31350b0386e269eb%3A0x5c10b1cc0c2e5df4!2sYO%20TEA%20%26%20COFFEE!5e0!3m2!1svi!2s!4v1645177383426!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
+    },
+    {
+      "name": "Yotea Hà Nội",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177345/assignment-js/dvmfu4bmhxa71a1ocewp.jpg",
+      "address": "320 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội",
+      "phone": "0345236589",
+      "timeStart": "08:30",
+      "timeEnd": "22:00",
+      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951656.4554626415!2d105.97789856356503!3d21.294887750094087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9ac4e41c13%3A0x5df50a7aafb1b0c2!2sYo%20Tea!5e0!3m2!1svi!2s!4v1645177253348!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+      "id": 3
+    },
+    {
+      "name": "Yotea Hà Giang",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644632614/assignment-js/z5qrp7yxl8bav29bfstt.jpg",
+      "address": "247 Nguyễn Thái Học, P. Trần Phú, Hà Giang",
+      "phone": "0347888888",
+      "timeStart": "08:00",
+      "timeEnd": "22:00",
+      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0188117154244!2d105.76751101501277!3d21.031933285996676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455b800b38dd9%3A0xf202c907e66c5743!2zVlBCQU5LIEzDiiDEkOG7qEMgVEjhu4w!5e0!3m2!1svi!2s!4v1644632586810!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+      "id": 4
+    }
+  ],
+  "favorites_product": [
+    {
+      "userId": 6,
+      "productId": 31,
+      "createdAt": "2022-02-18T15:09:17.398Z",
+      "id": 14
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 62728,
+      "price_decrease": 6272.8,
+      "message": "",
+      "status": 4,
+      "voucher": [
+        3
+      ],
+      "createdAt": "2022-02-17T12:28:57.357Z",
+      "updatedAt": "2022-02-17T17:06:36.086Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 25000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-18T07:24:03.835Z",
+      "updatedAt": "2022-02-18T07:24:03.835Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 14231,
+      "price_decrease": 0,
+      "message": "",
+      "status": 4,
+      "voucher": [],
+      "createdAt": "2022-02-18T07:25:17.530Z",
+      "updatedAt": "2022-02-18T07:58:02.865Z",
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "customer_name": "Đặng Ngọc Quỳnh",
+      "address": "SN 5, Xã Kim Hoa, Huyện Mê Linh, Thành phố Hà Nội",
+      "phone": "0345698563",
+      "email": "quynhdn@gmail.com",
+      "total_price": 28000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-18T15:42:02.933Z",
+      "updatedAt": "2022-02-18T15:42:02.933Z",
+      "id": 5
+    },
+    {
+      "userId": 6,
+      "customer_name": "Đặng Ngọc Quỳnh",
+      "address": "SN 3, Xã Tân Lập, Huyện Thanh Sơn, Tỉnh Phú Thọ",
+      "phone": "0345698563",
+      "email": "quynhdn@gmail.com",
+      "total_price": 110000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2022-02-18T15:43:37.227Z",
+      "updatedAt": "2022-02-20T07:13:57.360Z",
+      "id": 6
+    },
+    {
+      "userId": 6,
+      "customer_name": "Đặng Ngọc Quỳnh",
+      "address": "SN 3, Xã Tân Lập, Huyện Thanh Sơn, Tỉnh Phú Thọ",
+      "phone": "0345698563",
+      "email": "quynhdn@gmail.com",
+      "total_price": 42000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-19T03:19:40.026Z",
+      "updatedAt": "2022-02-19T03:19:40.026Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Tân Mỹ, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 197000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-19T03:25:09.596Z",
+      "updatedAt": "2022-02-19T03:25:09.596Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0347562365",
+      "email": "admin@gmail.com",
+      "total_price": 204000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2022-02-19T03:30:24.506Z",
+      "updatedAt": "2022-02-20T15:16:08.452Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "customer_name": "admin",
+      "address": "Bắc Giang, Xã Quang Huy, Huyện Phù Yên, Tỉnh Sơn La",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "total_price": 61000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 1,
+      "voucher": [],
+      "createdAt": "2022-02-19T08:20:36.137Z",
+      "updatedAt": "2022-02-20T06:53:52.584Z",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 65000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 1,
+      "voucher": [],
+      "createdAt": "2022-02-20T06:57:20.734Z",
+      "updatedAt": "2022-02-20T07:13:42.363Z",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 149000,
+      "price_decrease": 10000,
+      "message": "",
+      "status": 0,
+      "voucher": [
+        5
+      ],
+      "createdAt": "2022-02-20T07:46:10.431Z",
+      "updatedAt": "2022-02-20T07:46:10.431Z",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "customer_name": "Lê Tuân",
+      "address": "Tân Mỹ, Xã Tân Thanh, Huyện Lạng Giang, Tỉnh Bắc Giang",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "total_price": 244000,
+      "price_decrease": 0,
+      "message": "Ship gấp nha",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2022-02-20T12:54:06.028Z",
+      "updatedAt": "2022-02-20T12:54:06.028Z",
+      "id": 19
+    },
+    {
+      "userId": 11,
+      "customer_name": "demo2",
+      "address": "4444, Phường Phúc Xá, Quận Ba Đình, Thành phố Hà Nội",
+      "phone": "0987543123",
+      "email": "demo2@gmail.com",
+      "total_price": 99999,
+      "price_decrease": 100000,
+      "message": "",
+      "status": 0,
+      "voucher": [
+        7
+      ],
+      "createdAt": "2023-09-22T15:41:04.922Z",
+      "updatedAt": "2023-09-22T15:41:04.922Z",
+      "id": 26
+    }
+  ],
+  "orderDetails": [
+    {
+      "orderId": 1,
+      "productId": 6,
+      "productPrice": 10000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 2
+    },
+    {
+      "orderId": 2,
+      "productId": 6,
+      "productPrice": 10000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 1,
+      "ice": 0,
+      "sugar": 30,
+      "toppingId": 1,
+      "toppingPrice": 5000,
+      "id": 3
+    },
+    {
+      "orderId": 3,
+      "productId": 4,
+      "productPrice": 1231,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 30,
+      "toppingId": 2,
+      "toppingPrice": 6000,
+      "id": 4
+    },
+    {
+      "orderId": 5,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 100,
+      "sugar": 30,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 9
+    },
+    {
+      "orderId": 6,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 100,
+      "sugar": 30,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 9
+    },
+    {
+      "orderId": 7,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 0,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 10
+    },
+    {
+      "orderId": 8,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 0,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 11
+    },
+    {
+      "orderId": 8,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 3,
+      "ice": 30,
+      "sugar": 100,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 13
+    },
+    {
+      "orderId": 9,
+      "productId": 34,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 0,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 14
+    },
+    {
+      "orderId": 9,
+      "productId": 32,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 3,
+      "ice": 30,
+      "sugar": 100,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 15
+    },
+    {
+      "orderId": 9,
+      "productId": 33,
+      "productPrice": 25000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 16
+    },
+    {
+      "orderId": 11,
+      "productId": 31,
+      "productPrice": 45000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 30,
+      "toppingId": 2,
+      "toppingPrice": 6000,
+      "id": 18
+    },
+    {
+      "orderId": 14,
+      "productId": 37,
+      "productPrice": 45000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 30,
+      "sugar": 30,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 19
+    },
+    {
+      "orderId": 19,
+      "productId": 38,
+      "productPrice": 25000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 4,
+      "ice": 50,
+      "sugar": 70,
+      "toppingId": 5,
+      "toppingPrice": 7000,
+      "id": 20
+    },
+    {
+      "orderId": 19,
+      "productId": 36,
+      "productPrice": 24000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 50,
+      "sugar": 30,
+      "toppingId": 5,
+      "toppingPrice": 7000,
+      "id": 21
+    },
+    {
+      "orderId": 20,
+      "productId": 39,
+      "productPrice": 40000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 4,
+      "ice": 70,
+      "sugar": 70,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 23
+    },
+    {
+      "orderId": 21,
+      "productId": 33,
+      "productPrice": 28000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 50,
+      "sugar": 50,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 24
+    },
+    {
+      "orderId": 22,
+      "productId": 35,
+      "productPrice": 35000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 2,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 5,
+      "toppingPrice": 7000,
+      "id": 25
+    },
+    {
+      "orderId": 22,
+      "productId": 34,
+      "productPrice": 35000,
+      "sizeId": 1,
+      "sizePrice": 7000,
+      "quantity": 3,
+      "ice": 50,
+      "sugar": 50,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 26
+    }
+  ],
+  "comments": [
+    {
+      "userId": 1,
+      "content": "2",
+      "productId": 6,
+      "createdAt": "2022-02-18T05:28:14.975Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "content": "s",
+      "productId": 31,
+      "createdAt": "2022-02-18T12:34:34.782Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "content": "3",
+      "productId": 31,
+      "createdAt": "2022-02-18T12:48:04.395Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "content": "3",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:19:46.070Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "content": "4",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:19:52.969Z",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "content": "3",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:19:56.623Z",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "content": "1",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:19:59.851Z",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "content": "2",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:20:02.783Z",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "content": "5",
+      "productId": 30,
+      "createdAt": "2022-02-18T13:20:06.002Z",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "content": "rất ok",
+      "productId": 26,
+      "createdAt": "2022-02-19T05:55:37.859Z",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "content": "Ngon quá mn ơi",
+      "productId": 39,
+      "createdAt": "2022-02-20T07:35:40.021Z",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "content": "Khum ngon nha",
+      "productId": 38,
+      "createdAt": "2022-02-20T07:36:04.030Z",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "content": "yyyyyyyy",
+      "productId": 39,
+      "createdAt": "2023-09-22T15:36:37.856Z",
+      "id": 35
+    },
+    {
+      "userId": 11,
+      "content": "ccccccc",
+      "productId": 41,
+      "createdAt": "2023-09-22T15:39:41.798Z",
+      "id": 36
+    },
+    {
+      "userId": 11,
+      "content": "ôl",
+      "productId": 33,
+      "createdAt": "2023-09-22T15:44:01.025Z",
+      "id": 37
+    }
+  ],
+  "ratings": [
+    {
+      "userId": 1,
+      "productId": 6,
+      "ratingNumber": 2,
+      "createdAt": "2022-02-18T03:42:47.723Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "ratingNumber": 3,
+      "createdAt": "2022-02-18T05:54:12.512Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "productId": 31,
+      "ratingNumber": 2,
+      "createdAt": "2022-02-18T12:33:13.176Z",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "productId": 30,
+      "ratingNumber": 5,
+      "createdAt": "2022-02-18T13:17:10.794Z",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "productId": 26,
+      "ratingNumber": 4,
+      "createdAt": "2022-02-19T05:55:37.800Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "productId": 39,
+      "ratingNumber": 5,
+      "createdAt": "2022-02-20T07:35:39.985Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "productId": 38,
+      "ratingNumber": 1,
+      "createdAt": "2022-02-20T07:36:03.984Z",
+      "id": 9
+    },
+    {
+      "userId": 11,
+      "productId": 41,
+      "ratingNumber": 5,
+      "createdAt": "2023-09-22T15:39:41.764Z",
+      "id": 13
+    },
+    {
+      "userId": 11,
+      "productId": 33,
+      "ratingNumber": 5,
+      "createdAt": "2023-09-22T15:44:00.990Z",
+      "id": 14
+    }
+  ],
+  "address": [
+    {
+      "userId": 6,
+      "fullName": "Đặng Ngọc Quỳnh",
+      "phone": "0345698563",
+      "email": "quynhdn@gmail.com",
+      "provinceCode": 1,
+      "districtCode": 250,
+      "wardCode": 8977,
+      "address": "SN 5",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "fullName": "Đặng Ngọc Quỳnh",
+      "phone": "0345698563",
+      "email": "quynhdn@gmail.com",
+      "provinceCode": 25,
+      "districtCode": 238,
+      "wardCode": 8641,
+      "address": "SN 3",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "fullName": "Lê Tuân",
+      "phone": "0345263256",
+      "email": "admin@gmail.com",
+      "provinceCode": 24,
+      "districtCode": 217,
+      "wardCode": 7411,
+      "address": "Tân Mỹ",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "fullName": "admin",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "provinceCode": 24,
+      "districtCode": 217,
+      "wardCode": 7375,
+      "address": "Bắc Giang",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "fullName": "admin",
+      "phone": "0347562367",
+      "email": "admin@gmail.com",
+      "provinceCode": 14,
+      "districtCode": 122,
+      "wardCode": 3910,
+      "address": "Bắc Giang",
+      "id": 5
+    }
+  ]
+}
