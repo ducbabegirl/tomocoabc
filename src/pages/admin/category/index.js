@@ -1,21 +1,26 @@
 import Swal from "sweetalert2";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
-
+import AdminCategoryList from "../../../components/admin/categoryList";
+import { getAll, remove } from "../../../api/category";
+import { reRender } from "../../../utils";
+import Pagination from "../../../components/admin/pagination";
 
 const AdminCateListPage = {
     getTitle() {
         return "Category Product List | Administrator";
     },
-    async render() {
-       
-       
+    async render(pageNumber) {
+        const { data } = await getAll();
+        const total = data.length; // tổng số
+        const limit = 10;
+        const currentPage = pageNumber ?? 1; // lấy số trang hiện tại
+
+        // ds theo limit
+        const { data: cateList } = await getAll(currentPage, limit);
 
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
-            
-            <div class="ml-0 transition md:ml-60">
-                <header class="left-0 md:left-60 fixed right-0 top-0">
             ${AdminNav.render("category")}
             
             <div class="ml-0 transition md:ml-60">
@@ -52,11 +57,11 @@ const AdminCateListPage = {
                         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                                 <table class="min-w-full divide-y divide-gray-200" id="cate__list-table">
-                                    
+                                    ${await AdminCategoryList.render(cateList)}
                                 </table>
 
                                 <!-- pagination -->
-                             
+                                ${Pagination.render(total, limit, +currentPage, "category")}
                             </div>
                         </div>
                         </div>
@@ -72,8 +77,38 @@ const AdminCateListPage = {
     afterRender() {
         HeaderTop.afterRender();
         AdminNav.afterRender();
+        const btnsDelete = document.querySelectorAll(".cate__list-btn-delete");
 
-       
+        // xóa danh mục
+        btnsDelete.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const { id } = e.target.dataset;
+
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn xóa không?",
+                    text: "Bạn không thể hoàn tác sau khi xóa!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        remove(id)
+                            .then(() => {
+                                Swal.fire(
+                                    "Thành công",
+                                    "Đã xóa danh mục.",
+                                    "success",
+                                );
+                            })
+                            .then(() => {
+                                reRender(AdminCateListPage, "#app");
+                            });
+                    }
+                });
+            });
+        });
     },
 };
 

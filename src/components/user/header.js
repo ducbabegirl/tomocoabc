@@ -5,6 +5,15 @@ import WishList from "./wishlist";
 import WishListLabel from "./wishlistLabel";
 
 const Header = {
+
+    async render() {
+       
+
+        return /* html */ `
+       
+            <!-- header top -->
+            
+
     async render(pageName){
 
         return /* html */`
