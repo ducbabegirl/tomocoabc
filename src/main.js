@@ -45,17 +45,7 @@ const print = async (content, id, pageNumber) => {
     if (content.getTitle) document.title = await content.getTitle(id);
 };
 
-router.on("/admin/*", () => {}, {
-    before(done) {
-        const userInfo = getUser();
 
-        if (userInfo && userInfo.role) {
-            done();
-        } else {
-            document.location.href = "/#/";
-        }
-    },
-});
 
 router.on("/my-account/*", () => {}, {
     before(done) {

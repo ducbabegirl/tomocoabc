@@ -2,6 +2,7 @@ import $ from "jquery"
 import Header from "../../components/user/header";
 import Footer from "../../components/user/footer";
 import Banner from "../../components/user/home/banner";
+import "slick-carousel";
 const HomePage = {
     getTitle() {
         return "Trang chủ - Trà Sữa Cocomoco";
@@ -47,6 +48,7 @@ const HomePage = {
     },
     afterRender() {
         Header.afterRender();
+        
   
 
         
