@@ -5,7 +5,7 @@ import MyAccNav from "../../../components/user/myAccNav";
 import {
     getUser, reRender, saveUser, uploadFile,
 } from "../../../utils";
-import { getAllProvince, getDistrict, getWard } from "../../../api/location";
+
 import { update } from "../../../api/user";
 
 const UpdateInfoPage = {

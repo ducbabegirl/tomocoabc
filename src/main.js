@@ -1,7 +1,4 @@
 import Navigo from "navigo";
-import HomePage from "./pages/user/home";
-
-
 import "slick-carousel/slick/slick.css";
 import "@fortawesome/fontawesome-free/js/brands";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -11,27 +8,26 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
-import NotFoundPage from "./pages/user/notFound";
-import ProductsPage from "./pages/user/products";
-import DashboardPage from "./pages/admin/dashboard";
-import AdminCateListPage from "./pages/admin/category";
-import AdminProductListPage from "./pages/admin/product";
 
-import AdminProfilePage from "./pages/admin/profile";
+import HomePage from "./pages/user/home";
+
 import UpdateInfoPage from "./pages/user/my-account";
+
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
-import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
-import AdminAddCatePage from "./pages/admin/category/add";
-import AdminEditCatePage from "./pages/admin/category/edit";
-import AdminAddProductPage from "./pages/admin/product/add";
-import { getUser } from "./utils";
 
+import ProductsPage from "./pages/user/products";
 
+import DashboardPage from "./pages/admin/dashboard";
 
-import AdminAddCatePage from "./pages/admin/category/add";
-import AdminEditCatePage from "./pages/admin/category/edit";
+import AdminProductListPage from "./pages/admin/product";
 import AdminAddProductPage from "./pages/admin/product/add";
 import AdminEditProductPage from "./pages/admin/product/edit";
+import AdminCateListPage from "./pages/admin/category";
+import AdminAddCatePage from "./pages/admin/category/add";
+import AdminEditCatePage from "./pages/admin/category/edit";
+import NotFoundPage from "./pages/user/notFound";
+
+import { getUser } from "./utils";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -44,6 +40,7 @@ const print = async (content, id, pageNumber) => {
     // change title
     if (content.getTitle) document.title = await content.getTitle(id);
 };
+
 router.on("/admin/*", () => {}, {
     before(done) {
         const userInfo = getUser();
@@ -72,35 +69,14 @@ router.on({
     "/": () => {
         print(HomePage);
     },
-
-    
-
+    "/intro": () => {
+        print(IntroPage);
+    },
     "/products": () => {
         print(ProductsPage);
     },
-
-
-    "/admin": () => {
-        print(DashboardPage);
-    },
-
-    
-    "/admin/product": () => {
-        print(AdminProductListPage);
-    },
-    "/admin/product/add": () => {
-        print(AdminAddProductPage);
-    },
-    "/admin/product/page/:page": ({ data }) => {
-        print(AdminProductListPage, data.page);
-    },
-    "/admin/product/:id/edit": ({ data }) => {
-        print(AdminEditProductPage, data.id);
-    },
-
-
-    "/admin/category": () => {
-        print(AdminCateListPage);
+    "/products/page/:page": ({ data }) => {
+        print(ProductsPage, data.page);
     },
 
     "/login": () => {
@@ -112,44 +88,50 @@ router.on({
     "/forgot": () => {
         print(FortgotPage);
     },
+    
     "/my-account": () => {
         print(UpdateInfoPage);
     },
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
     },
-    "/admin/profile": () => {
-        print(AdminProfilePage);
-    },
-    "/admin/profile/change-password": () => {
-        print(AdminUpdatePassPage);
-    },
-    "/admin/category/:id/edit": ({ data }) => {
-        print(AdminEditCatePage, data.id);
 
+    "/admin": () => {
+        print(DashboardPage);
+    },
+
+    "/admin/product": () => {
+        print(AdminProductListPage);
+    },
+    "/admin/product/page/:page": ({ data }) => {
+        print(AdminProductListPage, data.page);
+    },
+    "/admin/product/add": () => {
+        print(AdminAddProductPage);
+    },
+    "/admin/product/:id/edit": ({ data }) => {
+        print(AdminEditProductPage, data.id);
+    },
+    "/admin/category": () => {
+        print(AdminCateListPage);
+    },
     "/admin/category/page/:page": ({ data }) => {
         print(AdminCateListPage, data.page);
-
     },
     "/admin/category/add": () => {
         print(AdminAddCatePage);
     },
-
-    "/admin/product/add": () => {
-        print(AdminAddProductPage);
-    },
-   
-
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
     },
-    
 
-   
+
+
+
 });
 
 router.notFound(() => {
-  
+    print(NotFoundPage);
 });
 
 router.resolve();
