@@ -20,12 +20,16 @@ import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 
 import AdminProductListPage from "./pages/admin/product";
+
 import AdminAddProductPage from "./pages/admin/product/add";
 import AdminEditProductPage from "./pages/admin/product/edit";
 import AdminCateListPage from "./pages/admin/category";
 import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
+
+import AdminSliderListPage from "./pages/admin/slider";
+
 
 import { getUser } from "./utils";
 
@@ -41,17 +45,7 @@ const print = async (content, id, pageNumber) => {
     if (content.getTitle) document.title = await content.getTitle(id);
 };
 
-router.on("/admin/*", () => {}, {
-    before(done) {
-        const userInfo = getUser();
 
-        if (userInfo && userInfo.role) {
-            done();
-        } else {
-            document.location.href = "/#/";
-        }
-    },
-});
 
 router.on("/my-account/*", () => {}, {
     before(done) {
@@ -127,6 +121,15 @@ router.on({
 
 
 
+
+
+    "/admin/slider": () => {
+        print(AdminSliderListPage);
+    },
+    "/admin/slider/page/:page": ({ data }) => {
+        print(AdminSliderListPage, data.page);
+    },
+    
 
 });
 
