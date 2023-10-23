@@ -9,10 +9,10 @@ const WishList = {
         <div class="wishlist__overlay invisible opacity-0 transition-all duration-400 ease-linear fixed top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.6)] z-20"></div>
        
         <div class="wishlist__content transition duration-500 ease fixed top-0 right-0 bottom-0 min-w-[360px] bg-white shadow z-20 translate-x-full">
-            <header class="px-3 h-14 flex justify-between items-center border-b-2" >
+            <header class="px-3 h-14 flex justify-between items-center border-b-2">
                 <h1 class="uppercase font-semibold text-lg">Danh sách yêu thích</h1>
                 <button id="wishlist__btn-close" class="py-2 font-semibold text-xl text-gray-500 transition duration-200 ease-linear hover:text-black">
-                  <i class="fas fa-times"></i>
+                    <i class="fas fa-times"></i>
                 </button>
             </header>
        
@@ -28,13 +28,13 @@ const WishList = {
             const wishlistElement = document.querySelector(".wishlist");
             const closeBtn = document.querySelector("#wishlist__btn-close");
 
-            overlay.addEventListener("click", () => wishlistElement.classList.remove("action"));
-            closeBtn.addEventListener("click", () => wishlistElement.classList.remove("action"));
-
-            // xóa wishlist
-            const btnsDelete = document.querySelector(".wishlist-icon-delete");
+             overlay.addEventListener("click", () => wishlistElement.classList.remove("active"));
+             closeBtn.addEventListener("click", () => wishlistElement.classList.remove("active"));
+           
+        // xóa wishlist
+            const btnsDelete = document.querySelectorAll(".wishlist-icon-delete");
             btnsDelete.forEach((btn) => {
-                const { id } = btn.dataset;
+            const { id } = btn.dataset;
 
                 btn.addEventListener("click", () => {
                     remove(id)
