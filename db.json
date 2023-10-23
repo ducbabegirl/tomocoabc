@@ -370,10 +370,16 @@
       "categoryId": 2,
       "status": 1,
       "view": 18,
-      "favorites": 0,
+      "favorites": 1,
       "createdAt": "2022-02-18T08:48:09.048Z",
       "updatedAt": "2022-02-18T08:48:09.048Z",
-      "id": 34
+      "id": 34,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
     },
     {
       "name": " Sữa tươi trân châu đường đen",
@@ -383,17 +389,17 @@
       "categoryId": 2,
       "status": 1,
       "view": 23,
-      "favorites": 1,
+      "favorites": 2,
       "createdAt": "2022-02-18T08:48:45.769Z",
       "updatedAt": "2022-02-18T08:48:45.769Z",
       "id": 33,
       "ratings": [
         {
-          "userId": 6,
-          "productId": 22,
+          "userId": 11,
+          "productId": 33,
           "ratingNumber": 5,
-          "createdAt": "2022-02-18T15:05:51.789Z",
-          "id": 6
+          "createdAt": "2023-09-22T15:44:00.990Z",
+          "id": 14
         }
       ],
       "category": {
@@ -1159,6 +1165,18 @@
       "productId": 31,
       "createdAt": "2022-02-18T15:09:17.398Z",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "productId": 33,
+      "createdAt": "2023-10-23T14:30:00.024Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "productId": 34,
+      "createdAt": "2023-10-23T14:30:01.702Z",
+      "id": 16
     }
   ],
   "orders": [
