@@ -552,6 +552,19 @@
       "createdAt": "2022-02-21T02:47:10.990Z",
       "updatedAt": "2022-02-21T02:47:10.990Z",
       "id": 40
+    },
+    {
+      "name": "DEmo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698070988/bc0jzgeeyyntmsf2h6vy.jpg",
+      "price": 123,
+      "description": "<p>ẻttt</p>",
+      "categoryId": 4,
+      "status": 0,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-10-23T14:22:55.960Z",
+      "updatedAt": "2023-10-23T14:22:55.960Z",
+      "id": 41
     }
   ],
   "news": [
