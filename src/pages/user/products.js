@@ -1,13 +1,31 @@
+import { getAllJoinCategory } from "../../api/product";
 
 import Header from "../../components/user/header";
-
+import ProductContent from "../../components/user/products/productContent";
+import Sidebar from "../../components/user/products/sidebar";
 
 const ProductsPage = {
     getTitle() {
-        return "Thực đơn - Trà Sữa ";
+        return "Thực đơn - Trà Sữa Yotea";
     },
     async render(pageNumber) {
-       
+        let currentPage = pageNumber;
+        const { data } = await getAllJoinCategory();
+
+        // phân trang
+        const limit = 9; // limit
+        const total = data.length; // tổng số sp
+        const totalPage = Math.ceil(total / limit); // tổng số page
+        currentPage = pageNumber ?? 1; // lấy số trang hiện tại
+        if (currentPage >= totalPage) {
+            currentPage = totalPage;
+        } else if (currentPage < 0) {
+            currentPage = 1;
+        }
+        const start = (currentPage - 1) * limit;
+
+        // ds sp theo limit
+        const { data: productList } = await getAllJoinCategory(start, limit);
 
         return /* html */ `
         ${await Header.render("products")}
@@ -23,17 +41,19 @@ const ProductsPage = {
             </section>
 
             <section class="container max-w-6xl mx-auto px-3 grid grid-cols-12 gap-6 mb-8">
-               
+                ${await Sidebar.render()}
+
+                ${ProductContent.render(productList, currentPage, total, totalPage, start, limit, "products")}
             </section>
         </main>
         <!-- end content -->
 
-       
         `;
     },
     afterRender() {
         Header.afterRender();
-        
+       
+        ProductContent.afterRender();
     },
 };
 
