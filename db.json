@@ -298,7 +298,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 37,
-      "favorites": 1,
+      "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -1183,6 +1183,12 @@
       "productId": 39,
       "createdAt": "2023-10-23T14:32:07.896Z",
       "id": 17
+    },
+    {
+      "userId": 1,
+      "productId": 38,
+      "createdAt": "2023-10-23T15:22:32.532Z",
+      "id": 18
     }
   ],
   "orders": [
