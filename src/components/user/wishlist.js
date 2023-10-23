@@ -64,4 +64,4 @@ const WishList = {
     },
 };
 
-export default WishList;s
+export default WishList;
