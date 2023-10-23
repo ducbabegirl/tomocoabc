@@ -7,11 +7,13 @@ export const add = (data) => {
     return instance.post(url, data);
 };
 
+
 // kiểm tra user đã yêu thích sp chưa
 export const checkHeart = (userId, productId) => {
     const url = `/${TABLE_NAME}/?userId=${userId}&productId=${productId}`;
     return instance.get(url);
 };
+
 
 export const get = (userId) => {
     const url = `/${TABLE_NAME}/?userId=${userId}&_expand=product&_sort=id&_order=desc`;
