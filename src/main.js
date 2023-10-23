@@ -16,6 +16,7 @@ import ProductsPage from "./pages/user/products";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminCateListPage from "./pages/admin/category";
 import AdminProductListPage from "./pages/admin/product";
+
 import AdminProfilePage from "./pages/admin/profile";
 import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
@@ -24,6 +25,13 @@ import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import AdminAddProductPage from "./pages/admin/product/add";
 import { getUser } from "./utils";
+
+
+
+import AdminAddCatePage from "./pages/admin/category/add";
+import AdminEditCatePage from "./pages/admin/category/edit";
+import AdminAddProductPage from "./pages/admin/product/add";
+import AdminEditProductPage from "./pages/admin/product/edit";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -65,12 +73,7 @@ router.on({
         print(HomePage);
     },
 
-    "/admin/category": () => {
-        print(AdminCateListPage);
-    },
-    "/admin/category/page/:page": ({ data }) => {
-        print(AdminCateListPage, data.page);
-    },
+    
 
     "/products": () => {
         print(ProductsPage);
@@ -80,15 +83,26 @@ router.on({
     "/admin": () => {
         print(DashboardPage);
     },
+
+    
     "/admin/product": () => {
         print(AdminProductListPage);
+    },
+    "/admin/product/add": () => {
+        print(AdminAddProductPage);
     },
     "/admin/product/page/:page": ({ data }) => {
         print(AdminProductListPage, data.page);
     },
+    "/admin/product/:id/edit": ({ data }) => {
+        print(AdminEditProductPage, data.id);
+    },
+
+
     "/admin/category": () => {
         print(AdminCateListPage);
     },
+
     "/login": () => {
         print(LoginPage);
     },
@@ -112,14 +126,25 @@ router.on({
     },
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
+
+    "/admin/category/page/:page": ({ data }) => {
+        print(AdminCateListPage, data.page);
+
     },
     "/admin/category/add": () => {
         print(AdminAddCatePage);
     },
+
     "/admin/product/add": () => {
         print(AdminAddProductPage);
     },
    
+
+    "/admin/category/:id/edit": ({ data }) => {
+        print(AdminEditCatePage, data.id);
+    },
+    
+
    
 });
 
