@@ -48,3 +48,4 @@ export const uploadFile = (file) => {
 
     return res;
 };
+
