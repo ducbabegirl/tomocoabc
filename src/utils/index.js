@@ -7,6 +7,26 @@ export const reRender = async (component, domElement, id) => {
 
     if (component.afterRender) await component.afterRender(id);
 };
+
+// hàm upload image
+export const uploadFile = (file) => {
+    const CLOUDINARY_NAME = "levantuan";
+    const CLOUDINARY_API = `https://api.cloudinary.com/v1_1/${CLOUDINARY_NAME}/image/upload`;
+    const CLOUDINARY_PRESET = "u6e4fyfm";
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("upload_preset", CLOUDINARY_PRESET);
+
+    const res = axios.post(CLOUDINARY_API, formData, {
+        headers: {
+            "Content-Type": "application/form-data",
+        },
+    });
+
+    return res;
+};
+
 // check login
 export const checkLogin = (role) => {
     const user = JSON.parse(localStorage.getItem("auth"));
@@ -28,23 +48,22 @@ export const saveUser = (uesr) => {
 };
 
 export const logout = () => {
+    localStorage.removeItem("auth");
+    localStorage.removeItem("cart");
+    localStorage.removeItem("voucher");
     document.location.href = "/#/login";
 };
-// hàm upload image
-export const uploadFile = (file) => {
-    const CLOUDINARY_NAME = "ddxwrjamy";
-    const CLOUDINARY_API = `https://api.cloudinary.com/v1_1/${CLOUDINARY_NAME}/image/upload`;
-    const CLOUDINARY_PRESET = "sim-ninh";
 
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("upload_preset", CLOUDINARY_PRESET);
+// hàm format money
+export const formatCurrency = (currency) => currency.toLocaleString("it-IT", { style: "currency", currency: "VND" });
 
-    const res = axios.post(CLOUDINARY_API, formData, {
-        headers: {
-            "Content-Type": "application/form-data",
-        },
-    });
+// format date
+export const formatDate = (dateString) => {
+    const date = new Date(dateString);
 
-    return res;
+    const hours = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
+    const minutes = date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
+    const seconds = date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds();
+
+    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${hours}:${minutes}:${seconds}`;
 };

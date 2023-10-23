@@ -5,7 +5,7 @@ import Header from "../../components/user/header";
 
 const RegisterPage = {
     getTitle() {
-        return "Đăng ký - Trà Sữa Tomocoabc";
+        return "Đăng ký - Trà Sữa Yotea";
     },
     async render() {
         return /* html */ `
@@ -25,7 +25,7 @@ const RegisterPage = {
 
                     <div class="mt-3">
                         <label for="form__reg-fullname" class="font-semibold block mb-1">Họ và tên *</label>
-                        <input type="text" id="form__reg-fullname" name="form__reg-fullname" class="shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc] w-full border px-2 h-10 text-sm outline-none" placeholder="">
+                        <input type="text" id="form__reg-fullname" name="form__reg-fullname" class="shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc] w-full border px-2 h-10 text-sm outline-none" placeholder="VD: Lê Văn Tuân...">
                         <div class="form__reg-message text-sm text-red-500 mt-0.5"></div>
                     </div>
 
