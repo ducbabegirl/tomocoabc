@@ -28,7 +28,7 @@ const Feedback = {
                                 <i class="fas fa-star"></i>
                             </li>
                         </ul>
-                        <p class="font-semibold text-gray-300 text-xl italic">Lê Văn Tuân</p>
+                        <p class="font-semibold text-gray-300 text-xl italic">duypn003</p>
                         <p class="mt-1 text-gray-300">
                             Mình rất thích đưa khách hàng của mình đến đây bởi vì
                             phong cách rất chuyên nghiệp.Hơn nữa thức uống ở đây rất ngon,
@@ -54,10 +54,10 @@ const Feedback = {
                                 <i class="fas fa-star"></i>
                             </li>
                         </ul>
-                        <p class="font-semibold text-gray-300 text-xl italic">Ngô Lệ Hằng</p>
+                        <p class="font-semibold text-gray-300 text-xl italic">Ducmtd</p>
                         <p class="mt-1 text-gray-300">
                             Nếu như muốn được thư giãn hãy nghe một bản nhạc.
-                            Nếu muốn tìm một hương vị trà chanh đúng gu nhất với mình thì hãy đến với Tea House.
+                            Nếu muốn tìm một hương vị trà chanh đúng gu nhất với mình thì hãy đến với Tomocoabc House.
                             Nơi luôn khiến mình hài lòng nhất.
                         </p>
                     </li>
@@ -80,7 +80,7 @@ const Feedback = {
                                 <i class="fas fa-star"></i>
                             </li>
                         </ul>
-                        <p class="font-semibold text-gray-300 text-xl italic">Nguyễn Quang Vinh</p>
+                        <p class="font-semibold text-gray-300 text-xl italic">Vanhvanh</p>
                         <p class="mt-1 text-gray-300">
                             Không gian được thiết kế quá tuyệt vời luôn giúp mình có nhiều idea và cảm hứng để mình sáng tạo.
                             Hơn nữa chất lượng đồ uống ở đây vô cùng vừa ý mình, Tea House là sự lựa chọn tuyệt vời.

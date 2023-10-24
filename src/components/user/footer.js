@@ -9,26 +9,26 @@ const Footer = {
                         <h3 class="text-white text-xl uppercase font-semibold mb-3">KẾT NỐI VỚI CHÚNG TÔI</h3>
                         <p class="text-gray-300 text-justify">
                             Chúng tôi mong muốn tạo nên hương vị thức uống tuyệt vời nhất.
-                            Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của tách Coffee
+                            Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của tách Milktea
                         </p>
                         <ul class="flex text-white">
                             <li class="mr-3 mt-3">
-                                <a href="https://www.facebook.com/LeVanTuan.Info/" target="_blank">
+                                <a href="" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="mr-3 mt-3">
-                                <a href="https://www.youtube.com/c/L%C3%AAV%C4%83nTu%C3%A2n02/" target="_blank">
+                                <a href="" target="_blank">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
                             <li class="mr-3 mt-3">
-                                <a href="https://www.instagram.com/_tuan02/" target="_blank">
+                                <a href="" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li class="mr-3 mt-3">
-                                <a href="https://www.tiktok.com/@tuandemo" target="_blank">
+                                <a href="" target="_blank">
                                     <i class="fab fa-tiktok"></i>
                                 </a>
                             </li>
@@ -43,47 +43,47 @@ const Footer = {
                                 <div class="min-w-[25px]">
                                     <i class="fas fa-home"></i>
                                 </div>
-                                Lạng Giang, Bắc Giang
+                                Hà Nội
                             </li>
                             <li class="flex">
                                 <div class="min-w-[25px]">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 Hotline:
-                                <a href="tel:0347247244">&nbsp 0347247244</a>
+                                <a href="tel:0395852788">&nbsp 0395852788</a>
                             </li>
                             <li class="flex">
                                 <div class="min-w-[25px]">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 Email:
-                                <a href="mailto:tuanlvph14271@fpt.edu.vn">&nbsp tuanlvph14271@fpt.edu.vn</a>
+                                <a href="mailto:duynlph27635@fpt.edu.vn">&nbsp duynlph27635@fpt.edu.vn</a>
                             </li>
                             <li class="flex">
                                 <div class="min-w-[25px]">
                                     <i class="fab fa-facebook-f"></i>
                                 </div>
                                 Facebook:
-                                <a href="https://www.facebook.com/LeVanTuan.Info/" target="_blank">&nbsp Lê Văn Tuân</a>
+                                <a href="https://www.facebook.com/profile.php?id=100053765474265" target="_blank">&nbsp Duypn003</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="overflow-hidden">
                         <h3 class="text-white text-xl uppercase font-semibold mb-3">Kết nối với chúng tôi</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/PolyQuiz/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/PolyQuiz/" class="fb-xfbml-parse-ignore">
-                                <a href="https://www.facebook.com/PolyQuiz/">Ở Đây Có Đáp Án Quiz - Fpoly</a>
+                        <div class="fb-page" data-href=https://www.facebook.com/profile.php?id=100053765474265" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/profile.php?id=100053765474265" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/profile.php?id=100053765474265">Giao lưu cùng Tomocoabc</a>
                             </blockquote>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center text-gray-300 mt-9">
-                    Copyright 2022 ©
+                    Copyright 2023 ©
                     <strong>
                         Bản quyền thuộc về
-                        <a href="https://www.facebook.com/LeVanTuan.Info/" target="_blank">TuanDemo</a>
+                        <a href="https://www.facebook.com/profile.php?id=100053765474265" target="_blank">Trà sữa tomocoabc</a>
                     </strong>
                 </div>
             </div>
