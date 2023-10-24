@@ -19,7 +19,7 @@ import {
 
 const CheckoutPage = {
     getTitle() {
-        return "Thanh toán - Trà Sữa Yotea";
+        return "Thanh toán - Trà Sữa tomocoabc";
     },
     async render() {
         const userLogged = getUser();

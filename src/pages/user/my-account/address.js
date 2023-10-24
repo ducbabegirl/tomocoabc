@@ -9,7 +9,7 @@ import { getUser, reRender } from "../../../utils";
 
 const MyAccAddressPage = {
     getTitle() {
-        return "Thông tin thanh toán - Trà Sữa Yotea";
+        return "Thông tin thanh toán - Trà Sữa tomocoabc";
     },
     async render(pageNumber) {
         const userLogged = getUser();

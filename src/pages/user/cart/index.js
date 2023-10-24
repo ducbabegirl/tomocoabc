@@ -11,7 +11,7 @@ import {
 
 const CartPage = {
     getTitle() {
-        return "Giỏ hàng - Trà Sữa Yotea";
+        return "Giỏ hàng - Trà Sữa tomocoabc";
     },
     async render() {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];

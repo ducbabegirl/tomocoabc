@@ -4,7 +4,7 @@ import Header from "../../../components/user/header";
 
 const ThanksPage = {
     getTitle() {
-        return "Thank you - Trà Sữa Yotea";
+        return "Thank you - Trà Sữa tomocoabc";
     },
     async render() {
         return /* html */ `
@@ -20,7 +20,7 @@ const ThanksPage = {
                 <h1 class="text-center mt-4 font-semibold text-2xl uppercase">Đặt hàng thành công</h1>
 
                 <p class="text-center mt-2">
-                    Cảm ơn bạn đã đặt hàng của Tea House.
+                    Cảm ơn bạn đã đặt hàng của tomocoabc House.
                     Nhân viên sẽ gọi điện từ số điện thoại bạn đã cung cấp
                     để Confirm (Xác nhận) lại với bạn trong thời gian sớm nhất để xác nhận đơn hàng.
                 </p>

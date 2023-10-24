@@ -7,7 +7,7 @@ import MyAccNav from "../../../components/user/myAccNav";
 
 const MyAccEditAddressPage = {
     getTitle() {
-        return `Cập nhật thông tin thanh toán - Trà Sữa Yotea`;
+        return `Cập nhật thông tin thanh toán - Trà Sữa tomocoabc`;
     },
     async render(id) {
         // get address detail
