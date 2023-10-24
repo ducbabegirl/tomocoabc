@@ -10,7 +10,7 @@ import { get as getVoucher } from "../../../api/voucher";
 
 const MyAccCartDetailsPage = {
     getTitle(id) {
-        return `Chi tiết đơn hàng #${id} - Trà Sữa Yotea`;
+        return `Chi tiết đơn hàng #${id} - Trà Sữa Tomocoabc`;
     },
     async render(id) {
         const { data: cartData } = await get(id);

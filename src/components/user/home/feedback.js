@@ -83,7 +83,7 @@ const Feedback = {
                         <p class="font-semibold text-gray-300 text-xl italic">Vanhvanh</p>
                         <p class="mt-1 text-gray-300">
                             Không gian được thiết kế quá tuyệt vời luôn giúp mình có nhiều idea và cảm hứng để mình sáng tạo.
-                            Hơn nữa chất lượng đồ uống ở đây vô cùng vừa ý mình, Tea House là sự lựa chọn tuyệt vời.
+                            Hơn nữa chất lượng đồ uống ở đây vô cùng vừa ý mình, Tomocoabc House là sự lựa chọn tuyệt vời.
                         </p>
                     </li>
                 </ul>
