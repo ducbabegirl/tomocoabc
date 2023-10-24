@@ -3,7 +3,7 @@ const Show = {
         return /* html */ `
         <section class="px-3 py-9">
             <div class="text-center">
-                <h3 class="uppercase text-center block text-[#D9A953] text-2xl font-semibold">#trasuayotea</h3>
+                <h3 class="uppercase text-center block text-[#D9A953] text-2xl font-semibold">#trasuatomocoabc</h3>
                 <p>Những hình ảnh update từ Instagram.</p>
             </div>
 
