@@ -7,7 +7,7 @@ import Related from "../../components/user/news/related";
 const NewsDetailsPage = {
     async getTitle(newsId) {
         const { data: newsDetails } = await get(newsId);
-        return `${newsDetails.title} - Trà sữa Yotea`;
+        return `${newsDetails.title} - Trà sữa tomocoabc`;
     },
     async render(newsId) {
         const { data: newsDetails } = await get(newsId);

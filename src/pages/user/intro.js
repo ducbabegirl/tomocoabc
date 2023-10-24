@@ -66,7 +66,7 @@ const IntroPage = {
                             <div class="w-24 h-24 inline-flex text-5xl text-[#D9A953] shadow-sm items-center justify-center rounded-full bg-white">
                                 <i class="fas fa-medal"></i>
                             </div>
-                            <p class="mt-3">Đưa thương hiệu Yotea ra nước ngoài và mở rộng thị trường quốc tế.</p>
+                            <p class="mt-3">Đưa thương hiệu tomocoabc ra nước ngoài và mở rộng thị trường quốc tế.</p>
                         </div>
                         <div class="text-center">
                             <div class="w-24 h-24 inline-flex text-5xl text-[#D9A953] shadow-sm items-center justify-center rounded-full bg-white">
@@ -86,7 +86,7 @@ const IntroPage = {
                         <p class="text-justify mt-3">
                             Với châm ngôn tuyệt đối không sử dụng nguyên liệu
                             không rõ nguồn gốc xuất xứ, trà sữa tomocoabc tự hào mang
-                            lại cho khách hàng những sản phẩm chất lượng nhất và Yotea
+                            lại cho khách hàng những sản phẩm chất lượng nhất và tomocoabc
                             luôn cảm kích vì sự tin dùng và yêu thương của quý khách hàng.
                         </p>
                     </div>

@@ -8,7 +8,7 @@ import ProductContent from "../../components/user/products/productContent";
 const ProductByCatePage = {
     async getTitle(cateId) {
         const { data: categoryData } = await getCate(cateId);
-        return `${categoryData.name} - Trà sữa Yotea`;
+        return `${categoryData.name} - Trà sữa tomocoabc`;
     },
     async render(cateId, pageNumber) {
         // thông tin danh mục

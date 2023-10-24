@@ -10,7 +10,7 @@ import { update } from "../../../api/user";
 
 const UpdateInfoPage = {
     getTitle() {
-        return "Cập nhật tài khoản - Trà Sữa Yotea";
+        return "Cập nhật tài khoản - Trà Sữa tomocoabc";
     },
     async render() {
         const userInfo = getUser();

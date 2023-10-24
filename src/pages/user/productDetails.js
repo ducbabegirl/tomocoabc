@@ -16,7 +16,7 @@ import FormComment from "../../components/user/products/formComment";
 const ProductDetailPage = {
     async getTitle(id) {
         const { data: productDetail } = await get(id);
-        return `${productDetail.name} - Trà sữa Yotea`;
+        return `${productDetail.name} - Trà sữa tomocoabc`;
     },
     async render(id, pageNumber) {
         // update view

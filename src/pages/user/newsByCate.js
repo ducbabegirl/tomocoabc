@@ -8,7 +8,7 @@ const NewsByCatePage = {
     async getTitle(cateId) {
         const { data: cateData } = await get(cateId);
 
-        return `${cateData.name} - Trà sữa Yotea`;
+        return `${cateData.name} - Trà sữa tomocoabc`;
     },
     async render(cateId, pageNumber) {
         // format date

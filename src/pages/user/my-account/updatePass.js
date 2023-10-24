@@ -8,7 +8,7 @@ import { getUser, reRender } from "../../../utils";
 
 const MyAccUpdatePass = {
     getTitle() {
-        return "Đổi mật khẩu - Trà Sữa Yotea";
+        return "Đổi mật khẩu - Trà Sữa tomocoabc";
     },
     async render() {
         return /* html */ `

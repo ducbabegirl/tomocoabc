@@ -6,7 +6,7 @@ import ProductContent from "../../components/user/products/productContent";
 
 const SearchProductPage = {
     getTitle(keyword) {
-        return `Kết quả tìm kiếm cho "${keyword}" - Trà sữa Yotea`;
+        return `Kết quả tìm kiếm cho "${keyword}" - Trà sữa tomocoabc`;
     },
     async render(keyword, pageNumber) {
         const { data } = await search(keyword);
