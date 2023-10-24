@@ -727,7 +727,7 @@
     {
       "title": "Banner1",
       "url": "https://res.cloudinary.com/dizzurnqo/image/upload/v1697382333/banner_oritqt.jpg",
-      "status": 1,
+      "status": 0,
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698073218/bpqh81llssyeyj0ghpq0.jpg",
       "createdAt": "2023-10-23T15:00:18.756Z",
       "id": 4

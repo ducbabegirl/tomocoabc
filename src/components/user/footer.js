@@ -6,7 +6,7 @@ const Footer = {
             <div class="container max-w-6xl mx-auto px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div>
-                        <h3 class="text-white text-xl uppercase font-semibold mb-3">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                        <h3 class="text-white text-xl uppercase font-semibold mb-3">CÔNG TY CP TM & DV COCOMOCO</h3>
                         <p class="text-gray-300 text-justify">
                             Chúng tôi mong muốn tạo nên hương vị thức uống tuyệt vời nhất.
                             Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của ly trà sữa.
