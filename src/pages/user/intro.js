@@ -3,7 +3,7 @@ import Footer from "../../components/user/footer";
 
 const IntroPage = {
     getTitle() {
-        return "Về chúng tôi - Trà Sữa Yotea";
+        return "Về chúng tôi - Trà Sữa tomocoabc";
     },
     async render() {
         return /* html */ `
@@ -12,27 +12,27 @@ const IntroPage = {
         <!-- content -->
         <main>
             <section class="container max-w-6xl mx-auto px-3 py-9">
-                <h2 class="uppercase text-[#D9A953] text-2xl font-semibold">Về Yotea</h2>
+                <h2 class="uppercase text-[#D9A953] text-2xl font-semibold">Về tomocoabc</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2">
                     <div class="text-justify leading-relaxed">
                         <p class="mb-3">
-                            Thương hiệu trà và cà phê YoTea được thành lập vào năm 2014
+                            Thương hiệu trà và cà phê tomocoabc được thành lập vào năm 2014
                             với cửa hàng đầu tiên tại Royal City. Với triết lý kinh doanh
-                            không ngừng phát triển và đưa thương hiệu YoTea ngày càng lớn
+                            không ngừng phát triển và đưa thương hiệu tomocoabc ngày càng lớn
                             mạnh bằng hương vị trà và cà phê hảo hạng, quy trình phục vụ
                             chuyên nghiệp mà còn là không gian đẳng cấp sang trọng. Trong
-                            suốt thời gian qua, YoTea luôn khẳng định vị thế của mình trên
+                            suốt thời gian qua, tomocoabc luôn khẳng định vị thế của mình trên
                             thị trường và không ngừng mở rộng thương hiệu với 15 cửa hàng
-                            mang thương hiệu YoTea tại các thành phố lớn: Hà Nội, Hồ Chí Minh,
+                            mang thương hiệu tomocoabc tại các thành phố lớn: Hà Nội, Hồ Chí Minh,
                             Hải Phòng và Bình Dương.
                         </p>
 
                         <p class="mb-3">
-                            YoTea mang đến cho khách hàng sự trải nghiệm tuyệt vời chất lượng
+                        tomocoabc mang đến cho khách hàng sự trải nghiệm tuyệt vời chất lượng
                             đồ uống hảo hạng với những hạt cà phê rang xay được chọn lọc kỹ
                             càng từ những vùng đất trồng nổi tiếng, khi pha cà phê vẫn giữ
                             được hương vị đậm đà, thơm ngon và nguyên chất. Hương vị trà của
-                            YoTea luôn làm khách hàng xao xuyến bởi vị chan chát đầu lưỡi,
+                            tomocoabc luôn làm khách hàng xao xuyến bởi vị chan chát đầu lưỡi,
                             và vị chua ngọt tự nhiên từ hoa quả hòa quyện làm nên ly đồ uống
                             thanh thanh mà thực hấp dẫn.
                         </p>
@@ -40,7 +40,7 @@ const IntroPage = {
                         <p>
                             Với sứ mệnh góp phần tạo nên một thị trường trà – cafe cao cấp từ
                             sản phẩm cho tới dịch vụ. Trong suốt 5 năm hoạt động và phát triển,
-                            YoTea đã đem tới cho hơn 1.000.000 thực khách những giây phút trải
+                            tomocoabc đã đem tới cho hơn 1.000.000 thực khách những giây phút trải
                             nghiệm thực sự trong không gian sang trọng và đồ uống hảo hạng
                         </p>
                     </div>
@@ -85,7 +85,7 @@ const IntroPage = {
                         <h2 class="text-2xl font-semibold uppercase">SỨ MỆNH</h2>
                         <p class="text-justify mt-3">
                             Với châm ngôn tuyệt đối không sử dụng nguyên liệu
-                            không rõ nguồn gốc xuất xứ, trà sữa Yotea tự hào mang
+                            không rõ nguồn gốc xuất xứ, trà sữa tomocoabc tự hào mang
                             lại cho khách hàng những sản phẩm chất lượng nhất và Yotea
                             luôn cảm kích vì sự tin dùng và yêu thương của quý khách hàng.
                         </p>

@@ -12,7 +12,7 @@ import Why from "../../components/user/home/why";
 
 const HomePage = {
     getTitle() {
-        return "Trang chủ - Trà Sữa Yotea";
+        return "Trang chủ - Trà Sữa tomocoabc";
     },
     async render() {
         return /* html */ `

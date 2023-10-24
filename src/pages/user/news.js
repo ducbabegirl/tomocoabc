@@ -5,7 +5,7 @@ import NewsHeader from "../../components/user/news/newsHeader";
 
 const NewsPage = {
     getTitle() {
-        return "Tin tức - Trà Sữa Yotea";
+        return "Tin tức - Trà Sữa tomocoabc";
     },
     async render(pageNumber) {
         // format date
