@@ -1,5 +1,10 @@
 import toastr from "toastr";
+import { search } from "../../api/product";
 import { formatCurrency, getUser, reRender } from "../../utils";
+import CartLabel from "./cartLabel";
+import Nav from "./nav";
+import WishList from "./wishlist";
+import WishListLabel from "./wishlistLabel";
 
 const Header = {
     async render(pageName) {

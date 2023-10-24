@@ -6,7 +6,7 @@ import { checkLogin, saveUser } from "../../utils";
 
 const LoginPage = {
     getTitle() {
-        return "Đăng nhập - Trà Sữa tomocoabc";
+        return "Đăng nhập - Trà Sữa Yotea";
     },
     async render() {
         return /* html */ `
