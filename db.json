@@ -1137,6 +1137,22 @@
       "active": 1,
       "createdAt": "2023-09-22T15:39:26.642Z",
       "id": 11
+    },
+    {
+      "email": "duyng1032003@gmail.com",
+      "password": "$2a$10$TgUrov5vrPIvwaShH0DSOeiHYVOfFyhNgVqYlxxYJFIoBq6IoKfyK",
+      "username": "DuyLê",
+      "fullName": "Lê Duy",
+      "phone": "0395852788",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-24T05:21:32.902Z",
+      "id": 12
     }
   ],
   "stores": [
