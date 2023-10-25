@@ -121,8 +121,6 @@ router.on({
 
 
 
-
-
     "/admin/slider": () => {
         print(AdminSliderListPage);
     },
