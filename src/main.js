@@ -28,6 +28,8 @@ import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 
+import AdminNewsListPage from "./pages/admin/news";
+
 import AdminSliderListPage from "./pages/admin/slider";
 import AdminAddSliderPage from "./pages/admin/slider/add";
 import AdminEditSliderPage from "./pages/admin/slider/edit";
@@ -119,9 +121,10 @@ router.on({
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
     },
-
-
-
+    "/admin/news": () => {
+        print(AdminNewsListPage);
+    },
+    
 
 
     "/admin/slider": () => {
