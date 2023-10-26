@@ -121,10 +121,14 @@ router.on({
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
     },
+
+
+
     "/admin/news": () => {
         print(AdminNewsListPage);
     },
     
+
 
 
     "/admin/slider": () => {

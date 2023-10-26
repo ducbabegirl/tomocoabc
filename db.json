@@ -271,7 +271,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 118,
-      "favorites": 3,
+      "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
       "id": 39,
@@ -298,7 +298,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 37,
-      "favorites": 1,
+      "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -370,10 +370,16 @@
       "categoryId": 2,
       "status": 1,
       "view": 18,
-      "favorites": 0,
+      "favorites": 1,
       "createdAt": "2022-02-18T08:48:09.048Z",
       "updatedAt": "2022-02-18T08:48:09.048Z",
-      "id": 34
+      "id": 34,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
     },
     {
       "name": " Sữa tươi trân châu đường đen",
@@ -383,17 +389,17 @@
       "categoryId": 2,
       "status": 1,
       "view": 23,
-      "favorites": 1,
+      "favorites": 2,
       "createdAt": "2022-02-18T08:48:45.769Z",
       "updatedAt": "2022-02-18T08:48:45.769Z",
       "id": 33,
       "ratings": [
         {
-          "userId": 6,
-          "productId": 22,
+          "userId": 11,
+          "productId": 33,
           "ratingNumber": 5,
-          "createdAt": "2022-02-18T15:05:51.789Z",
-          "id": 6
+          "createdAt": "2023-09-22T15:44:00.990Z",
+          "id": 14
         }
       ],
       "category": {
@@ -552,6 +558,19 @@
       "createdAt": "2022-02-21T02:47:10.990Z",
       "updatedAt": "2022-02-21T02:47:10.990Z",
       "id": 40
+    },
+    {
+      "name": "DEmo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698070988/bc0jzgeeyyntmsf2h6vy.jpg",
+      "price": 123,
+      "description": "<p>ẻttt</p>",
+      "categoryId": 4,
+      "status": 0,
+      "view": 0,
+      "favorites": 0,
+      "createdAt": "2023-10-23T14:22:55.960Z",
+      "updatedAt": "2023-10-23T14:22:55.960Z",
+      "id": 41
     }
   ],
   "news": [
@@ -1154,6 +1173,30 @@
       "productId": 31,
       "createdAt": "2022-02-18T15:09:17.398Z",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "productId": 33,
+      "createdAt": "2023-10-23T14:30:00.024Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "productId": 34,
+      "createdAt": "2023-10-23T14:30:01.702Z",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "productId": 39,
+      "createdAt": "2023-10-23T14:32:07.896Z",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "productId": 38,
+      "createdAt": "2023-10-23T15:22:32.532Z",
+      "id": 18
     }
   ],
   "orders": [
