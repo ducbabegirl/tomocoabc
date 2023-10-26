@@ -18,6 +18,9 @@ import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
 
 import DashboardPage from "./pages/admin/dashboard";
+import AdminUserListPage from "./pages/admin/user";
+import AdminAddUserPage from "./pages/admin/user/add";
+import AdminEditUserPage from "./pages/admin/user/edit";
 
 import AdminProductListPage from "./pages/admin/product";
 
@@ -46,7 +49,17 @@ const print = async (content, id, pageNumber) => {
 };
 
 
+router.on("/admin/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
 
+        if (userInfo && userInfo.role) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
 
 router.on("/my-account/*", () => {}, {
     before(done) {
@@ -119,10 +132,18 @@ router.on({
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
     },
-
-
-
-
+    "/admin/user": () => {
+        print(AdminUserListPage);
+    },
+    "/admin/user/page/:page": ({ data }) => {
+        print(AdminUserListPage, data.page);
+    },
+    "/admin/user/add": () => {
+        print(AdminAddUserPage);
+    },
+    "/admin/user/:id/edit": ({ data }) => {
+        print(AdminEditUserPage, data.id);
+    },
 
     "/admin/slider": () => {
         print(AdminSliderListPage);
