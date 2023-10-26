@@ -1115,6 +1115,38 @@
       "active": 1,
       "createdAt": "2023-09-22T15:39:26.642Z",
       "id": 11
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "$2a$10$KSzXCdWoj/7W35YRLv.VU.a3I7WKWWEe7pc0FBndxZtpLl/fTlxI.",
+      "username": "ababa",
+      "fullName": "abababa",
+      "phone": "0987654321",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-26T15:15:15.718Z",
+      "id": 12
+    },
+    {
+      "email": "duy@gmail.com",
+      "password": "$2a$10$JRYoyx23OCu86w5qIMM6TuHdgQC.OqTySpdezOi13sUT33zY5HocG",
+      "username": "leduy",
+      "fullName": "Le Duy",
+      "phone": "0395852788",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-26T15:17:16.074Z",
+      "id": 13
     }
   ],
   "stores": [

@@ -37,3 +37,10 @@ export const update = (id, data) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.patch(url, data);
 };
+
+export const search = (key, stt = 0) => {
+    let url = `/${TABLE_NAME}/?q=${key}`;
+
+    if (stt) url += `&active=${stt}`;
+    return instance.get(url);
+};
