@@ -326,3 +326,37 @@ const AdminEditUserPage = {
             const regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
             return regexPhone.test(value);
         });
+           // bắt sự kiện đổi avatar
+           avatar.addEventListener("change", (e) => {
+            avatarPreview.attr("src", URL.createObjectURL(e.target.files[0]));
+        });
+
+        // bắt sự kiện chọn tỉnh/tp
+        provinceElement.on("change", async (e) => {
+            const provinceCode = e.target.value;
+            const districtList = await getDistrict(provinceCode);
+            let htmlDistrict = `<option value="">-- Chọn Tỉnh/TP --</option>`;
+            districtList.forEach((item) => {
+                htmlDistrict += `<option value="${item.code}">${item.name}</option>`;
+            });
+
+            districtElement.removeAttr("disabled");
+            districtElement.html(htmlDistrict);
+        });
+
+        // bắt sự kiện chọn quận/huyện
+        districtElement.on("change", async (e) => {
+            const districtCode = e.target.value;
+            const wardList = await getWard(districtCode);
+            let htmlWard = `<option value="">-- Chọn Xã/Phường --</option>`;
+            wardList.forEach((item) => {
+                htmlWard += `<option value="${item.code}">${item.name}</option>`;
+            });
+
+            wardElement.removeAttr("disabled");
+            wardElement.html(htmlWard);
+        });
+    },
+};
+
+export default AdminEditUserPage;
