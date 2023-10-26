@@ -165,3 +165,115 @@ const AdminAddUserPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const fullName = $("#form__add-user-fullname");
+        const username = $("#form__add-user-username");
+        const phone = $("#form__add-user-phone");
+        const email = $("#form__add-user-email");
+        const role = $("#form__add-user-role");
+        const status = $("#form__add-user-stt");
+        const password = $("#form__add-user-password");
+        const avatar = document.querySelector("#form__add-user-avatar");
+        const avatarPreview = $("#form__add-user-preview");
+        const provinceElement = $("#form__add-user-province");
+        const districtElement = $("#form__add-user-district");
+        const wardElement = $("#form__add-user-ward");
+        const address = $("#form__add-user-address");
+
+        // validate
+        $("#form__add-user").validate({
+            rules: {
+                "form__add-user-fullname": "required",
+                "form__add-user-username": {
+                    required: true,
+                },
+                "form__add-user-phone": {
+                    required: true,
+                    valid_phone: true,
+                },
+                "form__add-user-email": {
+                    required: true,
+                    email: true,
+                },
+                "form__add-user-role": "required",
+                "form__add-user-stt": "required",
+                "form__add-user-password": {
+                    required: true,
+                    minlength: 4,
+                },
+                "form__add-user-confirm": {
+                    required: true,
+                    equalTo: "#form__add-user-password",
+                },
+                "form__add-user-province": "required",
+                "form__add-user-district": "required",
+                "form__add-user-ward": "required",
+                "form__add-user-address": "required",
+            },
+            messages: {
+                "form__add-user-fullname": "Vui lòng nhập họ tên",
+                "form__add-user-username": {
+                    required: "Vui lòng nhập tên đăng nhập",
+                },
+                "form__add-user-phone": {
+                    required: "Vui lòng nhập số điện thoại",
+                    valid_phone: "Số điện thoại không đúng định dạng",
+                },
+                "form__add-user-email": {
+                    required: "Vui lòng nhập email",
+                    email: "Email không đúng định dạng",
+                },
+                "form__add-user-role": "Vui lòng chọn vai trò",
+                "form__add-user-stt": "Vui lòng chọn trạng thái tài khoản",
+                "form__add-user-password": {
+                    required: "Vui lòng nhập mật khẩu",
+                    minlength: "Mật khẩu tối thiểu 4 ký tự",
+                },
+                "form__add-user-confirm": {
+                    required: "Vui lòng nhập mật khẩu xác nhận",
+                    equalTo: "Mật khẩu xác nhận không chính xác",
+                },
+                "form__add-user-province": "Vui lòng chọn Tỉnh/TP",
+                "form__add-user-district": "Vui lòng chọn Quận/Huyện",
+                "form__add-user-ward": "Vui lòng chọn Xã/Phường",
+                "form__add-user-address": "Trường này không thể bỏ trống",
+            },
+            submitHandler() {
+                (async () => {
+                    let avatarUrl = "";
+                    if (avatar.files.length) {
+                        const { data } = await uploadFile(avatar.files[0]);
+                        avatarUrl = data.url;
+                    }
+                    const date = new Date();
+
+                    const userData = {
+                        email: email.val(),
+                        password: password.val(),
+                        username: username.val(),
+                        fullName: fullName.val(),
+                        phone: phone.val(),
+                        wardsCode: +wardElement.val(),
+                        districtCode: +districtElement.val(),
+                        provinceCode: +provinceElement.val(),
+                        address: address.val(),
+                        avatar: avatarUrl,
+                        role: +role.val(),
+                        active: +status.val(),
+                        createdAt: date.toISOString(),
+                    };
+
+                    add(userData)
+                        .then(() => toastr.success("Thêm thành công"))
+                        .then(() => reRender(AdminAddUserPage, "#app"));
+                })();
+            },
+        });
+
+        $.validator.addMethod("valid_phone", (value) => {
+            const regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+            return regexPhone.test(value);
+        });

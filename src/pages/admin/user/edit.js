@@ -210,3 +210,119 @@ const AdminEditUserPage = {
         </section>
         `;
     },
+    async afterRender(id) {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const fullName = $("#form__edit-user-fullname");
+        const username = $("#form__edit-user-username");
+        const phone = $("#form__edit-user-phone");
+        const email = $("#form__edit-user-email");
+        const role = $("#form__edit-user-role");
+        const status = $("#form__edit-user-stt");
+        const password = $("#form__edit-user-password");
+        const avatar = document.querySelector("#form__edit-user-avatar");
+        const avatarPreview = $("#form__edit-user-preview");
+        const provinceElement = $("#form__edit-user-province");
+        const districtElement = $("#form__edit-user-district");
+        const wardElement = $("#form__edit-user-ward");
+        const address = $("#form__edit-user-address");
+
+        const { data: userDetail } = await get(id);
+
+        // validate
+        $("#form__edit-user").validate({
+            rules: {
+                "form__edit-user-fullname": "required",
+                "form__edit-user-username": {
+                    required: true,
+                },
+                "form__edit-user-phone": {
+                    required: true,
+                    valid_phone: true,
+                },
+                "form__edit-user-email": {
+                    required: true,
+                    email: true,
+                },
+                "form__edit-user-role": "required",
+                "form__edit-user-stt": "required",
+                "form__edit-user-password": {
+                    required: true,
+                    minlength: 4,
+                },
+                "form__edit-user-confirm": {
+                    required: true,
+                    equalTo: "#form__edit-user-password",
+                },
+                "form__edit-user-province": "required",
+                "form__edit-user-district": "required",
+                "form__edit-user-ward": "required",
+                "form__edit-user-address": "required",
+            },
+            messages: {
+                "form__edit-user-fullname": "Vui lòng nhập họ tên",
+                "form__edit-user-username": {
+                    required: "Vui lòng nhập tên đăng nhập",
+                },
+                "form__edit-user-phone": {
+                    required: "Vui lòng nhập số điện thoại",
+                    valid_phone: "Số điện thoại không đúng định dạng",
+                },
+                "form__edit-user-email": {
+                    required: "Vui lòng nhập email",
+                    email: "Email không đúng định dạng",
+                },
+                "form__edit-user-role": "Vui lòng chọn vai trò",
+                "form__edit-user-stt": "Vui lòng chọn trạng thái tài khoản",
+                "form__edit-user-password": {
+                    required: "Vui lòng nhập mật khẩu",
+                    minlength: "Mật khẩu tối thiểu 4 ký tự",
+                },
+                "form__edit-user-confirm": {
+                    required: "Vui lòng nhập mật khẩu xác nhận",
+                    equalTo: "Mật khẩu xác nhận không chính xác",
+                },
+                "form__edit-user-province": "Vui lòng chọn Tỉnh/TP",
+                "form__edit-user-district": "Vui lòng chọn Quận/Huyện",
+                "form__edit-user-ward": "Vui lòng chọn Xã/Phường",
+                "form__edit-user-address": "Trường này không thể bỏ trống",
+            },
+            submitHandler() {
+                (async () => {
+                    const userData = {
+                        email: email.val(),
+                        username: username.val(),
+                        fullName: fullName.val(),
+                        phone: phone.val(),
+                        wardsCode: +wardElement.val(),
+                        districtCode: +districtElement.val(),
+                        provinceCode: +provinceElement.val(),
+                        address: address.val(),
+                        role: +role.val(),
+                        active: +status.val(),
+                    };
+
+                    // nếu cập nhật avatar
+                    if (avatar.files.length) {
+                        const { data } = await uploadFile(avatar.files[0]);
+                        userData.avatar = data.url;
+                    }
+
+                    // nếu cập nhật mật khẩu
+                    if (password.val() !== userDetail.password) {
+                        userData.password = password.val();
+                    }
+
+                    update(id, userData)
+                        .then(() => toastr.success("Cập nhật thành công"))
+                        .then(() => { window.location.href = "/#/admin/user"; })
+                        .then(() => reRender(AdminUserListPage, "#app"));
+                })();
+            },
+        });
+
+        $.validator.addMethod("valid_phone", (value) => {
+            const regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+            return regexPhone.test(value);
+        });
