@@ -754,18 +754,18 @@
   ],
   "sizes": [
     {
-      "name": "M",
-      "priceIncrease": 7000,
-      "createdAt": "2022-02-14T13:08:17.543Z",
-      "updatedAt": "2022-02-14T13:08:17.543Z",
-      "id": 1
-    },
-    {
       "name": "L",
       "priceIncrease": 10000,
       "createdAt": "2022-02-14T13:08:22.518Z",
       "updatedAt": "2022-02-14T13:08:22.518Z",
       "id": 2
+    },
+    {
+      "name": "M ",
+      "priceIncrease": 5000,
+      "createdAt": "2023-10-26T16:03:03.532Z",
+      "updatedAt": "2023-10-26T16:25:08.947Z",
+      "id": 3
     }
   ],
   "toppings": [
@@ -1430,123 +1430,6 @@
       "id": 3
     },
     {
-      "orderId": 3,
-      "productId": 4,
-      "productPrice": 1231,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 30,
-      "toppingId": 2,
-      "toppingPrice": 6000,
-      "id": 4
-    },
-    {
-      "orderId": 5,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 30,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 9
-    },
-    {
-      "orderId": 6,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 30,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 9
-    },
-    {
-      "orderId": 7,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 0,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 10
-    },
-    {
-      "orderId": 8,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 0,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 11
-    },
-    {
-      "orderId": 8,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 3,
-      "ice": 30,
-      "sugar": 100,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 13
-    },
-    {
-      "orderId": 9,
-      "productId": 34,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 0,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 14
-    },
-    {
-      "orderId": 9,
-      "productId": 32,
-      "productPrice": 28000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 3,
-      "ice": 30,
-      "sugar": 100,
-      "toppingId": 4,
-      "toppingPrice": 6000,
-      "id": 15
-    },
-    {
-      "orderId": 9,
-      "productId": 33,
-      "productPrice": 25000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 16
-    },
-    {
       "orderId": 11,
       "productId": 31,
       "productPrice": 45000,
@@ -1560,19 +1443,6 @@
       "id": 18
     },
     {
-      "orderId": 14,
-      "productId": 37,
-      "productPrice": 45000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 30,
-      "sugar": 30,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 19
-    },
-    {
       "orderId": 19,
       "productId": 38,
       "productPrice": 25000,
@@ -1584,19 +1454,6 @@
       "toppingId": 5,
       "toppingPrice": 7000,
       "id": 20
-    },
-    {
-      "orderId": 19,
-      "productId": 36,
-      "productPrice": 24000,
-      "sizeId": 1,
-      "sizePrice": 7000,
-      "quantity": 2,
-      "ice": 50,
-      "sugar": 30,
-      "toppingId": 5,
-      "toppingPrice": 7000,
-      "id": 21
     }
   ],
   "comments": [
