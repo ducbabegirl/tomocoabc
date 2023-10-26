@@ -67,5 +67,18 @@ const RegisterPage = {
         ${Footer.render()}
         `;
     },
+    afterRender() {
+        Header.afterRender();
+        
+        const formRegister = document.querySelector("#form__reg");
+        const username = formRegister.querySelector("#form__reg-username");
+        const fullName = formRegister.querySelector("#form__reg-fullname");
+        const email = formRegister.querySelector("#form__reg-email");
+        const phone = formRegister.querySelector("#form__reg-phone");
+        const password = formRegister.querySelector("#form__reg-password");
+        const confirmPassword = formRegister.querySelector("#form__reg-confirm");
+
+
+
 
 export default RegisterPage;
