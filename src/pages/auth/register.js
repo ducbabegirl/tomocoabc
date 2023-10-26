@@ -78,6 +78,69 @@ const RegisterPage = {
         const password = formRegister.querySelector("#form__reg-password");
         const confirmPassword = formRegister.querySelector("#form__reg-confirm");
 
+        // validate
+        const validate = () => {
+            let isValid = true;
+
+            const regexUsername = /[\s*]/;
+            if (!username.value) {
+                username.nextElementSibling.innerText = "Vui lòng nhập tên đăng nhập";
+                isValid = false;
+            } else if (regexUsername.test(username.value)) {
+                username.nextElementSibling.innerText = "Vui lòng nhập lại, tên đăng nhập không được chứa khoảng trắng";
+                isValid = false;
+            } else {
+                username.nextElementSibling.innerText = "";
+            }
+
+            if (!fullName.value) {
+                fullName.nextElementSibling.innerText = "Vui lòng nhập họ tên";
+                isValid = false;
+            } else {
+                fullName.nextElementSibling.innerText = "";
+            }
+
+            const regexEmail = /^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            if (!email.value) {
+                email.nextElementSibling.innerText = "Vui lòng nhập email";
+                isValid = false;
+            } else if (!regexEmail.test(email.value)) {
+                email.nextElementSibling.innerText = "Email không đúng định dạng";
+                isValid = false;
+            } else {
+                email.nextElementSibling.innerText = "";
+            }
+
+            const regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+            if (!phone.value) {
+                phone.nextElementSibling.innerText = "Vui lòng nhập số điện thoại";
+                isValid = false;
+            } else if (!regexPhone.test(phone.value)) {
+                phone.nextElementSibling.innerText = "Số điện thoại không đúng định dạng";
+                isValid = false;
+            } else {
+                phone.nextElementSibling.innerText = "";
+            }
+
+            if (!password.value) {
+                password.nextElementSibling.innerText = "Vui lòng nhập mật khẩu";
+                isValid = false;
+            } else {
+                password.nextElementSibling.innerText = "";
+            }
+
+            if (!confirmPassword.value) {
+                confirmPassword.nextElementSibling.innerText = "Vui lòng xác nhận mật khẩu";
+                isValid = false;
+            } else if (password.value !== confirmPassword.value) {
+                confirmPassword.nextElementSibling.innerText = "Mật khẩu xác nhận không khớp";
+                isValid = false;
+            } else {
+                confirmPassword.nextElementSibling.innerText = "";
+            }
+
+            return isValid;
+        };
 
 
 
