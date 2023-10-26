@@ -46,5 +46,34 @@ const LoginPage = {
         ${Footer.render()}
         `;
     },
+    afterRender() {
+        Header.afterRender();
+      
+
+        const formLogin = document.querySelector("#form__login");
+        const username = formLogin.querySelector("#form__login-user");
+        const password = formLogin.querySelector("#form__login-password");
+
+        // validate
+        const validate = () => {
+            let isValid = true;
+
+            if (!username.value) {
+                username.nextElementSibling.innerText = "Vui lòng nhập tài khoản";
+                isValid = false;
+            } else {
+                username.nextElementSibling.innerText = "";
+            }
+
+            if (!password.value) {
+                password.nextElementSibling.innerText = "Vui lòng nhập mật khẩu";
+                isValid = false;
+            } else {
+                password.nextElementSibling.innerText = "";
+            }
+
+            return isValid;
+        };
+
 
 export default LoginPage;
