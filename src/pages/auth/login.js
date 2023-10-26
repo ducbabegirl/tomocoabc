@@ -75,5 +75,36 @@ const LoginPage = {
             return isValid;
         };
 
+        // bắt sự kiện submit form
+        formLogin.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const isValid = validate();
+            if (isValid) {
+                try {
+                    const { data } = await login({
+                        email: username.value,
+                        password: password.value,
+                    });
+
+                    // nếu tài khoản bị khóa
+                    if (!data.user.active) {
+                        toastr.error("Tài khoản của bạn đang bị khóa, liên hệ QTV");
+                    } else {
+                        // lưu thông tin vào localStorage
+                        saveUser(data.user);
+
+                        // show message
+                        toastr.success("Đăng nhập thành công, hệ thống tự động chuyển hướng sau 3s");
+
+                        setTimeout(() => checkLogin(data.user.role), 3000);
+                    }
+                } catch (error) {
+                    toastr.error(error.response.data);
+                }
+            }
+        });
+    },
+};
 
 export default LoginPage;
