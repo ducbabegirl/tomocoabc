@@ -142,6 +142,31 @@ const RegisterPage = {
             return isValid;
         };
 
+        formRegister.addEventListener("submit", (e) => {
+            e.preventDefault();
 
+            const isValid = validate();
+            if (isValid) {
+                register({
+                    username: username.value,
+                    fullName: fullName.value,
+                    email: email.value,
+                    phone: phone.value,
+                    password: password.value,
+                    wardsCode: 0,
+                    districtCode: 0,
+                    provinceCode: 0,
+                    address: "",
+                    avatar: "",
+                    role: 0,
+                    active: 1,
+                    createdAt: new Date().toISOString(),
+                })
+                    .then(() => toastr.success("Đăng ký thành công"))
+                    .then(() => { window.location.href = "/#/login"; });
+            }
+        });
+    },
+};
 
 export default RegisterPage;
