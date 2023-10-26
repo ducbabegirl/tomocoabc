@@ -49,7 +49,7 @@ const AdminAddCatePage = {
                                     <div class="col-span-3">
                                         <label class="block text-sm font-medium text-gray-700">Xem trước ảnh danh mục</label>
                                         <div class="mt-1">
-                                            <img src="https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg" alt="Preview Img" id="form__add-cate-preview" class="h-60 w-full object-cover rounded-md">
+                                            <img src="https://res.cloudinary.com/dizzurnqo/image/upload/v1698072562/uploadimg_yzkpbo.jpg" alt="Preview Img" id="form__add-cate-preview" class="h-60 w-full object-cover rounded-md">
                                         </div>
                                     </div>
 

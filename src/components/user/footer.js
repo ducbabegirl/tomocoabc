@@ -6,7 +6,7 @@ const Footer = {
             <div class="container max-w-6xl mx-auto px-3">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div>
-                        <h3 class="text-white text-xl uppercase font-semibold mb-3">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                        <h3 class="text-white text-xl uppercase font-semibold mb-3">CÔNG TY CP TM & DV COCOMOCO</h3>
                         <p class="text-gray-300 text-justify">
                             Chúng tôi mong muốn tạo nên hương vị thức uống tuyệt vời nhất.
                             Là điểm đến đầu tiên dành cho bạn khi muốn thưởng thức trọn vẹn của ly trà sữa.
@@ -18,17 +18,17 @@ const Footer = {
                                 </a>
                             </li>
                             <li class="mr-3 mt-3">
-                            <a href="https://www.youtube.com/c/L%C3%AAV%C4%83nTu%C3%A2n02/" target="_blank">
+                            <a href="" target="_blank">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                         <li class="mr-3 mt-3">
-                        <a href="https://www.instagram.com/_tuan02/" target="_blank">
+                        <a href="" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li class="mr-3 mt-3">
-                    <a href="https://www.tiktok.com/@tuandemo" target="_blank">
+                    <a href="" target="_blank">
                         <i class="fab fa-tiktok"></i>
                     </a>
                 </li>
@@ -68,7 +68,6 @@ const Footer = {
                     </div>
                     <div class="overflow-hidden">
                         <h3 class="text-white text-xl uppercase font-semibold mb-3">Kết nối với chúng tôi</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/PolyQuiz/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                             <p> hihi</p>
                         </div>
                     </div>
