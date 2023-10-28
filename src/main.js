@@ -144,7 +144,6 @@ router.on({
     "/admin/user/:id/edit": ({ data }) => {
         print(AdminEditUserPage, data.id);
     },
-
     "/admin/slider": () => {
         print(AdminSliderListPage);
     },

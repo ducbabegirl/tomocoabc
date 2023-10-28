@@ -1,13 +1,12 @@
 import HeaderTop from "../../components/admin/headerTop";
 import AdminNav from "../../components/admin/nav";
-
-
+import { getAll as getAllUser } from "../../api/user";
 const DashboardPage = {
     getTitle() {
         return "Dashboard | Administrator";
     },
     async render() {
-        
+        const { data: users } = await getAllUser();
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
             ${AdminNav.render("dashboard")}
@@ -45,7 +44,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Tài khoản</span>
-                                    <span class="block text-gray-500">Members</span>
+                                    <span class="block text-gray-500">${users.length}</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
