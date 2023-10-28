@@ -1147,6 +1147,38 @@
       "active": 1,
       "createdAt": "2023-10-26T15:17:16.074Z",
       "id": 13
+    },
+    {
+      "email": "duyng1032003@gmail.com",
+      "password": "$2a$10$734fxD5qHxHJCjk32Pq.UepzcKK8ZH2a7V99IURfVqLH5QtBnpshG",
+      "username": "DuyLê",
+      "fullName": "Lê Duy",
+      "phone": "0395852788",
+      "wardsCode": 28,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "115 kim ma",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698479870/ytxy4u5xhye26sobca8u.png",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-26T16:24:43.352Z",
+      "id": 14
+    },
+    {
+      "email": "liud@gmail.com",
+      "password": "$2a$10$tvkGjLFULNuHY/QExfkzAem.e9cjOjjMLVDQE8Y2Q2M.ck9kI.IdK",
+      "username": "liud",
+      "fullName": "Liu dee",
+      "phone": "0395852466",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-28T07:29:20.468Z",
+      "id": 15
     }
   ],
   "stores": [
