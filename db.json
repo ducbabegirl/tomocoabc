@@ -738,10 +738,18 @@
     {
       "title": "Slider 3",
       "url": "https://www.facebook.com/LeVanTuan.Info/",
-      "status": 1,
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757540/assignment-js/bcrpldnvh7gqp8bsmpp4.jpg",
+      "status": 0,
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698074939/wzkfwibstupfamz1kuqv.png",
       "createdAt": "2022-02-13T13:04:39.364Z",
       "id": 3
+    },
+    {
+      "title": "Banner1",
+      "url": "https://res.cloudinary.com/dizzurnqo/image/upload/v1697382333/banner_oritqt.jpg",
+      "status": 0,
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698073218/bpqh81llssyeyj0ghpq0.jpg",
+      "createdAt": "2023-10-23T15:00:18.756Z",
+      "id": 4
     }
   ],
   "sizes": [

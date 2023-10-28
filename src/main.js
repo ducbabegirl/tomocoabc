@@ -28,9 +28,13 @@ import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 
-import AdminSliderListPage from "./pages/admin/slider";
+import AdminNewsListPage from "./pages/admin/news";
 
 import AdminCmtListPage from "./pages/admin/comments";
+import AdminSliderListPage from "./pages/admin/slider";
+import AdminAddSliderPage from "./pages/admin/slider/add";
+import AdminEditSliderPage from "./pages/admin/slider/edit";
+
 import { getUser } from "./utils";
 
 
@@ -121,6 +125,13 @@ router.on({
 
 
 
+    "/admin/news": () => {
+        print(AdminNewsListPage);
+    },
+    
+
+
+
     "/admin/slider": () => {
         print(AdminSliderListPage);
     },
@@ -133,6 +144,12 @@ router.on({
     },
   
     
+    "/admin/slider/add": () => {
+        print(AdminAddSliderPage);
+    },
+    "/admin/slider/:id/edit": ({ data }) => {
+        print(AdminEditSliderPage, data.id);
+    },
 
 });
 
