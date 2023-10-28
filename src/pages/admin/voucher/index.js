@@ -74,3 +74,84 @@ const AdminVoucherListPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const btnsDelete = document.querySelectorAll(".voucher__list-btn-delete");
+
+        // xóa voucher
+        btnsDelete.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const { id } = e.target.dataset;
+
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn xóa không?",
+                    text: "Bạn không thể hoàn tác sau khi xóa!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        remove(id)
+                            .then(() => {
+                                Swal.fire(
+                                    "Thành công",
+                                    "Đã xóa danh mục.",
+                                    "success",
+                                );
+                            })
+                            .then(() => {
+                                reRender(AdminVoucherListPage, "#app");
+                            });
+                    }
+                });
+            });
+        });
+
+        // search
+        $("#voucher__form-search").on("input", async () => {
+            const keyword = $("#voucher__form-search-key").val();
+
+            const { data: voucherList } = await search(keyword);
+            $("#voucher__list").html(voucherList.map((voucher) => `
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${voucher.id}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                        ${voucher.code}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                        ${voucher.quantity}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                        -${voucher.condition ? `${voucher.conditionNumber} VNĐ` : `${voucher.conditionNumber}%`}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-500">
+                        ${formatDate(voucher.timeStart)}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-500">
+                        ${formatDate(voucher.timeEnd)}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${voucher.status ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}">
+                        ${voucher.status ? "Kích hoạt" : "Khóa"}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <a href="/#/admin/voucher/${voucher.id}/edit" class="h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Edit</a>
+                        <button data-id="${voucher.id}" class="voucher__list-btn-delete h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-3">Delete</button>
+                    </td>
+                </tr>
+                `).join(""));
+
+            // ẩn phân trang
+            $("#pagination").hide();
+        });
+    },
+};
+
+export default AdminVoucherListPage;

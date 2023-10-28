@@ -101,3 +101,89 @@ const AdminAddVoucherPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const voucherCode = $("#form__add-voucher-code");
+        const voucherQuantity = $("#form__add-voucher-quantity");
+        const voucherCondition = $("#form__add-voucher-condition");
+        const voucherStt = $("#form__add-voucher-stt");
+        const voucherNumber = $("#form__add-voucher-number");
+        const voucherTimeStart = $("#form__add-voucher-start");
+        const voucherTimeEnd = $("#form__add-voucher-end");
+
+        $("#form__add-voucher").validate({
+            rules: {
+                "form__add-voucher-code": {
+                    required: true,
+                },
+                "form__add-voucher-quantity": {
+                    required: true,
+                },
+                "form__add-voucher-condition": "required",
+                "form__add-voucher-stt": "required",
+                "form__add-voucher-number": {
+                    required: true,
+                    number: true,
+                    valid_percent: true,
+                },
+                "form__add-voucher-start": "required",
+                "form__add-voucher-end": {
+                    required: true,
+                    valid_time: true,
+                },
+            },
+            messages: {
+                "form__add-voucher-code": {
+                    required: "Vui lòng nhập mã Voucher",
+                },
+                "form__add-voucher-quantity": {
+                    required: "Vui lòng nhập số lượng Voucher",
+                },
+                "form__add-voucher-condition": "Vui lòng chọn loại giảm",
+                "form__add-voucher-stt": "Vui lòng chọn trạng thái Voucher",
+                "form__add-voucher-number": {
+                    required: "Vui lòng nhập số lượng giảm",
+                    number: "Không đúng định dạng, vui lòng nhập lại",
+                    valid_percent: "Vui lòng nhập lại % giảm giá",
+                },
+                "form__add-voucher-start": "Vui lòng nhập thời gian hiệu lực voucher",
+                "form__add-voucher-end": {
+                    required: "Vui lòng nhập thời gian hết hiệu lực voucher",
+                    valid_time: "Vui lòng nhập lại",
+                },
+            },
+            submitHandler() {
+                (async () => {
+                    const date = new Date();
+
+                    const voucherData = {
+                        code: voucherCode.val().toUpperCase(),
+                        quantity: +voucherQuantity.val(),
+                        condition: +voucherCondition.val(),
+                        conditionNumber: +voucherNumber.val(),
+                        status: +voucherStt.val(),
+                        timeStart: voucherTimeStart.val(),
+                        timeEnd: voucherTimeEnd.val(),
+                        user_ids: [],
+                        createdAt: date.toISOString(),
+                        updatedAt: date.toISOString(),
+                    };
+
+                    add(voucherData)
+                        .then(() => toastr.success("Thêm thành công"))
+                        .then(() => reRender(AdminAddVoucherPage, "#app"));
+                })();
+            },
+        });
+
+        $.validator.addMethod("valid_time", () => voucherTimeEnd.val() > voucherTimeStart.val());
+        $.validator.addMethod("valid_percent", () => {
+            if (voucherCondition.val() === "0" && voucherNumber.val() > 100) return false;
+            return true;
+        });
+    },
+};
+
+export default AdminAddVoucherPage;
