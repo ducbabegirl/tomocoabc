@@ -1,5 +1,7 @@
+import { getAll } from "../../api/category";
 const Nav = {
     async render(pageName){
+        const { data: cateList } = await getAll();
 
         return /* html */`
     <div class="container max-w-6xl mx-auto px-3 h-full">
@@ -27,7 +29,11 @@ const Nav = {
 
                 </a>
                     <ul class="z-20 invisible group-hover:visible absolute top-full left-0 bg-white shadow min-w-[150px] grid grid-cols-1 divide-y px-2 rounded-sm">
-                
+                    ${cateList.map((cate) => `
+                    <li>
+                        <a href="/#/category/${cate.id}" class="block py-1.5 text-gray-500 transition ease-linear duration-200 hover:text-[#D9A953]">${cate.name}</a>
+                    </li>
+                    `).join("")}
                     </ul>
                 </li>
              </ul>
@@ -72,14 +78,14 @@ const Nav = {
     },
 
         afterRender(){
-            const bntBar = document.querySelector(".btn-toggle-nav");
+            const btnBar = document.querySelector(".btn-toggle-nav");
             const navMobile = document.querySelector(".nav__mobile");
             const navMobileOverlay = navMobile.querySelector(".nav__mobile-overlay");
             const navMobileClose = navMobile.querySelector(".nav__mobile-close");
 
-            bntBar.addEventListener("click", () => navMobile.classList.toggle("action"));
-            navMobileOverlay.addEventListener("click", () => navMobile.classList.toggle("action"));
-            navMobileClose.addEventListener("click", () => navMobile.classList.toggle("action"));
+            btnBar.addEventListener("click", () => navMobile.classList.toggle("active"));
+            navMobileOverlay.addEventListener("click", () => navMobile.classList.toggle("active"));
+            navMobileClose.addEventListener("click", () => navMobile.classList.toggle("active"));
         },
 
 };

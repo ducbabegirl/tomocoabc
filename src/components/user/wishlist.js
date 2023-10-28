@@ -50,6 +50,7 @@ const WishList = {
         overlay.addEventListener("click", () => wishlistElement.classList.remove("active"));
         closeBtn.addEventListener("click", () => wishlistElement.classList.remove("active"));
 
+
         // xóa wishlist
         const btnsDelete = document.querySelectorAll(".wishlist-icon-delete");
         btnsDelete.forEach((btn) => {
@@ -59,6 +60,21 @@ const WishList = {
                 remove(id)
                     .then(() => reRender(WishListLabel, ".header-icon-heart"))
                     .then(() => document.querySelector(`.wishlist-item-${id}`).remove());
+
+             overlay.addEventListener("click", () => wishlistElement.classList.remove("active"));
+             closeBtn.addEventListener("click", () => wishlistElement.classList.remove("active"));
+           
+        // xóa wishlist
+            const btnsDelete = document.querySelectorAll(".wishlist-icon-delete");
+            btnsDelete.forEach((btn) => {
+            const { id } = btn.dataset;
+
+                btn.addEventListener("click", () => {
+                    remove(id)
+                        .then(() => reRender(WishListLabel, ".header-icon-heart"))
+                        .then(() => document.querySelector(`.wishlist-item-${id}`).remove());
+                });
+
             });
         });
     },
