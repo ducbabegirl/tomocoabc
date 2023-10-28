@@ -25,7 +25,7 @@ const RegisterPage = {
 
                     <div class="mt-3">
                         <label for="form__reg-fullname" class="font-semibold block mb-1">Họ và tên *</label>
-                        <input type="text" id="form__reg-fullname" name="form__reg-fullname" class="shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc] w-full border px-2 h-10 text-sm outline-none" placeholder="VD: Lê Văn Tuân...">
+                        <input type="text" id="form__reg-fullname" name="form__reg-fullname" class="shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc] w-full border px-2 h-10 text-sm outline-none" placeholder="VD: Nguyen Van A...">
                         <div class="form__reg-message text-sm text-red-500 mt-0.5"></div>
                     </div>
 
@@ -69,8 +69,7 @@ const RegisterPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
-
+        
         const formRegister = document.querySelector("#form__reg");
         const username = formRegister.querySelector("#form__reg-username");
         const fullName = formRegister.querySelector("#form__reg-fullname");
@@ -158,7 +157,7 @@ const RegisterPage = {
                     districtCode: 0,
                     provinceCode: 0,
                     address: "",
-                    avatar: "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+                    avatar: "",
                     role: 0,
                     active: 1,
                     createdAt: new Date().toISOString(),

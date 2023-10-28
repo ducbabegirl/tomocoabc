@@ -18,7 +18,12 @@ import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
 
 import DashboardPage from "./pages/admin/dashboard";
-
+import AdminUserListPage from "./pages/admin/user";
+import AdminAddUserPage from "./pages/admin/user/add";
+import AdminEditUserPage from "./pages/admin/user/edit";
+import AdminToppingListPage from "./pages/admin/topping";
+import AdminAddToppingPage from "./pages/admin/topping/add";
+import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
 
 import AdminAddProductPage from "./pages/admin/product/add";
@@ -53,6 +58,17 @@ const print = async (content, id, pageNumber) => {
 };
 
 
+router.on("/admin/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
+
+        if (userInfo && userInfo.role) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
 
 router.on("/my-account/*", () => {}, {
     before(done) {
@@ -132,6 +148,20 @@ router.on({
         print(AdminEditCatePage, data.id);
     },
 
+    "/admin/user": () => {
+        print(AdminUserListPage);
+    },
+    "/admin/user/page/:page": ({ data }) => {
+        print(AdminUserListPage, data.page);
+    },
+    "/admin/user/add": () => {
+        print(AdminAddUserPage);
+    },
+    "/admin/user/:id/edit": ({ data }) => {
+        print(AdminEditUserPage, data.id);
+    },
+
+
 
 
     "/admin/news": () => {
@@ -147,6 +177,20 @@ router.on({
     "/admin/slider/page/:page": ({ data }) => {
         print(AdminSliderListPage, data.page);
     },
+
+    "/admin/topping": () => {
+        print(AdminToppingListPage);
+    },
+    "/admin/topping/page/:page": ({ data }) => {
+        print(AdminToppingListPage, data.page);
+    },
+    "/admin/topping/add": () => {
+        print(AdminAddToppingPage);
+    },
+    "/admin/topping/:id/edit": ({ data }) => {
+        print(AdminEditToppingPage, data.id);
+    },
+
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);
     },
