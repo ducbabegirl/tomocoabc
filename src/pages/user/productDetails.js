@@ -15,12 +15,14 @@ import { getAll as getAllSize, get as getSize } from "../../api/size";
 const ProductDetailPage = {
     async getTitle(id) {
         const { data: productDetail } = await get(id);
-        return `${productDetail.name} - Trà sữa TOCOO `;
+        return `${productDetail.name} - Trà sữa TOCOO`;
     },
     async render(id, pageNumber) {
         // update view
         const { data: productDetail } = await get(id);
-      
+        updateView(id, {
+            view: +(productDetail.view + 1),
+        });
 
         // ds topping
       
