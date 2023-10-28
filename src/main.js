@@ -25,7 +25,9 @@ import AdminToppingListPage from "./pages/admin/topping";
 import AdminAddToppingPage from "./pages/admin/topping/add";
 import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
-
+import AdminVoucherListPage from "./pages/admin/voucher";
+import AdminAddVoucherPage from "./pages/admin/voucher/add";
+import AdminEditVoucherPage from "./pages/admin/voucher/edit";
 import AdminAddProductPage from "./pages/admin/product/add";
 import AdminEditProductPage from "./pages/admin/product/edit";
 import AdminCateListPage from "./pages/admin/category";
@@ -190,7 +192,18 @@ router.on({
     "/admin/topping/:id/edit": ({ data }) => {
         print(AdminEditToppingPage, data.id);
     },
-
+    "/admin/voucher": () => {
+        print(AdminVoucherListPage);
+    },
+    "/admin/voucher/page/:page": ({ data }) => {
+        print(AdminVoucherListPage, data.page);
+    },
+    "/admin/voucher/add": () => {
+        print(AdminAddVoucherPage);
+    },
+    "/admin/voucher/:id/edit": ({ data }) => {
+        print(AdminEditVoucherPage, data.id);
+    },
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);
     },
