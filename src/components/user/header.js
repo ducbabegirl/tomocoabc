@@ -17,7 +17,7 @@ const Header = {
                 <div class="container max-w-6xl px-3 mx-auto flex justify-between items-center h-10">
                     <ul class="flex items-center">
                         <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:right-3 after:top-1/2 after:-translate-y-1/2 text-sm uppercase pr-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                            <a href="mailto:tuanlvph14271@fpt.edu.vn">
+                            <a href="mailto:hongdtph14095@fpt.edu.vn">
                                 <i class="far fa-envelope"></i>
                                 <span class="pl-1">Contact</span>
                             </a>
@@ -29,7 +29,7 @@ const Header = {
                         <li class="text-sm uppercase text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
                             <a href="tel:0347247244">
                                 <i class="fas fa-phone-alt"></i>
-                                <span class="pl-1">0347 247 244</span>
+                                <span class="pl-1">0842 027 665</span>
                             </a>
                         </li>
                     </ul>
@@ -155,5 +155,9 @@ const Header = {
     },
 
 
-}
+};
+
+
+
+
 export default Header;

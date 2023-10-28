@@ -33,10 +33,17 @@ import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 
-import AdminSliderListPage from "./pages/admin/slider";
+import AdminNewsListPage from "./pages/admin/news";
 
+import AdminSliderListPage from "./pages/admin/slider";
+import AdminAddSliderPage from "./pages/admin/slider/add";
+import AdminEditSliderPage from "./pages/admin/slider/edit";
+import AdminSizeListPage from "./pages/admin/size";
+import AdminAddSizePage from "./pages/admin/size/add";
+import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
+import ProductDetailPage from "./pages/user/productDetails";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -88,6 +95,12 @@ router.on({
     "/products/page/:page": ({ data }) => {
         print(ProductsPage, data.page);
     },
+    "/product/:id": ({ data }) => {
+        print(ProductDetailPage, data.id);
+    },
+    "/product/:id/page/:page": ({ data }) => {
+        print(ProductDetailPage, data.id, data.page);
+    },
 
     "/login": () => {
         print(LoginPage);
@@ -134,6 +147,7 @@ router.on({
     "/admin/category/:id/edit": ({ data }) => {
         print(AdminEditCatePage, data.id);
     },
+
     "/admin/user": () => {
         print(AdminUserListPage);
     },
@@ -146,12 +160,24 @@ router.on({
     "/admin/user/:id/edit": ({ data }) => {
         print(AdminEditUserPage, data.id);
     },
+
+
+
+
+    "/admin/news": () => {
+        print(AdminNewsListPage);
+    },
+    
+
+
+
     "/admin/slider": () => {
         print(AdminSliderListPage);
     },
     "/admin/slider/page/:page": ({ data }) => {
         print(AdminSliderListPage, data.page);
     },
+
     "/admin/topping": () => {
         print(AdminToppingListPage);
     },
@@ -164,6 +190,23 @@ router.on({
     "/admin/topping/:id/edit": ({ data }) => {
         print(AdminEditToppingPage, data.id);
     },
+
+    "/admin/slider/add": () => {
+        print(AdminAddSliderPage);
+    },
+    "/admin/slider/:id/edit": ({ data }) => {
+        print(AdminEditSliderPage, data.id);
+    },
+    "/admin/size": () => {
+        print(AdminSizeListPage);
+    },
+    "/admin/size/add": () => {
+        print(AdminAddSizePage);
+    },
+    "/admin/size/:id/edit": ({ data }) => {
+        print(AdminEditSizePage, data.id);
+    },
+
 });
 
 router.notFound(() => {

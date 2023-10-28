@@ -2,6 +2,8 @@ import $ from "jquery"
 import Header from "../../components/user/header";
 import Footer from "../../components/user/footer";
 import Banner from "../../components/user/home/banner";
+import Why from "../../components/user/home/why";
+import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
 const HomePage = {
     getTitle() {
@@ -22,7 +24,7 @@ const HomePage = {
             <!-- end category -->
 
             <!-- why -->
-            
+            ${Why.render()}
             <!-- end why -->
 
             <!-- product -->
@@ -34,7 +36,7 @@ const HomePage = {
             <!-- end news -->
 
             <!-- feedback -->
-          
+            ${Feedback.render()}
             <!-- end feedback -->
 
             <!-- show -->
