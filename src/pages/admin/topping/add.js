@@ -66,3 +66,42 @@ const AdminAddToppingPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const toppingName = $("#form__add-topping-name");
+        const toppingPrice = $("#form__add-topping-price");
+
+        $("#form__add-topping").validate({
+            rules: {
+                "form__add-topping-name": "required",
+                "form__add-topping-price": {
+                    required: true,
+                    number: true,
+                },
+            },
+            messages: {
+                "form__add-topping-name": "Vui lòng nhập tên topping",
+                "form__add-topping-price": {
+                    required: "Vui lòng nhập giá topping",
+                    number: "Không đúng định dạng, vui lòng nhập lại",
+                },
+            },
+            submitHandler() {
+                (async () => {
+                    const toppingData = {
+                        name: toppingName.val(),
+                        price: +toppingPrice.val(),
+                    };
+
+                    add(toppingData)
+                        .then(() => toastr.success("Thêm thành công"))
+                        .then(() => reRender(AdminAddToppingPage, "#app"));
+                })();
+            },
+        });
+    },
+};
+
+export default AdminAddToppingPage;

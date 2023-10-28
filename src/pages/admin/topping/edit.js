@@ -68,3 +68,43 @@ const AdminEditToppingPage = {
         </section>
         `;
     },
+    afterRender(id) {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const toppingName = $("#form__edit-topping-name");
+        const toppingPrice = $("#form__edit-topping-price");
+
+        $("#form__edit-topping").validate({
+            rules: {
+                "form__edit-topping-name": "required",
+                "form__edit-topping-price": {
+                    required: true,
+                    number: true,
+                },
+            },
+            messages: {
+                "form__edit-topping-name": "Vui lòng nhập tên topping",
+                "form__edit-topping-price": {
+                    required: "Vui lòng nhập giá topping",
+                    number: "Không đúng định dạng, vui lòng nhập lại",
+                },
+            },
+            submitHandler() {
+                (async () => {
+                    const cateData = {
+                        name: toppingName.val(),
+                        price: +toppingPrice.val(),
+                    };
+
+                    update(id, cateData)
+                        .then(() => toastr.success("Cập nhật thành công"))
+                        .then(() => { window.location.href = "/#/admin/topping"; })
+                        .then(() => reRender(AdminToppingListPage, "#app"));
+                })();
+            },
+        });
+    },
+};
+
+export default AdminEditToppingPage;

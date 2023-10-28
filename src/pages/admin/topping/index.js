@@ -73,3 +73,43 @@ const AdminToppingListPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const btnsDelete = document.querySelectorAll(".topping__list-btn-delete");
+
+        // xóa danh mục
+        btnsDelete.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const { id } = e.target.dataset;
+
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn xóa không?",
+                    text: "Bạn không thể hoàn tác sau khi xóa!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        remove(id)
+                            .then(() => {
+                                Swal.fire(
+                                    "Thành công",
+                                    "Đã xóa danh mục.",
+                                    "success",
+                                );
+                            })
+                            .then(() => {
+                                reRender(AdminToppingListPage, "#app");
+                            });
+                    }
+                });
+            });
+        });
+    },
+};
+
+export default AdminToppingListPage;
