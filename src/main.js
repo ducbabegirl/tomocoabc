@@ -31,6 +31,7 @@ import NotFoundPage from "./pages/user/notFound";
 import AdminNewsListPage from "./pages/admin/news";
 
 import AdminCmtListPage from "./pages/admin/comments";
+import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
 import AdminAddSliderPage from "./pages/admin/slider/add";
 import AdminEditSliderPage from "./pages/admin/slider/edit";
@@ -141,6 +142,9 @@ router.on({
 
     "/admin/comment": () => {
         print(AdminCmtListPage);
+    },
+    "/admin/comment/:id/detail": ({ data }) => {
+        print(AdminDetailCmtPage, data.id);
     },
   
     
