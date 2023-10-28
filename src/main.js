@@ -38,6 +38,7 @@ import AdminAddSizePage from "./pages/admin/size/add";
 import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
+import ProductDetailPage from "./pages/user/productDetails";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -77,6 +78,12 @@ router.on({
     },
     "/products/page/:page": ({ data }) => {
         print(ProductsPage, data.page);
+    },
+    "/product/:id": ({ data }) => {
+        print(ProductDetailPage, data.id);
+    },
+    "/product/:id/page/:page": ({ data }) => {
+        print(ProductDetailPage, data.id, data.page);
     },
 
     "/login": () => {
