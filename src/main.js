@@ -30,7 +30,7 @@ import NotFoundPage from "./pages/user/notFound";
 
 import AdminSliderListPage from "./pages/admin/slider";
 
-
+import AdminCmtListPage from "./pages/admin/comments";
 import { getUser } from "./utils";
 
 
@@ -127,6 +127,11 @@ router.on({
     "/admin/slider/page/:page": ({ data }) => {
         print(AdminSliderListPage, data.page);
     },
+
+    "/admin/comment": () => {
+        print(AdminCmtListPage);
+    },
+  
     
 
 });
