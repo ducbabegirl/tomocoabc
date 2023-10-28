@@ -1,6 +1,7 @@
 import Swal from "sweetalert2";
-import { get } from "../../api/comment";
+import { get, remove } from "../../api/comment";
 // eslint-disable-next-line import/no-cycle
+import AdminDetailCmtPage from "../../pages/admin/comments/detail";
 import { formatDate, reRender } from "../../utils";
 
 const AdminCmtByProductList = {
@@ -55,7 +56,7 @@ const AdminCmtByProductList = {
                         ${formatDate(item.createdAt)}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <button data-id="" class="btn-remove h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Delete</button>
+                        <button data-id="${item.id}" class="btn-remove h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Delete</button>
                     </td>
                 </tr>
                 `).join("")}
@@ -63,7 +64,40 @@ const AdminCmtByProductList = {
         </tbody>
         `;
     },
-    
+    afterRender(productId) {
+        const btnsDelete = document.querySelectorAll(".btn-remove");
+
+        // xóa danh mục
+        btnsDelete.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const { id } = e.target.dataset;
+
+                Swal.fire({
+                    title: "Bạn có chắc chắn muốn xóa không?",
+                    text: "Bạn không thể hoàn tác sau khi xóa!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        remove(id)
+                            .then(() => {
+                                Swal.fire(
+                                    "Thành công",
+                                    "Đã xóa danh mục.",
+                                    "success",
+                                );
+                            })
+                            .then(() => {
+                                reRender(AdminDetailCmtPage, "#app", productId);
+                            });
+                    }
+                });
+            });
+        });
+    },
 };
 
 export default AdminCmtByProductList;
