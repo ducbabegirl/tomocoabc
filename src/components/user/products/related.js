@@ -3,7 +3,7 @@ import toastr from "toastr";
 import { add, checkHeart } from "../../../api/favoritesProduct";
 import { get, getRelated, update } from "../../../api/product";
 import { formatCurrency, getUser, reRender } from "../../../utils";
-import Related from "../../components/user/products/related";
+
 import WishList from "../wishlist";
 import WishListLabel from "../wishlistLabel";
 
