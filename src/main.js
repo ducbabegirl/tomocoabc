@@ -21,7 +21,9 @@ import DashboardPage from "./pages/admin/dashboard";
 import AdminUserListPage from "./pages/admin/user";
 import AdminAddUserPage from "./pages/admin/user/add";
 import AdminEditUserPage from "./pages/admin/user/edit";
-
+import AdminToppingListPage from "./pages/admin/topping";
+import AdminAddToppingPage from "./pages/admin/topping/add";
+import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
 
 import AdminAddProductPage from "./pages/admin/product/add";
@@ -150,8 +152,18 @@ router.on({
     "/admin/slider/page/:page": ({ data }) => {
         print(AdminSliderListPage, data.page);
     },
-    
-
+    "/admin/topping": () => {
+        print(AdminToppingListPage);
+    },
+    "/admin/topping/page/:page": ({ data }) => {
+        print(AdminToppingListPage, data.page);
+    },
+    "/admin/topping/add": () => {
+        print(AdminAddToppingPage);
+    },
+    "/admin/topping/:id/edit": ({ data }) => {
+        print(AdminEditToppingPage, data.id);
+    },
 });
 
 router.notFound(() => {
