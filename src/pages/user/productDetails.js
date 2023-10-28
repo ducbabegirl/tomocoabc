@@ -3,7 +3,7 @@ import toastr from "toastr";
 import { get, updateView,  } from "../../api/product";
 import Footer from "../../components/user/footer";
 import Header from "../../components/user/header";
-
+import { getAll, get as getTopping } from "../../api/topping";
 import { formatCurrency, getUser, reRender } from "../../utils";
 
 import { getAll as getAllSize, get as getSize } from "../../api/size";
@@ -26,7 +26,7 @@ const ProductDetailPage = {
         });
 
         // ds topping
-      
+        const { data: toppingList } = await getAll();
 
         // ds size
         const { data: sizeList } = await getAllSize();
@@ -205,8 +205,10 @@ const ProductDetailPage = {
                                     <label for="" class="min-w-[80px] font-bold text-sm">Topping</label>
                                     <select name="" id="form__add-cart-topping" class="px-3 py-1 outline-none border-2 border-gray-300 transition duration-300 hover:shadow-md rounded-[4px] mr-1 shadow-sm text-gray-500">
                                         <option value="">Chọn topping</option>
+                                        ${toppingList.map((item) => `<option value="${item.id}">${item.name} +${formatCurrency(item.price)}</option>`)}
                                     </select>
                                 </div>
+                                
     
                                 <div class="border-b border-dashed pb-4 mt-6">
                                     <p class="form__add-cart-total-price h-0 overflow-hidden transition-all ease-linear duration-100 mt-6 border-t border-dashed pt-2 text-xl font-semibold">
