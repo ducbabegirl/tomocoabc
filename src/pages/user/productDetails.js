@@ -7,6 +7,7 @@ import Header from "../../components/user/header";
 import { formatCurrency, getUser, reRender } from "../../utils";
 
 import { getAll as getAllSize, get as getSize } from "../../api/size";
+import Related from "../../components/user/products/related";
 
 
 // eslint-disable-next-line import/no-cycle
@@ -268,7 +269,7 @@ const ProductDetailPage = {
             <section class="container max-w-6xl px-3 mx-auto my-6">
                 <div class="border-t">
                     <h2 class="text-2xl font-semibold mt-2">Sản phẩm tương tự</h2>
-                  
+                    ${await Related.render(id, productDetail.categoryId)}
                 </div>
             </section>
         </main>
