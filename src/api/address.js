@@ -8,3 +8,17 @@ export const getByUserId = (userId, page, limit = 0) => {
     return instance.get(url);
 };
 
+export const add = (data) => {
+    const url = `/${TABLE_NAME}`;
+    return instance.post(url, data);
+};
+
+export const get = (id) => {
+    const url = `/${TABLE_NAME}/${id}`;
+    return instance.get(url);
+};
+
+export const getAll = () => {
+    const url = `/${TABLE_NAME}`;
+    return instance.get(url);
+};
