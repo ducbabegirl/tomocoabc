@@ -7,7 +7,9 @@ import CartNav from "../../../components/user/cartNav";
 import Footer from "../../../components/user/footer";
 import Header from "../../../components/user/header";
 import { formatCurrency, getUser } from "../../../utils";
-
+import {
+    finishOrder, getIdsVoucher, getTotalPrice, totalPriceDerease,
+} from "../../../utils/cart";
 import { add } from "../../../api/order";
 import { update as updateVoucher, get } from "../../../api/voucher";
 import { add as addOrderDetail } from "../../../api/orderDetail";
@@ -17,7 +19,7 @@ import {
 
 const CheckoutPage = {
     getTitle() {
-        return "Thanh toán - Trà Sữa TOCOMOCO";
+        return "Thanh toán - Trà Sữa Yotea";
     },
     async render() {
         const userLogged = getUser();
@@ -303,7 +305,7 @@ const CheckoutPage = {
 
             return isValid;
         };
-        
+
         formCheckout.addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -397,7 +399,7 @@ const CheckoutPage = {
                 });
             }
         });
-        
+
         // bắt sự kiện chọn tỉnh/tp
         provinceElement.addEventListener("change", async (e) => {
             const provinceCode = e.target.value;
@@ -412,8 +414,9 @@ const CheckoutPage = {
                 districtElement.innerHTML = htmlDistrict;
             }
         });
-         // bắt sự kiện chọn quận/huyện
-         districtElement.addEventListener("change", async (e) => {
+
+        // bắt sự kiện chọn quận/huyện
+        districtElement.addEventListener("change", async (e) => {
             const districtCode = e.target.value;
 
             if (districtCode) {
@@ -491,16 +494,6 @@ const CheckoutPage = {
                 modal.classList.add("active");
             });
         }
-
-
-
-     
-        
-        
-
-      
-
-        
 
         // đóng modal
         $("#modal__overlay").on("click", () => modal.classList.remove("active"));
