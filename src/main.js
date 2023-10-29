@@ -8,7 +8,7 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
-
+import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
 
 import UpdateInfoPage from "./pages/user/my-account";
@@ -112,6 +112,9 @@ router.on({
     },
     "/forgot": () => {
         print(FortgotPage);
+    },
+    "/cart": () => {
+        print(CartPage);
     },
     
     "/my-account": () => {

@@ -181,7 +181,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 1,
+      "view": 6,
       "favorites": 1,
       "createdAt": "2022-02-18T08:31:13.125Z",
       "updatedAt": "2022-02-18T08:31:13.125Z",
@@ -270,7 +270,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 141,
+      "view": 150,
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -297,7 +297,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 46,
+      "view": 74,
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -324,7 +324,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 34,
+      "view": 36,
       "favorites": 0,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
@@ -1125,27 +1125,6 @@
       "id": 11
     },
     {
-      "email": "demo@gmail.com",
-      "password": "$2a$10$KSzXCdWoj/7W35YRLv.VU.a3I7WKWWEe7pc0FBndxZtpLl/fTlxI.",
-      "username": "ababa",
-      "fullName": "abababa",
-      "phone": "0987654321",
-      "email": "lingbong@gmail.com",
-      "password": "$2a$10$x0qgdibfVy7gfKNAJ11UeeQbrqqUpEXwC0W1zY88uaWLkOjpWcRNO",
-      "username": "vanhad",
-      "fullName": "vanhvanh",
-      "phone": "0991267839",
-      "wardsCode": 0,
-      "districtCode": 0,
-      "provinceCode": 0,
-      "address": "",
-      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
-      "role": 0,
-      "active": 1,
-      "createdAt": "2023-10-26T15:15:15.718Z",
-      "id": 12
-    },
-    {
       "email": "duy@gmail.com",
       "password": "$2a$10$JRYoyx23OCu86w5qIMM6TuHdgQC.OqTySpdezOi13sUT33zY5HocG",
       "username": "leduy",
@@ -1208,8 +1187,6 @@
       "active": 1,
       "createdAt": "2023-10-28T09:11:27.007Z",
       "id": 16
-      "createdAt": "2023-10-28T09:47:39.200Z",
-      "id": 12
     }
   ],
   "stores": [
