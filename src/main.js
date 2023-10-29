@@ -25,7 +25,9 @@ import AdminToppingListPage from "./pages/admin/topping";
 import AdminAddToppingPage from "./pages/admin/topping/add";
 import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
-
+import AdminVoucherListPage from "./pages/admin/voucher";
+import AdminAddVoucherPage from "./pages/admin/voucher/add";
+import AdminEditVoucherPage from "./pages/admin/voucher/edit";
 import AdminAddProductPage from "./pages/admin/product/add";
 import AdminEditProductPage from "./pages/admin/product/edit";
 import AdminCateListPage from "./pages/admin/category";
@@ -46,6 +48,7 @@ import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
 import ProductDetailPage from "./pages/user/productDetails";
+import CheckoutPage from "./pages/user/cart/checkout";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -115,6 +118,9 @@ router.on({
     },
     "/cart": () => {
         print(CartPage);
+    },
+    "/cart-checkout": () => {
+        print(CheckoutPage);
     },
     
     "/my-account": () => {
@@ -196,6 +202,20 @@ router.on({
         print(AdminEditToppingPage, data.id);
     },
 
+    "/admin/voucher": () => {
+        print(AdminVoucherListPage);
+    },
+    "/admin/voucher/page/:page": ({ data }) => {
+        print(AdminVoucherListPage, data.page);
+    },
+    "/admin/voucher/add": () => {
+        print(AdminAddVoucherPage);
+    },
+    "/admin/voucher/:id/edit": ({ data }) => {
+        print(AdminEditVoucherPage, data.id);
+    },
+
+
     "/admin/comment": () => {
         print(AdminCmtListPage);
     },
@@ -204,6 +224,7 @@ router.on({
     },
   
     
+
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);
     },
