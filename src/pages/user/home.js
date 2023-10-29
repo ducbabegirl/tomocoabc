@@ -4,6 +4,7 @@ import Footer from "../../components/user/footer";
 import Banner from "../../components/user/home/banner";
 import Category from "../../components/user/home/category";
 import Why from "../../components/user/home/why";
+import Show from "../../components/user/home/show";
 import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
 const HomePage = {
@@ -41,7 +42,7 @@ const HomePage = {
             <!-- end feedback -->
 
             <!-- show -->
-          
+            ${Show.render()}
             <!-- end show -->
         </main>
         <!-- end content -->
