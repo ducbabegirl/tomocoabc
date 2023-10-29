@@ -303,7 +303,7 @@ const CheckoutPage = {
 
             return isValid;
         };
-
+        
         formCheckout.addEventListener("submit", async (e) => {
             e.preventDefault();
 
@@ -371,43 +371,41 @@ const CheckoutPage = {
                     });
                 });
 
-               
+                // lưu thông tin thanh toán
+                const isSaveAdd = document.querySelector("#cart__checkout-save-address:checked");
+                if (isSaveAdd) {
+                    const currentAddress = {
+                        userId: userLogged.id,
+                        fullName: fullName.value,
+                        phone: phone.value,
+                        email: email.value,
+                        provinceCode: +provinceElement.value,
+                        districtCode: +districtElement.value,
+                        wardCode: +wardElement.value,
+                        address: address.value,
+                    };
 
-               
+                    // check duplicate
+                    const isExits = await checkAddExits(currentAddress);
+                    if (!isExits) await addAddress(currentAddress);
+                }
+
+                // xóa cart khỏi local storage
+                finishOrder(() => {
+                    toastr.success("Đặt hàng thành công");
+                    window.location.href = "/#/cart-thanks";
+                });
             }
         });
 
+
+     
         
         
 
       
 
-        const btnAddress = document.querySelector("#btn-choose-address");
-        const modal = document.querySelector("#modal");
-        const listAddress = document.querySelector("#list-address");
-        if (btnAddress) {
-            btnAddress.addEventListener("click", async () => {
-                const { data: listAdd } = await getByUserId(userLogged.id);
-                if (listAdd.length) {
-                    let html = "";
-
-                    // eslint-disable-next-line no-restricted-syntax
-                    for await (const addressItem of listAdd) {
-                        html += `
-                        <tr class="hover:bg-gray-100 cursor-pointer address-item" data-id="${addressItem.id}">
-                            <td class="p-2">${addressItem.fullName}</td>
-                            <td class="p-2">${addressItem.phone}</td>
-                            <td class="p-2">${addressItem.address}, ${await renderAddress(addressItem.wardCode, addressItem.districtCode, addressItem.provinceCode)}</td>
-                        </tr>
-                        `;
-                    }
-                    listAddress.innerHTML = html;
-
-                  
-                }
-                modal.classList.add("active");
-            });
-        }
+        
 
         // đóng modal
         $("#modal__overlay").on("click", () => modal.classList.remove("active"));
