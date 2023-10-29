@@ -270,7 +270,15 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+<<<<<<< HEAD
       "view": 152,
+=======
+
+      "view": 144,
+
+      "view": 150,
+
+>>>>>>> 4ca252254f7c06b2067ad8fa1a7792fcc1107cc3
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -297,7 +305,11 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
+      "view": 48,
+
       "view": 74,
+
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -790,9 +802,9 @@
       "id": 4
     },
     {
-      "name": "Trân châu trắng",
-      "price": 200000,
-      "id": 5
+      "name": "Hạt Sen Vàng",
+      "price": 20000,
+      "id": 6
     }
   ],
   "contact": [
@@ -845,110 +857,80 @@
   "voucher": [
     {
       "id": 1,
-      "code": "COVID",
+      "code": "HNMAIDINH",
       "quantity": 998,
       "condition": 0,
       "conditionNumber": 10,
       "status": 1,
-      "timeStart": "2022-02-19T15:42:22",
-      "timeEnd": "2022-02-28T15:42:22",
+      "timeStart": "2023-10-28T15:42:22",
+      "timeEnd": "2023-12-10T15:42:22",
       "createdAt": "2022-02-08T12:06:48.706Z",
-      "updatedAt": "2022-02-20T08:09:08.334Z",
+      "updatedAt": "2023-10-29T06:18:25.248Z",
       "user_ids": [
         1,
         2
       ]
     },
     {
-      "code": "COVID10",
+      "code": "HNSAYHI",
       "quantity": 10,
       "condition": 1,
       "conditionNumber": 10000,
       "status": 0,
-      "timeStart": "2022-02-10T17:22",
-      "timeEnd": "2022-02-10T17:22",
+      "timeStart": "2023-10-28T17:22",
+      "timeEnd": "2023-11-05T17:22",
       "createdAt": "2022-02-10T10:22:46.553Z",
-      "updatedAt": "2022-02-10T10:46:22.588Z",
+      "updatedAt": "2023-10-29T06:17:48.810Z",
       "user_ids": [],
       "id": 2
     },
     {
-      "code": "COVID101",
+      "code": "HNT10",
       "quantity": 0,
       "condition": 0,
       "conditionNumber": 10,
       "status": 1,
-      "timeStart": "2022-02-17T13:37",
-      "timeEnd": "2022-02-19T13:37",
+      "timeStart": "2023-10-29T13:37",
+      "timeEnd": "2023-10-30T13:37",
       "user_ids": [
         1
       ],
       "createdAt": "2022-02-17T06:37:58.837Z",
-      "updatedAt": "2022-02-17T06:37:58.837Z",
+      "updatedAt": "2023-10-29T06:16:55.052Z",
       "id": 3
     },
     {
-      "code": "COVID102",
-      "quantity": 0,
+      "code": "HN2023",
+      "quantity": 1,
       "condition": 1,
       "conditionNumber": 1000,
       "status": 1,
-      "timeStart": "2022-02-20T10:52",
-      "timeEnd": "2022-02-21T10:53",
+      "timeStart": "2023-10-28T10:52",
+      "timeEnd": "2023-10-30T10:53",
       "user_ids": [
         1
       ],
       "createdAt": "2022-02-20T03:53:36.661Z",
-      "updatedAt": "2022-02-20T03:57:07.455Z",
+      "updatedAt": "2023-10-29T06:15:44.896Z",
       "id": 4
     },
     {
-      "code": "BGMAIDINH",
-      "quantity": 97,
-      "condition": 1,
-      "conditionNumber": 10000,
+      "code": "TEST",
+      "quantity": 10,
+      "condition": 0,
+      "conditionNumber": 50,
       "status": 1,
-      "timeStart": "2022-02-20T14:45",
-      "timeEnd": "2022-02-28T14:45",
-      "user_ids": [
-        1,
-        2
-      ],
-      "createdAt": "2022-02-20T07:45:22.511Z",
-      "updatedAt": "2022-02-20T07:45:22.511Z",
-      "id": 5
-    },
-    {
-      "code": "BGMAIDINH1",
-      "quantity": 100,
-      "condition": 1,
-      "conditionNumber": 9999,
-      "status": 1,
-      "timeStart": "2022-02-21T18:32",
-      "timeEnd": "2022-02-28T18:32",
+      "timeStart": "2023-10-28T15:00",
+      "timeEnd": "2023-11-10T15:00",
       "user_ids": [],
-      "createdAt": "2022-02-21T11:32:16.036Z",
-      "updatedAt": "2022-02-21T11:32:16.036Z",
-      "id": 6
-    },
-    {
-      "code": "CONCAC",
-      "quantity": 99,
-      "condition": 1,
-      "conditionNumber": 100000,
-      "status": 1,
-      "timeStart": "2023-09-22T21:53",
-      "timeEnd": "2023-09-24T13:59",
-      "user_ids": [
-        11
-      ],
-      "createdAt": "2023-09-22T14:54:18.833Z",
-      "updatedAt": "2023-09-22T15:40:40.816Z",
-      "id": 7
+      "createdAt": "2023-10-29T06:19:50.500Z",
+      "updatedAt": "2023-10-29T06:19:50.500Z",
+      "id": 5
     }
   ],
   "users": [
     {
+
       "email": "admin@gmail.com",
       "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
       "username": "admin",
@@ -1125,36 +1107,21 @@
       "id": 11
     },
     {
+
       "email": "duy@gmail.com",
       "password": "$2a$10$JRYoyx23OCu86w5qIMM6TuHdgQC.OqTySpdezOi13sUT33zY5HocG",
       "username": "leduy",
       "fullName": "Le Duy",
       "phone": "0395852788",
-      "wardsCode": 0,
-      "districtCode": 0,
-      "provinceCode": 0,
-      "address": "",
+      "wardsCode": 100,
+      "districtCode": 3,
+      "provinceCode": 1,
+      "address": "172 Lạc Long Quân",
       "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
       "role": 0,
-      "active": 1,
+      "active": 0,
       "createdAt": "2023-10-26T15:17:16.074Z",
       "id": 13
-    },
-    {
-      "email": "duyng1032003@gmail.com",
-      "password": "$2a$10$1nv3CJaeRPwZYlpso7MSKOsfBC7XEJipTN0iQXpV32lDp4MgV9Scy",
-      "username": "DuyLê",
-      "fullName": "Lê Duy",
-      "phone": "0395852788",
-      "wardsCode": 28,
-      "districtCode": 1,
-      "provinceCode": 1,
-      "address": "115 giang vo",
-      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698479870/ytxy4u5xhye26sobca8u.png",
-      "role": 0,
-      "active": 1,
-      "createdAt": "2023-10-26T16:24:43.352Z",
-      "id": 14
     },
     {
       "email": "liud@gmail.com",
@@ -1183,10 +1150,42 @@
       "provinceCode": 25,
       "address": "xóm3",
       "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698485326/gn2zg6lhxghywbai5zht.jpg",
-      "role": 0,
+      "role": 1,
       "active": 1,
       "createdAt": "2023-10-28T09:11:27.007Z",
       "id": 16
+    },
+    {
+      "email": "z@gmail.com",
+      "password": "$2a$10$kYlhOlPJ7AqhbQlKWJHVf.QolFuqU9NQXucXa.JMHBYAgjfYanlxG",
+      "username": "Zuy Le",
+      "fullName": "Zyunl",
+      "phone": "0395851477",
+      "wardsCode": 31,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "612 La Thành",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T06:44:19.726Z",
+      "id": 17
+    },
+    {
+      "email": "add@gmail.com",
+      "password": "$2a$10$YEhDCT1qJopJgxvTn7duaeVNYgyhzuKkg5vVIrO5ZaPUgadKxYJ9u",
+      "username": "addUser",
+      "fullName": "Adduser",
+      "phone": "0395864561",
+      "wardsCode": 178,
+      "districtCode": 6,
+      "provinceCode": 1,
+      "address": "21 Cát Linh",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698561882/jevob3hjhbxfzi0cn9es.png",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T06:46:35.314Z",
+      "id": 18
     }
   ],
   "stores": [
@@ -1231,6 +1230,14 @@
       "id": 4
     }
   ],
+
+  "favorites_product": [],
+  "orders": [],
+  "orderDetails": [],
+  "comments": [],
+  "ratings": [],
+  "address": []
+
   "favorites_product": [
     {
       "userId": 6,
@@ -1713,4 +1720,5 @@
       "id": 5
     }
   ]
+
 }
