@@ -1130,6 +1130,11 @@
       "username": "ababa",
       "fullName": "abababa",
       "phone": "0987654321",
+      "email": "lingbong@gmail.com",
+      "password": "$2a$10$x0qgdibfVy7gfKNAJ11UeeQbrqqUpEXwC0W1zY88uaWLkOjpWcRNO",
+      "username": "vanhad",
+      "fullName": "vanhvanh",
+      "phone": "0991267839",
       "wardsCode": 0,
       "districtCode": 0,
       "provinceCode": 0,
@@ -1203,6 +1208,8 @@
       "active": 1,
       "createdAt": "2023-10-28T09:11:27.007Z",
       "id": 16
+      "createdAt": "2023-10-28T09:47:39.200Z",
+      "id": 12
     }
   ],
   "stores": [
@@ -1539,14 +1546,14 @@
   "comments": [
     {
       "userId": 1,
-      "content": "2",
+      "content": "ngon vl",
       "productId": 6,
       "createdAt": "2022-02-18T05:28:14.975Z",
       "id": 3
     },
     {
       "userId": 1,
-      "content": "s",
+      "content": "như c",
       "productId": 31,
       "createdAt": "2022-02-18T12:34:34.782Z",
       "id": 7
@@ -1557,20 +1564,6 @@
       "productId": 31,
       "createdAt": "2022-02-18T12:48:04.395Z",
       "id": 8
-    },
-    {
-      "userId": 1,
-      "content": "3",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:19:46.070Z",
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "content": "4",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:19:52.969Z",
-      "id": 10
     },
     {
       "userId": 1,
@@ -1592,13 +1585,6 @@
       "productId": 30,
       "createdAt": "2022-02-18T13:20:02.783Z",
       "id": 13
-    },
-    {
-      "userId": 1,
-      "content": "5",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:20:06.002Z",
-      "id": 14
     },
     {
       "userId": 1,

@@ -7,6 +7,11 @@ export const getAll = (page, limit) => {
     if (limit) url += `&_page=${page}&_limit=${limit}`;
     return instance.get(url);
 };
+export const getAllJoinProduct = (start, limit = 0) => {
+    let url = `/${TABLE_NAME}/?_embed=products`;
+    if (limit) url += `&_start=${start}&_limit=${limit}`;
+    return instance.get(url);
+};
 export const get = (id) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.get(url);
