@@ -304,7 +304,11 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
       "view": 76,
+
+      "view": 75,
+
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -921,6 +925,19 @@
       "createdAt": "2023-10-29T06:19:50.500Z",
       "updatedAt": "2023-10-29T06:19:50.500Z",
       "id": 5
+    },
+    {
+      "code": "VANH",
+      "quantity": 100,
+      "condition": 1,
+      "conditionNumber": 20000,
+      "status": 1,
+      "timeStart": "2023-10-28T21:48",
+      "timeEnd": "2023-11-05T21:48",
+      "user_ids": [],
+      "createdAt": "2023-10-29T14:49:02.738Z",
+      "updatedAt": "2023-10-29T14:49:02.738Z",
+      "id": 6
     }
   ],
   "users": [
@@ -1181,6 +1198,7 @@
       "id": 18
     },
     {
+
       "email": "adminabc@gmail.com",
       "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
       "username": "Admin",
@@ -1194,6 +1212,21 @@
       "role": 1,
       "active": 1,
       "createdAt": "2023-10-29T14:22:03.219Z",
+
+      "email": "lingbong12@gmail.com",
+      "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
+      "username": "vanhuser",
+      "fullName": "việt anh",
+      "phone": "0985673815",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T14:46:41.257Z",
+
       "id": 19
     }
   ],
