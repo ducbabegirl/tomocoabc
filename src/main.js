@@ -48,6 +48,7 @@ import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
 import ProductDetailPage from "./pages/user/productDetails";
+import CheckoutPage from "./pages/user/cart/checkout";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -117,6 +118,9 @@ router.on({
     },
     "/cart": () => {
         print(CartPage);
+    },
+    "/cart-checkout": () => {
+        print(CheckoutPage);
     },
     
     "/my-account": () => {

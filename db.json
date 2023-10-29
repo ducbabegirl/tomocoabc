@@ -306,6 +306,11 @@
       "status": 1,
 
       "view": 76,
+<<<<<<< HEAD
+=======
+
+      "view": 75,
+>>>>>>> a9c6ce2c0292416dec92f8899ba2f1f7033ab334
 
    
       "favorites": 2,
@@ -1195,6 +1200,38 @@
       "active": 1,
       "createdAt": "2023-10-29T06:46:35.314Z",
       "id": 18
+    },
+    {
+
+      "email": "adminabc@gmail.com",
+      "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
+      "username": "Admin",
+      "fullName": "adminabc",
+      "phone": "0987543132",
+      "wardsCode": 4,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "Xom1000",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698589375/zyt3bzpouwpp2m29yjpx.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T14:22:03.219Z",
+
+      "email": "lingbong12@gmail.com",
+      "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
+      "username": "vanhuser",
+      "fullName": "việt anh",
+      "phone": "0985673815",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T14:46:41.257Z",
+
+      "id": 19
     }
    
   ],

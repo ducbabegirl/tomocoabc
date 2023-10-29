@@ -59,6 +59,13 @@ const WishList = {
                 remove(id)
                     .then(() => reRender(WishListLabel, ".header-icon-heart"))
                     .then(() => document.querySelector(`.wishlist-item-${id}`).remove());
+
+
+
+             overlay.addEventListener("click", () => wishlistElement.classList.remove("active"));
+             closeBtn.addEventListener("click", () => wishlistElement.classList.remove("active"));
+        
+
             });
         });
     },

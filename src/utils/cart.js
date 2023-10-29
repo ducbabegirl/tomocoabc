@@ -56,3 +56,65 @@ export const getTotalPrice = () => {
 
     return totalPrice;
 };
+
+// add voucher
+export const addVoucher = (voucherItem, next) => {
+    const voucher = JSON.parse(localStorage.getItem("voucher")) || [];
+
+    const isExits = voucher.some((item) => item.id === voucherItem.id);
+
+    if (!isExits) {
+        voucher.push(voucherItem);
+        localStorage.setItem("voucher", JSON.stringify(voucher));
+    }
+
+    next();
+};
+
+// xóa voucher
+export const removeVoucher = (id, next) => {
+    let voucher = JSON.parse(localStorage.getItem("voucher")) || [];
+
+    voucher = voucher.filter((item) => item.id !== id);
+    localStorage.setItem("voucher", JSON.stringify(voucher));
+
+    next();
+};
+
+// tính tổng tiền giảm bởi voucher
+export const totalPriceDerease = () => {
+    const voucher = JSON.parse(localStorage.getItem("voucher")) || [];
+
+    const totalCartPrice = getTotalPrice();
+
+    let totalDecrease = 0;
+    voucher.forEach((item) => {
+        if (item.condition) {
+            totalDecrease += item.conditionNumber;
+        } else {
+            totalDecrease += totalCartPrice * (item.conditionNumber / 100);
+        }
+    });
+
+    return totalDecrease;
+};
+
+// lấy ds id voucher
+export const getIdsVoucher = () => {
+    const voucher = JSON.parse(localStorage.getItem("voucher")) || [];
+
+    let voucherIds = [];
+
+    if (voucher.length) {
+        voucherIds = voucher.map((item) => item.id);
+    }
+
+    return voucherIds;
+};
+
+export const finishOrder = (next) => {
+    localStorage.removeItem("cart");
+    localStorage.removeItem("voucher");
+
+    next();
+};
