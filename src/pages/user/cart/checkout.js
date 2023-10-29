@@ -397,6 +397,21 @@ const CheckoutPage = {
                 });
             }
         });
+        
+        // bắt sự kiện chọn tỉnh/tp
+        provinceElement.addEventListener("change", async (e) => {
+            const provinceCode = e.target.value;
+
+            if (provinceCode) {
+                const districtList = await getDistrict(provinceCode);
+                let htmlDistrict = `<option value="">-- Chọn Tỉnh/TP --</option>`;
+                districtList.forEach((item) => {
+                    htmlDistrict += `<option value="${item.code}">${item.name}</option>`;
+                });
+
+                districtElement.innerHTML = htmlDistrict;
+            }
+        });
 
 
      
