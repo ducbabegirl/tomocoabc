@@ -270,7 +270,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 144,
+      "view": 150,
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -793,6 +793,11 @@
       "name": "Hạt Sen Vàng",
       "price": 20000,
       "id": 6
+    },
+    {
+      "name": "Trân trâu trắng",
+      "price": 10000,
+      "id": 7
     }
   ],
   "contact": [
@@ -874,7 +879,7 @@
     },
     {
       "code": "HNT10",
-      "quantity": 0,
+      "quantity": 4,
       "condition": 0,
       "conditionNumber": 10,
       "status": 1,
@@ -884,7 +889,7 @@
         1
       ],
       "createdAt": "2022-02-17T06:37:58.837Z",
-      "updatedAt": "2023-10-29T06:16:55.052Z",
+      "updatedAt": "2023-10-29T13:29:19.280Z",
       "id": 3
     },
     {
@@ -985,7 +990,7 @@
       "email": "add@gmail.com",
       "password": "$2a$10$YEhDCT1qJopJgxvTn7duaeVNYgyhzuKkg5vVIrO5ZaPUgadKxYJ9u",
       "username": "addUser",
-      "fullName": "Adduser",
+      "fullName": "Duy Lê",
       "phone": "0395864561",
       "wardsCode": 178,
       "districtCode": 6,
@@ -996,6 +1001,38 @@
       "active": 1,
       "createdAt": "2023-10-29T06:46:35.314Z",
       "id": 18
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$d47hCc/ZcLdApiXWRKT8GuegaXKWrT44VfKoIS37px/VIzraEgPwC",
+      "username": "user",
+      "fullName": "Khách hàng",
+      "phone": "0395852633",
+      "wardsCode": 25,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "172 Ngọc Khánh",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T07:10:12.216Z",
+      "id": 19
+    },
+    {
+      "email": "d@gmail.com",
+      "password": "$2a$10$Zf5cytdujLtuUf7SiOgNkuM55VQE2lNO2QrTDXnwZTlh3JkXIJqNq",
+      "username": "duyn",
+      "fullName": "Zuy Lee",
+      "phone": "0395851477",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T13:22:48.659Z",
+      "id": 20
     }
   ],
   "stores": [
