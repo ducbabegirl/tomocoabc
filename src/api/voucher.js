@@ -1,8 +1,8 @@
 import instance from "./config";
 
-const TABLE_NAME = "orders";
+const TABLE_NAME = "voucher";
 
-export const getAll = (page, limit = 0) => {
+export const getAll = (page, limit) => {
     let url = `/${TABLE_NAME}/?_sort=id&_order=desc`;
     if (limit) url += `&_page=${page}&_limit=${limit}`;
     return instance.get(url);
@@ -25,4 +25,15 @@ export const remove = (id) => {
 export const update = (id, data) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.patch(url, data);
+};
+
+// get voucher theo mã
+export const getByCode = (voucher) => {
+    const url = `/${TABLE_NAME}/?code=${voucher}`;
+    return instance.get(url);
+};
+
+export const search = (keyword) => {
+    const url = `/${TABLE_NAME}/?code_like=${keyword}`;
+    return instance.get(url);
 };
