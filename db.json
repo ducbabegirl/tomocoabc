@@ -270,15 +270,11 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-<<<<<<< HEAD
-      "view": 152,
-=======
 
       "view": 144,
 
       "view": 150,
 
->>>>>>> 4ca252254f7c06b2067ad8fa1a7792fcc1107cc3
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -1231,12 +1227,8 @@
     }
   ],
 
-  "favorites_product": [],
-  "orders": [],
-  "orderDetails": [],
-  "comments": [],
-  "ratings": [],
-  "address": []
+
+
 
   "favorites_product": [
     {
