@@ -24,6 +24,22 @@ export const removeItemInCart = (cartId, next) => {
     next();
 };
 
+// cập nhật số lượng
+export const updateQuantity = (listQuantity, next) => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    listQuantity.forEach((cartItem) => {
+        if (!cartItem.quantity) {
+            cart = cart.filter((item) => item.id !== cartItem.id);
+        } else {
+            const currentProduct = cart.find((item) => item.id === cartItem.id);
+            currentProduct.quantity = cartItem.quantity;
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+
+    next();
+};
 
 // tính tổng tiền
 export const getTotalPrice = () => {

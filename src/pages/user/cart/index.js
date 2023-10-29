@@ -3,7 +3,7 @@ import toastr from "toastr";
 import Footer from "../../../components/user/footer";
 import Header from "../../../components/user/header";
 import { formatCurrency, reRender } from "../../../utils";
-import { getTotalPrice, removeItemInCart,} from "../../../utils/cart";
+import { getTotalPrice, removeItemInCart,updateQuantity} from "../../../utils/cart";
 
 const CartPage = {
     getTitle() {
@@ -222,6 +222,21 @@ const CartPage = {
             });
 
             //update sp
+            const cartForm = document.querySelector("#cart__detail-form");
+            const trElements = cartForm.querySelectorAll(".cart__detail-item");
+            cartForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const cartQuantity = Array.from(trElements).map((item) => ({
+                    id: item.dataset.id,
+                    quantity: +item.querySelector(".cart__detail-qnt").value,
+                }));
+
+                updateQuantity(cartQuantity, () => {
+                    toastr.success("Cập nhật giỏ hàng thành công");
+                    reRender(CartPage, "#app");
+                });
+            });
 
             cartForm.addEventListener("input", () => btnUpdateCart.removeAttribute("disabled"));
 
