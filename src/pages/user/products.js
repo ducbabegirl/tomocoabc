@@ -6,7 +6,11 @@ import Sidebar from "../../components/user/products/sidebar";
 
 const ProductsPage = {
     getTitle() {
-        return "Thực đơn - Trà Sữa Yotea";
+
+        return "Thực đơn - Trà Sữa Tomocoabc";
+
+        return "Thực đơn - Trà Sữa Tocomoo";
+
     },
     async render(pageNumber) {
         let currentPage = pageNumber;

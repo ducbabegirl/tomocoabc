@@ -8,7 +8,7 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
-
+import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
 
 import UpdateInfoPage from "./pages/user/my-account";
@@ -18,9 +18,16 @@ import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
 
 import DashboardPage from "./pages/admin/dashboard";
-
+import AdminUserListPage from "./pages/admin/user";
+import AdminAddUserPage from "./pages/admin/user/add";
+import AdminEditUserPage from "./pages/admin/user/edit";
+import AdminToppingListPage from "./pages/admin/topping";
+import AdminAddToppingPage from "./pages/admin/topping/add";
+import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
-
+import AdminVoucherListPage from "./pages/admin/voucher";
+import AdminAddVoucherPage from "./pages/admin/voucher/add";
+import AdminEditVoucherPage from "./pages/admin/voucher/edit";
 import AdminAddProductPage from "./pages/admin/product/add";
 import AdminEditProductPage from "./pages/admin/product/edit";
 import AdminCateListPage from "./pages/admin/category";
@@ -30,6 +37,8 @@ import NotFoundPage from "./pages/user/notFound";
 
 import AdminNewsListPage from "./pages/admin/news";
 
+import AdminCmtListPage from "./pages/admin/comments";
+import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
 import AdminAddSliderPage from "./pages/admin/slider/add";
 import AdminEditSliderPage from "./pages/admin/slider/edit";
@@ -38,6 +47,8 @@ import AdminAddSizePage from "./pages/admin/size/add";
 import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
+import ProductDetailPage from "./pages/user/productDetails";
+import CheckoutPage from "./pages/user/cart/checkout";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -52,6 +63,17 @@ const print = async (content, id, pageNumber) => {
 };
 
 
+router.on("/admin/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
+
+        if (userInfo && userInfo.role) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
 
 router.on("/my-account/*", () => {}, {
     before(done) {
@@ -78,6 +100,12 @@ router.on({
     "/products/page/:page": ({ data }) => {
         print(ProductsPage, data.page);
     },
+    "/product/:id": ({ data }) => {
+        print(ProductDetailPage, data.id);
+    },
+    "/product/:id/page/:page": ({ data }) => {
+        print(ProductDetailPage, data.id, data.page);
+    },
 
     "/login": () => {
         print(LoginPage);
@@ -87,6 +115,12 @@ router.on({
     },
     "/forgot": () => {
         print(FortgotPage);
+    },
+    "/cart": () => {
+        print(CartPage);
+    },
+    "/cart-checkout": () => {
+        print(CheckoutPage);
     },
     
     "/my-account": () => {
@@ -125,6 +159,20 @@ router.on({
         print(AdminEditCatePage, data.id);
     },
 
+    "/admin/user": () => {
+        print(AdminUserListPage);
+    },
+    "/admin/user/page/:page": ({ data }) => {
+        print(AdminUserListPage, data.page);
+    },
+    "/admin/user/add": () => {
+        print(AdminAddUserPage);
+    },
+    "/admin/user/:id/edit": ({ data }) => {
+        print(AdminEditUserPage, data.id);
+    },
+
+
 
 
     "/admin/news": () => {
@@ -140,6 +188,43 @@ router.on({
     "/admin/slider/page/:page": ({ data }) => {
         print(AdminSliderListPage, data.page);
     },
+
+    "/admin/topping": () => {
+        print(AdminToppingListPage);
+    },
+    "/admin/topping/page/:page": ({ data }) => {
+        print(AdminToppingListPage, data.page);
+    },
+    "/admin/topping/add": () => {
+        print(AdminAddToppingPage);
+    },
+    "/admin/topping/:id/edit": ({ data }) => {
+        print(AdminEditToppingPage, data.id);
+    },
+
+    "/admin/voucher": () => {
+        print(AdminVoucherListPage);
+    },
+    "/admin/voucher/page/:page": ({ data }) => {
+        print(AdminVoucherListPage, data.page);
+    },
+    "/admin/voucher/add": () => {
+        print(AdminAddVoucherPage);
+    },
+    "/admin/voucher/:id/edit": ({ data }) => {
+        print(AdminEditVoucherPage, data.id);
+    },
+
+
+    "/admin/comment": () => {
+        print(AdminCmtListPage);
+    },
+    "/admin/comment/:id/detail": ({ data }) => {
+        print(AdminDetailCmtPage, data.id);
+    },
+  
+    
+
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);
     },

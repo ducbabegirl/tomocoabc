@@ -2,12 +2,13 @@ import $ from "jquery"
 import Header from "../../components/user/header";
 import Footer from "../../components/user/footer";
 import Banner from "../../components/user/home/banner";
+import Category from "../../components/user/home/category";
 import Why from "../../components/user/home/why";
 import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
 const HomePage = {
     getTitle() {
-        return "Trang chủ - Trà Sữa Cocomoco";
+        return "Trang chủ - Trà Sữa Tomocoabc";
     },
     async render() {
         return /* html */ `
@@ -20,7 +21,7 @@ const HomePage = {
             <!-- end banner -->
 
             <!-- category -->
-          
+            ${await Category.render()}
             <!-- end category -->
 
             <!-- why -->

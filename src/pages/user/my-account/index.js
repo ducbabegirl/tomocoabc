@@ -5,7 +5,7 @@ import MyAccNav from "../../../components/user/myAccNav";
 import {
     getUser, reRender, saveUser, uploadFile,
 } from "../../../utils";
-
+import { getAllProvince, getDistrict, getWard } from "../../../api/location";
 import { update } from "../../../api/user";
 
 const UpdateInfoPage = {
@@ -140,7 +140,7 @@ const UpdateInfoPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+        // Footer.afterRender();
         MyAccNav.afterRender();
 
         const formUpdate = document.querySelector("#form__update-account");

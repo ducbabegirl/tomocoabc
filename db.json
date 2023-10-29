@@ -52,11 +52,18 @@
       "description": "<p>Trà tranh mô tả</p>",
       "status": 1,
       "view": 6,
-      "favorites": 0,
+      "favorites": 1,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2022-02-18T08:59:05.730Z",
       "id": 1,
-      "categoryId": 1
+      "categoryId": 1,
+      "ratings": [],
+      "category": {
+        "id": 1,
+        "name": "Tea",
+        "createdAt": "2022-03-13T05:07:46.346Z",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757211/assignment-js/dydnuwy6d0f7man8fbsn.png"
+      }
     },
     {
       "name": "Trà vải nhiệt đới",
@@ -181,7 +188,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 1,
+      "view": 6,
       "favorites": 1,
       "createdAt": "2022-02-18T08:31:13.125Z",
       "updatedAt": "2022-02-18T08:31:13.125Z",
@@ -270,7 +277,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 118,
+      "view": 153,
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -297,7 +304,11 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 37,
+
+      "view": 76,
+
+      "view": 75,
+
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -324,7 +335,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 31,
+      "view": 36,
       "favorites": 0,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
@@ -337,7 +348,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 7,
+      "view": 10,
       "favorites": 0,
       "createdAt": "2022-02-18T08:47:04.929Z",
       "updatedAt": "2022-02-18T08:47:04.929Z",
@@ -350,7 +361,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 17,
+      "view": 25,
       "favorites": 2,
       "createdAt": "2022-02-18T08:47:34.029Z",
       "updatedAt": "2022-02-18T08:47:34.029Z",
@@ -369,7 +380,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 18,
+      "view": 19,
       "favorites": 1,
       "createdAt": "2022-02-18T08:48:09.048Z",
       "updatedAt": "2022-02-18T08:48:09.048Z",
@@ -388,7 +399,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 23,
+      "view": 25,
       "favorites": 2,
       "createdAt": "2022-02-18T08:48:45.769Z",
       "updatedAt": "2022-02-18T08:48:45.769Z",
@@ -415,7 +426,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 16,
+      "view": 17,
       "favorites": 1,
       "createdAt": "2022-02-18T08:58:32.229Z",
       "updatedAt": "2022-02-18T08:58:32.229Z",
@@ -473,7 +484,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-      "view": 10,
+      "view": 11,
       "favorites": 0,
       "createdAt": "2022-02-18T09:02:12.743Z",
       "updatedAt": "2022-02-18T09:49:51.577Z",
@@ -525,7 +536,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-      "view": 31,
+      "view": 32,
       "favorites": 1,
       "createdAt": "2022-02-18T09:04:27.177Z",
       "updatedAt": "2022-02-18T09:04:27.177Z",
@@ -723,13 +734,13 @@
       "id": 1,
       "title": "Slider 1",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
-      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "url": "https://www.facebook.com/conccccccccccccc/",
       "status": 1,
       "createdAt": "2022-02-09T15:42:22"
     },
     {
       "title": "Slider 2",
-      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "url": "https://www.facebook.com/ccccccccccc/",
       "status": 1,
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
       "createdAt": "2022-02-10T06:44:52.008Z",
@@ -790,9 +801,9 @@
       "id": 4
     },
     {
-      "name": "Trân châu trắng",
-      "price": 7000,
-      "id": 5
+      "name": "Hạt Sen Vàng",
+      "price": 20000,
+      "id": 6
     }
   ],
   "contact": [
@@ -845,106 +856,88 @@
   "voucher": [
     {
       "id": 1,
-      "code": "COVID",
+      "code": "HNMAIDINH",
       "quantity": 998,
       "condition": 0,
       "conditionNumber": 10,
       "status": 1,
-      "timeStart": "2022-02-19T15:42:22",
-      "timeEnd": "2022-02-28T15:42:22",
+      "timeStart": "2023-10-28T15:42:22",
+      "timeEnd": "2023-12-10T15:42:22",
       "createdAt": "2022-02-08T12:06:48.706Z",
-      "updatedAt": "2022-02-20T08:09:08.334Z",
+      "updatedAt": "2023-10-29T06:18:25.248Z",
       "user_ids": [
         1,
         2
       ]
     },
     {
-      "code": "COVID10",
+      "code": "HNSAYHI",
       "quantity": 10,
       "condition": 1,
       "conditionNumber": 10000,
       "status": 0,
-      "timeStart": "2022-02-10T17:22",
-      "timeEnd": "2022-02-10T17:22",
+      "timeStart": "2023-10-28T17:22",
+      "timeEnd": "2023-11-05T17:22",
       "createdAt": "2022-02-10T10:22:46.553Z",
-      "updatedAt": "2022-02-10T10:46:22.588Z",
+      "updatedAt": "2023-10-29T06:17:48.810Z",
       "user_ids": [],
       "id": 2
     },
     {
-      "code": "COVID101",
+      "code": "HNT10",
       "quantity": 0,
       "condition": 0,
       "conditionNumber": 10,
       "status": 1,
-      "timeStart": "2022-02-17T13:37",
-      "timeEnd": "2022-02-19T13:37",
+      "timeStart": "2023-10-29T13:37",
+      "timeEnd": "2023-10-30T13:37",
       "user_ids": [
         1
       ],
       "createdAt": "2022-02-17T06:37:58.837Z",
-      "updatedAt": "2022-02-17T06:37:58.837Z",
+      "updatedAt": "2023-10-29T06:16:55.052Z",
       "id": 3
     },
     {
-      "code": "COVID102",
-      "quantity": 0,
+      "code": "HN2023",
+      "quantity": 1,
       "condition": 1,
       "conditionNumber": 1000,
       "status": 1,
-      "timeStart": "2022-02-20T10:52",
-      "timeEnd": "2022-02-21T10:53",
+      "timeStart": "2023-10-28T10:52",
+      "timeEnd": "2023-10-30T10:53",
       "user_ids": [
         1
       ],
       "createdAt": "2022-02-20T03:53:36.661Z",
-      "updatedAt": "2022-02-20T03:57:07.455Z",
+      "updatedAt": "2023-10-29T06:15:44.896Z",
       "id": 4
     },
     {
-      "code": "BGMAIDINH",
-      "quantity": 97,
-      "condition": 1,
-      "conditionNumber": 10000,
+      "code": "TEST",
+      "quantity": 10,
+      "condition": 0,
+      "conditionNumber": 50,
       "status": 1,
-      "timeStart": "2022-02-20T14:45",
-      "timeEnd": "2022-02-28T14:45",
-      "user_ids": [
-        1,
-        2
-      ],
-      "createdAt": "2022-02-20T07:45:22.511Z",
-      "updatedAt": "2022-02-20T07:45:22.511Z",
+      "timeStart": "2023-10-28T15:00",
+      "timeEnd": "2023-11-10T15:00",
+      "user_ids": [],
+      "createdAt": "2023-10-29T06:19:50.500Z",
+      "updatedAt": "2023-10-29T06:19:50.500Z",
       "id": 5
     },
     {
-      "code": "BGMAIDINH1",
+      "code": "VANH",
       "quantity": 100,
       "condition": 1,
-      "conditionNumber": 9999,
+      "conditionNumber": 20000,
       "status": 1,
-      "timeStart": "2022-02-21T18:32",
-      "timeEnd": "2022-02-28T18:32",
+      "timeStart": "2023-10-28T21:48",
+      "timeEnd": "2023-11-05T21:48",
       "user_ids": [],
-      "createdAt": "2022-02-21T11:32:16.036Z",
-      "updatedAt": "2022-02-21T11:32:16.036Z",
+      "createdAt": "2023-10-29T14:49:02.738Z",
+      "updatedAt": "2023-10-29T14:49:02.738Z",
       "id": 6
-    },
-    {
-      "code": "CONCAC",
-      "quantity": 99,
-      "condition": 1,
-      "conditionNumber": 100000,
-      "status": 1,
-      "timeStart": "2023-09-22T21:53",
-      "timeEnd": "2023-09-24T13:59",
-      "user_ids": [
-        11
-      ],
-      "createdAt": "2023-09-22T14:54:18.833Z",
-      "updatedAt": "2023-09-22T15:40:40.816Z",
-      "id": 7
     }
   ],
   "users": [
@@ -1123,6 +1116,118 @@
       "active": 1,
       "createdAt": "2023-09-22T15:39:26.642Z",
       "id": 11
+    },
+    {
+      "email": "duy@gmail.com",
+      "password": "$2a$10$JRYoyx23OCu86w5qIMM6TuHdgQC.OqTySpdezOi13sUT33zY5HocG",
+      "username": "leduy",
+      "fullName": "Le Duy",
+      "phone": "0395852788",
+      "wardsCode": 100,
+      "districtCode": 3,
+      "provinceCode": 1,
+      "address": "172 Lạc Long Quân",
+      "avatar": "https://res.cloudinary.com/levantuan/image/upload/v1644302455/assignment-js/thumbnail-image-vector-graphic-vector-id1147544807_ochvyr.jpg",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2023-10-26T15:17:16.074Z",
+      "id": 13
+    },
+    {
+      "email": "liud@gmail.com",
+      "password": "$2a$10$tvkGjLFULNuHY/QExfkzAem.e9cjOjjMLVDQE8Y2Q2M.ck9kI.IdK",
+      "username": "liud",
+      "fullName": "Liu dee",
+      "phone": "0395852466",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-28T07:29:20.468Z",
+      "id": 15
+    },
+    {
+      "email": "oibanoi@gmail.com",
+      "password": "$2a$10$rjPDy2PQTcCJnM6Z8esMuOiO5Ni4/VN3EEviyUt0BP60D6QlrNKFC",
+      "username": "oibanoi",
+      "fullName": "thanhduc",
+      "phone": "0987543123",
+      "wardsCode": 7945,
+      "districtCode": 228,
+      "provinceCode": 25,
+      "address": "xóm3",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698485326/gn2zg6lhxghywbai5zht.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-28T09:11:27.007Z",
+      "id": 16
+    },
+    {
+      "email": "z@gmail.com",
+      "password": "$2a$10$kYlhOlPJ7AqhbQlKWJHVf.QolFuqU9NQXucXa.JMHBYAgjfYanlxG",
+      "username": "Zuy Le",
+      "fullName": "Zyunl",
+      "phone": "0395851477",
+      "wardsCode": 31,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "612 La Thành",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T06:44:19.726Z",
+      "id": 17
+    },
+    {
+      "email": "add@gmail.com",
+      "password": "$2a$10$YEhDCT1qJopJgxvTn7duaeVNYgyhzuKkg5vVIrO5ZaPUgadKxYJ9u",
+      "username": "addUser",
+      "fullName": "Adduser",
+      "phone": "0395864561",
+      "wardsCode": 178,
+      "districtCode": 6,
+      "provinceCode": 1,
+      "address": "21 Cát Linh",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698561882/jevob3hjhbxfzi0cn9es.png",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T06:46:35.314Z",
+      "id": 18
+    },
+    {
+
+      "email": "adminabc@gmail.com",
+      "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
+      "username": "Admin",
+      "fullName": "adminabc",
+      "phone": "0987543132",
+      "wardsCode": 4,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "Xom1000",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698589375/zyt3bzpouwpp2m29yjpx.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T14:22:03.219Z",
+
+      "email": "lingbong12@gmail.com",
+      "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
+      "username": "vanhuser",
+      "fullName": "việt anh",
+      "phone": "0985673815",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T14:46:41.257Z",
+
+      "id": 19
     }
   ],
   "stores": [
@@ -1197,6 +1302,12 @@
       "productId": 38,
       "createdAt": "2023-10-23T15:22:32.532Z",
       "id": 18
+    },
+    {
+      "userId": 19,
+      "productId": 1,
+      "createdAt": "2023-10-29T14:29:27.936Z",
+      "id": 19
     }
   ],
   "orders": [
@@ -1441,32 +1552,19 @@
       "toppingId": 2,
       "toppingPrice": 6000,
       "id": 18
-    },
-    {
-      "orderId": 19,
-      "productId": 38,
-      "productPrice": 25000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 4,
-      "ice": 50,
-      "sugar": 70,
-      "toppingId": 5,
-      "toppingPrice": 7000,
-      "id": 20
     }
   ],
   "comments": [
     {
       "userId": 1,
-      "content": "2",
+      "content": "ngon vl",
       "productId": 6,
       "createdAt": "2022-02-18T05:28:14.975Z",
       "id": 3
     },
     {
       "userId": 1,
-      "content": "s",
+      "content": "như c",
       "productId": 31,
       "createdAt": "2022-02-18T12:34:34.782Z",
       "id": 7
@@ -1477,20 +1575,6 @@
       "productId": 31,
       "createdAt": "2022-02-18T12:48:04.395Z",
       "id": 8
-    },
-    {
-      "userId": 1,
-      "content": "3",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:19:46.070Z",
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "content": "4",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:19:52.969Z",
-      "id": 10
     },
     {
       "userId": 1,
@@ -1515,13 +1599,6 @@
     },
     {
       "userId": 1,
-      "content": "5",
-      "productId": 30,
-      "createdAt": "2022-02-18T13:20:06.002Z",
-      "id": 14
-    },
-    {
-      "userId": 1,
       "content": "rất ok",
       "productId": 26,
       "createdAt": "2022-02-19T05:55:37.859Z",
@@ -1540,13 +1617,6 @@
       "productId": 38,
       "createdAt": "2022-02-20T07:36:04.030Z",
       "id": 18
-    },
-    {
-      "userId": 1,
-      "content": "yyyyyyyy",
-      "productId": 39,
-      "createdAt": "2023-09-22T15:36:37.856Z",
-      "id": 35
     },
     {
       "userId": 11,
