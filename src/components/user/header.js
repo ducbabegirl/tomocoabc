@@ -1,9 +1,10 @@
 
 import toastr from "toastr";
 
-
+import { search } from "../../api/product";
+import { formatCurrency, getUser, reRender } from "../../utils";
 import Nav from "./nav";
-
+import WishList from "./wishlist";
 import WishListLabel from "./wishlistLabel";
 
 const Header = {
@@ -141,9 +142,48 @@ const Header = {
             }
         });
 
-        
+        // tìm kiếm sp
+        const formSearch = document.querySelector("#form-search-product");
+        const formSearchMobile = document.querySelector("#nav__mobile-search");
+        const formControlSearch = document.querySelector("#form-search-control");
+        const searchResult = document.querySelector("#search-product-result");
 
-      
+        formControlSearch.addEventListener("input", async (e) => {
+            const keyword = e.target.value;
+
+            const { data: listProduct } = await search(keyword);
+            searchResult.innerHTML = listProduct.map((item) => `
+                <li>
+                    <a href="/#/product/${item.id}" class="flex py-2 transition duration-200 hover:bg-gray-50 hover:text-[#D9A953] text-black items-center px-2">
+                        <img src="${item.image}" class="w-10 h-10 object-cover rounded-full bg-[#f7f7f7]" alt="">
+                        <p class="pl-1 pr-2 normal-case font-normal">${item.name}</p>
+                        <p class="font-medium ml-auto">${formatCurrency(item.price)}</p>
+                    </a>
+                </li>
+            `).join("");
+        });
+        
+        formSearch.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const keyword = formControlSearch.value;
+
+            if (!keyword) {
+                toastr.info("Vui lòng nhập tên sản phẩm");
+            } else {
+                document.location.href = `/#/product/search/${keyword}`;
+            }
+        });
+        formSearchMobile.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const keyword = formSearchMobile.querySelector("input").value;
+
+            if (!keyword) {
+                toastr.info("Vui lòng nhập tên sản phẩm");
+            } else {
+                document.location.href = `/#/product/search/${keyword}`;
+            }
+        });
        
 
        
