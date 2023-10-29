@@ -1,22 +1,21 @@
 /* eslint-disable no-plusplus */
 import toastr from "toastr";
-import { get, updateView,  } from "../../api/product";
+import { get, updateView, getPrice } from "../../api/product";
 import Footer from "../../components/user/footer";
 import Header from "../../components/user/header";
-import { getAll, get as getTopping } from "../../api/topping";
-import { formatCurrency, getUser, reRender } from "../../utils";
-
-import { getAll as getAllSize, get as getSize } from "../../api/size";
 import Related from "../../components/user/products/related";
+import { formatCurrency, getUser, reRender } from "../../utils";
+import { getAll, get as getTopping } from "../../api/topping";
+import { getAll as getAllSize, get as getSize } from "../../api/size";
+import { addToCart } from "../../utils/cart";
+import CartLabel from "../../components/user/cartLabel";
 
-
-// eslint-disable-next-line import/no-cycle
 
 
 const ProductDetailPage = {
     async getTitle(id) {
         const { data: productDetail } = await get(id);
-        return `${productDetail.name} - Trà sữa TOCOO`;
+        return `${productDetail.name} - Trà sữa cocomoco`;
     },
     async render(id, pageNumber) {
         // update view
@@ -208,7 +207,6 @@ const ProductDetailPage = {
                                         ${toppingList.map((item) => `<option value="${item.id}">${item.name} +${formatCurrency(item.price)}</option>`)}
                                     </select>
                                 </div>
-                                
     
                                 <div class="border-b border-dashed pb-4 mt-6">
                                     <p class="form__add-cart-total-price h-0 overflow-hidden transition-all ease-linear duration-100 mt-6 border-t border-dashed pt-2 text-xl font-semibold">
@@ -266,7 +264,7 @@ const ProductDetailPage = {
             </section>
 
             <!-- panel -->
-           
+            
 
             <section class="container max-w-6xl px-3 mx-auto my-6">
                 <div class="border-t">
@@ -282,11 +280,128 @@ const ProductDetailPage = {
     },
     afterRender(id) {
         Header.afterRender();
-        Footer.afterRender();
-     
-      
-       
-       
+        Related.afterRender();
+
+        const formAddCart = document.querySelector("#form__add-cart");
+        const qntElement = formAddCart.querySelector("#form__add-cart-qnt");
+        const toppingElement = formAddCart.querySelector("#form__add-cart-topping");
+        const totalPriceElement = formAddCart.querySelector(".form__add-cart-total-price");
+        const btnResetForm = document.querySelector(".form__add-cart-btn-clear");
+
+        // generate id
+        const generateId = () => Date.now().toString(36) + Math.random().toString(36).substr(2);
+
+        // render tổng tiền
+        const renderTotalPrice = async () => {
+            const sizeElement = formAddCart.querySelector(".form__add-cart-size:checked");
+
+            let toppingId = toppingElement.value;
+            toppingId = +toppingId || 0;
+            const sizeId = +sizeElement.value || 0;
+            const qnt = qntElement.value;
+
+            const totalPrice = await getPrice(id, toppingId, sizeId, qnt);
+            totalPriceElement.classList.add("active");
+            totalPriceElement.innerHTML = `Giá: ${formatCurrency(totalPrice)}`;
+        };
+
+        // add cart
+        formAddCart.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const sizeElement = formAddCart.querySelector(".form__add-cart-size:checked");
+            const iceElement = formAddCart.querySelector(".form__add-cart-ice:checked");
+            const sugarElement = formAddCart.querySelector(".form__add-cart-sugar:checked");
+
+            // get số lượng sp
+            const quantity = +qntElement.value;
+            if (!quantity) {
+                toastr.info("Vui lòng nhập lại số lượng sản phẩm");
+            } else {
+                // get data product
+                const { data: product } = await get(id);
+                const productData = {
+                    productId: +id,
+                    productName: product.name,
+                    productPrice: product.price,
+                    productImage: product.image,
+                };
+
+                // get thông tin size
+                const sizeId = +sizeElement.value || 0;
+                const sizeData = {
+                    sizeId,
+                    sizeName: "S",
+                    sizePrice: 0,
+                };
+
+                if (sizeId) {
+                    const { data } = await getSize(sizeId);
+                    sizeData.sizeName = data.name;
+                    sizeData.sizePrice = data.priceIncrease;
+                }
+
+                // get thông tin topping
+                const toppingId = +toppingElement.value || 0;
+                const toppingData = {
+                    toppingId,
+                    toppingName: "",
+                    toppingPrice: 0,
+                };
+
+                if (toppingId) {
+                    const { data } = await getTopping(toppingId);
+                    toppingData.toppingName = data.name;
+                    toppingData.toppingPrice = data.price;
+                }
+
+                // data cart
+                const cartData = {
+                    id: generateId(),
+                    ...productData,
+                    ...sizeData,
+                    ...toppingData,
+                    quantity,
+                    ice: +iceElement.value,
+                    sugar: +sugarElement.value,
+                };
+
+                addToCart(cartData, () => {
+                    toastr.success(`Thêm sản phẩm ${productData.productName} vào giỏ hàng thành công`);
+                    reRender(CartLabel, "#header-cart-label");
+                });
+            }
+        });
+
+        // tăng giảm số lượng
+        const btnMinus = formAddCart.querySelector("#form__add-cart-qnt-minus");
+        const btnPlus = formAddCart.querySelector("#form__add-cart-qnt-plus");
+
+        btnMinus.addEventListener("click", () => {
+            if (qntElement.value <= 0) {
+                toastr.info("Vui lòng chọn số lượng lớn hơn 0");
+            } else {
+                qntElement.value -= 1;
+                renderTotalPrice();
+            }
+        });
+
+        btnPlus.addEventListener("click", () => {
+            qntElement.value = Number(qntElement.value) + 1;
+            renderTotalPrice();
+        });
+
+        formAddCart.addEventListener("change", async () => {
+            renderTotalPrice();
+            btnResetForm.classList.remove("hidden");
+        });
+
+        // reset form add cart
+        btnResetForm.addEventListener("click", () => {
+            formAddCart.reset();
+            totalPriceElement.classList.remove("active");
+            btnResetForm.classList.add("hidden");
+        });
     },
 };
 
