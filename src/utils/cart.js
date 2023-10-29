@@ -1,0 +1,32 @@
+// thêm
+export const addToCart = (newProduct, next) => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    // eslint-disable-next-line max-len
+    const exitsProduct = cart.find((item) => item.productId === newProduct.productId && item.sizeId === newProduct.sizeId && item.toppingId === newProduct.toppingId && item.ice === newProduct.ice && item.sugar === newProduct.sugar);
+
+    if (!exitsProduct) {
+        cart.push(newProduct);
+    } else {
+        exitsProduct.quantity += +newProduct.quantity;
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    next();
+};
+
+// tính tổng tiền
+export const getTotalPrice = () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalPrice = 0;
+
+    if (cart.length) {
+        totalPrice = cart.reduce((total, item) => {
+            // eslint-disable-next-line no-param-reassign
+            total += (item.productPrice + item.sizePrice + item.toppingPrice) * item.quantity;
+            return total;
+        }, 0);
+    }
+
+    return totalPrice;
+};
