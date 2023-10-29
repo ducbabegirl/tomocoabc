@@ -412,6 +412,86 @@ const CheckoutPage = {
                 districtElement.innerHTML = htmlDistrict;
             }
         });
+         // bắt sự kiện chọn quận/huyện
+         districtElement.addEventListener("change", async (e) => {
+            const districtCode = e.target.value;
+
+            if (districtCode) {
+                const wardList = await getWard(districtCode);
+                let htmlWard = `<option value="">-- Chọn Xã/Phường --</option>`;
+                wardList.forEach((item) => {
+                    htmlWard += `<option value="${item.code}">${item.name}</option>`;
+                });
+
+                wardElement.innerHTML = htmlWard;
+            }
+        });
+
+        // xử lý sự kiện chọn địa chỉ
+        const renderAddress = async (wardCode, districtCode, provinceCode) => {
+            const ward = await getWardById(wardCode);
+            const district = await getDistrictById(districtCode);
+            const province = await getProvinceById(provinceCode);
+            return `${ward.name}, ${district.name}, ${province.name}`;
+        };
+
+        const btnAddress = document.querySelector("#btn-choose-address");
+        const modal = document.querySelector("#modal");
+        const listAddress = document.querySelector("#list-address");
+        if (btnAddress) {
+            btnAddress.addEventListener("click", async () => {
+                const { data: listAdd } = await getByUserId(userLogged.id);
+                if (listAdd.length) {
+                    let html = "";
+
+                    // eslint-disable-next-line no-restricted-syntax
+                    for await (const addressItem of listAdd) {
+                        html += `
+                        <tr class="hover:bg-gray-100 cursor-pointer address-item" data-id="${addressItem.id}">
+                            <td class="p-2">${addressItem.fullName}</td>
+                            <td class="p-2">${addressItem.phone}</td>
+                            <td class="p-2">${addressItem.address}, ${await renderAddress(addressItem.wardCode, addressItem.districtCode, addressItem.provinceCode)}</td>
+                        </tr>
+                        `;
+                    }
+                    listAddress.innerHTML = html;
+
+                    // handle sự kiện click chọn địa chỉ
+                    const addressItem = document.querySelectorAll(".address-item");
+                    addressItem.forEach(async (row) => {
+                        const { id } = row.dataset;
+
+                        row.addEventListener("click", async () => {
+                            const { data: addressData } = await getAdd(id);
+
+                            // get ds quận/huyện
+                            const listDistrict = await getDistrict(addressData.provinceCode);
+                            districtElement.innerHTML = listDistrict.map((item) => `
+                                <option value="${item.code}">${item.name}</option>
+                                `).join("");
+
+                            // get ds xã/phường
+                            const listWard = await getWard(addressData.districtCode);
+                            wardElement.innerHTML = listWard.map((item) => `
+                                <option value="${item.code}">${item.name}</option>
+                                `).join("");
+
+                            fullName.value = addressData.fullName;
+                            phone.value = addressData.phone;
+                            email.value = addressData.email;
+                            address.value = addressData.address;
+                            provinceElement.value = addressData.provinceCode;
+                            districtElement.value = addressData.districtCode;
+                            wardElement.value = addressData.wardCode;
+
+                            modal.classList.remove("active");
+                        });
+                    });
+                }
+                modal.classList.add("active");
+            });
+        }
+
 
 
      
