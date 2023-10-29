@@ -1,9 +1,13 @@
 import Swal from "sweetalert2";
 import toastr from "toastr";
+import { getByCode } from "../../../api/voucher";
+import CartNav from "../../../components/user/cartNav";
 import Footer from "../../../components/user/footer";
 import Header from "../../../components/user/header";
-import { formatCurrency, reRender } from "../../../utils";
-import { getTotalPrice, removeItemInCart,updateQuantity} from "../../../utils/cart";
+import { formatCurrency, getUser, reRender } from "../../../utils";
+import {
+    addVoucher, getTotalPrice, removeItemInCart, removeVoucher, totalPriceDerease, updateQuantity,
+} from "../../../utils/cart";
 
 const CartPage = {
     getTitle() {
@@ -13,7 +17,8 @@ const CartPage = {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
         const voucher = JSON.parse(localStorage.getItem("voucher")) || [];
 
-        
+        // tổng tiền giảm khi áp voucher
+        const totalPriceVoucher = totalPriceDerease();
 
         return /* html */ `
         ${await Header.render()}
@@ -21,6 +26,7 @@ const CartPage = {
         <!-- content -->
         <main>
             <section class="container max-w-6xl mx-auto px-3 mt-10">
+                ${CartNav.render("index")}
             </section>
 
             <section class="container max-w-6xl mx-auto px-3 mt-10 grid grid-cols-12 mb-9">
@@ -117,7 +123,7 @@ const CartPage = {
                             
                             <tr class="border-b">
                                 <td >Tổng</td>
-                                <td class="py-2 text-right font-semibold">${formatCurrency(getTotalPrice())}</td>
+                                <td class="py-2 text-right font-semibold">${formatCurrency(getTotalPrice() - totalPriceVoucher > 0 ? getTotalPrice() - totalPriceVoucher : 0)}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -221,7 +227,7 @@ const CartPage = {
                 });
             });
 
-            //update sp
+            // cập nhật số lượng sp
             const cartForm = document.querySelector("#cart__detail-form");
             const trElements = cartForm.querySelectorAll(".cart__detail-item");
             cartForm.addEventListener("submit", (e) => {
@@ -241,8 +247,68 @@ const CartPage = {
             cartForm.addEventListener("input", () => btnUpdateCart.removeAttribute("disabled"));
 
             // add voucher
+            const formAddVoucher = document.querySelector("#form__voucher-add");
+            const voucherElement = formAddVoucher.querySelector("#form__voucher-add-control");
+            formAddVoucher.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const userLogged = getUser();
+
+                if (userLogged) {
+                    if (!voucherElement.value) {
+                        toastr.info("Vui lòng nhập mã Voucher");
+                    } else {
+                        const voucherCode = voucherElement.value.toUpperCase();
+                        // check voucher
+                        const { data } = await getByCode(voucherCode);
+
+                        if (!data.length) {
+                            toastr.info("Mã voucher không tồn tại");
+                        } else {
+                            const [voucherData] = data;
+                            const timeStart = new Date(voucherData.timeStart);
+                            const timeEnd = new Date(voucherData.timeEnd);
+
+                            const now = new Date();
+
+                            if (timeStart > now) {
+                                toastr.info("Voucher chưa đến thời gian sử dụng");
+                            } else if (timeEnd < now) {
+                                toastr.info("Voucher đã quá hạn sử dụng");
+                            } else if (!voucherData.quantity) {
+                                toastr.info("Voucher đã hết lượt sử dụng");
+                            } else if (!voucherData.status) {
+                                toastr.info("Voucher đã bị khóa");
+                            } else {
+                                // check user đã sử dụng voucher chưa
+
+                                const listIdUsed = voucherData.user_ids;
+
+                                const isUsed = listIdUsed.some((id) => id === userLogged.id);
+                                if (isUsed) {
+                                    toastr.info("Bạn đã sử dụng Voucher này trước đó");
+                                } else {
+                                    addVoucher(voucherData, () => {
+                                        reRender(CartPage, "#app");
+                                    });
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    toastr.info("Vui lòng đăng nhập để sử dụng Voucher");
+                }
+            });
+
             // remove voucher
-            
+            const btnsRemoveVoucher = document.querySelectorAll(".btn-remove-voucher");
+            btnsRemoveVoucher.forEach((btn) => {
+                const { id } = btn.dataset;
+
+                btn.addEventListener("click", () => {
+                    removeVoucher(+id, () => reRender(CartPage, "#app"));
+                });
+            });
         }
     },
 };

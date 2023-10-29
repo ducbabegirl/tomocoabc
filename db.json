@@ -52,11 +52,18 @@
       "description": "<p>Trà tranh mô tả</p>",
       "status": 1,
       "view": 6,
-      "favorites": 0,
+      "favorites": 1,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2022-02-18T08:59:05.730Z",
       "id": 1,
-      "categoryId": 1
+      "categoryId": 1,
+      "ratings": [],
+      "category": {
+        "id": 1,
+        "name": "Tea",
+        "createdAt": "2022-03-13T05:07:46.346Z",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757211/assignment-js/dydnuwy6d0f7man8fbsn.png"
+      }
     },
     {
       "name": "Trà vải nhiệt đới",
@@ -270,11 +277,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 144,
-
-      "view": 150,
-
+      "view": 153,
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -302,9 +305,9 @@
       "categoryId": 2,
       "status": 1,
 
-      "view": 48,
+      "view": 76,
 
-      "view": 74,
+      "view": 75,
 
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
@@ -731,13 +734,13 @@
       "id": 1,
       "title": "Slider 1",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
-      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "url": "https://www.facebook.com/conccccccccccccc/",
       "status": 1,
       "createdAt": "2022-02-09T15:42:22"
     },
     {
       "title": "Slider 2",
-      "url": "https://www.facebook.com/LeVanTuan.Info/",
+      "url": "https://www.facebook.com/ccccccccccc/",
       "status": 1,
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
       "createdAt": "2022-02-10T06:44:52.008Z",
@@ -922,11 +925,23 @@
       "createdAt": "2023-10-29T06:19:50.500Z",
       "updatedAt": "2023-10-29T06:19:50.500Z",
       "id": 5
+    },
+    {
+      "code": "VANH",
+      "quantity": 100,
+      "condition": 1,
+      "conditionNumber": 20000,
+      "status": 1,
+      "timeStart": "2023-10-28T21:48",
+      "timeEnd": "2023-11-05T21:48",
+      "user_ids": [],
+      "createdAt": "2023-10-29T14:49:02.738Z",
+      "updatedAt": "2023-10-29T14:49:02.738Z",
+      "id": 6
     }
   ],
   "users": [
     {
-
       "email": "admin@gmail.com",
       "password": "$2a$10$d2PpTTfVt/tLFNlr8RPgDuSTDYfu93epUjay7bxI7zpsQeHqc84r6",
       "username": "admin",
@@ -1103,7 +1118,6 @@
       "id": 11
     },
     {
-
       "email": "duy@gmail.com",
       "password": "$2a$10$JRYoyx23OCu86w5qIMM6TuHdgQC.OqTySpdezOi13sUT33zY5HocG",
       "username": "leduy",
@@ -1182,6 +1196,38 @@
       "active": 1,
       "createdAt": "2023-10-29T06:46:35.314Z",
       "id": 18
+    },
+    {
+
+      "email": "adminabc@gmail.com",
+      "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
+      "username": "Admin",
+      "fullName": "adminabc",
+      "phone": "0987543132",
+      "wardsCode": 4,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "Xom1000",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698589375/zyt3bzpouwpp2m29yjpx.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T14:22:03.219Z",
+
+      "email": "lingbong12@gmail.com",
+      "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
+      "username": "vanhuser",
+      "fullName": "việt anh",
+      "phone": "0985673815",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T14:46:41.257Z",
+
+      "id": 19
     }
   ],
   "stores": [
@@ -1226,14 +1272,6 @@
       "id": 4
     }
   ],
-
-  "favorites_product": [],
-  "orders": [],
-  "orderDetails": [],
-  "comments": [],
-  "ratings": [],
-  "address": []
-
   "favorites_product": [
     {
       "userId": 6,
@@ -1264,6 +1302,12 @@
       "productId": 38,
       "createdAt": "2023-10-23T15:22:32.532Z",
       "id": 18
+    },
+    {
+      "userId": 19,
+      "productId": 1,
+      "createdAt": "2023-10-29T14:29:27.936Z",
+      "id": 19
     }
   ],
   "orders": [
@@ -1508,19 +1552,6 @@
       "toppingId": 2,
       "toppingPrice": 6000,
       "id": 18
-    },
-    {
-      "orderId": 19,
-      "productId": 38,
-      "productPrice": 25000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 4,
-      "ice": 50,
-      "sugar": 70,
-      "toppingId": 5,
-      "toppingPrice": 7000,
-      "id": 20
     }
   ],
   "comments": [
@@ -1586,13 +1617,6 @@
       "productId": 38,
       "createdAt": "2022-02-20T07:36:04.030Z",
       "id": 18
-    },
-    {
-      "userId": 1,
-      "content": "yyyyyyyy",
-      "productId": 39,
-      "createdAt": "2023-09-22T15:36:37.856Z",
-      "id": 35
     },
     {
       "userId": 11,
@@ -1716,5 +1740,4 @@
       "id": 5
     }
   ]
-
 }
