@@ -18,7 +18,12 @@ import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
 
 import DashboardPage from "./pages/admin/dashboard";
-
+import AdminUserListPage from "./pages/admin/user";
+import AdminAddUserPage from "./pages/admin/user/add";
+import AdminEditUserPage from "./pages/admin/user/edit";
+import AdminToppingListPage from "./pages/admin/topping";
+import AdminAddToppingPage from "./pages/admin/topping/add";
+import AdminEditToppingPage from "./pages/admin/topping/edit";
 import AdminProductListPage from "./pages/admin/product";
 
 import AdminAddProductPage from "./pages/admin/product/add";
@@ -35,8 +40,12 @@ import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
 import AdminAddSliderPage from "./pages/admin/slider/add";
 import AdminEditSliderPage from "./pages/admin/slider/edit";
+import AdminSizeListPage from "./pages/admin/size";
+import AdminAddSizePage from "./pages/admin/size/add";
+import AdminEditSizePage from "./pages/admin/size/edit";
 
 import { getUser } from "./utils";
+import ProductDetailPage from "./pages/user/productDetails";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -51,6 +60,17 @@ const print = async (content, id, pageNumber) => {
 };
 
 
+router.on("/admin/*", () => {}, {
+    before(done) {
+        const userInfo = getUser();
+
+        if (userInfo && userInfo.role) {
+            done();
+        } else {
+            document.location.href = "/#/";
+        }
+    },
+});
 
 router.on("/my-account/*", () => {}, {
     before(done) {
@@ -76,6 +96,12 @@ router.on({
     },
     "/products/page/:page": ({ data }) => {
         print(ProductsPage, data.page);
+    },
+    "/product/:id": ({ data }) => {
+        print(ProductDetailPage, data.id);
+    },
+    "/product/:id/page/:page": ({ data }) => {
+        print(ProductDetailPage, data.id, data.page);
     },
 
     "/login": () => {
@@ -124,6 +150,20 @@ router.on({
         print(AdminEditCatePage, data.id);
     },
 
+    "/admin/user": () => {
+        print(AdminUserListPage);
+    },
+    "/admin/user/page/:page": ({ data }) => {
+        print(AdminUserListPage, data.page);
+    },
+    "/admin/user/add": () => {
+        print(AdminAddUserPage);
+    },
+    "/admin/user/:id/edit": ({ data }) => {
+        print(AdminEditUserPage, data.id);
+    },
+
+
 
 
     "/admin/news": () => {
@@ -140,6 +180,19 @@ router.on({
         print(AdminSliderListPage, data.page);
     },
 
+    "/admin/topping": () => {
+        print(AdminToppingListPage);
+    },
+    "/admin/topping/page/:page": ({ data }) => {
+        print(AdminToppingListPage, data.page);
+    },
+    "/admin/topping/add": () => {
+        print(AdminAddToppingPage);
+    },
+    "/admin/topping/:id/edit": ({ data }) => {
+        print(AdminEditToppingPage, data.id);
+    },
+
     "/admin/comment": () => {
         print(AdminCmtListPage);
     },
@@ -153,6 +206,15 @@ router.on({
     },
     "/admin/slider/:id/edit": ({ data }) => {
         print(AdminEditSliderPage, data.id);
+    },
+    "/admin/size": () => {
+        print(AdminSizeListPage);
+    },
+    "/admin/size/add": () => {
+        print(AdminAddSizePage);
+    },
+    "/admin/size/:id/edit": ({ data }) => {
+        print(AdminEditSizePage, data.id);
     },
 
 });

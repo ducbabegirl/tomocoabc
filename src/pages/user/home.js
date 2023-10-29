@@ -8,7 +8,7 @@ import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
 const HomePage = {
     getTitle() {
-        return "Trang chủ - Trà Sữa Cocomoco";
+        return "Trang chủ - Trà Sữa Tomocoabc";
     },
     async render() {
         return /* html */ `
