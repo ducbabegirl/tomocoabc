@@ -8,7 +8,7 @@ import "sweetalert2/dist/sweetalert2.css";
 import FortgotPage from "./pages/auth/forgot";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
-
+import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
 
 import UpdateInfoPage from "./pages/user/my-account";
@@ -37,6 +37,8 @@ import NotFoundPage from "./pages/user/notFound";
 
 import AdminNewsListPage from "./pages/admin/news";
 
+import AdminCmtListPage from "./pages/admin/comments";
+import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
 import AdminAddSliderPage from "./pages/admin/slider/add";
 import AdminEditSliderPage from "./pages/admin/slider/edit";
@@ -112,6 +114,9 @@ router.on({
     },
     "/forgot": () => {
         print(FortgotPage);
+    },
+    "/cart": () => {
+        print(CartPage);
     },
     
     "/my-account": () => {
@@ -192,6 +197,7 @@ router.on({
     "/admin/topping/:id/edit": ({ data }) => {
         print(AdminEditToppingPage, data.id);
     },
+
     "/admin/voucher": () => {
         print(AdminVoucherListPage);
     },
@@ -204,6 +210,17 @@ router.on({
     "/admin/voucher/:id/edit": ({ data }) => {
         print(AdminEditVoucherPage, data.id);
     },
+
+
+    "/admin/comment": () => {
+        print(AdminCmtListPage);
+    },
+    "/admin/comment/:id/detail": ({ data }) => {
+        print(AdminDetailCmtPage, data.id);
+    },
+  
+    
+
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);
     },

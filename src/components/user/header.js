@@ -3,7 +3,7 @@ import toastr from "toastr";
 
 import { formatCurrency, getUser, reRender } from "../../utils";
 import Nav from "./nav";
-
+import CartLabel from "./cartLabel";
 import WishListLabel from "./wishlistLabel";
 
 const Header = {
@@ -73,7 +73,7 @@ const Header = {
                             ${await WishListLabel.render()}
                         </li>
                         <li id="header-cart-label" class="uppercase text-base pl-4 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                           
+                        ${CartLabel.render()}
                         </li>
                     </ul>
                 </div>
@@ -156,6 +156,7 @@ const Header = {
 
 
 };
+
 
 
 
