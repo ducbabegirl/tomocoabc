@@ -15,6 +15,16 @@ export const addToCart = (newProduct, next) => {
     next();
 };
 
+// xóa sp khỏi giỏ hàng
+export const removeItemInCart = (cartId, next) => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart = cart.filter((item) => item.id !== cartId);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    next();
+};
+
+
 // tính tổng tiền
 export const getTotalPrice = () => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];

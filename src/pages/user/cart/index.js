@@ -3,7 +3,7 @@ import toastr from "toastr";
 import Footer from "../../../components/user/footer";
 import Header from "../../../components/user/header";
 import { formatCurrency, reRender } from "../../../utils";
-import {getTotalPrice} from "../../../utils/cart";
+import { getTotalPrice, removeItemInCart,} from "../../../utils/cart";
 
 const CartPage = {
     getTitle() {
@@ -197,6 +197,30 @@ const CartPage = {
             });
 
             // xóa sp
+            const btnsRemove = document.querySelectorAll(".cart__detail-btn-remove");
+            btnsRemove.forEach((btn) => {
+                const { id } = btn.dataset;
+
+                btn.addEventListener("click", () => {
+                    Swal.fire({
+                        title: "Bạn có chắc chắn muốn xóa không?",
+                        text: "Bạn không thể hoàn tác sau khi xóa!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!",
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            removeItemInCart(id, () => {
+                                toastr.success("Xóa sản phẩm thành công");
+                                reRender(CartPage, "#app");
+                            });
+                        }
+                    });
+                });
+            });
+
             //update sp
 
             cartForm.addEventListener("input", () => btnUpdateCart.removeAttribute("disabled"));
