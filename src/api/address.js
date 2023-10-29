@@ -22,6 +22,7 @@ export const getAll = () => {
     const url = `/${TABLE_NAME}`;
     return instance.get(url);
 };
+
 // check địa chỉ tồn tại chưa
 // eslint-disable-next-line max-len
 export const checkAddExits = async (data) => {
