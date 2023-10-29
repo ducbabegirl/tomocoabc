@@ -64,7 +64,7 @@ router.on("/admin/*", () => {}, {
     before(done) {
         const userInfo = getUser();
 
-        if (userInfo && userInfo.role) {
+        if (userInfo) {
             done();
         } else {
             document.location.href = "/#/";
