@@ -36,7 +36,12 @@ import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 
 import AdminNewsListPage from "./pages/admin/news";
+
+import AdminProfilePage from "./pages/admin/profile";
+import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
+
 import AdminAddNewsPage from "./pages/admin/news/add";
+
 
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
@@ -172,8 +177,12 @@ router.on({
     "/admin/user/:id/edit": ({ data }) => {
         print(AdminEditUserPage, data.id);
     },
-
-
+    "/admin/profile": () => {
+        print(AdminProfilePage);
+    },
+    "/admin/profile/change-password": () => {
+        print(AdminUpdatePassPage);
+    },
 
 
     "/admin/news": () => {
