@@ -36,8 +36,13 @@ import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 
 import AdminNewsListPage from "./pages/admin/news";
+
 import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
+
+import AdminAddNewsPage from "./pages/admin/news/add";
+
+
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
@@ -183,7 +188,12 @@ router.on({
     "/admin/news": () => {
         print(AdminNewsListPage);
     },
-    
+    "/admin/news/page/:page": ({ data }) => {
+        print(AdminNewsListPage, data.page);
+    },
+    "/admin/news/add": () => {
+        print(AdminAddNewsPage);
+    },
 
 
 
