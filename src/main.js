@@ -41,7 +41,9 @@ import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
 
 import AdminAddNewsPage from "./pages/admin/news/add";
-
+import AdminCateNewsListPage from "./pages/admin/categoryNews";
+import AdminEditCateNewsPage from "./pages/admin/categoryNews/edit";
+import AdminAddCateNewsPage from "./pages/admin/categoryNews/add";
 
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
@@ -229,7 +231,18 @@ router.on({
     "/admin/voucher/:id/edit": ({ data }) => {
         print(AdminEditVoucherPage, data.id);
     },
-
+    "/admin/category-news": () => {
+        print(AdminCateNewsListPage);
+    },
+    "/admin/category-news/page/:page": ({ data }) => {
+        print(AdminCateNewsListPage, data.page);
+    },
+    "/admin/category-news/add": () => {
+        print(AdminAddCateNewsPage);
+    },
+    "/admin/category-news/:id/edit": ({ data }) => {
+        print(AdminEditCateNewsPage, data.id);
+    },
 
     "/admin/comment": () => {
         print(AdminCmtListPage);
