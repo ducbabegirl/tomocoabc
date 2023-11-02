@@ -61,3 +61,36 @@ const AdminAddCateNewsPage = {
         </section>
         `;
     },
+    afterRender() {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const cateName = $("#form__add-cate-title");
+
+        $("#form__add-cate").validate({
+            rules: {
+                "form__add-cate-title": "required",
+            },
+            messages: {
+                "form__add-cate-title": "Vui lòng nhập tên danh mục",
+            },
+            submitHandler() {
+                (async () => {
+                    const date = new Date();
+
+                    const cateData = {
+                        name: cateName.val(),
+                        createdAt: date.toISOString(),
+                        updatedAt: date.toISOString(),
+                    };
+
+                    add(cateData)
+                        .then(() => toastr.success("Thêm thành công"))
+                        .then(() => reRender(AdminAddCateNewsPage, "#app"));
+                })();
+            },
+        });
+    },
+};
+
+export default AdminAddCateNewsPage;

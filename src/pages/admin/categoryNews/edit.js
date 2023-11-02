@@ -65,3 +65,35 @@ const AdminEditCateNewsPage = {
         </section>
         `;
     },
+    afterRender(id) {
+        HeaderTop.afterRender();
+        AdminNav.afterRender();
+
+        const cateName = $("#form__edit-cate-title");
+
+        $("#form__edit-cate").validate({
+            rules: {
+                "form__edit-cate-title": "required",
+            },
+            messages: {
+                "form__edit-cate-title": "Vui lòng nhập tên danh mục",
+            },
+            submitHandler() {
+                (async () => {
+                    const date = new Date();
+                    const cateData = {
+                        name: cateName.value,
+                        updatedAt: date.toISOString(),
+                    };
+
+                    update(id, cateData)
+                        .then(() => toastr.success("Cập nhật thành công"))
+                        .then(() => { window.location.href = "/#/admin/category-news"; })
+                        .then(() => reRender(AdminCateNewsListPage, "#app"));
+                })();
+            },
+        });
+    },
+};
+
+export default AdminEditCateNewsPage;
