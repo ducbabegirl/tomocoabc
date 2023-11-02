@@ -2,6 +2,7 @@ import toastr from "toastr";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
+import validate from "jquery-validation";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -12,7 +13,8 @@ const AdminAddNewsPage = {
         return "Add News | Administrator";
     },
     async render(){
-        const { data: cateList } = await getAll();
+        
+
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
             ${AdminNav.render("news")}
@@ -63,8 +65,8 @@ const AdminAddNewsPage = {
                                         <label for="form__add-news-cate" class="block text-sm font-medium text-gray-700">Danh mục bài viết</label>
                                         <select id="form__add-news-cate" name="form__add-news-cate" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                             <option value="">-- Chọn danh mục bài viết --</option>
-                                            ${cateList.map((cate) => `
-                                                <option value="${cate.id}">${cate.name}</option>
+                                            ${((cate) => `
+                                                <option value="${cate.id}">Cafe</option>
                                                 `)}
                                         </select>
                                     </div>
