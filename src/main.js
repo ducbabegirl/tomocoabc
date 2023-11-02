@@ -41,7 +41,7 @@ import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
 
 import AdminAddNewsPage from "./pages/admin/news/add";
-
+import AdminEditNewsPage from "./pages/admin/news/edit";
 
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
@@ -194,7 +194,9 @@ router.on({
     "/admin/news/add": () => {
         print(AdminAddNewsPage);
     },
-
+    "/admin/news/:id/edit": ({ data }) => {
+        print(AdminEditNewsPage, data.id);
+    },
 
 
     "/admin/slider": () => {
