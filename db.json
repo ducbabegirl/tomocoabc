@@ -42,6 +42,18 @@
       "createdAt": "2022-02-12T14:13:41.269Z",
       "updatedAt": "2022-02-12T14:13:41.269Z",
       "id": 3
+    },
+    {
+      "name": "Test",
+      "createdAt": "2023-11-02T12:28:36.195Z",
+      "updatedAt": "2023-11-02T12:28:43.173Z",
+      "id": 4
+    },
+    {
+      "name": "Add cate",
+      "createdAt": "2023-11-02T12:52:30.717Z",
+      "updatedAt": "2023-11-02T12:52:30.717Z",
+      "id": 5
     }
   ],
   "products": [
@@ -1183,7 +1195,7 @@
       "provinceCode": 1,
       "address": "612 La Thành",
       "avatar": "",
-      "role": 0,
+      "role": 1,
       "active": 1,
       "createdAt": "2023-10-29T06:44:19.726Z",
       "id": 17
@@ -1213,7 +1225,11 @@
       "wardsCode": 1,
       "districtCode": 1,
       "provinceCode": 1,
+
+      "address": "hii",
+
       "address": "",
+
       "avatar": "",
       "role": 1,
       "active": 1,
