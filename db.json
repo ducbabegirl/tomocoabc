@@ -42,6 +42,12 @@
       "createdAt": "2022-02-12T14:13:41.269Z",
       "updatedAt": "2022-02-12T14:13:41.269Z",
       "id": 3
+    },
+    {
+      "name": "Test",
+      "createdAt": "2023-11-02T12:28:36.195Z",
+      "updatedAt": "2023-11-02T12:28:43.173Z",
+      "id": 4
     }
   ],
   "products": [
@@ -278,7 +284,6 @@
       "categoryId": 2,
       "status": 1,
       "view": 155,
-
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -1203,10 +1208,7 @@
       "wardsCode": 1,
       "districtCode": 1,
       "provinceCode": 1,
-
       "address": "hii",
-
-
       "avatar": "",
       "role": 1,
       "active": 1,

@@ -180,7 +180,7 @@ const AdminAddVoucherPage = {
 
         $.validator.addMethod("valid_time", () => voucherTimeEnd.val() > voucherTimeStart.val());
         $.validator.addMethod("valid_percent", () => {
-            if (voucherCondition.val() === "0" && voucherNumber.val() > 100) return false;
+            if (voucherCondition.val() === "0" && voucherNumber.val() > 99) return false;
             return true;
         });
     },
