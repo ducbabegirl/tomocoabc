@@ -30,7 +30,6 @@ const NewsByCatePage = {
         const start = (currentPage - 1) * limit;
 
         // get sp dựa trên limit
-        const { data: newsList } = await getAllByCate(cateId, start, limit);
 
         let htmlPagination = "";
         // eslint-disable-next-line no-plusplus
