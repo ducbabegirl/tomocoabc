@@ -34,7 +34,7 @@ import AdminCateListPage from "./pages/admin/category";
 import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
-
+import NewsByCatePage from "./pages/user/newsByCate";
 import AdminNewsListPage from "./pages/admin/news";
 
 import AdminProfilePage from "./pages/admin/profile";
@@ -136,6 +136,12 @@ router.on({
     },
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
+    },
+    "/category-news/:id": ({ data }) => {
+        print(NewsByCatePage, data.id);
+    },
+    "/category-news/:id/page/:page": ({ data }) => {
+        print(NewsByCatePage, data.id, data.page);
     },
 
     "/admin": () => {
