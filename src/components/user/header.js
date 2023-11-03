@@ -119,7 +119,7 @@ const Header = {
                             <a href="/#/news" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Tin tức</a>
                         </li>
                         <li>
-                            <a href="/#/contact" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Liên hệ</a>
+                            <a href="/#/news" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Tin tức</a>
                         </li>
                         <li>
                             <a href="/#/store" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Cửa hàng</a>
