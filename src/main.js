@@ -36,17 +36,20 @@ import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
 import NewsByCatePage from "./pages/user/newsByCate";
 import AdminNewsListPage from "./pages/admin/news";
+import AdminAddNewsPage from "./pages/admin/news/add";
+import AdminEditNewsPage from "./pages/admin/news/edit";
+import NewsPage from "./pages/user/news";
+
 
 import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
 
-import AdminAddNewsPage from "./pages/admin/news/add";
+
 
 import AdminCateNewsListPage from "./pages/admin/categoryNews";
 import AdminEditCateNewsPage from "./pages/admin/categoryNews/edit";
 import AdminAddCateNewsPage from "./pages/admin/categoryNews/add";
 
-import AdminEditNewsPage from "./pages/admin/news/edit";
 
 
 import AdminCmtListPage from "./pages/admin/comments";
@@ -195,7 +198,15 @@ router.on({
     "/admin/profile/change-password": () => {
         print(AdminUpdatePassPage);
     },
-
+    "/news": () => {
+        print(NewsPage);
+    },
+    "/news/page/:page": ({ data }) => {
+        print(NewsPage, data.page);
+    },
+    "/news/:id": ({ data }) => {
+        print(NewsDetailsPage, data.id);
+    },
 
     "/admin/news": () => {
         print(AdminNewsListPage);
