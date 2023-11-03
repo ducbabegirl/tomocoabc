@@ -16,7 +16,7 @@ import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 
 import ProductsPage from "./pages/user/products";
-
+import ProductByCatePage from "./pages/user/productByCate";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminUserListPage from "./pages/admin/user";
 import AdminAddUserPage from "./pages/admin/user/add";
@@ -106,7 +106,12 @@ router.on({
     "/product/:id/page/:page": ({ data }) => {
         print(ProductDetailPage, data.id, data.page);
     },
-
+    "/category/:id": ({ data }) => {
+        print(ProductByCatePage, data.id);
+    },
+    "/category/:id/page/:page": ({ data }) => {
+        print(ProductByCatePage, data.id, data.page);
+    },
     "/login": () => {
         print(LoginPage);
     },
