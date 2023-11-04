@@ -38,6 +38,7 @@ import NotFoundPage from "./pages/user/notFound";
 import AdminNewsListPage from "./pages/admin/news";
 import AdminAddNewsPage from "./pages/admin/news/add";
 import AdminContactListPage from "./pages/admin/contact";
+import AdminDetailContactPage from "./pages/admin/contact/details";
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
@@ -239,7 +240,9 @@ router.on({
     "/admin/contact/page/:page": ({ data }) => {
         print(AdminContactListPage, data.page);
     },
-    
+    "/admin/contact/:id/detail": ({ data }) => {
+        print(AdminDetailContactPage, data.id);
+    },
 
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);

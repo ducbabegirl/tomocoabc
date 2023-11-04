@@ -16,3 +16,7 @@ export const remove = (id) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.delete(url);
 };
+export const update = (id, data) => {
+    const url = `/${TABLE_NAME}/${id}`;
+    return instance.patch(url, data);
+};
