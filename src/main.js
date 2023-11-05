@@ -10,11 +10,8 @@ import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
-
 import UpdateInfoPage from "./pages/user/my-account";
-
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
-
 import ProductsPage from "./pages/user/products";
 import ProductByCatePage from "./pages/user/productByCate";
 import DashboardPage from "./pages/admin/dashboard";
@@ -68,6 +65,7 @@ import AdminEditSizePage from "./pages/admin/size/edit";
 import { getUser } from "./utils";
 import ProductDetailPage from "./pages/user/productDetails";
 import CheckoutPage from "./pages/user/cart/checkout";
+import ThanksPage from "./pages/user/cart/thanhks";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -145,6 +143,10 @@ router.on({
     },
     "/cart-checkout": () => {
         print(CheckoutPage);
+    },
+
+    "/cart-thanks": () => {
+        print(ThanksPage);
     },
     
     "/my-account": () => {

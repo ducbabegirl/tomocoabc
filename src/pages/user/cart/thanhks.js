@@ -48,7 +48,7 @@ const ThanksPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+        
     },
 };
 
