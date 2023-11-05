@@ -66,6 +66,8 @@ import { getUser } from "./utils";
 import ProductDetailPage from "./pages/user/productDetails";
 import CheckoutPage from "./pages/user/cart/checkout";
 import ThanksPage from "./pages/user/cart/thanhks";
+import AdminCartListPage from "./pages/admin/cart";
+import AdminCartDetailPage from "./pages/admin/cart/detail";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -308,6 +310,15 @@ router.on({
     },
     "/admin/size/:id/edit": ({ data }) => {
         print(AdminEditSizePage, data.id);
+    },
+    "/admin/cart": () => {
+        print(AdminCartListPage);
+    },
+    "/admin/cart/:id/detail": ({ data }) => {
+        print(AdminCartDetailPage, data.id);
+    },
+    "/admin/cart/page/:page": ({ data }) => {
+        print(AdminCartListPage, data.page);
     },
 
 });
