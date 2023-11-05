@@ -78,6 +78,7 @@ import MyAccEditAddressPage from "./pages/user/my-account/addressEdit";
 import AdminStoreListPage from "./pages/admin/store";
 import AdminAddStorePage from "./pages/admin/store/add";
 import AdminEditStorePage from "./pages/admin/store/edit";
+import StorePage from "./pages/user/store";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -122,6 +123,9 @@ router.on({
     },
     "/intro": () => {
         print(IntroPage);
+    },
+    "/store": () => {
+        print(StorePage);
     },
     "/products": () => {
         print(ProductsPage);
