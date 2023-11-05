@@ -3,7 +3,6 @@ import Nav from "./nav";
 import CartLabel from "./cartLabel";
 import { search } from "../../api/product";
 import { formatCurrency, getUser, reRender } from "../../utils";
-import Nav from "./nav";
 import WishList from "./wishlist";
 
 import WishListLabel from "./wishlistLabel";
