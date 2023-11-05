@@ -316,7 +316,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 79,
+      "view": 82,
       "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -1286,11 +1286,11 @@
       "username": "dem2",
       "fullName": "vanhvanh",
       "phone": "0987654345",
-      "wardsCode": 0,
-      "districtCode": 0,
-      "provinceCode": 0,
-      "address": "",
-      "avatar": "",
+      "wardsCode": 9442,
+      "districtCode": 262,
+      "provinceCode": 27,
+      "address": "xom2",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699184019/jcsgk3yejn5nzfrdeozz.jpg",
       "role": 0,
       "active": 1,
       "createdAt": "2023-11-05T09:23:15.912Z",
@@ -1689,6 +1689,21 @@
       "createdAt": "2023-11-05T11:05:44.492Z",
       "updatedAt": "2023-11-05T11:05:44.492Z",
       "id": 33
+    },
+    {
+      "userId": 22,
+      "customer_name": "vanhvanh",
+      "address": "xom33, Xã Vĩnh Trung, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+      "phone": "0987654345",
+      "email": "vanhaz@gmail.com",
+      "total_price": 200000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T11:32:35.977Z",
+      "updatedAt": "2023-11-05T11:32:35.977Z",
+      "id": 34
     }
   ],
   "orderDetails": [
@@ -1730,6 +1745,19 @@
       "toppingId": 2,
       "toppingPrice": 6000,
       "id": 18
+    },
+    {
+      "orderId": 34,
+      "productId": 39,
+      "productPrice": 40000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 5,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 19
     }
   ],
   "comments": [
@@ -1809,6 +1837,13 @@
       "productId": 37,
       "createdAt": "2023-11-01T15:00:06.240Z",
       "id": 38
+    },
+    {
+      "userId": 22,
+      "content": "toi thấy ngon",
+      "productId": 38,
+      "createdAt": "2023-11-05T11:33:56.574Z",
+      "id": 39
     }
   ],
   "ratings": [
@@ -1873,6 +1908,13 @@
       "ratingNumber": 5,
       "createdAt": "2023-11-01T15:00:06.229Z",
       "id": 15
+    },
+    {
+      "userId": 22,
+      "productId": 38,
+      "ratingNumber": 5,
+      "createdAt": "2023-11-05T11:33:56.564Z",
+      "id": 16
     }
   ],
   "address": [
