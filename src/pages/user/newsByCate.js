@@ -111,7 +111,7 @@ const NewsByCatePage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+       
     },
 };
 
