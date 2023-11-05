@@ -10,7 +10,9 @@ import { getAll as getAllSize, get as getSize } from "../../api/size";
 import { addToCart } from "../../utils/cart";
 import CartLabel from "../../components/user/cartLabel";
 
-
+import CommentList from "../../components/user/products/commentList";
+// eslint-disable-next-line import/no-cycle
+import FormComment from "../../components/user/products/formComment";
 
 const ProductDetailPage = {
     async getTitle(id) {
@@ -264,7 +266,22 @@ const ProductDetailPage = {
             </section>
 
             <!-- panel -->
-            
+            <section class="container max-w-6xl mx-auto px-3">
+
+                ${userLogged ? await FormComment.render(id) : /* html */`
+                <div class="mt-5">
+                    Vui lòng
+                    <a href="/#/login">
+                        <button class="bg-[#D9A953] px-2 py-1 rounded text-white text-sm font-semibold transition duration-200 ease-linear hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">đăng nhập</button>
+                    </a>
+                    để nhận xét
+                </div>
+                `}
+
+                <div id="list-comment">
+                    ${await CommentList.render(id, pageNumber)}
+                </div>
+            </section>
 
             <section class="container max-w-6xl px-3 mx-auto my-6">
                 <div class="border-t">
@@ -281,6 +298,8 @@ const ProductDetailPage = {
     afterRender(id) {
         Header.afterRender();
         Related.afterRender();
+        FormComment.afterRender(+id);
+        CommentList.afterRender(+id);
 
         const formAddCart = document.querySelector("#form__add-cart");
         const qntElement = formAddCart.querySelector("#form__add-cart-qnt");
