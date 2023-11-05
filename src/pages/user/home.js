@@ -5,6 +5,7 @@ import Banner from "../../components/user/home/banner";
 import Category from "../../components/user/home/category";
 import Why from "../../components/user/home/why";
 import Show from "../../components/user/home/show";
+import News from "../../components/user/home/news";
 import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
 const HomePage = {
@@ -34,9 +35,9 @@ const HomePage = {
             <!-- end product -->
 
             <!-- news -->
-        
+            ${await News.render()}
             <!-- end news -->
-
+           
             <!-- feedback -->
             ${Feedback.render()}
             <!-- end feedback -->

@@ -34,11 +34,28 @@ import AdminCateListPage from "./pages/admin/category";
 import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
-
+import NewsByCatePage from "./pages/user/newsByCate";
 import AdminNewsListPage from "./pages/admin/news";
 import AdminAddNewsPage from "./pages/admin/news/add";
+
+import AdminEditNewsPage from "./pages/admin/news/edit";
+import NewsPage from "./pages/user/news";
+
+
+import AdminProfilePage from "./pages/admin/profile";
+import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
+
+
+
+import AdminCateNewsListPage from "./pages/admin/categoryNews";
+import AdminEditCateNewsPage from "./pages/admin/categoryNews/edit";
+import AdminAddCateNewsPage from "./pages/admin/categoryNews/add";
+
+
+
 import AdminContactListPage from "./pages/admin/contact";
 import AdminDetailContactPage from "./pages/admin/contact/details";
+
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
 import AdminSliderListPage from "./pages/admin/slider";
@@ -136,6 +153,12 @@ router.on({
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
     },
+    "/category-news/:id": ({ data }) => {
+        print(NewsByCatePage, data.id);
+    },
+    "/category-news/:id/page/:page": ({ data }) => {
+        print(NewsByCatePage, data.id, data.page);
+    },
 
     "/admin": () => {
         print(DashboardPage);
@@ -178,9 +201,21 @@ router.on({
     "/admin/user/:id/edit": ({ data }) => {
         print(AdminEditUserPage, data.id);
     },
-
-
-
+    "/admin/profile": () => {
+        print(AdminProfilePage);
+    },
+    "/admin/profile/change-password": () => {
+        print(AdminUpdatePassPage);
+    },
+    "/news": () => {
+        print(NewsPage);
+    },
+    "/news/page/:page": ({ data }) => {
+        print(NewsPage, data.page);
+    },
+    "/news/:id": ({ data }) => {
+        print(NewsDetailsPage, data.id);
+    },
 
     "/admin/news": () => {
         print(AdminNewsListPage);
@@ -191,7 +226,9 @@ router.on({
     "/admin/news/add": () => {
         print(AdminAddNewsPage);
     },
-
+    "/admin/news/:id/edit": ({ data }) => {
+        print(AdminEditNewsPage, data.id);
+    },
 
 
     "/admin/slider": () => {
@@ -226,7 +263,18 @@ router.on({
     "/admin/voucher/:id/edit": ({ data }) => {
         print(AdminEditVoucherPage, data.id);
     },
-
+    "/admin/category-news": () => {
+        print(AdminCateNewsListPage);
+    },
+    "/admin/category-news/page/:page": ({ data }) => {
+        print(AdminCateNewsListPage, data.page);
+    },
+    "/admin/category-news/add": () => {
+        print(AdminAddCateNewsPage);
+    },
+    "/admin/category-news/:id/edit": ({ data }) => {
+        print(AdminEditCateNewsPage, data.id);
+    },
 
     "/admin/comment": () => {
         print(AdminCmtListPage);
