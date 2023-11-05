@@ -10,11 +10,8 @@ import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
-
 import UpdateInfoPage from "./pages/user/my-account";
-
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
-
 import ProductsPage from "./pages/user/products";
 import ProductByCatePage from "./pages/user/productByCate";
 import DashboardPage from "./pages/admin/dashboard";
@@ -129,7 +126,6 @@ router.on({
     "/cart-checkout": () => {
         print(CheckoutPage);
     },
-    
     "/my-account": () => {
         print(UpdateInfoPage);
     },
