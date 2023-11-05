@@ -289,7 +289,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 162,
+      "view": 163,
       "favorites": 5,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -316,7 +316,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 76,
+      "view": 77,
       "favorites": 3,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -1630,6 +1630,36 @@
       "createdAt": "2023-11-05T10:08:28.183Z",
       "updatedAt": "2023-11-05T10:08:28.183Z",
       "id": 30
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Na Lay, Thị xã Mường Lay, Tỉnh Điện Biên",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 150000,
+      "price_decrease": 0,
+      "message": "ok",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:31:34.148Z",
+      "updatedAt": "2023-11-05T10:31:34.148Z",
+      "id": 31
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 57000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:33:53.154Z",
+      "updatedAt": "2023-11-05T10:33:53.154Z",
+      "id": 32
     }
   ],
   "orderDetails": [
@@ -1710,6 +1740,45 @@
       "toppingId": 0,
       "toppingPrice": 0,
       "id": 21
+    },
+    {
+      "orderId": 31,
+      "productId": 39,
+      "productPrice": 40000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 3,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 22
+    },
+    {
+      "orderId": 32,
+      "productId": 38,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 23
+    },
+    {
+      "orderId": 32,
+      "productId": 38,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 24
     }
   ],
   "comments": [
