@@ -1,4 +1,3 @@
-
 import toastr from "toastr";
 import Nav from "./nav";
 import CartLabel from "./cartLabel";
