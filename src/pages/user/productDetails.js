@@ -9,7 +9,6 @@ import { getAll, get as getTopping } from "../../api/topping";
 import { getAll as getAllSize, get as getSize } from "../../api/size";
 import { addToCart } from "../../utils/cart";
 import CartLabel from "../../components/user/cartLabel";
-
 import CommentList from "../../components/user/products/commentList";
 // eslint-disable-next-line import/no-cycle
 import FormComment from "../../components/user/products/formComment";
@@ -17,7 +16,7 @@ import FormComment from "../../components/user/products/formComment";
 const ProductDetailPage = {
     async getTitle(id) {
         const { data: productDetail } = await get(id);
-        return `${productDetail.name} - Trà sữa cocomoco`;
+        return `${productDetail.name} - Trà sữa TOCO`;
     },
     async render(id, pageNumber) {
         // update view
@@ -297,6 +296,7 @@ const ProductDetailPage = {
     },
     afterRender(id) {
         Header.afterRender();
+      
         Related.afterRender();
         FormComment.afterRender(+id);
         CommentList.afterRender(+id);
