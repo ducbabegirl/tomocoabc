@@ -42,18 +42,6 @@
       "createdAt": "2022-02-12T14:13:41.269Z",
       "updatedAt": "2022-02-12T14:13:41.269Z",
       "id": 3
-    },
-    {
-      "name": "Test",
-      "createdAt": "2023-11-02T12:28:36.195Z",
-      "updatedAt": "2023-11-02T12:28:43.173Z",
-      "id": 4
-    },
-    {
-      "name": "Add cate",
-      "createdAt": "2023-11-02T12:52:30.717Z",
-      "updatedAt": "2023-11-05T11:12:20.402Z",
-      "id": 5
     }
   ],
   "products": [
@@ -316,7 +304,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 99,
+      "view": 104,
       "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -1337,16 +1325,6 @@
       "timeEnd": "22:00",
       "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0188117154244!2d105.76751101501277!3d21.031933285996676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455b800b38dd9%3A0xf202c907e66c5743!2zVlBCQU5LIEzDiiDEkOG7qEMgVEjhu4w!5e0!3m2!1svi!2s!4v1644632586810!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
       "id": 4
-    },
-    {
-      "name": "Thành Đức",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699184820/udwvssdgnwnl6don5ovk.jpg",
-      "address": "abc123",
-      "phone": "0987654321",
-      "timeStart": "08:44",
-      "timeEnd": "12:16",
-      "map": "https://www.youtube.com/watch?v=C_cZZSVUEyk&list=LL&index=3",
-      "id": 5
     }
   ],
   "favorites_product": [
@@ -1755,19 +1733,6 @@
       "toppingId": 2,
       "toppingPrice": 6000,
       "id": 18
-    },
-    {
-      "orderId": 34,
-      "productId": 39,
-      "productPrice": 40000,
-      "sizeId": 0,
-      "sizePrice": 0,
-      "quantity": 5,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 0,
-      "toppingPrice": 0,
-      "id": 19
     }
   ],
   "comments": [
