@@ -290,7 +290,7 @@
       "categoryId": 2,
       "status": 1,
 
-      "view": 155,
+      "view": 156,
 
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
@@ -321,7 +321,8 @@
 
       "view": 76,
 
-      "favorites": 2,
+      "favorites": 3,
+
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -1195,7 +1196,7 @@
       "email": "add@gmail.com",
       "password": "$2a$10$YEhDCT1qJopJgxvTn7duaeVNYgyhzuKkg5vVIrO5ZaPUgadKxYJ9u",
       "username": "addUser",
-      "fullName": "Adduser",
+      "fullName": "AdminD",
       "phone": "0395864561",
       "wardsCode": 178,
       "districtCode": 6,
@@ -1355,9 +1356,11 @@
       "id": 19
     },
     {
+
       "userId": 1,
       "productId": 37,
       "createdAt": "2023-11-01T14:59:46.557Z",
+
       "id": 20
     }
   ],
