@@ -71,6 +71,8 @@ import CheckoutPage from "./pages/user/cart/checkout";
 import ThanksPage from "./pages/user/cart/thanhks";
 import AdminCartListPage from "./pages/admin/cart";
 import AdminCartDetailPage from "./pages/admin/cart/detail";
+import MyAccCartPage from "./pages/user/my-account/cart";
+import MyAccCartDetailsPage from "./pages/user/my-account/cartDetails";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -159,6 +161,15 @@ router.on({
     },
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
+    },
+    "/my-account/cart": () => {
+        print(MyAccCartPage);
+    },
+    "/my-account/cart/page/:page": ({ data }) => {
+        print(MyAccCartPage, data.page);
+    },
+    "/my-account/cart/:id/detail": ({ data }) => {
+        print(MyAccCartDetailsPage, data.id);
     },
     "/category-news/:id": ({ data }) => {
         print(NewsByCatePage, data.id);
