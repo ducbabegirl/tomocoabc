@@ -16,7 +16,7 @@ import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 
 import ProductsPage from "./pages/user/products";
-
+import ProductByCatePage from "./pages/user/productByCate";
 import DashboardPage from "./pages/admin/dashboard";
 import AdminUserListPage from "./pages/admin/user";
 import AdminAddUserPage from "./pages/admin/user/add";
@@ -40,6 +40,7 @@ import NotFoundPage from "./pages/user/notFound";
 import NewsByCatePage from "./pages/user/newsByCate";
 import AdminNewsListPage from "./pages/admin/news";
 import AdminAddNewsPage from "./pages/admin/news/add";
+
 import AdminEditNewsPage from "./pages/admin/news/edit";
 import NewsPage from "./pages/user/news";
 
@@ -54,6 +55,9 @@ import AdminEditCateNewsPage from "./pages/admin/categoryNews/edit";
 import AdminAddCateNewsPage from "./pages/admin/categoryNews/add";
 
 
+
+import AdminContactListPage from "./pages/admin/contact";
+import AdminDetailContactPage from "./pages/admin/contact/details";
 
 import AdminCmtListPage from "./pages/admin/comments";
 import AdminDetailCmtPage from "./pages/admin/comments/detail";
@@ -124,7 +128,12 @@ router.on({
     "/product/:id/page/:page": ({ data }) => {
         print(ProductDetailPage, data.id, data.page);
     },
-
+    "/category/:id": ({ data }) => {
+        print(ProductByCatePage, data.id);
+    },
+    "/category/:id/page/:page": ({ data }) => {
+        print(ProductByCatePage, data.id, data.page);
+    },
     "/login": () => {
         print(LoginPage);
     },
@@ -276,8 +285,15 @@ router.on({
     "/admin/comment/:id/detail": ({ data }) => {
         print(AdminDetailCmtPage, data.id);
     },
-  
-    
+    "/admin/contact": () => {
+        print(AdminContactListPage);
+    },
+    "/admin/contact/page/:page": ({ data }) => {
+        print(AdminContactListPage, data.page);
+    },
+    "/admin/contact/:id/detail": ({ data }) => {
+        print(AdminDetailContactPage, data.id);
+    },
 
     "/admin/slider/add": () => {
         print(AdminAddSliderPage);

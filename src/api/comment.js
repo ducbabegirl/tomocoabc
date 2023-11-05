@@ -7,6 +7,10 @@ export const get = (productId, page, limit = 0) => {
     if (limit) url += `&_page=${page}&_limit=${limit}`;
     return instance.get(url);
 };
+export const add = (comment) => {
+    const url = `/${TABLE_NAME}`;
+    return instance.post(url, comment);
+};
 export const remove = (id) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.delete(url);

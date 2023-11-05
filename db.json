@@ -289,7 +289,9 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
       "view": 156,
+
       "favorites": 4,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
@@ -316,8 +318,11 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
       "view": 76,
+
       "favorites": 3,
+
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -343,11 +348,17 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 36,
-      "favorites": 0,
+      "view": 48,
+      "favorites": 1,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
-      "id": 37
+      "id": 37,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
     },
     {
       "name": "Trà sữa YoTea",
@@ -356,7 +367,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 10,
+      "view": 12,
       "favorites": 0,
       "createdAt": "2022-02-18T08:47:04.929Z",
       "updatedAt": "2022-02-18T08:47:04.929Z",
@@ -827,20 +838,11 @@
     {
       "id": 2,
       "content": "Rất oke",
-      "name": "Tuân",
+      "name": "tuấn",
       "email": "admin@gmail.com",
       "phone": "0347856325",
       "storeId": 2,
       "createdAt": "2022-02-09T15:42:22"
-    },
-    {
-      "content": "Bắc Giang 98",
-      "name": "Lê Văn Tuân",
-      "email": "tuanlv@gmail.com",
-      "phone": "0345632563",
-      "storeId": 3,
-      "createdAt": "2022-02-12T10:28:55.185Z",
-      "id": 3
     },
     {
       "content": "Ok lắm ạ",
@@ -935,6 +937,7 @@
       "id": 5
     },
     {
+
       "code": "VANH",
       "quantity": 100,
       "condition": 1,
@@ -1206,6 +1209,7 @@
       "id": 18
     },
     {
+
       "email": "lingbong12@gmail.com",
       "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
       "username": "vanhuser",
@@ -1214,7 +1218,9 @@
       "wardsCode": 1,
       "districtCode": 1,
       "provinceCode": 1,
-      "address": "",
+
+      "address": "hii",
+
       "avatar": "",
       "role": 1,
       "active": 1,
@@ -1235,6 +1241,38 @@
       "role": 1,
       "active": 1,
       "createdAt": "2023-10-29T15:15:16.149Z",
+
+
+      "email": "adminabc@gmail.com",
+      "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
+      "username": "Admin",
+      "fullName": "adminabc",
+      "phone": "0987543132",
+      "wardsCode": 4,
+      "districtCode": 1,
+      "provinceCode": 1,
+      "address": "Xom1000",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698589375/zyt3bzpouwpp2m29yjpx.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-10-29T14:22:03.219Z",
+      "id": 19
+    },
+    {
+      "email": "vanhvanh123@gmail.com",
+      "password": "$2a$10$bl9ltMbPXp1XEKo41YBb4eZ/tGtPCKhUN4dU773XhTq./I2x963de",
+      "username": "Vanhaa",
+      "fullName": "vanh",
+      "phone": "0987541787",
+      "wardsCode": 7696,
+      "districtCode": 213,
+      "provinceCode": 24,
+      "address": "xom",
+      "avatar": "",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2023-10-30T14:15:49.792Z",
+
       "id": 20
     }
   ],
@@ -1318,9 +1356,11 @@
       "id": 19
     },
     {
-      "userId": 18,
-      "productId": 38,
-      "createdAt": "2023-11-03T07:04:38.826Z",
+
+      "userId": 1,
+      "productId": 37,
+      "createdAt": "2023-11-01T14:59:46.557Z",
+
       "id": 20
     }
   ],
@@ -1638,6 +1678,13 @@
       "productId": 33,
       "createdAt": "2023-09-22T15:44:01.025Z",
       "id": 37
+    },
+    {
+      "userId": 1,
+      "content": "aaaaaaaaaaaaaaaaaa",
+      "productId": 37,
+      "createdAt": "2023-11-01T15:00:06.240Z",
+      "id": 38
     }
   ],
   "ratings": [
@@ -1695,6 +1742,13 @@
       "ratingNumber": 5,
       "createdAt": "2023-09-22T15:44:00.990Z",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "productId": 37,
+      "ratingNumber": 5,
+      "createdAt": "2023-11-01T15:00:06.229Z",
+      "id": 15
     }
   ],
   "address": [
