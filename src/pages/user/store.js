@@ -4,7 +4,7 @@ import { get, getAll, search } from "../../api/store";
 
 const StorePage = {
     getTitle() {
-        return "Hệ thống cửa hàng - Trà Sữa Yotea";
+        return "Hệ thống cửa hàng - Trà Sữa TOCOMOCO";
     },
     async render() {
         const { data: storeList } = await getAll();
@@ -15,7 +15,7 @@ const StorePage = {
         <!-- content -->
         <main>
             <section class="container max-w-6xl mx-auto px-3 mb-8">
-                <h1 class="text-2xl font-semibold text-center text-[#D9A953] my-5 uppercase">Cửa hàng Yotea</h1>
+                <h1 class="text-2xl font-semibold text-center text-[#D9A953] my-5 uppercase">Cửa hàng TOCOMOCO</h1>
 
                 <div class="grid grid-cols-12 gap-8">
                     <div class="col-span-12 md:col-span-5">
@@ -56,8 +56,7 @@ const StorePage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
-
+      
         const formSearchControl = document.querySelector("#store__form-search-control");
 
         // đổi google map khi chọn chi nhánh
