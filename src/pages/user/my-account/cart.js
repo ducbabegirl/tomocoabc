@@ -8,7 +8,7 @@ import { formatCurrency, formatDate, getUser } from "../../../utils";
 
 const MyAccCartPage = {
     getTitle() {
-        return "Đơn hàng của tôi - Trà Sữa Yotea";
+        return "Đơn hàng của tôi - Trà Sữa ";
     },
     async render(pageNumber) {
         const userLogged = getUser();
