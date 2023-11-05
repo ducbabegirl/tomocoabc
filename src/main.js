@@ -75,6 +75,9 @@ import MyAccCartPage from "./pages/user/my-account/cart";
 import MyAccCartDetailsPage from "./pages/user/my-account/cartDetails";
 import MyAccAddressPage from "./pages/user/my-account/address";
 import MyAccEditAddressPage from "./pages/user/my-account/addressEdit";
+import AdminStoreListPage from "./pages/admin/store";
+import AdminAddStorePage from "./pages/admin/store/add";
+import AdminEditStorePage from "./pages/admin/store/edit";
 
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -344,6 +347,18 @@ router.on({
     },
     "/admin/cart/page/:page": ({ data }) => {
         print(AdminCartListPage, data.page);
+    },
+    "/admin/store": () => {
+        print(AdminStoreListPage);
+    },
+    "/admin/store/page/:page": ({ data }) => {
+        print(AdminStoreListPage, data.page);
+    },
+    "/admin/store/add": () => {
+        print(AdminAddStorePage);
+    },
+    "/admin/store/:id/edit": ({ data }) => {
+        print(AdminEditStorePage, data.id);
     },
 
 });
