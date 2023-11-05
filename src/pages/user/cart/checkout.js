@@ -230,7 +230,7 @@ const CheckoutPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+   
         const userLogged = getUser();
 
         const provinceElement = document.querySelector("#cart__checkout-province");

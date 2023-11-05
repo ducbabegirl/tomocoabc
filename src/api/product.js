@@ -1,5 +1,6 @@
 import instance from "./config";
-
+import { get as getTopping } from "./topping";
+import { get as getSize } from "./size";
 
 const TABLE_NAME = "products";
 

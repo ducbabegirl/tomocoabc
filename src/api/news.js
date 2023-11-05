@@ -24,11 +24,23 @@ export const getRelated = (id, cateId, start, limit = 0) => {
     if (limit) url += `&_start=${start}&_limit=${limit}`;
     return instance.get(url);
 };
+export const add = (data) => {
+    const url = `/${TABLE_NAME}`;
+    return instance.post(url, data);
+};
+
 export const remove = (id) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.delete(url);
 };
-export const add = (data) => {
-    const url = `/${TABLE_NAME}`;
-    return instance.post(url, data);
+export const update = (id, data) => {
+    const url = `/${TABLE_NAME}/${id}`;
+    return instance.patch(url, data);
+};
+
+// tin tức theo danh mục
+export const getAllByCate = (cateId, start, limit = 0) => {
+    let url = `/${TABLE_NAME}/?cateNewId=${cateId}&status_ne=0`;
+    if (limit) url += `&_start=${start}&_limit=${limit}`;
+    return instance.get(url);
 };

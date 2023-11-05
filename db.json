@@ -277,8 +277,8 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 173,
-      "favorites": 4,
+      "view": 180,
+      "favorites": 6,
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
       "id": 39,
@@ -304,8 +304,8 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 76,
-      "favorites": 2,
+      "view": 104,
+      "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -331,12 +331,20 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 48,
-      "favorites": 1,
+      "view": 49,
+      "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
       "id": 37,
-      "ratings": [],
+      "ratings": [
+        {
+          "userId": 1,
+          "productId": 37,
+          "ratingNumber": 5,
+          "createdAt": "2023-11-01T15:00:06.229Z",
+          "id": 15
+        }
+      ],
       "category": {
         "name": "Milk Tea",
         "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
@@ -350,11 +358,17 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 10,
-      "favorites": 0,
+      "view": 12,
+      "favorites": 1,
       "createdAt": "2022-02-18T08:47:04.929Z",
       "updatedAt": "2022-02-18T08:47:04.929Z",
-      "id": 36
+      "id": 36,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
     },
     {
       "name": "Trà sữa trân châu nghệ nhân",
@@ -364,7 +378,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 25,
-      "favorites": 2,
+      "favorites": 3,
       "createdAt": "2022-02-18T08:47:34.029Z",
       "updatedAt": "2022-02-18T08:47:34.029Z",
       "id": 35,
@@ -401,7 +415,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 25,
+      "view": 26,
       "favorites": 2,
       "createdAt": "2022-02-18T08:48:45.769Z",
       "updatedAt": "2022-02-18T08:48:45.769Z",
@@ -720,15 +734,15 @@
       "id": 12
     },
     {
-      "title": "Thị trường F&B sẽ biến động thế nào trước nhu cầu đồ uống biến động trong tương lai",
-      "thumbnail": "http://res.cloudinary.com/levantuan/image/upload/v1645273987/assignment-js/vyzudetjcx7vmfwy66kj.jpg",
-      "description": "<p>test edit</p>",
-      "content": "<p>test</p>",
-      "cateNewId": 2,
-      "status": 0,
-      "createdAt": "2022-02-19T12:33:09.573Z",
-      "updatedAt": "2022-02-19T12:52:42.505Z",
-      "id": 13
+      "title": "THỊ TRƯỜNG F&B SẼ BIẾN ĐỘNG THẾ NÀO TRƯỚC NHU CẦU ĐỒ UỐNG BIẾN ĐỘNG TRONG TƯƠNG LAI",
+      "thumbnail": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698939362/jcdhjlcakuvmlhanltjb.jpg",
+      "description": "<p><strong>Năm 2019, đánh dấu sự thay đổi và biến động không ngừng của nền kinh tế Việt Nam , xu hướng tiêu dùng đồ uống của người Việt không hề giảm sút mà còn có dấu hiệu tăng trưởng. Khi thu nhập tăng cao, đời sống của người dân ngày một cải thiện, nhu cầu của con người về ăn uống và hưởng thụ ngày càng tăng. Đây là cơ hội và cũng là thách thức rất lớn đối với những người kinh doanh trong lĩnh vực F&amp;B.</strong></p><h2><strong>Tại sao kinh doanh đồ uống chưa bao giờ hết “hot”</strong></h2>",
+      "content": "<p>Ăn uống là nhu cầu cơ bản của con người. Nhu cầu ấy không bao giờ mất đi mà ngày một trở nên đa dạng và gia tăng theo sự phát triển của nền kinh tế. Để phù hợp với điều kiện sống và thị hiếu của khách hàng. Kinh doanh đồ uống là giải pháp khá bền vững và ổn định. Bởi lẽ chi phí bỏ ra để đầu tư một cửa hàng đồ uống khá thấp, nhu cầu sử dụng đồ uống của khách hàng cao. Khách hàng ghé thăm một cửa hàng đồ uống không chỉ để giải khát mà còn có là để tụ tập, chuyền trò, thư giãn và làm việc. Họ cần nhiều hơn giá trị của một ly đồ uống. Chính những lý do đó đã khiến cho những cửa hàng kinh doanh đồ uống trở thành mô hình kinh doanh ổn định và bền vững.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/10/Y1-300x200.jpg 300w, https://yotea.vn/wp-content/uploads/2019/10/Y1-768x512.jpg 768w, https://yotea.vn/wp-content/uploads/2019/10/Y1-600x400.jpg 600w, https://yotea.vn/wp-content/uploads/2019/10/Y1.jpg 960w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Đâu mới là giá trị cốt lõi của kinh doanh đồ uống</strong></h2><p>Chất lượng sản phẩm luôn là yếu tố cốt lõi của việc kinh doanh đồ uống. Sản phẩm luôn là yếu tố đầu tiên để đánh giá một cửa hàng đồ uống. Chính vì vậy, đây là yếu tố bắt buộc, người làm kinh doanh phải chú trọng. Đồ uống phải thơm ngon, hấp dẫn cả về hương vị lẫn hình thức mới làm thỏa mãn khách hàng. Không những thế, thức uống phải đa dạng và đặc biệt, đôi khi sự khác lạ so với những thương hiệu khác chính là điểm nhấn làm thương hiệu này trở nên khác biệt.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144-300x240.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144-300x240.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-20191029092144.jpg 313w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Biến thương hiệu đồ uống trở nên khác biệt</strong></h2><p>Thị trường kinh doanh đồ uống tại Việt Nam là thị trường béo bở. Có thể dễ dàng nhận thấy ngay có nhiều thương hiệu đồ uống lớn nhỏ, trong và ngoài nước xuất hiện thời gian gần đây, điều này đã tạo nên sự cạnh tranh khá gay gắt trong lĩnh vực kinh doanh F&amp;B. Vậy tại sao rất nhiều thương hiệu lại tồn tại được, đó là do nhu cầu tiềm năng của thị trường tiêu dùng đồ uống tại Việt Nam. Sự gia tăng nhu cầu của khách hàng tỷ lệ thuận với sự gia tăng các thương hiệu và cửa hàng đồ uống. Trước sự cạnh tranh gay gắt như vậy, thương hiệu muốn thu hút được khách hàng cần phải trở nên khác biệt. Khác biệt vê chất lượng đồ uống, về không gian, về con người, về quy trình phục vụ. Ví dụ như Toco toco được biết đến với thương hiệu trà sữa được pha chế từ những nguyên liệu nông sản Việt, Cocomoco đã rất thành công trong việc xây dựng một mô hình kinh doanh trà và cà phê hướng đến một không gian mở hiện đại, trẻ trung sang trọng, đồ uống với nguyên liệu tự nhiên,… Điều quan trọng là tạo được dấu ân để khách hàng biết đến thương hiệu. Đó chính là yếu tố tiên quyết tạo nên một thương hiệu đồ uống thành công.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-238x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-238x300.jpg 238w, https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-300x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-300x300.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-150x150.jpg 150w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa-100x100.jpg 100w, https://yotea.vn/wp-content/uploads/2019/11/454209d6ac1f4413fe344d19512826aa.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><p>Thương hiệu Cocomoco đã rất thành công trong việc xây dựng hình ảnh không gian thưởng thức trà và cà phê sang trọng với chất lượng đồ uống tuyệt hảo từ những nguyên liệu được chiết xuất từ nguyên liệu sạch, tự nhiên. Với mong muốn mang thương hiệu trà và cà phê Việt đến với nhiều người hơn. Thương hiệu <strong>Cocomoco</strong><a href=\"https://yotea.vn/\"> </a>đang tìm kiếm đối tác nhượng quyền thương hiệu.</p>",
+      "cateNewId": 1,
+      "status": 1,
+      "createdAt": "2023-11-02T15:36:02.214Z",
+      "updatedAt": "2023-11-05T11:21:38.450Z",
+      "id": 15
     }
   ],
   "slider": [
@@ -1169,7 +1183,7 @@
       "provinceCode": 1,
       "address": "612 La Thành",
       "avatar": "",
-      "role": 0,
+      "role": 1,
       "active": 1,
       "createdAt": "2023-10-29T06:44:19.726Z",
       "id": 17
@@ -1178,7 +1192,7 @@
       "email": "add@gmail.com",
       "password": "$2a$10$YEhDCT1qJopJgxvTn7duaeVNYgyhzuKkg5vVIrO5ZaPUgadKxYJ9u",
       "username": "addUser",
-      "fullName": "Adduser",
+      "fullName": "AdminD",
       "phone": "0395864561",
       "wardsCode": 178,
       "districtCode": 6,
@@ -1207,20 +1221,68 @@
       "id": 19
     },
     {
-      "email": "hongdtabc@gmail.com",
-      "password": "$2a$10$EFql4ffVp/nmxSypB1AJIeeS2QwkJSAxYBwnPRskVt5T7sQ1lb/Bm",
-      "username": "hong",
-      "fullName": "Dt hong",
-      "phone": "0842027665",
-      "wardsCode": 1,
+      "email": "adminabc@gmail.com",
+      "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
+      "username": "Admin",
+      "fullName": "adminabc",
+      "phone": "0987543132",
+      "wardsCode": 4,
       "districtCode": 1,
       "provinceCode": 1,
-      "address": "",
-      "avatar": "",
+      "address": "Xom1000",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698589375/zyt3bzpouwpp2m29yjpx.jpg",
       "role": 1,
       "active": 1,
-      "createdAt": "2023-10-29T15:15:16.149Z",
+      "createdAt": "2023-10-29T14:22:03.219Z",
+      "id": 19
+    },
+    {
+      "email": "vanhvanh123@gmail.com",
+      "password": "$2a$10$bl9ltMbPXp1XEKo41YBb4eZ/tGtPCKhUN4dU773XhTq./I2x963de",
+      "username": "Vanhaa",
+      "fullName": "vanh",
+      "phone": "0987541787",
+      "wardsCode": 7696,
+      "districtCode": 213,
+      "provinceCode": 24,
+      "address": "xom",
+      "avatar": "",
+      "role": 0,
+      "active": 0,
+      "createdAt": "2023-10-30T14:15:49.792Z",
       "id": 20
+    },
+    {
+      "email": "tocomoco@gmail.com",
+      "password": "$2a$10$u5tNDDDFQ2b7LNmxIuWwx.aJlC3VSYOxj0M/zgMt0HwBsrkCamzbe",
+      "username": "tocomoco",
+      "fullName": "Admin",
+      "phone": "0987654345",
+      "wardsCode": 61,
+      "districtCode": 2,
+      "provinceCode": 1,
+      "address": "xom2",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699175644/lrwqlu6h5t3wmemw1ygn.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-11-05T09:13:26.992Z",
+      "id": 21
+    },
+    {
+      "email": "vanhaz@gmail.com",
+      "password": "$2a$10$73XYTKVueq4EgYcTvT78BebdHrmSN9huwUIuZEjbMXiHDvQfn6hdy",
+      "username": "dem2",
+      "fullName": "vanhvanh",
+      "phone": "0987654345",
+      "wardsCode": 9442,
+      "districtCode": 262,
+      "provinceCode": 27,
+      "address": "xom2",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699184019/jcsgk3yejn5nzfrdeozz.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-11-05T09:23:15.912Z",
+      "id": 22
     }
   ],
   "stores": [
@@ -1510,6 +1572,126 @@
       "createdAt": "2023-09-22T15:41:04.922Z",
       "updatedAt": "2023-09-22T15:41:04.922Z",
       "id": 26
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:39:29.279Z",
+      "updatedAt": "2023-11-05T09:39:29.279Z",
+      "id": 27
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:40:36.318Z",
+      "updatedAt": "2023-11-05T09:40:36.318Z",
+      "id": 28
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:59:20.889Z",
+      "updatedAt": "2023-11-05T09:59:20.889Z",
+      "id": 29
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 0,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:08:28.183Z",
+      "updatedAt": "2023-11-05T10:08:28.183Z",
+      "id": 30
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Na Lay, Thị xã Mường Lay, Tỉnh Điện Biên",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 150000,
+      "price_decrease": 0,
+      "message": "ok",
+      "status": 2,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:31:34.148Z",
+      "updatedAt": "2023-11-05T10:43:58.768Z",
+      "id": 31
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 57000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 4,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:33:53.154Z",
+      "updatedAt": "2023-11-05T10:43:36.763Z",
+      "id": 32
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Xã Quang Kim, Huyện Bát Xát, Tỉnh Lào Cai",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 50000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T11:05:44.492Z",
+      "updatedAt": "2023-11-05T11:05:44.492Z",
+      "id": 33
+    },
+    {
+      "userId": 22,
+      "customer_name": "vanhvanh",
+      "address": "xom33, Xã Vĩnh Trung, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+      "phone": "0987654345",
+      "email": "vanhaz@gmail.com",
+      "total_price": 200000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T11:32:35.977Z",
+      "updatedAt": "2023-11-05T11:32:35.977Z",
+      "id": 34
     }
   ],
   "orderDetails": [
@@ -1630,6 +1812,13 @@
       "productId": 37,
       "createdAt": "2023-11-01T15:00:06.240Z",
       "id": 38
+    },
+    {
+      "userId": 22,
+      "content": "toi thấy ngon",
+      "productId": 38,
+      "createdAt": "2023-11-05T11:33:56.574Z",
+      "id": 39
     }
   ],
   "ratings": [
@@ -1694,6 +1883,13 @@
       "ratingNumber": 5,
       "createdAt": "2023-11-01T15:00:06.229Z",
       "id": 15
+    },
+    {
+      "userId": 22,
+      "productId": 38,
+      "ratingNumber": 5,
+      "createdAt": "2023-11-05T11:33:56.564Z",
+      "id": 16
     }
   ],
   "address": [
@@ -1751,6 +1947,17 @@
       "wardCode": 3910,
       "address": "Bắc Giang",
       "id": 5
+    },
+    {
+      "userId": 21,
+      "fullName": "Admin",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "provinceCode": 1,
+      "districtCode": 2,
+      "wardCode": 61,
+      "address": "xom2",
+      "id": 6
     }
   ]
 }

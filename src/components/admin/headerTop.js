@@ -1,7 +1,8 @@
+import { getUser, logout } from "../../utils";
 
 const HeaderTop = {
     render() {
-       
+        const userLogin = getUser();
 
         return /* html */ `
         <div class="bg-white border-b h-14 px-4 flex justify-between items-center">
@@ -29,7 +30,7 @@ const HeaderTop = {
                     <div>
                         <button type="button" class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" x-ref="button" @click="onButtonClick()" @keyup.space.prevent="onButtonEnter()" @keydown.enter.prevent="onButtonEnter()" aria-expanded="false" aria-haspopup="true" x-bind:aria-expanded="open.toString()" @keydown.arrow-up.prevent="onArrowUp()" @keydown.arrow-down.prevent="onArrowDown()">
                             <span class="sr-only">Open user menu</span>
-                            <img class="h-8 w-8 rounded-full object-cover" src="" alt="">
+                            <img class="h-8 w-8 rounded-full object-cover" src="${userLogin.avatar}" alt="">
                         </button>
                     </div>
                     

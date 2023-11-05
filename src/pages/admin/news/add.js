@@ -2,10 +2,12 @@ import toastr from "toastr";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
+import validate from "jquery-validation";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
 import { add } from "../../../api/news";
+import { getAll } from "../../../api/cateNews";
 
 const AdminAddNewsPage = {
     getTitle() {
@@ -13,6 +15,7 @@ const AdminAddNewsPage = {
     },
     async render(){
         const { data: cateList } = await getAll();
+
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
             ${AdminNav.render("news")}
