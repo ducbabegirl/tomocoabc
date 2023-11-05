@@ -34,6 +34,9 @@ import AdminCateListPage from "./pages/admin/category";
 import AdminAddCatePage from "./pages/admin/category/add";
 import AdminEditCatePage from "./pages/admin/category/edit";
 import NotFoundPage from "./pages/user/notFound";
+
+
+
 import NewsByCatePage from "./pages/user/newsByCate";
 import AdminNewsListPage from "./pages/admin/news";
 import AdminAddNewsPage from "./pages/admin/news/add";
