@@ -79,7 +79,7 @@ import AdminStoreListPage from "./pages/admin/store";
 import AdminAddStorePage from "./pages/admin/store/add";
 import AdminEditStorePage from "./pages/admin/store/edit";
 import StorePage from "./pages/user/store";
-
+import ContactPage from "./pages/user/contact";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -159,6 +159,9 @@ router.on({
     },
     "/cart-checkout": () => {
         print(CheckoutPage);
+    },
+    "/contact": () => {
+        print(ContactPage);
     },
 
     "/cart-thanks": () => {
