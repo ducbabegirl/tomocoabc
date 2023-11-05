@@ -305,6 +305,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 78,
+
       "favorites": 2,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -923,16 +924,17 @@
       "id": 5
     },
     {
-      "code": "DEMO",
-      "quantity": 1000,
-      "condition": 0,
-      "conditionNumber": 10,
-      "status": 0,
-      "timeStart": "2023-10-21T21:24",
-      "timeEnd": "2023-12-27T23:24",
+
+      "code": "VANH",
+      "quantity": 100,
+      "condition": 1,
+      "conditionNumber": 20000,
+      "status": 1,
+      "timeStart": "2023-10-28T21:48",
+      "timeEnd": "2023-11-05T21:48",
       "user_ids": [],
-      "createdAt": "2023-10-30T14:25:03.088Z",
-      "updatedAt": "2023-10-30T14:25:03.088Z",
+      "createdAt": "2023-10-29T14:49:02.738Z",
+      "updatedAt": "2023-10-29T14:49:02.738Z",
       "id": 6
     }
   ],
@@ -1194,6 +1196,7 @@
       "id": 18
     },
     {
+
       "email": "adminabc@gmail.com",
       "password": "$2a$10$lhvKiSu/7YIVIFlFDeT.Pese4kwcLlHKK4rV.5oJXmO/9P3JHyZiq",
       "username": "Admin",
@@ -1207,6 +1210,21 @@
       "role": 1,
       "active": 1,
       "createdAt": "2023-10-29T14:22:03.219Z",
+
+      "email": "lingbong12@gmail.com",
+      "password": "$2a$10$LGMeqF.Y.JhEuK3/6wtTF.N/XLGoUsoK2U2rCqQQPx4O0s.P55E.q",
+      "username": "vanhuser",
+      "fullName": "việt anh",
+      "phone": "0985673815",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-10-29T14:46:41.257Z",
+
       "id": 19
     },
     {
