@@ -54,6 +54,7 @@
       "createdAt": "2023-11-02T12:52:30.717Z",
       "updatedAt": "2023-11-05T09:48:45.477Z",
       "id": 5
+
     }
   ],
   "products": [
@@ -291,6 +292,7 @@
       "status": 1,
       "view": 156,
       "favorites": 4,
+
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
       "id": 39,
@@ -318,6 +320,7 @@
       "status": 1,
       "view": 76,
       "favorites": 3,
+
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
       "id": 38,
@@ -343,12 +346,20 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 48,
-      "favorites": 1,
+      "view": 49,
+      "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
       "id": 37,
-      "ratings": [],
+      "ratings": [
+        {
+          "userId": 1,
+          "productId": 37,
+          "ratingNumber": 5,
+          "createdAt": "2023-11-01T15:00:06.229Z",
+          "id": 15
+        }
+      ],
       "category": {
         "name": "Milk Tea",
         "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
@@ -363,10 +374,16 @@
       "categoryId": 2,
       "status": 1,
       "view": 12,
-      "favorites": 0,
+      "favorites": 1,
       "createdAt": "2022-02-18T08:47:04.929Z",
       "updatedAt": "2022-02-18T08:47:04.929Z",
-      "id": 36
+      "id": 36,
+      "ratings": [],
+      "category": {
+        "name": "Milk Tea",
+        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+        "id": 2
+      }
     },
     {
       "name": "Trà sữa trân châu nghệ nhân",
@@ -376,7 +393,7 @@
       "categoryId": 2,
       "status": 1,
       "view": 25,
-      "favorites": 2,
+      "favorites": 3,
       "createdAt": "2022-02-18T08:47:34.029Z",
       "updatedAt": "2022-02-18T08:47:34.029Z",
       "id": 35,
@@ -739,7 +756,7 @@
       "cateNewId": 1,
       "status": 1,
       "createdAt": "2023-11-02T15:36:02.214Z",
-      "updatedAt": "2023-11-02T15:36:31.549Z",
+      "updatedAt": "2023-11-05T11:21:38.450Z",
       "id": 15
     }
   ],
@@ -856,6 +873,15 @@
       "storeId": 3,
       "createdAt": "2023-09-08T02:26:30.348Z",
       "id": 5
+    },
+    {
+      "content": "ngonngngnggnng",
+      "name": " test",
+      "email": "testtest69@gmail.com",
+      "phone": "0784371437",
+      "storeId": 2,
+      "createdAt": "2023-11-05T14:43:56.768Z",
+      "id": 6
     }
   ],
   "voucher": [
@@ -1249,12 +1275,44 @@
       "active": 0,
       "createdAt": "2023-10-30T14:15:49.792Z",
       "id": 20
+    },
+    {
+      "email": "tocomoco@gmail.com",
+      "password": "$2a$10$u5tNDDDFQ2b7LNmxIuWwx.aJlC3VSYOxj0M/zgMt0HwBsrkCamzbe",
+      "username": "tocomoco",
+      "fullName": "Admin",
+      "phone": "0987654345",
+      "wardsCode": 61,
+      "districtCode": 2,
+      "provinceCode": 1,
+      "address": "xom2",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699175644/lrwqlu6h5t3wmemw1ygn.jpg",
+      "role": 1,
+      "active": 1,
+      "createdAt": "2023-11-05T09:13:26.992Z",
+      "id": 21
+    },
+    {
+      "email": "vanhaz@gmail.com",
+      "password": "$2a$10$73XYTKVueq4EgYcTvT78BebdHrmSN9huwUIuZEjbMXiHDvQfn6hdy",
+      "username": "dem2",
+      "fullName": "vanhvanh",
+      "phone": "0987654345",
+      "wardsCode": 9442,
+      "districtCode": 262,
+      "provinceCode": 27,
+      "address": "xom2",
+      "avatar": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699184019/jcsgk3yejn5nzfrdeozz.jpg",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-11-05T09:23:15.912Z",
+      "id": 22
     }
   ],
   "stores": [
     {
       "id": 1,
-      "name": "Yotea Bắc Giang",
+      "name": "Cocomoco Bắc Giang",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177222/assignment-js/ekkpofluy69wvmzhgwde.jpg",
       "address": "Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
       "phone": "0347568965",
@@ -1264,7 +1322,7 @@
     },
     {
       "id": 2,
-      "name": "Yotea Bắc Ninh",
+      "name": "Cocomoco Bắc Ninh",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644595526/assignment-js/kqcvijzpvdgmrq6uu5mh.jpg",
       "address": "544W+Q72, Phượng Mao, Quế Võ, Bắc Ninh, Việt Nam",
       "phone": "0345632563",
@@ -1273,7 +1331,7 @@
       "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119123.91725720058!2d106.10322212964464!3d21.087737850260655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31350b0386e269eb%3A0x5c10b1cc0c2e5df4!2sYO%20TEA%20%26%20COFFEE!5e0!3m2!1svi!2s!4v1645177383426!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
     },
     {
-      "name": "Yotea Hà Nội",
+      "name": "Cocomoco Hà Nội",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177345/assignment-js/dvmfu4bmhxa71a1ocewp.jpg",
       "address": "320 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội",
       "phone": "0345236589",
@@ -1283,7 +1341,7 @@
       "id": 3
     },
     {
-      "name": "Yotea Hà Giang",
+      "name": "Cocomoco Hà Giang",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1644632614/assignment-js/z5qrp7yxl8bav29bfstt.jpg",
       "address": "247 Nguyễn Thái Học, P. Trần Phú, Hà Giang",
       "phone": "0347888888",
@@ -1538,6 +1596,141 @@
       "createdAt": "2023-09-22T15:41:04.922Z",
       "updatedAt": "2023-09-22T15:41:04.922Z",
       "id": 26
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:39:29.279Z",
+      "updatedAt": "2023-11-05T09:39:29.279Z",
+      "id": 27
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:40:36.318Z",
+      "updatedAt": "2023-11-05T09:40:36.318Z",
+      "id": 28
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 40000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T09:59:20.889Z",
+      "updatedAt": "2023-11-05T09:59:20.889Z",
+      "id": 29
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 0,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:08:28.183Z",
+      "updatedAt": "2023-11-05T10:08:28.183Z",
+      "id": 30
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Na Lay, Thị xã Mường Lay, Tỉnh Điện Biên",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 150000,
+      "price_decrease": 0,
+      "message": "ok",
+      "status": 2,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:31:34.148Z",
+      "updatedAt": "2023-11-05T10:43:58.768Z",
+      "id": 31
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 57000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 4,
+      "voucher": [],
+      "createdAt": "2023-11-05T10:33:53.154Z",
+      "updatedAt": "2023-11-05T10:43:36.763Z",
+      "id": 32
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Xã Quang Kim, Huyện Bát Xát, Tỉnh Lào Cai",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 50000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T11:05:44.492Z",
+      "updatedAt": "2023-11-05T11:05:44.492Z",
+      "id": 33
+    },
+    {
+      "userId": 22,
+      "customer_name": "vanhvanh",
+      "address": "xom33, Xã Vĩnh Trung, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+      "phone": "0987654345",
+      "email": "vanhaz@gmail.com",
+      "total_price": 200000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T11:32:35.977Z",
+      "updatedAt": "2023-11-05T11:32:35.977Z",
+      "id": 34
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 50000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 0,
+      "voucher": [],
+      "createdAt": "2023-11-05T12:02:45.545Z",
+      "updatedAt": "2023-11-05T12:02:45.545Z",
+      "id": 35
     }
   ],
   "orderDetails": [
@@ -1579,6 +1772,19 @@
       "toppingId": 2,
       "toppingPrice": 6000,
       "id": 18
+    },
+    {
+      "orderId": 35,
+      "productId": 39,
+      "productPrice": 40000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 19
     }
   ],
   "comments": [
@@ -1658,6 +1864,13 @@
       "productId": 37,
       "createdAt": "2023-11-01T15:00:06.240Z",
       "id": 38
+    },
+    {
+      "userId": 22,
+      "content": "toi thấy ngon",
+      "productId": 38,
+      "createdAt": "2023-11-05T11:33:56.574Z",
+      "id": 39
     }
   ],
   "ratings": [
@@ -1722,6 +1935,13 @@
       "ratingNumber": 5,
       "createdAt": "2023-11-01T15:00:06.229Z",
       "id": 15
+    },
+    {
+      "userId": 22,
+      "productId": 38,
+      "ratingNumber": 5,
+      "createdAt": "2023-11-05T11:33:56.564Z",
+      "id": 16
     }
   ],
   "address": [
@@ -1779,6 +1999,17 @@
       "wardCode": 3910,
       "address": "Bắc Giang",
       "id": 5
+    },
+    {
+      "userId": 21,
+      "fullName": "Admin",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "provinceCode": 1,
+      "districtCode": 2,
+      "wardCode": 61,
+      "address": "xom2",
+      "id": 6
     }
   ]
 }

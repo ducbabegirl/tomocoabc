@@ -10,11 +10,8 @@ import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
-
 import UpdateInfoPage from "./pages/user/my-account";
-
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
-
 import ProductsPage from "./pages/user/products";
 import ProductByCatePage from "./pages/user/productByCate";
 import DashboardPage from "./pages/admin/dashboard";
@@ -71,7 +68,18 @@ import AdminEditSizePage from "./pages/admin/size/edit";
 import { getUser } from "./utils";
 import ProductDetailPage from "./pages/user/productDetails";
 import CheckoutPage from "./pages/user/cart/checkout";
-
+import ThanksPage from "./pages/user/cart/thanhks";
+import AdminCartListPage from "./pages/admin/cart";
+import AdminCartDetailPage from "./pages/admin/cart/detail";
+import MyAccCartPage from "./pages/user/my-account/cart";
+import MyAccCartDetailsPage from "./pages/user/my-account/cartDetails";
+import MyAccAddressPage from "./pages/user/my-account/address";
+import MyAccEditAddressPage from "./pages/user/my-account/addressEdit";
+import AdminStoreListPage from "./pages/admin/store";
+import AdminAddStorePage from "./pages/admin/store/add";
+import AdminEditStorePage from "./pages/admin/store/edit";
+import StorePage from "./pages/user/store";
+import ContactPage from "./pages/user/contact";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -116,6 +124,9 @@ router.on({
     "/intro": () => {
         print(IntroPage);
     },
+    "/store": () => {
+        print(StorePage);
+    },
     "/products": () => {
         print(ProductsPage);
     },
@@ -149,12 +160,36 @@ router.on({
     "/cart-checkout": () => {
         print(CheckoutPage);
     },
-    
+    "/contact": () => {
+        print(ContactPage);
+    },
+
+    "/cart-thanks": () => {
+        print(ThanksPage);
+    },
     "/my-account": () => {
         print(UpdateInfoPage);
     },
     "/my-account/update-pass": () => {
         print(MyAccUpdatePass);
+    },
+    "/my-account/cart": () => {
+        print(MyAccCartPage);
+    },
+    "/my-account/cart/page/:page": ({ data }) => {
+        print(MyAccCartPage, data.page);
+    },
+    "/my-account/cart/:id/detail": ({ data }) => {
+        print(MyAccCartDetailsPage, data.id);
+    },
+    "/my-account/address": () => {
+        print(MyAccAddressPage);
+    },
+    "/my-account/address/page/:page": ({ data }) => {
+        print(MyAccAddressPage, data.page);
+    },
+    "/my-account/address/:id/edit": ({ data }) => {
+        print(MyAccEditAddressPage, data.id);
     },
     "/category-news/:id": ({ data }) => {
         print(NewsByCatePage, data.id);
@@ -309,6 +344,27 @@ router.on({
     },
     "/admin/size/:id/edit": ({ data }) => {
         print(AdminEditSizePage, data.id);
+    },
+    "/admin/cart": () => {
+        print(AdminCartListPage);
+    },
+    "/admin/cart/:id/detail": ({ data }) => {
+        print(AdminCartDetailPage, data.id);
+    },
+    "/admin/cart/page/:page": ({ data }) => {
+        print(AdminCartListPage, data.page);
+    },
+    "/admin/store": () => {
+        print(AdminStoreListPage);
+    },
+    "/admin/store/page/:page": ({ data }) => {
+        print(AdminStoreListPage, data.page);
+    },
+    "/admin/store/add": () => {
+        print(AdminAddStorePage);
+    },
+    "/admin/store/:id/edit": ({ data }) => {
+        print(AdminEditStorePage, data.id);
     },
 
 });

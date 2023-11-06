@@ -1,14 +1,26 @@
 import HeaderTop from "../../components/admin/headerTop";
 import AdminNav from "../../components/admin/nav";
+import { getAll as getAllPost } from "../../api/news";
 import { getAll as getAllUser } from "../../api/user";
 import { getAll as getAllProduct } from "../../api/product";
+import { getAll as getAllOrder } from "../../api/order";
+import { formatCurrency } from "../../utils";
+
 const DashboardPage = {
     getTitle() {
         return "Dashboard | Administrator";
     },
     async render() {
+        const { data: posts } = await getAllPost();
         const { data: users } = await getAllUser();
         const { data: products } = await getAllProduct();
+
+        // thống kê doanh thu
+        const { data: orderList } = await getAllOrder();
+        const orderSuccess = orderList.filter((order) => order.status === 3);
+        // eslint-disable-next-line max-len
+        const totalPrice = orderSuccess.reduce((total, order) => total + (order.total_price - order.price_decrease), 0);
+
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
             ${AdminNav.render("dashboard")}
@@ -34,7 +46,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Bài viết</span>
-                                    <span class="block text-gray-500"> Posts</span>
+                                    <span class="block text-gray-500">${posts.length} Posts</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
@@ -46,7 +58,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Tài khoản</span>
-                                    <span class="block text-gray-500">${users.length}</span>
+                                    <span class="block text-gray-500">${users.length} Members</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
@@ -70,7 +82,7 @@ const DashboardPage = {
                             <div class="rounded-r-md flex shadow-sm items-center flex-1 justify-between px-3 py-2 leading-snug border-y border-r">
                                 <div>
                                     <span class="block font-semibold">Doanh thu</span>
-                                    <span class="block text-gray-500"></span>
+                                    <span class="block text-gray-500">${formatCurrency(totalPrice)}</span>
                                 </div>
                                 <div class="text-gray-500">
                                     <i class="fas fa-ellipsis-v"></i>
