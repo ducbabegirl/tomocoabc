@@ -107,7 +107,7 @@ const NewsPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+       
     },
 };
 export default NewsPage;
