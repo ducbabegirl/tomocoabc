@@ -16,11 +16,13 @@ import { add as addOrderDetail } from "../../../api/orderDetail";
 import {
     add as addAddress, getByUserId, get as getAdd, checkAddExits,
 } from "../../../api/address";
+import bankingFunctions from "../../../utils/pay";
 
 const CheckoutPage = {
     getTitle() {
         return "Thanh toán - Trà Sữa Yotea";
     },
+
     async render() {
         const userLogged = getUser();
         const { data: listProvince } = await getAllProvince();
@@ -200,6 +202,7 @@ const CheckoutPage = {
                     </table>
 
                     <button class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">Đặt hàng</button>
+                    <a href="javascript:void(0)" class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]" id="pay_online">Thanh Toán Trước</a>
                 </div>
             </form>
         </main>
@@ -228,9 +231,12 @@ const CheckoutPage = {
         ${Footer.render()}
         `;
     },
+
+
+
     afterRender() {
         Header.afterRender();
-   
+
         const userLogged = getUser();
 
         const provinceElement = document.querySelector("#cart__checkout-province");
@@ -495,9 +501,60 @@ const CheckoutPage = {
             });
         }
 
+
+        // Phần thanh toán online
+        const payOnline = document.querySelector('#pay_online');
+        if (payOnline) {
+            payOnline.addEventListener('click', async () => {
+
+                // tổng tiền giảm bởi voucher
+                const totalPriceVoucher = totalPriceDerease();
+                let totalMoney = getTotalPrice() - totalPriceVoucher
+                if (totalMoney <= 0) {
+                    totalMoney = 0
+                }
+                const district = districtElement.options[districtElement.selectedIndex].text;
+                const province = provinceElement.options[provinceElement.selectedIndex].text;
+                const ward = wardElement.options[wardElement.selectedIndex].text;
+                const date = new Date();
+                const currentUserId = getUser() ? getUser().id : 0;
+                const customerAdd = `${address.value}, ${ward}, ${district}, ${province}`;
+                const listIdVoucher = getIdsVoucher();
+                const order = {
+                    userId: currentUserId,
+                    customer_name: fullName.value,
+                    address: customerAdd,
+                    phone: phone.value,
+                    email: email.value,
+                    total_price: getTotalPrice(),
+                    price_decrease: totalPriceDerease(),
+                    message: message.value,
+                    status: 5,
+                    voucher: listIdVoucher,
+                    checkBanking:0,
+                    createdAt: date.toISOString(),
+                    updatedAt: date.toISOString(),
+                };
+                const { data } = await add(order);
+                const idOrder = data.id;
+                const paymentUrl = bankingFunctions.mainBanking(totalMoney,idOrder);
+                if (paymentUrl != null) {
+                    
+                    window.location = paymentUrl;
+                }
+
+            });
+        }
+
+        // end
+
         // đóng modal
         $("#modal__overlay").on("click", () => modal.classList.remove("active"));
         $("#modal-btn-close").on("click", () => modal.classList.remove("active"));
+
+
+
+
     },
 };
 
