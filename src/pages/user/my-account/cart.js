@@ -131,7 +131,7 @@ const MyAccCartPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+     
         MyAccNav.afterRender();
 
         const userLogged = getUser();
