@@ -170,7 +170,7 @@ const MyAccCartDetailsPage = {
     },
     afterRender(id) {
         Header.afterRender();
-     
+
 
         const btnCartCancel = document.querySelector("#btn-cancel");
 
