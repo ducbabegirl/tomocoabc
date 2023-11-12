@@ -68,7 +68,7 @@ const CartPage = {
                                     <td class="p-2">
                                         <div class="flex items-center h-9" id="cart__detail-qnt-wrap">
                                             <button type="button" class="cart__detail-qnt-btn btn-decrease cart__detail-btn-decrease px-2 bg-gray-100 border-gray-200 h-full border-l border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">-</button>
-                                            <input type="text" class="cart__detail-qnt border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="${item.quantity}">
+                                            <input type="text" class="cart__detail-qnt border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="${item.quantity}" min="0" disabled>
                                             <button type="button" class="cart__detail-qnt-btn btn-increase cart__detail-btn-increase px-2 bg-gray-100 border-gray-200 h-full border-r border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">+</button>
                                         </div>
                                     </td>
@@ -241,6 +241,17 @@ const CartPage = {
                 updateQuantity(cartQuantity, () => {
                     toastr.success("Cập nhật giỏ hàng thành công");
                     reRender(CartPage, "#app");
+                });
+            });
+
+            const quantityInputs = document.querySelectorAll(".cart__detail-qnt");
+
+            quantityInputs.forEach((input) => {
+                input.addEventListener("input", (e) => {
+                    const newValue = parseInt(e.target.value, 10);
+                    if (newValue < 1) {
+                        e.target.value = "1"; 
+                    }
                 });
             });
 
