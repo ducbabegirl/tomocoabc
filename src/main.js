@@ -117,10 +117,12 @@ router.on("/my-account/*", () => {}, {
     },
 });
 
+
 router.on({
     "/": () => {
         print(HomePage);
     },
+    
     "/intro": () => {
         print(IntroPage);
     },
