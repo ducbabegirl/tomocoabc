@@ -1998,7 +1998,7 @@
       "total_price": 25000,
       "price_decrease": 0,
       "message": "",
-      "status": 5,
+      "status": 0,
       "voucher": [],
       "checkBanking": 1,
       "createdAt": "2023-11-12T10:38:11.948Z",
