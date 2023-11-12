@@ -5,8 +5,8 @@ const bankingFunctions = {
     handleBanking(totalMoney,idOrder) {
         let vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
         const vnp_Returnurl = "http://localhost:3000/#/cart-thanks";
-        const vnp_TmnCode = ""; // Mã website tại VNPAY
-        const vnp_HashSecret = ""; // Chuỗi bí mật
+        const vnp_TmnCode = "C6TI6IX1"; // Mã website tại VNPAY
+        const vnp_HashSecret = "LLRUPSWJEGTOOFSYLYNLKAMWMPNZCZRZ"; // Chuỗi bí mật
 
         const vnp_TxnRef = Math.floor(Math.random() * 1000);
         const vnp_OrderInfo = "Bố Minh Chuyển Khoản";
