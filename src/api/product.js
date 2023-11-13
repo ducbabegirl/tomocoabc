@@ -127,3 +127,27 @@ export const adminSearch = (key, stt = 0) => {
     if (stt) url += `&status=${stt}`;
     return instance.get(url);
 };
+
+
+export const getBestSellingProducts = async (start, limit = 0, option) => {
+    let url = `/${TABLE_NAME}/?_embed=orderDetails`;
+    if (limit) url += `&_start=${start}&_limit=${limit}`;
+    const response = await instance.get(url);
+    const productsWithTotalQuantity = response.data.map(product => {
+        const totalQuantity = product.orderDetails.reduce((total, orderDetail) => {
+            return total + orderDetail.quantity;
+        }, 0);
+        return { ...product, totalQuantity };
+    });
+
+    let sortedProducts;
+    if (option === 1) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    } else if (option === 0) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => a.totalQuantity - b.totalQuantity);
+    } else {
+        sortedProducts = productsWithTotalQuantity;
+    }
+
+    return sortedProducts;
+};
