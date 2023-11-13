@@ -529,15 +529,32 @@ const CheckoutPage = {
                     total_price: getTotalPrice(),
                     price_decrease: totalPriceDerease(),
                     message: message.value,
-                    status: 5,
+                    status: 0,
                     voucher: listIdVoucher,
                     checkBanking:0,
                     createdAt: date.toISOString(),
                     updatedAt: date.toISOString(),
                 };
                 const { data } = await add(order);
-                const idOrder = data.id;
-                const paymentUrl = bankingFunctions.mainBanking(totalMoney,idOrder);
+                const orderId = data.id;
+                const cartList = JSON.parse(localStorage.getItem("cart")) || [];
+                cartList.forEach(async (cart) => {
+                    await addOrderDetail({
+                        orderId,
+                        productId: cart.productId,
+                        productPrice: cart.productPrice,
+                        sizeId: cart.sizeId,
+                        sizePrice: cart.sizePrice,
+                        quantity: cart.quantity,
+                        ice: cart.ice,
+                        sugar: cart.sugar,
+                        toppingId: cart.toppingId,
+                        toppingPrice: cart.toppingPrice,
+                    });
+                });
+
+                // const idOrder = data.id;
+                const paymentUrl = bankingFunctions.mainBanking(totalMoney,orderId);
                 if (paymentUrl != null) {
                     
                     window.location = paymentUrl;
