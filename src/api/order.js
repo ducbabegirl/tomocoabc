@@ -44,3 +44,31 @@ export const search = (key, stt, userId = 0) => {
 
     return instance.get(url);
 };
+
+
+export const getTopBuyingUsers = async (page, limit = 0) => {
+    let url = `/${TABLE_NAME}/?_embed=orderDetails`;
+    if (limit) url += `&_start=${start}&_limit=${limit}`;
+    const ordersResponse = await instance.get(url);
+    const userPurchaseMap = {};
+    ordersResponse.data.forEach(order => {
+        order.orderDetails.forEach(orderDetail => {
+            const userId = order.userId;
+            const quantity = orderDetail.quantity;
+
+            if (userPurchaseMap[userId]) {
+                userPurchaseMap[userId] += quantity;
+            } else {
+                userPurchaseMap[userId] = quantity;
+            }
+        });
+    });
+    const usersWithTotalPurchase = Object.keys(userPurchaseMap).map(userId => ({
+        userId,
+        totalPurchase: userPurchaseMap[userId],
+    }));
+
+    const sortedUsers = usersWithTotalPurchase.sort((a, b) => b.totalPurchase - a.totalPurchase);
+
+    return sortedUsers;
+};
