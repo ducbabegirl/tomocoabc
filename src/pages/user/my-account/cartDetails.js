@@ -53,9 +53,10 @@ const MyAccCartDetailsPage = {
                         </div>
 
                         <div>
-                        ${cartData.status === 0 || cartData.status === 1 ? /* html */`
+                        ${cartData.status === 0 || cartData.status === 1 ? `
                         <button id="btn-cancel" class="px-3 py-1.5 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">Hủy ĐH</button>
                         ` : ""}
+     
                         <button class="px-3 py-1.5 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">Lịch sử ĐH</button>
                        </div>
                     </section>
@@ -159,6 +160,56 @@ const MyAccCartDetailsPage = {
                                 </tr>
                             </tbody>
                         </table>
+                    </section>
+
+                    <style>
+                    .btn {
+                        display: inline-block;
+                        font-weight: 400;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        user-select: none;
+                        border: 1px solid transparent;
+                        padding: 0.375rem 0.75rem;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        border-radius: 0.25rem;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    }
+                    
+                    /* Success button styling */
+                    .btn-success {
+                        color: #fff;
+                        background-color: #28a745;
+                        border-color: #28a745;
+                    }
+                    
+                    /* Hover styles for success button */
+                    .btn-success:hover {
+                        color: #fff;
+                        background-color: #218838;
+                        border-color: #1e7e34;
+                    }
+                    
+                    /* Focus styles for success button */
+                    .btn-success:focus {
+                        color: #fff;
+                        background-color: #218838;
+                        border-color: #1e7e34;
+                        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+                    }
+                    </style>
+                    <section class="mt-4">
+                        <form action="" method="POST" role="form">
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label style="display: block;margin-bottom: 0.5rem;font-weight: bold;" for="">Đánh Giá</label>
+                                <textarea style="display: block;width: 100%;padding: 0.75rem;font-size: 1rem;line-height: 1.5;color: #495057;background-color: #fff;
+                                background-clip: padding-box;border: 1px solid #ced4da;border-radius: 0.25rem;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;" class="form-control" id="" placeholder="Input field"></textarea>
+                            </div>
+
+                            <button class="btn btn-success">Gửi</button>
+                        </form>
                     </section>
                 </div>
             </section>

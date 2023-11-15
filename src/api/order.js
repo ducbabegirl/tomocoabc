@@ -72,3 +72,98 @@ export const getTopBuyingUsers = async (page, limit = 0) => {
 
     return sortedUsers;
 };
+
+
+
+// export const getOrdersInLast24Hours = async () => {
+//     try {
+//         const response = await getAll();
+//         const allOrders = response.data;
+//         const currentTime = new Date();
+//         const ordersInLast24Hours = allOrders.filter(order => {
+//             const orderTime = new Date(order.createdAt);
+            
+//             const timeDifference = currentTime - orderTime;
+
+//             const hoursDifference = timeDifference / (1000 * 60 * 60);
+//             return hoursDifference <= 24;
+//         });
+
+//         return ordersInLast24Hours;
+//     } catch (error) {
+//         console.error(error);
+//     }
+// };
+
+
+export const getOrdersInLast24Hours = async () => {
+    try {
+        const response = await getAll();
+        const allOrders = response.data;
+
+        // Ensure that allOrders is an array
+        if (!Array.isArray(allOrders)) {
+            throw new Error('Invalid data format: Orders should be an array');
+        }
+
+        const currentTime = new Date();
+        
+        // Filter out orders within the last 24 hours
+        const ordersInLast24Hours = allOrders.filter(order => {
+            const orderTime = new Date(order.createdAt);
+
+            // Ensure that createdAt is a valid date
+            if (isNaN(orderTime.getTime())) {
+                console.warn('Invalid date format in order:', order);
+                return false;
+            }
+
+            const timeDifference = currentTime - orderTime;
+            const hoursDifference = timeDifference / (1000 * 60 * 60);
+            
+            return hoursDifference <= 24;
+        });
+
+        return ordersInLast24Hours;
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+
+
+export const getOrdersInCurrentDay = async () => {
+    try {
+        const response = await getAll();
+        const allOrders = response.data;
+
+        if (!Array.isArray(allOrders)) {
+            throw new Error('Invalid data format: Orders should be an array');
+        }
+
+        const currentTime = new Date();
+        const startOfDay = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 0, 0, 0);
+        const endOfDay = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 23, 59, 59);
+        
+        // Cắt bỏ phần giờ, phút và giây
+        startOfDay.setHours(0, 0, 0, 0);
+        endOfDay.setHours(23, 59, 59, 999);
+        
+        const ordersInCurrentDay = allOrders.filter(order => {
+            const orderTime = new Date(order.createdAt);
+            if (isNaN(orderTime.getTime())) {
+                console.warn('Invalid date format in order:', order);
+                return false;
+            }
+
+            // Cắt bỏ phần giờ, phút và giây của orderTime
+            orderTime.setHours(0, 0, 0, 0);
+
+            return orderTime >= startOfDay && orderTime <= endOfDay;
+        });
+
+        return ordersInCurrentDay;
+    } catch (error) {
+        console.error(error);
+    }
+};
