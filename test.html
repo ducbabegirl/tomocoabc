@@ -1,50 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doanh thu năm</title>
-  <!-- Thêm thư viện Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Document</title>
 </head>
 <body>
-  <!-- Địa điểm để vẽ biểu đồ -->
-  <canvas id="revenueChart" width="600" height="400"></canvas>
-
-  <script>
-    // Dữ liệu doanh thu theo tháng
-    var revenueData = {
-      labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
-      datasets: [{
-        label: 'Doanh thu năm 2023',
-        borderColor: 'rgb(75, 192, 192)',
-        data: [100, 2500, 850, 890, 1995, 1200, 32000, 28000, 35000, 40000, 38000, 42000],
-        fill: false,
-      }]
-    };
-
-    // Cấu hình biểu đồ
-    var chartOptions = {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: {
-          type: 'category',
-          labels: revenueData.labels,
-        },
-        y: {
-          beginAtZero: true,
-        },
-      },
-    };
-
-    // Lấy đối tượng canvas và vẽ biểu đồ
-    var ctx = document.getElementById('revenueChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'line',
-      data: revenueData,
-      options: chartOptions,
-    });
-  </script>
+  <form action="" method="POST" role="form">
+    <legend>Form title</legend>
+  
+    <div class="form-group">
+      <label for="">label</label>
+      <textarea type="text" class="form-control" id="" placeholder="Input field"></textarea>
+    </div>
+  
+    
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 </html>
