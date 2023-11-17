@@ -8,23 +8,24 @@ import { formatCurrency, getUser, reRender } from "../../utils";
 import { getAll, get as getTopping } from "../../api/topping";
 import { getAll as getAllSize, get as getSize } from "../../api/size";
 import { addToCart } from "../../utils/cart";
+import { checkOrderDetailByIdProduct as check , checkOrderByIdOrderAndStatus as checkOrder, handleCheckComment as checkCommentByIdProAndIdUser} from "../../api/comment";
 import CartLabel from "../../components/user/cartLabel";
 import CommentList from "../../components/user/products/commentList";
 // eslint-disable-next-line import/no-cycle
 import FormComment from "../../components/user/products/formComment";
-
+import $ from "jquery";
 const ProductDetailPage = {
     async getTitle(id) {
         const { data: productDetail } = await get(id);
         return `${productDetail.name} - Trà sữa TOCO`;
     },
     async render(id, pageNumber) {
+        let a = true;
         // update view
         const { data: productDetail } = await get(id);
         updateView(id, {
             view: +(productDetail.view + 1),
         });
-
         // ds topping
         const { data: toppingList } = await getAll();
 
@@ -33,6 +34,37 @@ const ProductDetailPage = {
 
         // get info current user
         const userLogged = getUser();
+
+        const checkComment  = await check(id);
+        const dataCheckComment = checkComment.data;
+        const orderDetailIds = [];
+        for (let i = 0; i < dataCheckComment.length; i++) {
+            orderDetailIds.push(dataCheckComment[i].orderId);
+        }
+        
+
+        const dataOrders = [];
+        for (let j = 0; j < orderDetailIds.length; j++) {
+            const xv = await checkOrder(orderDetailIds[j],userLogged.id);
+            if(xv.data.length > 0){
+                dataOrders.push(xv.data);
+            }
+        }
+
+        if(dataOrders.length <= 0){
+            a = false;
+        }
+
+        
+        if(dataOrders.flat().length > 0){
+            const resCheckComment = await checkCommentByIdProAndIdUser(id,userLogged.id);
+            console.log(resCheckComment);
+            if(resCheckComment.data.length > 0){
+                a = false;
+            }   
+        }
+   
+        
 
         const renderRating = (listRating) => {
             let htmlRating = "";
@@ -266,16 +298,22 @@ const ProductDetailPage = {
 
             <!-- panel -->
             <section class="container max-w-6xl mx-auto px-3">
+                
+                
 
-                ${userLogged ? await FormComment.render(id) : /* html */`
-                <div class="mt-5">
-                    Vui lòng
-                    <a href="/#/login">
-                        <button class="bg-[#D9A953] px-2 py-1 rounded text-white text-sm font-semibold transition duration-200 ease-linear hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">đăng nhập</button>
-                    </a>
-                    để nhận xét
-                </div>
-                `}
+                ${a
+                    ? userLogged
+                      ? await FormComment.render(id)
+                      : /* html */ `
+                          <div class="mt-5">
+                              Vui lòng
+                              <a href="/#/login">
+                                  <button class="bg-[#D9A953] px-2 py-1 rounded text-white text-sm font-semibold transition duration-200 ease-linear hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">đăng nhập</button>
+                              </a>
+                              để nhận xét
+                          </div>`
+                    : /* html */ ''}
+
 
                 <div id="list-comment">
                     ${await CommentList.render(id, pageNumber)}
@@ -421,6 +459,24 @@ const ProductDetailPage = {
             totalPriceElement.classList.remove("active");
             btnResetForm.classList.add("hidden");
         });
+
+        $(document).ready(function(){
+            $("#form__add-cart-qnt").change(function(){
+                var quantity = $("#form__add-cart-qnt").val();
+                if(quantity <= 0){
+                    $("#form__add-cart-qnt").val(1);
+                }
+            });
+
+            $("#form__add-cart-qnt").on('keypress', function(e){
+                var charCode = (e.which) ? e.which : e.keyCode;
+        
+                if (charCode < 48 || charCode > 57) {
+                    e.preventDefault();
+                }
+            });
+        })
+        
     },
 };
 
