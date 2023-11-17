@@ -151,3 +151,28 @@ export const getBestSellingProducts = async (start, limit = 0, option) => {
 
     return sortedProducts;
 };
+
+
+
+
+export const get10BestSellingProducts = async (option) => {
+    let url = `/${TABLE_NAME}/?_embed=orderDetails`;
+    const response = await instance.get(url);
+    const productsWithTotalQuantity = response.data.map(product => {
+        const totalQuantity = product.orderDetails.reduce((total, orderDetail) => {
+            return total + orderDetail.quantity;
+        }, 0);
+        return { ...product, totalQuantity };
+    });
+
+    let sortedProducts;
+    if (option == 1) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    } else if (option == 0) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => a.totalQuantity - b.totalQuantity);
+    }else{
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    }
+    const top10Products = sortedProducts.slice(0, 5);
+    return top10Products;
+};

@@ -8,7 +8,7 @@ import { formatCurrency, getUser, reRender } from "../../../utils";
 import {
     addVoucher, getTotalPrice, removeItemInCart, removeVoucher, totalPriceDerease, updateQuantity,
 } from "../../../utils/cart";
-
+import $ from "jquery";
 const CartPage = {
     getTitle() {
         return "Giỏ hàng - Trà Sữa ";
@@ -68,7 +68,7 @@ const CartPage = {
                                     <td class="p-2">
                                         <div class="flex items-center h-9" id="cart__detail-qnt-wrap">
                                             <button type="button" class="cart__detail-qnt-btn btn-decrease cart__detail-btn-decrease px-2 bg-gray-100 border-gray-200 h-full border-l border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">-</button>
-                                            <input type="text" class="cart__detail-qnt border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="${item.quantity}" min="0" disabled>
+                                            <input type="text" id="form__add-cart-qnt" class="cart__detail-qnt border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="${item.quantity}" min="0" >
                                             <button type="button" class="cart__detail-qnt-btn btn-increase cart__detail-btn-increase px-2 bg-gray-100 border-gray-200 h-full border-r border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">+</button>
                                         </div>
                                     </td>
@@ -310,6 +310,23 @@ const CartPage = {
                     toastr.info("Vui lòng đăng nhập để sử dụng Voucher");
                 }
             });
+
+            $(document).ready(function(){
+                $("#form__add-cart-qnt").change(function(){
+                    var quantity = $("#form__add-cart-qnt").val();
+                    if(quantity <= 0){
+                        $("#form__add-cart-qnt").val(1);
+                    }
+                });
+
+                $("#form__add-cart-qnt").on('keypress', function(e){
+                    var charCode = (e.which) ? e.which : e.keyCode;
+            
+                    if (charCode < 48 || charCode > 57) {
+                        e.preventDefault();
+                    }
+                });
+            })
 
             // remove voucher
             const btnsRemoveVoucher = document.querySelectorAll(".btn-remove-voucher");
