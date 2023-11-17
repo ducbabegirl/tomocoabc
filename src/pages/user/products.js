@@ -53,7 +53,7 @@ const ProductsPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+      
         ProductContent.afterRender();
     },
 };
