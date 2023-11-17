@@ -64,44 +64,46 @@ const FormComment = {
         if (userLogged) {
             // comment, rating
             const formComment = document.querySelector("#form__comment");
-            const commentContent = formComment.querySelector("#form__comment-content");
-            formComment.addEventListener("submit", async (e) => {
-                e.preventDefault();
-
-                const starNumber = formComment.querySelector(".form__comment-star-number:checked");
-                if (!starNumber) {
-                    toastr.info("Vui lòng chọn mức đánh giá");
-                } else if (!commentContent.value) {
-                    toastr.info("Vui lòng nhập nội dung bình luận");
-                } else {
-                    // kiểm tra user đã từng rating chưa
-                    const { data: ratingData } = await checkUserRating(userLogged.id, productId);
-
-                    if (ratingData.length) {
-                        await updateRating(ratingData[0].id, {
-                            ratingNumber: +starNumber.value,
-                        });
+            if (formComment) { // Kiểm tra xem phần tử có tồn tại không
+                const commentContent = formComment.querySelector("#form__comment-content");
+                formComment.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+    
+                    const starNumber = formComment.querySelector(".form__comment-star-number:checked");
+                    if (!starNumber) {
+                        toastr.info("Vui lòng chọn mức đánh giá");
+                    } else if (!commentContent.value) {
+                        toastr.info("Vui lòng nhập nội dung bình luận");
                     } else {
-                        await addRating({
+                        // kiểm tra user đã từng rating chưa
+                        const { data: ratingData } = await checkUserRating(userLogged.id, productId);
+    
+                        if (ratingData.length) {
+                            await updateRating(ratingData[0].id, {
+                                ratingNumber: +starNumber.value,
+                            });
+                        } else {
+                            await addRating({
+                                userId: userLogged.id,
+                                productId,
+                                ratingNumber: +starNumber.value,
+                                createdAt: new Date().toISOString(),
+                            });
+                        }
+    
+                        // insert comment
+                        addComment({
                             userId: userLogged.id,
+                            content: commentContent.value,
                             productId,
-                            ratingNumber: +starNumber.value,
                             createdAt: new Date().toISOString(),
-                        });
+                        })
+                            .then(() => formComment.reset())
+                            .then(() => reRender(ProductDetailPage, "#app", productId))
+                            .then(() => toastr.success("Gửi bình luận thành công"));
                     }
-
-                    // insert comment
-                    addComment({
-                        userId: userLogged.id,
-                        content: commentContent.value,
-                        productId,
-                        createdAt: new Date().toISOString(),
-                    })
-                        .then(() => formComment.reset())
-                        .then(() => reRender(ProductDetailPage, "#app", productId))
-                        .then(() => toastr.success("Gửi bình luận thành công"));
-                }
-            });
+                });
+            }
         }
     },
 };
