@@ -121,6 +121,10 @@ const DashboardPage = {
                 </div>
             </div>
 
+            <section id="bieuDoDoanhThu" style="display:none">
+                <canvas style="padding-bottom:280px" id="myChart" ></canvas>
+            </section>
+
             <div class="ml-0 transition md:ml-60">
             <div class="row" style="display:flex">
             <div class="col-md-6" style="width: 50%;float: left;box-sizing: border-box;padding: 0 15px;">
@@ -263,17 +267,8 @@ const DashboardPage = {
             </table>
             </div>
 
-
-
           </div>
             </div>
-
-            
-            <section id="bieuDoDoanhThu" style="display:none">
-                <canvas style="padding-bottom:280px" id="myChart" ></canvas>
-            </section>
-
-            
         
             <div class="fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-25 hidden dashboard__overlay">
                 
@@ -303,9 +298,19 @@ const DashboardPage = {
         const totalPriceElement = document.getElementById('thongkedoanhthu');
         const chartSection = document.getElementById('bieuDoDoanhThu');
 
+        let isChartVisible = false;
+
         totalPriceElement.addEventListener('click', (event) => {
             event.preventDefault();
-            chartSection.style.display = 'block'
+        
+            if (isChartVisible) {
+                chartSection.style.display = 'none';
+            } else {
+                chartSection.style.display = 'block';
+            }
+        
+            // Toggle the state
+            isChartVisible = !isChartVisible;
         });
 
         const form = document.getElementById('dateFilterForm');

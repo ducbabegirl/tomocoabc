@@ -3,7 +3,7 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import AdminCateListPage from ".";
-import { get, update } from "../../../api/category";
+import { get, update, getCateByNameEdit } from "../../../api/category";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -116,6 +116,13 @@ const AdminEditCatePage = {
             },
             submitHandler() {
                 (async () => {
+                    
+                    const { data } = await getCateByNameEdit(cateName.val(),id);
+                    console.log(data);
+                    if(data.length > 0){
+                        toastr.error("Tên danh mục đã tồn tại");
+                        return;
+                    }
                     const cateData = {
                         name: cateName.val(),
                     };

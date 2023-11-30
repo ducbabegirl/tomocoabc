@@ -112,3 +112,17 @@ export const getTop5BuyingUsers = async () => {
         console.error(error);
     }
 };
+
+
+
+
+export const getUserByEmail = (email) => {
+    const url = `/${TABLE_NAME}?email=${email}`;
+    return instance.get(url);
+};
+
+
+export const getUserByEmailEdit = (email,id) => {
+    const url = `/${TABLE_NAME}?email=${email}&id_ne=${id}`;
+    return instance.get(url);
+};

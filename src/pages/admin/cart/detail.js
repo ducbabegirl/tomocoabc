@@ -6,7 +6,8 @@ import AdminNav from "../../../components/admin/nav";
 import { formatCurrency, formatDate } from "../../../utils";
 import { get as getCart, update } from "../../../api/order";
 import { get as getVoucher } from "../../../api/voucher";
-
+import $ from "jquery";
+import easyinvoice from 'easyinvoice';
 const AdminCartDetailPage = {
     getTitle() {
         return "Cart Detail | Administrator";
@@ -71,6 +72,7 @@ const AdminCartDetailPage = {
                                     DS đơn hàng
                                 </button>
                             </a>
+                            <a href="javascript:void(0)" class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]" id="invoice">In Bill</a>
                         </div>
                     </div>
                 </header>
@@ -187,7 +189,7 @@ const AdminCartDetailPage = {
         </section>
         `;
     },
-    afterRender() {
+    async afterRender(id) {
         HeaderTop.afterRender();
         AdminNav.afterRender();
 
@@ -234,7 +236,83 @@ const AdminCartDetailPage = {
                 });
             });
         });
+
+
+        // const { data: cartList } = await getCart(id);
+        const { data: cartList } = await get(id);
+        $("#invoice").click(async function () {
+            try {
+                const products = cartList.map(item => ({
+                    "quantity": item.quantity,
+                    "description": item.product.name,
+                    "price": item.productPrice,
+                    "tax-rate": 0,
+                }));
+                const baseFile = await handleInvoice(products);
+    
+                const blob = b64toBlob(baseFile);
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'invoice.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (error) {
+                console.error(error);
+            }
+        });
     },
 };
+
+
+
+function b64toBlob(base64) {
+    const byteCharacters = atob(base64);
+    const byteNumbers = new Array(byteCharacters.length);
+    for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+    const byteArray = new Uint8Array(byteNumbers);
+    return new Blob([byteArray], { type: 'application/pdf' });
+}
+
+
+function handleInvoice(products) {
+    return new Promise(async (resolve, reject) => {
+        try {
+            // Create the invoice data
+            const invoiceData = {
+                currency: 'USD',
+                taxNotation: 'vat', // or gst
+                marginTop: 25,
+                marginRight: 25,
+                marginLeft: 25,
+                marginBottom: 25,
+                "images": {
+                    "logo": "https://res.cloudinary.com/dizzurnqo/image/upload/v1697560429/plogo_oqv4xa.jpg",
+                },
+                sender: {
+                    company: 'CÔNG TY CP TM & DV COCOMOCO',
+                    address: 'Trịnh Văn Bô, Nam Từ Liêm, Hà Nội',
+                    city: 'Hà Nội',
+                    country: 'VietNam',
+                    phone: '0842027665',
+                    email: 'hongdtph14095@fpt.edu.vn',
+                },
+                products: products,
+                bottomNotice: 'Thank you for your business!',
+            };
+            
+
+            // Create the invoice using easyinvoice
+            easyinvoice.createInvoice(invoiceData, (result) => {
+                const pdfBase64 = result.pdf;
+                resolve(pdfBase64);
+            });
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
 
 export default AdminCartDetailPage;

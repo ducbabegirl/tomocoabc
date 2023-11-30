@@ -3,7 +3,7 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import AdminSizeListPage from ".";
-import { get, update } from "../../../api/size";
+import { get, update,getSizeByNameEdit } from "../../../api/size";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender } from "../../../utils";
@@ -94,6 +94,11 @@ const AdminEditSizePage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getSizeByNameEdit(sizeName.val().toUpperCase(),id);
+                    if(data.length > 0){
+                        toastr.error("Size đã tồn tại");
+                        return;
+                    }
                     const date = new Date();
                     const cateData = {
                         name: sizeName.val().toUpperCase(),
