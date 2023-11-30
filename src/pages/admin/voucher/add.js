@@ -2,7 +2,7 @@ import toastr from "toastr";
 import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
-import { add } from "../../../api/voucher";
+import { add,getVoucherByName } from "../../../api/voucher";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender } from "../../../utils";
@@ -156,6 +156,12 @@ const AdminAddVoucherPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getVoucherByName(voucherCode.val().toUpperCase());
+                    if(data.length > 0){
+                        toastr.error("Voucher này đã tồn tại");
+                        return;
+                    }
+
                     const date = new Date();
 
                     const voucherData = {

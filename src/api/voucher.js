@@ -37,3 +37,15 @@ export const search = (keyword) => {
     const url = `/${TABLE_NAME}/?code_like=${keyword}`;
     return instance.get(url);
 };
+
+
+export const getVoucherByName = (name) => {
+    const url = `/${TABLE_NAME}?code=${name}`;
+    return instance.get(url);
+};
+
+
+export const getVoucherByNameEdit = (name,id) => {
+    const url = `/${TABLE_NAME}?code=${name}&id_ne=${id}`;
+    return instance.get(url);
+};

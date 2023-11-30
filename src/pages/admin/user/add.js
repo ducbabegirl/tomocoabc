@@ -3,7 +3,7 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import { getAllProvince, getDistrict, getWard } from "../../../api/location";
-import { add } from "../../../api/user";
+import { add,getUserByEmail } from "../../../api/user";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -243,6 +243,11 @@ const AdminAddUserPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getUserByEmail(email.val());
+                    if(data.length > 0){
+                        toastr.error("Email này đã được đăng ký");
+                        return;
+                    }
                     let avatarUrl = "";
                     if (avatar.files.length) {
                         const { data } = await uploadFile(avatar.files[0]);

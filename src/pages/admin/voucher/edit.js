@@ -3,7 +3,7 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import AdminSizeListPage from ".";
-import { get, update } from "../../../api/voucher";
+import { get, update,getVoucherByNameEdit } from "../../../api/voucher";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender } from "../../../utils";
@@ -159,6 +159,12 @@ const AdminEditVoucherPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getVoucherByNameEdit(voucherCode.val().toUpperCase(),id);
+                    console.log(data);
+                    if(data.length > 0){
+                        toastr.error("Tên danh mục đã tồn tại");
+                        return;
+                    }
                     const date = new Date();
                     const cateData = {
                         code: voucherCode.val().toUpperCase(),

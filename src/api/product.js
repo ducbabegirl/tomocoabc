@@ -176,3 +176,16 @@ export const get10BestSellingProducts = async (option) => {
     const top10Products = sortedProducts.slice(0, 5);
     return top10Products;
 };
+
+
+
+export const getProDuctByName = (name) => {
+    const url = `/${TABLE_NAME}?name=${name}`;
+    return instance.get(url);
+};
+
+
+export const getProDuctByNameEdit = (name,id) => {
+    const url = `/${TABLE_NAME}?name=${name}&id_ne=${id}`;
+    return instance.get(url);
+};

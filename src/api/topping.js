@@ -27,3 +27,15 @@ export const update = (id, data) => {
     const url = `/${TABLE_NAME}/${id}`;
     return instance.patch(url, data);
 };
+
+
+
+export const getToppingByName = (name) => {
+    const url = `/${TABLE_NAME}?name=${name}`;
+    return instance.get(url);
+};
+
+export const getToppingByNameEdit = (name,id) => {
+    const url = `/${TABLE_NAME}?name=${name}&id_ne=${id}`;
+    return instance.get(url);
+};
