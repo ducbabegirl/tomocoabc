@@ -3,7 +3,7 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
 import AdminToppingListPage from ".";
-import { get, update } from "../../../api/topping";
+import { get, update,getToppingByNameEdit } from "../../../api/topping";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender } from "../../../utils";
@@ -92,6 +92,12 @@ const AdminEditToppingPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getToppingByNameEdit(toppingName.val(),id);
+                    console.log(data);
+                    if(data.length > 0){
+                        toastr.error("Tên Topping này đã tồn tại");
+                        return;
+                    }
                     const cateData = {
                         name: toppingName.val(),
                         price: +toppingPrice.val(),

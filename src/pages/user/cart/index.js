@@ -260,6 +260,8 @@ const CartPage = {
             // add voucher
             const formAddVoucher = document.querySelector("#form__voucher-add");
             const voucherElement = formAddVoucher.querySelector("#form__voucher-add-control");
+
+            let voucherApplied = false;
             formAddVoucher.addEventListener("submit", async (e) => {
                 e.preventDefault();
 
@@ -269,6 +271,7 @@ const CartPage = {
                     if (!voucherElement.value) {
                         toastr.info("Vui lòng nhập mã Voucher");
                     } else {
+                        
                         const voucherCode = voucherElement.value.toUpperCase();
                         // check voucher
                         const { data } = await getByCode(voucherCode);
@@ -279,6 +282,8 @@ const CartPage = {
                             const [voucherData] = data;
                             const timeStart = new Date(voucherData.timeStart);
                             const timeEnd = new Date(voucherData.timeEnd);
+                            const conditionNumber = voucherData.conditionNumber;
+                            const condition = voucherData.condition;
 
                             const now = new Date();
 
@@ -291,17 +296,32 @@ const CartPage = {
                             } else if (!voucherData.status) {
                                 toastr.info("Voucher đã bị khóa");
                             } else {
-                                // check user đã sử dụng voucher chưa
-
                                 const listIdUsed = voucherData.user_ids;
 
                                 const isUsed = listIdUsed.some((id) => id === userLogged.id);
                                 if (isUsed) {
                                     toastr.info("Bạn đã sử dụng Voucher này trước đó");
                                 } else {
-                                    addVoucher(voucherData, () => {
+                                    //
+                                    const totalPrice = getTotalPrice();
+                                    let voucherCheck = false;
+
+                                    if( ((condition == 0) && conditionNumber <= 20 ) || ((condition == 1) && conditionNumber <= 20000 )  && totalPrice >= 200000){
+                                        voucherCheck = true;
+                                    }else if( ((condition == 0) && conditionNumber <= 25 ) || ((condition == 1) && (conditionNumber > 20000 && conditionNumber <= 50000) )  && (totalPrice > 200000 && totalPrice >= 700000) ){
+                                        voucherCheck = true;
+                                    }else if( ((condition == 0) && conditionNumber > 30 ) || ((condition == 1) && (conditionNumber > 50000) )  && (totalPrice > 700000) ){
+                                        voucherCheck = true;
+                                    }else{
+                                        toastr.info("Bạn không đủ điều kiện sử dụng voucher này");
+                                    }
+                                    if(voucherCheck){
+                                        voucherApplied = true;
+                                        addVoucher(voucherData, () => {
                                         reRender(CartPage, "#app");
                                     });
+                                    }
+                                    
                                 }
                             }
                         }

@@ -2,15 +2,19 @@ import toastr from "toastr";
 import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import validate from "jquery-validation";
-import { add } from "../../../api/category";
+import { add,getCateByName } from "../../../api/category";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils/index";
+import { da } from "date-fns/locale";
 const AdminAddCatePage = {
+    
+
     getTitle() {
         return "Add Category Product | Administrator";
     },
-    render() {
+    async render() {
+
         return /* html */ `
         <section class="min-h-screen bg-gray-50 dashboard">
             ${AdminNav.render("category")}
@@ -95,6 +99,8 @@ const AdminAddCatePage = {
         const cateImg = document.querySelector("#form__add-cate-img");
         const imgPreview = $("#form__add-cate-preview");
 
+
+        
         $("#form__add-cate").validate({
             rules: {
                 "form__add-cate-title": "required",
@@ -105,6 +111,7 @@ const AdminAddCatePage = {
                 "form__add-cate-img": "Vui lòng chọn ảnh danh mục",
             },
             errorPlacement: (error, element) => {
+                
                 const placement = $(element).data("error");
                 if (placement) {
                     $(placement).html(error);
@@ -113,7 +120,14 @@ const AdminAddCatePage = {
                 }
             },
             submitHandler() {
+                
                 (async () => {
+                    const { data } = await getCateByName(cateName.val());
+                    if(data.length > 0){
+                        toastr.error("Tên danh mục đã tồn tại");
+                        return;
+                    }
+
                     const response = await uploadFile(cateImg.files[0]);
                     const date = new Date();
 

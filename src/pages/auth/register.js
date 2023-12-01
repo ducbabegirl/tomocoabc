@@ -1,5 +1,5 @@
 import toastr from "toastr";
-import { register } from "../../api/user";
+import { register,getUserByEmail } from "../../api/user";
 import Footer from "../../components/user/footer";
 import Header from "../../components/user/header";
 
@@ -79,7 +79,13 @@ const RegisterPage = {
         const confirmPassword = formRegister.querySelector("#form__reg-confirm");
 
         // validate
-        const validate = () => {
+        const validate = async () => {
+            const { data } = await getUserByEmail(email.value);
+            let checkEmail = false;
+            console.log(data);
+            if(data.length > 0){
+                checkEmail = true;
+            }
             let isValid = true;
 
             const regexUsername = /[\s*]/;
@@ -139,6 +145,10 @@ const RegisterPage = {
                 confirmPassword.nextElementSibling.innerText = "";
             }
 
+            if(checkEmail){
+                email.nextElementSibling.innerText = "Email này đã đăng ký";
+                isValid = false;
+            }
             return isValid;
         };
 
