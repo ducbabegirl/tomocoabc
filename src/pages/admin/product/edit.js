@@ -5,7 +5,7 @@ import $ from "jquery";
 import validate from "jquery-validation";
 import AdminProductListPage from ".";
 import { getAll } from "../../../api/category";
-import { get, update } from "../../../api/product";
+import { get, update,getProDuctByNameEdit } from "../../../api/product";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -175,6 +175,12 @@ const AdminEditProductPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getProDuctByNameEdit(proName.val(),id);
+                    console.log(data);
+                    if(data.length > 0){
+                        toastr.error("Tên danh mục đã tồn tại");
+                        return;
+                    }
                     const date = new Date();
                     const productData = {
                         name: proName.val(),

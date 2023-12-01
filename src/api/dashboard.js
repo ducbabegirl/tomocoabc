@@ -22,7 +22,6 @@ export const statistical_news = (startDate, endDate) => {
 
 
 export const statistical_account = (startDate, endDate) => {
-    console.log(startDate);
     let url = `/${table_account}/`;
     if (!startDate || !endDate) {
         const defaultStartDate = new Date();

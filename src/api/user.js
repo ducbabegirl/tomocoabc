@@ -74,3 +74,55 @@ export const getTopBuyingUsers = async (page, limit = 0) => {
         console.error(error);
     }
 };
+
+
+// export const getTop5BuyingUsers = async () => {
+//     let url = `/${TABLE_NAME}?_embed=orders`; 
+//     try {
+//         const res = await instance.get(url);
+//         const users = res.data;
+//         const sortedUsers = users.sort((a, b) => b.orders.length - a.orders.length);
+//         const topFiveUsers = sortedUsers.slice(0, 5);
+//         return topFiveUsers;
+//     } catch (error) {
+//         console.error(error);
+//     }
+// };
+
+export const getTop5BuyingUsers = async () => {
+    let url = `/${TABLE_NAME}?_embed=orders`;
+    try {
+        const res = await instance.get(url);
+        const users = res.data;
+
+        // Lọc ra các đơn hàng có status là 3
+        const ordersWithStatus3 = users.map(user => ({
+            ...user,
+            orders: user.orders.filter(order => order.status === 3)
+        }));
+
+        // Sắp xếp người dùng theo số lượng đơn hàng có status là 3
+        const sortedUsers = ordersWithStatus3.sort((a, b) => b.orders.length - a.orders.length);
+
+        // Chọn ra top 5 người mua
+        const topFiveUsers = sortedUsers.slice(0, 5);
+
+        return topFiveUsers;
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+
+
+
+export const getUserByEmail = (email) => {
+    const url = `/${TABLE_NAME}?email=${email}`;
+    return instance.get(url);
+};
+
+
+export const getUserByEmailEdit = (email,id) => {
+    const url = `/${TABLE_NAME}?email=${email}&id_ne=${id}`;
+    return instance.get(url);
+};
