@@ -10,6 +10,7 @@ import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
+import IntroPage from "./pages/user/intro";
 import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
