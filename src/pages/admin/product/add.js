@@ -4,7 +4,7 @@ import $ from "jquery";
 import validate from "jquery-validation";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { getAll as getAllCate } from "../../../api/category";
-import { add } from "../../../api/product";
+import { add, getProDuctByName } from "../../../api/product";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -175,6 +175,12 @@ const AdminAddProductPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getProDuctByName(proName.val());
+                    if(data.length > 0){
+                        toastr.error("Tên sản phẩm đã tồn tại");
+                        return;
+                    }
+
                     const response = await uploadFile(proImage.files[0]);
                     const date = new Date();
 

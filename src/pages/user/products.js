@@ -1,15 +1,12 @@
 import { getAllJoinCategory } from "../../api/product";
-
+import Footer from "../../components/user/footer";
 import Header from "../../components/user/header";
 import ProductContent from "../../components/user/products/productContent";
 import Sidebar from "../../components/user/products/sidebar";
 
 const ProductsPage = {
     getTitle() {
-
-        return "Thực đơn - Trà Sữa Tomocoabc";
-
-
+        return "Thực đơn - Trà Sữa TOCOMOCO";
     },
     async render(pageNumber) {
         let currentPage = pageNumber;
@@ -51,11 +48,12 @@ const ProductsPage = {
         </main>
         <!-- end content -->
 
+        ${Footer.render()}
         `;
     },
     afterRender() {
         Header.afterRender();
-       
+      
         ProductContent.afterRender();
     },
 };

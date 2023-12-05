@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import $ from "jquery";
-import {  getAll , remove ,adminSearch } from "../../../api/product";
+import { getAll, remove, adminSearch, getBestSellingProducts } from "../../../api/product";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import Pagination from "../../../components/admin/pagination";
@@ -46,17 +46,28 @@ const AdminProductListPage = {
 
                 <div class="p-6 mt-24 overflow-hidden">
                 <!-- search -->
-                    <form action="" class="flex rounded-md shadow-sm mb-5" method="POST" id="product__form-search">
-                        <input type="text" name="company-website" id="product__form-search-key" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300 px-4 py-2 border outline-none" placeholder="Nhập tên sản phẩm">
-                        <select class="border-gray-300 border outline-none px-2 text-sm" id="product__form-search-stt">
-                            <option value="">-- Trạng thái --</option>
-                            <option value="1">Hiển thị</option>
-                            <option value="0">Ẩn</option>
+                    <div class="row" style="display:flex">
+                        <div class="col-md-5" style="flex: 0 0 41.666667%;max-width: 41.666667%;padding-right: 15px;padding-left: 15px;">
+                            <form action="" class="flex rounded-md shadow-sm mb-5" method="POST" id="product__form-search">
+                                <input type="text" name="company-website" id="product__form-search-key" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300 px-4 py-2 border outline-none" placeholder="Nhập tên sản phẩm">
+                                <select class="border-gray-300 border outline-none px-2 text-sm" id="product__form-search-stt">
+                                    <option value="">-- Trạng thái --</option>
+                                    <option value="1">Hiển thị</option>
+                                    <option value="0">Ẩn</option>
+                                </select>
+                                <span class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm cursor-pointer hover:bg-gray-200">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                        <div class="col-md-3 style="flex: 0 0 25%;max-width: 25%;padding-right: 15px;padding-left: 15px;">
+                        <select class="border-gray-300 border outline-none px-2 text-sm" id="product_thong_ke"style="width: 200px;height: 35px;margin-top: 2px;border-radius: 8px;">
+                            <option value="">-- Lọc --</option>
+                            <option value="1">Sản phẩm bán chạy nhất</option>
+                            <option value="0">Sản phẩm bán ế nhất</option>
                         </select>
-                        <span class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm cursor-pointer hover:bg-gray-200">
-                            <i class="fas fa-search"></i>
-                        </span>
-                    </form>
+                        </div>
+                    </div>
 
                     <div class="flex flex-col">
                         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -78,7 +89,7 @@ const AdminProductListPage = {
         </section>
         `;
     },
-    afterRender() {
+    afterRender(pageNumber) {
         HeaderTop.afterRender();
         AdminNav.afterRender();
         const btns = document.querySelectorAll(".product__list-btn-delete");
@@ -112,8 +123,8 @@ const AdminProductListPage = {
                 });
             });
         });
-         // search
-         $("#product__form-search").on("input", async () => {
+        // search
+        $("#product__form-search").on("input", async () => {
             const key = $("#product__form-search-key").val();
             const stt = $("#product__form-search-stt").val();
 
@@ -153,9 +164,50 @@ const AdminProductListPage = {
             $("#pagination").hide();
         });
 
-       
 
-       
+        $("#product_thong_ke").on("change", async () => {
+            const selectedOption = $("#product_thong_ke").val();
+    
+            if (selectedOption === "1" || selectedOption === "0") {
+                const bestSellingProducts = await getBestSellingProducts(null, null, +selectedOption);
+                console.log(selectedOption);
+                $("#product__list").html(bestSellingProducts.map((item) => `
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.id}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img class="h-10 w-10 rounded-full" src="${item.image}" alt="">
+                            </div>
+                            <a href="/#/product/${item.id}" class="text-sm font-medium text-gray-900 ml-4 hover:underline">${item.name}</a>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${item.status ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}">
+                        ${item.status ? "Hiện" : "Ẩn"}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.view}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        ${item.favorites}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <a href="/#/admin/product/${item.id}/edit" class="h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Edit</a>
+                        <button data-id="${item.id}" class="product__list-btn-delete h-8 inline-flex items-center px-3 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-3">Delete</button>
+                    </td>
+                </tr>
+            `).join(""));
+    
+                // Hide the pagination since it might not be applicable
+                $("#pagination").hide();
+            }
+        });
+
+
     },
 };
 

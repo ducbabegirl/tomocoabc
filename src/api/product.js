@@ -1,5 +1,6 @@
 import instance from "./config";
-
+import { get as getTopping } from "./topping";
+import { get as getSize } from "./size";
 
 const TABLE_NAME = "products";
 
@@ -124,5 +125,67 @@ export const adminSearch = (key, stt = 0) => {
     let url = `/${TABLE_NAME}/?q=${key}&_sort=id&_order=desc`;
 
     if (stt) url += `&status=${stt}`;
+    return instance.get(url);
+};
+
+
+export const getBestSellingProducts = async (start, limit = 0, option) => {
+    let url = `/${TABLE_NAME}/?_embed=orderDetails`;
+    if (limit) url += `&_start=${start}&_limit=${limit}`;
+    const response = await instance.get(url);
+    const productsWithTotalQuantity = response.data.map(product => {
+        const totalQuantity = product.orderDetails.reduce((total, orderDetail) => {
+            return total + orderDetail.quantity;
+        }, 0);
+        return { ...product, totalQuantity };
+    });
+
+    let sortedProducts;
+    if (option === 1) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    } else if (option === 0) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => a.totalQuantity - b.totalQuantity);
+    } else {
+        sortedProducts = productsWithTotalQuantity;
+    }
+
+    return sortedProducts;
+};
+
+
+
+
+export const get10BestSellingProducts = async (option) => {
+    let url = `/${TABLE_NAME}/?_embed=orderDetails`;
+    const response = await instance.get(url);
+    const productsWithTotalQuantity = response.data.map(product => {
+        const totalQuantity = product.orderDetails.reduce((total, orderDetail) => {
+            return total + orderDetail.quantity;
+        }, 0);
+        return { ...product, totalQuantity };
+    });
+
+    let sortedProducts;
+    if (option == 1) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    } else if (option == 0) {
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => a.totalQuantity - b.totalQuantity);
+    }else{
+        sortedProducts = productsWithTotalQuantity.sort((a, b) => b.totalQuantity - a.totalQuantity);
+    }
+    const top10Products = sortedProducts.slice(0, 5);
+    return top10Products;
+};
+
+
+
+export const getProDuctByName = (name) => {
+    const url = `/${TABLE_NAME}?name=${name}`;
+    return instance.get(url);
+};
+
+
+export const getProDuctByNameEdit = (name,id) => {
+    const url = `/${TABLE_NAME}?name=${name}&id_ne=${id}`;
     return instance.get(url);
 };

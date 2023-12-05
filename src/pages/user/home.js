@@ -8,6 +8,7 @@ import Show from "../../components/user/home/show";
 import News from "../../components/user/home/news";
 import Feedback from "../../components/user/home/feedback";
 import "slick-carousel";
+import Products from "../../components/user/home/product";
 const HomePage = {
     getTitle() {
         return "Trang chủ - Trà Sữa Tomocoabc";
@@ -31,7 +32,7 @@ const HomePage = {
             <!-- end why -->
 
             <!-- product -->
-        
+            ${await Products.render()}
             <!-- end product -->
 
             <!-- news -->

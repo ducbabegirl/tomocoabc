@@ -16,11 +16,15 @@ import { add as addOrderDetail } from "../../../api/orderDetail";
 import {
     add as addAddress, getByUserId, get as getAdd, checkAddExits,
 } from "../../../api/address";
-
+import bankingFunctions from "../../../utils/pay";
+import InvoiceFunction from "../../../utils/invoice";
+import fs from 'fs';
+import easyinvoice from 'easyinvoice';
 const CheckoutPage = {
     getTitle() {
         return "Thanh toán - Trà Sữa Yotea";
     },
+
     async render() {
         const userLogged = getUser();
         const { data: listProvince } = await getAllProvince();
@@ -200,6 +204,8 @@ const CheckoutPage = {
                     </table>
 
                     <button class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">Đặt hàng</button>
+                    <a href="javascript:void(0)" class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]" id="pay_online">Thanh Toán</a>
+                    <a href="javascript:void(0)" class="mt-4 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]" id="invoice">In Bill</a>
                 </div>
             </form>
         </main>
@@ -228,9 +234,12 @@ const CheckoutPage = {
         ${Footer.render()}
         `;
     },
-    afterRender() {
+
+
+
+    async afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+
         const userLogged = getUser();
 
         const provinceElement = document.querySelector("#cart__checkout-province");
@@ -495,10 +504,168 @@ const CheckoutPage = {
             });
         }
 
+
+        // Phần thanh toán online
+        const payOnline = document.querySelector('#pay_online');
+        if (payOnline) {
+            payOnline.addEventListener('click', async () => {
+
+                // tổng tiền giảm bởi voucher
+                const totalPriceVoucher = totalPriceDerease();
+                let totalMoney = getTotalPrice() - totalPriceVoucher
+                if (totalMoney <= 0) {
+                    totalMoney = 0
+                }
+                const district = districtElement.options[districtElement.selectedIndex].text;
+                const province = provinceElement.options[provinceElement.selectedIndex].text;
+                const ward = wardElement.options[wardElement.selectedIndex].text;
+                const date = new Date();
+                const currentUserId = getUser() ? getUser().id : 0;
+                const customerAdd = `${address.value}, ${ward}, ${district}, ${province}`;
+                const listIdVoucher = getIdsVoucher();
+                const order = {
+                    userId: currentUserId,
+                    customer_name: fullName.value,
+                    address: customerAdd,
+                    phone: phone.value,
+                    email: email.value,
+                    total_price: getTotalPrice(),
+                    price_decrease: totalPriceDerease(),
+                    message: message.value,
+                    status: 0,
+                    voucher: listIdVoucher,
+                    checkBanking:0,
+                    createdAt: date.toISOString(),
+                    updatedAt: date.toISOString(),
+                };
+                const { data } = await add(order);
+                const orderId = data.id;
+                const cartList = JSON.parse(localStorage.getItem("cart")) || [];
+                cartList.forEach(async (cart) => {
+                    await addOrderDetail({
+                        orderId,
+                        productId: cart.productId,
+                        productPrice: cart.productPrice,
+                        sizeId: cart.sizeId,
+                        sizePrice: cart.sizePrice,
+                        quantity: cart.quantity,
+                        ice: cart.ice,
+                        sugar: cart.sugar,
+                        toppingId: cart.toppingId,
+                        toppingPrice: cart.toppingPrice,
+                    });
+                });
+
+                // const idOrder = data.id;
+                const paymentUrl = bankingFunctions.mainBanking(totalMoney,orderId);
+                if (paymentUrl != null) {
+                    
+                    window.location = paymentUrl;
+                }
+
+            });
+        }
+
+        // end
+
         // đóng modal
         $("#modal__overlay").on("click", () => modal.classList.remove("active"));
         $("#modal-btn-close").on("click", () => modal.classList.remove("active"));
+
+
+        const cartList = JSON.parse(localStorage.getItem("cart")) || [];
+        $("#invoice").click(async function () {
+            try {
+                const products = cartList.map(item => ({
+                    "quantity": item.quantity,
+                    "description": item.productName,
+                    "price": item.productPrice,
+                    "tax-rate": 0,
+                }));
+                const baseFile = await handleInvoice(address.value,"0326677811",email.value,products);
+    
+                const blob = b64toBlob(baseFile);
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'invoice.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (error) {
+                console.error(error);
+            }
+        });
+
     },
+
+    
 };
 
+
+function b64toBlob(base64) {
+    const byteCharacters = atob(base64);
+    const byteNumbers = new Array(byteCharacters.length);
+    for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+    const byteArray = new Uint8Array(byteNumbers);
+    return new Blob([byteArray], { type: 'application/pdf' });
+}
+
+function blobToBase64(blob) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = function () {
+            resolve(reader.result.split(',')[1]);
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+    });
+}
+
+function handleInvoice(addressClient, phone, email, products) {
+    return new Promise(async (resolve, reject) => {
+        try {
+            // Create the invoice data
+            const invoiceData = {
+                currency: 'USD',
+                taxNotation: 'vat', // or gst
+                marginTop: 25,
+                marginRight: 25,
+                marginLeft: 25,
+                marginBottom: 25,
+                "images": {
+                    "logo": "https://res.cloudinary.com/dizzurnqo/image/upload/v1697560429/plogo_oqv4xa.jpg",
+                },
+                sender: {
+                    company: 'CÔNG TY CP TM & DV COCOMOCO',
+                    address: 'Trịnh Văn Bô, Nam Từ Liêm, Hà Nội',
+                    city: 'Hà Nội',
+                    country: 'VietNam',
+                    phone: '0842027665',
+                    email: 'hongdtph14095@fpt.edu.vn',
+                },
+                "client": {
+                    company: 'Người Nhận',
+                    address: addressClient,
+                    zip: phone,
+                    country: email,
+                },
+                products: products,
+                bottomNotice: 'Thank you for your business!',
+            };
+            
+
+            // Create the invoice using easyinvoice
+            easyinvoice.createInvoice(invoiceData, (result) => {
+                const pdfBase64 = result.pdf;
+                resolve(pdfBase64);
+            });
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
+
 export default CheckoutPage;
+
