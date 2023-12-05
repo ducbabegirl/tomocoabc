@@ -58,7 +58,7 @@ const ProductByCatePage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+      
         ProductContent.afterRender();
     },
 };

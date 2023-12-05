@@ -4,96 +4,24 @@
       "id": 1,
       "name": "Tea",
       "createdAt": "2022-03-13T05:07:46.346Z",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757211/assignment-js/dydnuwy6d0f7man8fbsn.png"
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597578/kk0ysomdnuousvmctj65.jpg"
     },
     {
       "name": "Milk Tea",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597477/r8kiyverlupo0vklqkve.jpg",
       "id": 2
     },
     {
       "name": "Coffee",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757260/assignment-js/q9gmm4aneutfvgxtzxqf.png",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597350/ftaabnjhrczpjerzhiil.jpg",
       "createdAt": "2022-02-08T12:06:48.706Z",
       "id": 3
     },
     {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757277/assignment-js/hdp664y2nsbeeycxjrgm.jpg",
-      "createdAt": "2022-02-09T16:38:10.591Z",
+      "name": "Nước Ép Trái Cây",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597281/fum8e1vjiloksgkhmetg.jpg",
+      "createdAt": "2023-12-03T09:50:16.602Z",
       "id": 4
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701262360/eodtjbfpfmpoe24irmnf.jpg",
-      "createdAt": "2023-11-29T12:52:41.288Z",
-      "id": 5
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263389/j594hjyckyym7evzglii.jpg",
-      "createdAt": "2023-11-29T13:09:50.884Z",
-      "id": 6
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263390/k2fqe7c3hej31ixfay1k.jpg",
-      "createdAt": "2023-11-29T13:09:51.606Z",
-      "id": 7
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263444/rhvwo7iuwpvssow1ylgi.jpg",
-      "createdAt": "2023-11-29T13:10:45.186Z",
-      "id": 8
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263556/jbksum84q94zoz80bafx.jpg",
-      "createdAt": "2023-11-29T13:12:37.922Z",
-      "id": 9
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263772/ympbv8q0ofponbgzgwqt.jpg",
-      "createdAt": "2023-11-29T13:16:12.957Z",
-      "id": 10
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263804/upvxm8mzkpmvo2peu4hd.jpg",
-      "createdAt": "2023-11-29T13:16:45.687Z",
-      "id": 11
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263862/uspao5okivvipexwinor.jpg",
-      "createdAt": "2023-11-29T13:17:43.810Z",
-      "id": 12
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264142/opduc6l8iqybo5kza0qe.jpg",
-      "createdAt": "2023-11-29T13:22:23.633Z",
-      "id": 13
-    },
-    {
-      "name": "Bakery111",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264704/ppgjocbccsapoiwpfkav.jpg",
-      "createdAt": "2023-11-29T13:31:45.280Z",
-      "id": 14
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264883/wi9okyfrhdxxyv64acya.jpg",
-      "createdAt": "2023-11-29T13:34:44.646Z",
-      "id": 15
-    },
-    {
-      "name": "Bakery11232",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264940/oztivpsd0y504lqt03or.jpg",
-      "createdAt": "2023-11-29T13:35:41.481Z",
-      "id": 16
     }
   ],
   "cateNews": [
@@ -112,21 +40,27 @@
     {
       "name": "Yotea Story",
       "createdAt": "2022-02-12T14:13:41.269Z",
-      "updatedAt": "2023-11-19T08:13:28.751Z",
+      "updatedAt": "2023-12-03T14:25:57.017Z",
       "id": 3
+    },
+    {
+      "name": "RobotTrader",
+      "createdAt": "2023-12-03T14:26:03.588Z",
+      "updatedAt": "2023-12-03T14:27:53.879Z",
+      "id": 4
     }
   ],
   "products": [
     {
-      "name": "Hồng trà macchiato",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172420/assignment-js/djdwuozkvtckmxo002qt.png",
+      "name": "Trà xanhMango",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701602177/sttldvaw6d1b1xgdl3vo.png",
       "price": 42000,
       "description": "<p>Trà tranh mô tả</p>",
       "status": 1,
       "view": 14,
       "favorites": 1,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2023-11-29T16:08:44.699Z",
+      "updatedAt": "2023-12-03T11:16:15.783Z",
       "id": 1,
       "categoryId": 1,
       "ratings": [],
@@ -138,15 +72,15 @@
       }
     },
     {
-      "name": "Trà vải nhiệt đới",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172596/assignment-js/civnoyzmvtambfsjlhnp.png",
+      "name": "Trà thanh long đỏ",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701602149/w3k5xxdmnviwepvpacyu.png",
       "price": 42000,
       "description": "<p>Sự kết hợp giữa vị chua của Cam cùng sự ngọt ngào của trái Vải. Dư vị thanh mát của hồng tra tô điểm hoản hảo cho một chút vị chua, một chút ngọt của của 2 loại trái cây, cho một thức uống trái cây bắt mắt và vừa miệng khó cưỡng.</p>",
       "status": 1,
       "view": 249,
       "favorites": 14,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:23:16.641Z",
+      "updatedAt": "2023-12-03T11:15:48.622Z",
       "id": 2,
       "categoryId": 1,
       "category": {
@@ -156,17 +90,15 @@
       }
     },
     {
-      "name": "Trà cam kim quất",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172667/assignment-js/faa774aq8n4w8ax9flwf.png",
+      "name": "Trà dâu tây ổi hồng",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701602122/tg9fshz4amw5hg6e4s3p.png",
       "price": 42000,
       "description": "<p>Trà cam kim quất là sự kết hợp giữa vị chua chua của tắc, vị đậm của trà và kết hợp giữa hương thơm và vị ngọt ngọt của cam. Một ly hồng trà cam tắc sẽ giúp bạn giải khát và thư giãn hiệu quả.</p>",
       "status": 1,
-
       "view": 52,
-
       "favorites": 12,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:24:27.786Z",
+      "updatedAt": "2023-12-03T11:15:21.365Z",
       "id": 3,
       "categoryId": 2,
       "category": {
@@ -176,15 +108,15 @@
       }
     },
     {
-      "name": "Trà dâu nữ hoàng",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172713/assignment-js/z5bgto4mfwxh89b3s9ag.png",
+      "name": "Trà đào cam sả",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701602074/vy7t00coyhqb8whmdmyc.png",
       "price": 42000,
       "description": "<p>Dâu rừng có hình dáng dễ thương, màu sắc đẹp mắt và vị chua ngọt ăn hoài không ngán đã đốn tim nhiều bạn trẻ. Không chỉ dừng lại ở mức đẹp, ngon, dâu rừng còn là loại trái cây bổ dưỡng.</p><p>Trong dâu rừng chứa nhiều vitamin C – loại vitamin thần kì tăng sức đề kháng cho cơ thể và ngăn chặn quá trình lão hóa của cơ thể. Dâu rừng còn được xem là người bạn thân thiện của da. Các dưỡng chất có trong dâu tây giúp cho da luôn hồng hào, tươi trẻ.</p><p>Trà dâu nữ hoàng là sự kết hợp hài hòa giữa vị trà thanh mát cùng vị chua ngọt của trái dâu rừng sẽ tạo nên một thức uống tuyệt vời cho mọi người.</p>",
       "status": 1,
-      "view": 68,
+      "view": 69,
       "favorites": 15,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:25:14.050Z",
+      "updatedAt": "2023-12-03T11:14:33.678Z",
       "id": 4,
       "categoryId": 1,
       "category": {
@@ -194,15 +126,15 @@
       }
     },
     {
-      "name": "Trà đào gừng",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172791/assignment-js/fxbjbymklnxbobsrpjmo.png",
+      "name": "Trà chanh leo",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701602045/dqikqcohz6weciinnd7y.png",
       "price": 42000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p><p><br>&nbsp;</p>",
       "status": 1,
       "view": 90,
       "favorites": 13,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:26:32.062Z",
+      "updatedAt": "2023-12-03T11:14:04.225Z",
       "id": 5,
       "categoryId": 1,
       "category": {
@@ -212,15 +144,15 @@
       }
     },
     {
-      "name": "Trà đào cam sả",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172839/assignment-js/nn8ihjlm91ke9ea2ewdd.png",
+      "name": "Sữa chua thanh long dưa lưới dằm",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601959/jmxdyqxaqw0ay158ca2b.png",
       "price": 30000,
       "description": "<p>• Trà đào cam sả là một thức uống giải nhiệt cực tốt.</p><p>• Hương thơm từ sả rất hợp khi đi cùng cam, một phần cam để nguyên vỏ giữ được lượng tinh dầu trong vỏ cam để hòa quyện cùng sả tạo nên một hương thơm rất lạ. Khi thưởng thức bạn không chỉ bị mê bởi hương thơm đó mà bạn sẽ bị mê mẩn&nbsp;hương vị chua ngọt của ly trà đào quyện mùi sả độc đáo của Pozaa Tea.</p>",
       "status": 1,
       "view": 514,
       "favorites": 20,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:27:19.775Z",
+      "updatedAt": "2023-12-03T11:12:38.299Z",
       "id": 6,
       "categoryId": 1,
       "category": {
@@ -230,42 +162,42 @@
       }
     },
     {
-      "name": "Trà sữa ô long bạch kim",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645172924/assignment-js/ntnmsjdifbepbbbelzvq.png",
+      "name": "Sữa chua hoa quả dầm",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601905/g1xdykytsckc4lghzi80.png",
       "price": 37000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "status": 1,
       "view": 6,
       "favorites": 0,
       "createdAt": "2022-02-09T14:58:57.401Z",
-      "updatedAt": "2022-02-18T08:28:43.945Z",
+      "updatedAt": "2023-12-03T11:11:44.139Z",
       "id": 7,
       "categoryId": 2
     },
     {
-      "name": "Trà sữa thạch dứa nhiệt đới",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173011/assignment-js/fymplkrpyrtwgmrboyc5.png",
+      "name": "Chanh sả hạt chia ép",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601857/bg3tqsaanp2bhm7wklkf.png",
       "price": 20000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 4,
       "status": 1,
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T08:30:12.380Z",
-      "updatedAt": "2022-02-18T08:30:12.380Z",
+      "updatedAt": "2023-12-03T11:17:08.822Z",
       "id": 8
     },
     {
-      "name": "Trà sữa thạch Kiwi",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173071/assignment-js/anopomwnzuu8fxgn3wkr.png",
+      "name": "Táo xanh cần tây ép",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601822/tbk5errkbqzvtvlsvzbx.png",
       "price": 20000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 4,
       "status": 1,
       "view": 6,
       "favorites": 1,
       "createdAt": "2022-02-18T08:31:13.125Z",
-      "updatedAt": "2022-02-18T08:31:13.125Z",
+      "updatedAt": "2023-12-03T11:16:56.706Z",
       "id": 9,
       "category": {
         "name": "Milk Tea",
@@ -274,42 +206,42 @@
       }
     },
     {
-      "name": "Trà sữa Thạch Nam việt quất",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173127/assignment-js/qctktruxgfj6gpqdwbfc.png",
+      "name": "Chanh sả ép",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601772/xnv8fjhydvqnkid0wlg7.png",
       "price": 34000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 4,
       "status": 1,
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T08:32:08.852Z",
-      "updatedAt": "2022-02-18T08:32:08.852Z",
+      "updatedAt": "2023-12-03T11:16:46.363Z",
       "id": 10
     },
     {
-      "name": "Trà sữa Thạch Đào Bồng Lai",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173183/assignment-js/edpmjjyd7yzhqw5nl9k2.png",
+      "name": "Cam táo ép",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601746/vqvhuckucecsuoq2ggso.png",
       "price": 24000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 4,
       "status": 1,
       "view": 0,
       "favorites": 0,
       "createdAt": "2022-02-18T08:33:04.480Z",
-      "updatedAt": "2022-02-18T08:33:04.480Z",
+      "updatedAt": "2023-12-03T11:17:39.822Z",
       "id": 11
     },
     {
-      "name": "Trà sữa nha đam Sahaki",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173219/assignment-js/dxvkdqcxlp81t7xu0r23.png",
+      "name": "Cam ép",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701601711/yterrx1rgv0yytkl6f5o.png",
       "price": 30000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 4,
       "status": 1,
       "view": 4,
       "favorites": 1,
       "createdAt": "2022-02-18T08:33:41.389Z",
-      "updatedAt": "2022-02-18T08:33:41.389Z",
+      "updatedAt": "2023-12-03T11:16:33.503Z",
       "id": 12,
       "ratings": [],
       "category": {
@@ -319,44 +251,42 @@
       }
     },
     {
-      "name": "Trà sữa cafe thượng hạng",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173289/assignment-js/yp5wmufjwhwpbcumnge4.png",
+      "name": "Caramel hạnh nhân Machiato",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596503/r49xs89qhhkz1unwszcg.png",
       "price": 35000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 3,
       "status": 1,
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T08:34:50.858Z",
-      "updatedAt": "2022-02-18T08:34:50.858Z",
+      "updatedAt": "2023-12-03T10:00:29.849Z",
       "id": 14
     },
     {
-      "name": "Trà sữa caramel",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173839/assignment-js/jxofrse008bncyj6ejww.png",
+      "name": "Cacao kem trứng dừa nướng",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596392/gziprnj35tcekainujfe.png",
       "price": 34000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
+      "categoryId": 3,
       "status": 1,
       "view": 3,
       "favorites": 0,
       "createdAt": "2022-02-18T08:44:00.649Z",
-      "updatedAt": "2022-02-18T08:44:00.649Z",
+      "updatedAt": "2023-12-03T10:00:20.247Z",
       "id": 15
     },
     {
       "name": "Trà sữa socola",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173898/assignment-js/zszteiclgqgnvcwtcgr7.png",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701594994/asoma8coob5z7g99gnku.png",
       "price": 40000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 214,
+      "view": 231,
       "favorites": 7,
-
       "createdAt": "2022-02-18T08:44:59.658Z",
-      "updatedAt": "2022-02-18T08:44:59.658Z",
+      "updatedAt": "2023-12-03T09:16:31.848Z",
       "id": 39,
       "ratings": [
         {
@@ -388,18 +318,16 @@
       }
     },
     {
-      "name": " Trà sữa dâu nữ hoàng",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173932/assignment-js/ij3btyfk7fwekvmmwbe6.png",
+      "name": "Trà sữa trân chau hoàng kim",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701595143/zbmf7fwbvly2wygg3u9s.png",
       "price": 25000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 118,
-
+      "view": 128,
       "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
-      "updatedAt": "2022-02-18T08:45:49.967Z",
+      "updatedAt": "2023-12-03T09:19:00.303Z",
       "id": 38,
       "ratings": [
         {
@@ -417,18 +345,16 @@
       }
     },
     {
-      "name": "Trà sữa ô long Bạc hà",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645173990/assignment-js/rhp6jtqptdqxb3e00cjd.png",
+      "name": "Trà sữa trân châu kem Cheese",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701595568/riztcaxzopgz5tqj9khw.png",
       "price": 45000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 322,
-
+      "view": 324,
       "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
-      "updatedAt": "2022-02-18T08:46:32.004Z",
+      "updatedAt": "2023-12-03T09:26:05.421Z",
       "id": 37,
       "ratings": [
         {
@@ -446,18 +372,16 @@
       }
     },
     {
-      "name": "Trà sữa YoTea",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174023/assignment-js/fbcyvdf0y80ua73pbrkt.png",
+      "name": "Trà sữa trân châu kem trứng",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701595646/rgpnurq9ya9ndzteivir.png",
       "price": 24000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 23,
-
+      "view": 24,
       "favorites": 1,
       "createdAt": "2022-02-18T08:47:04.929Z",
-      "updatedAt": "2022-02-18T08:47:04.929Z",
+      "updatedAt": "2023-12-03T09:27:25.324Z",
       "id": 36,
       "ratings": [],
       "category": {
@@ -467,93 +391,8 @@
       }
     },
     {
-      "name": "Trà sữa trân châu nghệ nhân",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174052/assignment-js/yw38phxe4qba8vmlxqtu.png",
-      "price": 35000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
-      "status": 1,
-      "view": 27,
-
-      "favorites": 3,
-      "createdAt": "2022-02-18T08:47:34.029Z",
-      "updatedAt": "2022-02-18T08:47:34.029Z",
-      "id": 35,
-      "category": {
-        "name": "Milk Tea",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
-        "id": 2
-      },
-      "ratings": []
-    },
-    {
-      "name": "Trà sữa matcha Machiato",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174087/assignment-js/jsmtnckdg0dhchnsdayb.png",
-      "price": 35000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
-      "status": 1,
-      "view": 32,
-      "favorites": 1,
-      "createdAt": "2022-02-18T08:48:09.048Z",
-      "updatedAt": "2022-02-18T08:48:09.048Z",
-      "id": 34,
-      "ratings": [],
-      "category": {
-        "name": "Milk Tea",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
-        "id": 2
-      }
-    },
-    {
-      "name": " Sữa tươi trân châu đường đen",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174124/assignment-js/jhjaupfuamswq6v8vw9b.png",
-      "price": 28000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
-      "status": 1,
-      "view": 46,
-      "favorites": 2,
-      "createdAt": "2022-02-18T08:48:45.769Z",
-      "updatedAt": "2022-02-18T08:48:45.769Z",
-      "id": 33,
-      "ratings": [
-        {
-          "userId": 11,
-          "productId": 33,
-          "ratingNumber": 5,
-          "createdAt": "2023-09-22T15:44:00.990Z",
-          "id": 14
-        }
-      ],
-      "category": {
-        "name": "Milk Tea",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
-        "id": 2
-      }
-    },
-    {
-      "name": "Trà sữa khoai môn Macchiato",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174710/assignment-js/vizgnh3brvcvqkin1mfi.png",
-      "price": 25000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 2,
-      "status": 1,
-      "view": 74,
-      "favorites": 1,
-      "createdAt": "2022-02-18T08:58:32.229Z",
-      "updatedAt": "2022-02-18T08:58:32.229Z",
-      "id": 32,
-      "ratings": [],
-      "category": {
-        "name": "Milk Tea",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
-        "id": 2
-      }
-    },
-    {
       "name": "Cà phê Macchiato",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174832/assignment-js/t5zawg6znsphvslnm6kv.png",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596458/s4twzxs7m2ernygcotx8.png",
       "price": 32000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
@@ -561,25 +400,12 @@
       "view": 3,
       "favorites": 0,
       "createdAt": "2022-02-18T09:00:33.976Z",
-      "updatedAt": "2022-02-18T09:00:33.976Z",
+      "updatedAt": "2023-12-03T09:40:56.770Z",
       "id": 24
     },
     {
-      "name": "Bạc xỉu",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174868/assignment-js/w2ef831cpj2lhv6mrhbx.png",
-      "price": 40000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 3,
-      "status": 1,
-      "view": 3,
-      "favorites": 0,
-      "createdAt": "2022-02-18T09:01:09.743Z",
-      "updatedAt": "2022-02-18T09:01:09.743Z",
-      "id": 25
-    },
-    {
-      "name": "Cà phê sữa",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174898/assignment-js/yr9ckb2hene4en5rpquy.png",
+      "name": "Cà phê sữa xay",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596317/rgkcunypkcga2lp79aa6.png",
       "price": 35000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
@@ -587,27 +413,25 @@
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T09:01:40.108Z",
-      "updatedAt": "2022-02-18T09:01:40.108Z",
+      "updatedAt": "2023-12-03T09:38:36.503Z",
       "id": 26
     },
     {
-      "name": "Cà phê Expresso",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174931/assignment-js/ladlnmosfnan9wor8nsw.png",
+      "name": "Cà phê sữa đá Sài Gòn",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596249/jval9sagkmsiglog4j8s.png",
       "price": 25000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-
-      "view": 15,
-
+      "view": 17,
       "favorites": 0,
       "createdAt": "2022-02-18T09:02:12.743Z",
-      "updatedAt": "2022-02-18T09:49:51.577Z",
+      "updatedAt": "2023-12-03T09:37:28.241Z",
       "id": 27
     },
     {
-      "name": "Cà phê Americano",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174968/assignment-js/bkeqcbwtauxp4f0tqwqv.png",
+      "name": "Cà phê đen xay",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596220/jqcz9uzvesxlqludpwsz.png",
       "price": 38000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
@@ -615,25 +439,12 @@
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T09:02:49.854Z",
-      "updatedAt": "2022-02-18T09:02:49.854Z",
+      "updatedAt": "2023-12-03T09:36:57.125Z",
       "id": 28
     },
     {
-      "name": "Cà phê đen",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645174998/assignment-js/e9oxu0lw1rj86a4a7kjl.png",
-      "price": 32000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 3,
-      "status": 1,
-      "view": 13,
-      "favorites": 0,
-      "createdAt": "2022-02-18T09:03:19.524Z",
-      "updatedAt": "2022-02-18T09:03:19.524Z",
-      "id": 29
-    },
-    {
-      "name": "Cà phê Mocha",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645175030/assignment-js/ytwok9j9opoixqxuehee.png",
+      "name": "Cà phê đen đá Sài Gòn",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701595917/qrf6zeb4vrzwz3ac5p3t.png",
       "price": 50000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
@@ -641,20 +452,20 @@
       "view": 38,
       "favorites": 0,
       "createdAt": "2022-02-18T09:03:52.323Z",
-      "updatedAt": "2022-02-18T09:03:52.323Z",
+      "updatedAt": "2023-12-03T09:31:55.988Z",
       "id": 30
     },
     {
-      "name": "Cà phê Latte",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645175065/assignment-js/gwoatpyyazwdplh5lrph.png",
+      "name": "Bạc xỉu.",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701595885/xzq9h25zbqn4n5ygl26q.png",
       "price": 45000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-      "view": 37,
+      "view": 38,
       "favorites": 1,
       "createdAt": "2022-02-18T09:04:27.177Z",
-      "updatedAt": "2022-02-18T09:04:27.177Z",
+      "updatedAt": "2023-12-03T09:31:24.232Z",
       "id": 31,
       "ratings": [
         {
@@ -673,7 +484,7 @@
       }
     },
     {
-      "name": "Trà tranh nek",
+      "name": "Trà 1",
       "image": "http://res.cloudinary.com/levantuan/image/upload/v1645411631/assignment-js/bl8ukr5uvtezwaavwx9k.jpg",
       "price": 123,
       "description": "<p>abc</p>",
@@ -682,46 +493,8 @@
       "view": 1,
       "favorites": 0,
       "createdAt": "2022-02-21T02:47:10.990Z",
-      "updatedAt": "2022-02-21T02:47:10.990Z",
+      "updatedAt": "2023-12-01T07:46:49.950Z",
       "id": 40
-    },
-    {
-      "name": "DEmoeee",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698070988/bc0jzgeeyyntmsf2h6vy.jpg",
-      "price": 123,
-      "description": "<p>ẻttt</p>",
-      "categoryId": 4,
-      "status": 0,
-      "view": 0,
-      "favorites": 0,
-      "createdAt": "2023-10-23T14:22:55.960Z",
-      "updatedAt": "2023-11-12T11:08:44.524Z",
-      "id": 41
-
-    },
-    {
-      "name": "Hồng trà macchiato1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701265102/ddapswrbxdnsnglgl79e.jpg",
-      "price": 123123,
-      "description": "<p>ứdfwesdg</p>",
-      "categoryId": 15,
-      "status": 1,
-      "view": 0,
-      "favorites": 0,
-      "createdAt": "2023-11-29T13:38:22.907Z",
-      "updatedAt": "2023-11-29T13:38:22.907Z",
-      "name": "trà",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699970449/rhwrrnn871dmtac6napi.jpg",
-      "price": 99,
-      "description": "<p>hi</p>",
-      "categoryId": 4,
-      "status": 1,
-      "view": 1,
-      "favorites": 0,
-      "createdAt": "2023-11-14T14:00:48.873Z",
-      "updatedAt": "2023-11-14T14:00:48.873Z",
-      "id": 42
-
     }
   ],
   "news": [
@@ -873,7 +646,7 @@
     {
       "id": 1,
       "title": "Slider 1",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757428/assignment-js/hsamkkerv4d1ff4xocml.jpg",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701603680/vlslhukndjt1zurqibkx.jpg",
       "url": "https://www.facebook.com/conccccccccccccc/",
       "status": 1,
       "createdAt": "2022-02-09T15:42:22"
@@ -882,25 +655,17 @@
       "title": "Slider 2",
       "url": "https://www.facebook.com/ccccccccccc/",
       "status": 1,
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757521/assignment-js/ohju4wdp6pkrv34gdoyw.png",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701603504/dxhzmycysxjhtdkl7029.jpg",
       "createdAt": "2022-02-10T06:44:52.008Z",
       "id": 2
     },
     {
-      "title": "Slider 3",
-      "url": "https://www.facebook.com/LeVanTuan.Info/",
-      "status": 0,
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698074939/wzkfwibstupfamz1kuqv.png",
-      "createdAt": "2022-02-13T13:04:39.364Z",
+      "title": "Baner",
+      "url": "https://www.facebook.com/",
+      "status": 1,
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701603433/c31tl5l2ohhsroldbpbm.jpg",
+      "createdAt": "2023-12-03T11:28:33.415Z",
       "id": 3
-    },
-    {
-      "title": "Banner1",
-      "url": "https://res.cloudinary.com/dizzurnqo/image/upload/v1697382333/banner_oritqt.jpg",
-      "status": 0,
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698073218/bpqh81llssyeyj0ghpq0.jpg",
-      "createdAt": "2023-10-23T15:00:18.756Z",
-      "id": 4
     }
   ],
   "sizes": [
@@ -917,13 +682,6 @@
       "createdAt": "2023-10-26T16:03:03.532Z",
       "updatedAt": "2023-10-26T16:25:08.947Z",
       "id": 3
-    },
-    {
-      "name": "LM",
-      "priceIncrease": 44444,
-      "createdAt": "2023-11-29T13:43:17.557Z",
-      "updatedAt": "2023-11-29T16:10:46.079Z",
-      "id": 4
     }
   ],
   "toppings": [
@@ -1078,42 +836,20 @@
     },
     {
       "code": "TOCOMOCO",
-      "quantity": 100,
+      "quantity": 99,
       "condition": 1,
       "conditionNumber": 500000,
       "status": 1,
       "timeStart": "2023-11-01T21:13",
       "timeEnd": "2024-11-07T21:13",
-      "user_ids": [],
+      "user_ids": [
+        21
+      ],
       "createdAt": "2023-11-06T14:13:42.994Z",
       "updatedAt": "2023-11-29T16:06:18.076Z",
       "id": 7
     },
     {
-      "code": "MINHLE2",
-      "quantity": 66,
-      "condition": 0,
-      "conditionNumber": 10,
-      "status": 1,
-      "timeStart": "2023-11-07T20:46",
-      "timeEnd": "2023-12-03T20:46",
-      "user_ids": [],
-      "createdAt": "2023-11-29T13:46:20.605Z",
-      "updatedAt": "2023-11-29T16:06:33.695Z",
-      "id": 8
-    },
-    {
-      "code": "MINHLE",
-      "quantity": 1000,
-      "condition": 1,
-      "conditionNumber": 100000,
-      "status": 1,
-      "timeStart": "2023-11-29T22:23",
-      "timeEnd": "2025-11-07T22:23",
-      "user_ids": [],
-      "createdAt": "2023-11-29T15:23:17.348Z",
-      "updatedAt": "2023-11-29T15:49:29.865Z",
-      "id": 9,
       "code": "NOEL",
       "quantity": 20,
       "condition": 0,
@@ -1123,7 +859,7 @@
       "timeEnd": "2023-11-30T22:10",
       "user_ids": [],
       "createdAt": "2023-11-17T15:10:58.524Z",
-      "updatedAt": "2023-11-17T15:10:58.524Z",
+      "updatedAt": "2023-12-03T14:10:54.508Z",
       "id": 8
     }
   ],
@@ -1529,18 +1265,6 @@
       "productId": 31,
       "createdAt": "2022-02-18T15:09:17.398Z",
       "id": 14
-    },
-    {
-      "userId": 1,
-      "productId": 33,
-      "createdAt": "2023-10-23T14:30:00.024Z",
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "productId": 34,
-      "createdAt": "2023-10-23T14:30:01.702Z",
-      "id": 16
     },
     {
       "userId": 1,
@@ -2524,9 +2248,70 @@
       "createdAt": "2023-11-19T14:25:54.621Z",
       "updatedAt": "2023-11-19T14:26:47.690Z",
       "id": 64
-
-     
-
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 4500000,
+      "price_decrease": 100000,
+      "message": "ok pro",
+      "status": 2,
+      "voucher": [
+        9
+      ],
+      "createdAt": "2023-12-03T14:06:09.162Z",
+      "updatedAt": "2023-12-03T14:06:59.178Z",
+      "id": 65
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 50000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-03T14:19:06.195Z",
+      "updatedAt": "2023-12-03T14:19:24.033Z",
+      "id": 66
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 25000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-03T14:21:21.401Z",
+      "updatedAt": "2023-12-03T14:21:39.276Z",
+      "id": 67
+    },
+    {
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 46545000,
+      "price_decrease": 500000,
+      "message": "",
+      "status": 3,
+      "voucher": [
+        7
+      ],
+      "createdAt": "2023-12-03T14:23:06.936Z",
+      "updatedAt": "2023-12-03T14:23:28.229Z",
+      "id": 68
     }
   ],
   "orderDetails": [
@@ -2557,47 +2342,6 @@
       "id": 18
     },
     {
-
-      "orderId": 36,
-      "productId": 39,
-      "productPrice": 40000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 6,
-      "toppingPrice": 20000,
-      "id": 20
-    },
-    {
-      "orderId": 38,
-      "productId": 34,
-      "productPrice": 35000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 1,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 1,
-      "toppingPrice": 5000,
-      "id": 22
-    },
-    {
-      "orderId": 64,
-      "productId": 32,
-      "productPrice": 25000,
-      "sizeId": 0,
-      "sizePrice": 0,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 6,
-      "toppingPrice": 20000,
-      "id": 22
-    },
-    {
-
       "orderId": 41,
       "productId": 37,
       "productPrice": 45000,
@@ -2630,19 +2374,6 @@
       "id": 32
     },
     {
-      "orderId": 60,
-      "productId": 3,
-      "productPrice": 42000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 12,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 6,
-      "toppingPrice": 20000,
-      "id": 34
-    },
-    {
       "orderId": 61,
       "productId": 39,
       "productPrice": 40000,
@@ -2664,39 +2395,9 @@
       "quantity": 1,
       "ice": 100,
       "sugar": 100,
-
       "toppingId": 6,
-      "toppingPrice": 20000,
-      "id": 36,
-
       "toppingPrice": 0,
       "id": 24
-    },
-    {
-      "orderId": 59,
-      "productId": 42,
-      "productPrice": 99,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 1,
-      "ice": 50,
-      "sugar": 30,
-      "toppingId": 0,
-      "toppingPrice": 0,
-      "id": 25
-    },
-    {
-      "orderId": 56,
-      "productId": 38,
-      "productPrice": 25000,
-      "sizeId": 0,
-      "sizePrice": 0,
-      "quantity": 100,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 0,
-      "toppingPrice": 0,
-      "id": 30
     },
     {
       "orderId": 57,
@@ -2738,18 +2439,56 @@
       "id": 33
     },
     {
-      "orderId": 57,
-      "productId": 33,
-      "productPrice": 28000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 35,
-      "ice": 0,
+      "orderId": 66,
+      "productId": 37,
+      "productPrice": 45000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
       "sugar": 100,
-      "toppingId": 3,
-      "toppingPrice": 7000,
-      "id": 34
-
+      "toppingId": 7,
+      "toppingPrice": 5000,
+      "id": 36
+    },
+    {
+      "orderId": 67,
+      "productId": 27,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 37
+    },
+    {
+      "orderId": 68,
+      "productId": 31,
+      "productPrice": 45000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 101,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 38
+    },
+    {
+      "orderId": 68,
+      "productId": 4,
+      "productPrice": 42000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1000,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 39
     }
   ],
   "comments": [
@@ -2845,22 +2584,6 @@
       "id": 41
     },
     {
-      "userId": 21,
-      "content": "ok lunnn",
-      "productId": 32,
-      "createdAt": "2023-11-15T16:23:14.302Z",
-      "id": 42
-    },
-    {
-      "userId": 21,
-
-      "content": "nước như cc",
-      "productId": 33,
-      "createdAt": "2023-11-16T15:32:41.726Z",
-      "id": 43
-    },
-    {
-
       "content": "ok",
       "productId": 39,
       "createdAt": "2023-11-06T14:30:45.467Z",
@@ -2931,13 +2654,6 @@
       "id": 9
     },
     {
-      "userId": 11,
-      "productId": 33,
-      "ratingNumber": 5,
-      "createdAt": "2023-09-22T15:44:00.990Z",
-      "id": 14
-    },
-    {
       "userId": 1,
       "productId": 37,
       "ratingNumber": 5,
@@ -2959,22 +2675,6 @@
       "id": 17
     },
     {
-      "userId": 21,
-      "productId": 32,
-      "ratingNumber": 5,
-      "createdAt": "2023-11-15T15:57:25.853Z",
-      "id": 18
-    },
-    {
-      "userId": 21,
-
-      "productId": 33,
-      "ratingNumber": 4,
-      "createdAt": "2023-11-16T15:32:41.689Z",
-      "id": 19
-    },
-    {
-
       "productId": 39,
       "ratingNumber": 5,
       "createdAt": "2023-11-06T14:30:45.453Z",
@@ -2986,7 +2686,6 @@
       "ratingNumber": 5,
       "createdAt": "2023-11-06T14:31:49.090Z",
       "id": 18
-
     },
     {
       "userId": 23,
@@ -3008,7 +2707,6 @@
       "ratingNumber": 5,
       "createdAt": "2023-11-19T14:12:19.314Z",
       "id": 21
-
     }
   ],
   "address": [

@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
-import { getAll } from "../../../api/slider";
+import { getAll , remove } from "../../../api/slider";
 import { reRender } from "../../../utils";
 import AdminSliderList from "../../../components/admin/sliderList";
 import Pagination from "../../../components/admin/pagination";

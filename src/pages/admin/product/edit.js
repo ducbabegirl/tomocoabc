@@ -178,7 +178,7 @@ const AdminEditProductPage = {
                     const { data } = await getProDuctByNameEdit(proName.val(),id);
                     console.log(data);
                     if(data.length > 0){
-                        toastr.error("Tên danh mục đã tồn tại");
+                        toastr.error("Tên sản phẩm đã tồn tại");
                         return;
                     }
                     const date = new Date();
