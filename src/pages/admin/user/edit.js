@@ -4,7 +4,7 @@ import $ from "jquery";
 import validate from "jquery-validation";
 import AdminUserListPage from ".";
 import { getAllProvince, getDistrict, getWard } from "../../../api/location";
-import { update, get } from "../../../api/user";
+import { update, get, getUserByEmailEdit } from "../../../api/user";
 import HeaderTop from "../../../components/admin/headerTop";
 import AdminNav from "../../../components/admin/nav";
 import { reRender, uploadFile } from "../../../utils";
@@ -290,6 +290,12 @@ const AdminEditUserPage = {
             },
             submitHandler() {
                 (async () => {
+                    const { data } = await getUserByEmailEdit(email.val(),id);
+                    console.log(data);
+                    if(data.length > 0){
+                        toastr.error("Email này đã tồn tại");
+                        return;
+                    }
                     const userData = {
                         email: email.val(),
                         username: username.val(),

@@ -1,14 +1,11 @@
 import toastr from "toastr";
-
-import Nav from "./nav";
-
 import CartLabel from "./cartLabel";
 
+import Nav from "./nav"
 
 import { search } from "../../api/product";
 import { formatCurrency, getUser, reRender } from "../../utils";
 import WishList from "./wishlist";
-
 import WishListLabel from "./wishlistLabel";
 
 const Header = {
@@ -22,19 +19,19 @@ const Header = {
                 <div class="container max-w-6xl px-3 mx-auto flex justify-between items-center h-10">
                     <ul class="flex items-center">
                         <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:right-3 after:top-1/2 after:-translate-y-1/2 text-sm uppercase pr-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                            <a href="mailto:hongdtph14095@fpt.edu.vn">
+                            <a href="mailto:tuanlvph14271@fpt.edu.vn">
                                 <i class="far fa-envelope"></i>
                                 <span class="pl-1">Contact</span>
                             </a>
                         </li>
                         <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:right-3 after:top-1/2 after:-translate-y-1/2 text-sm uppercase pr-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
                             <i class="far fa-clock"></i>
-                            <span class="pl-1">09:00 - 21:00</span>
+                            <span class="pl-1">08:00 - 17:00</span>
                         </li>
                         <li class="text-sm uppercase text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
                             <a href="tel:0347247244">
                                 <i class="fas fa-phone-alt"></i>
-                                <span class="pl-1">0842 027 665</span>
+                                <span class="pl-1">0347 247 244</span>
                             </a>
                         </li>
                     </ul>
@@ -56,11 +53,6 @@ const Header = {
                                 <ul class="mt-3 grid grid-cols-1 divide-y max-h-[70vh] overflow-y-auto" id="search-product-result"></ul>
                             </div>
                         </li>
-                        
-                        <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:left-3 after:top-1/2 after:-translate-y-1/2 uppercase text-sm pl-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                          
-                        </li>
-                        
                         ${userLogged ? `
                         <li class="relative after:content-[''] after:absolute after:w-[1px] after:h-3.5 after:bg-gray-50 after:left-3 after:top-1/2 after:-translate-y-1/2 uppercase text-sm pl-6 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
                             Xin chào, <a href="${userLogged.role ? "/#/admin" : "/#/my-account"}">${userLogged.fullName}</a>
@@ -78,7 +70,7 @@ const Header = {
                             ${await WishListLabel.render()}
                         </li>
                         <li id="header-cart-label" class="uppercase text-base pl-4 text-gray-50 font-light opacity-80 transition ease-linear duration-200 hover:text-white hover:opacity-100">
-                        ${CartLabel.render()}
+                            ${CartLabel.render()}
                         </li>
                     </ul>
                 </div>
@@ -117,7 +109,7 @@ const Header = {
                             <a href="/#/news" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Tin tức</a>
                         </li>
                         <li>
-                            <a href="/#/news" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Tin tức</a>
+                            <a href="/#/contact" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Liên hệ</a>
                         </li>
                         <li>
                             <a href="/#/store" class="px-3 py-3.5 transition ease-linear duration-200 hover:bg-gray-200 text-sm font-semibold text-gray-500 hover:text-black uppercase block">Cửa hàng</a>
@@ -137,7 +129,7 @@ const Header = {
         `;
     },
     async afterRender() {
-       
+        WishListLabel.afterRender();
         Nav.afterRender();
 
         const headerElement = document.querySelector("#header-bottom");
@@ -150,9 +142,6 @@ const Header = {
                 headerElement.classList.remove("active");
             }
         });
-
-        const userLogged = getUser();
-
 
         // tìm kiếm sp
         const formSearch = document.querySelector("#form-search-product");
@@ -172,10 +161,9 @@ const Header = {
                         <p class="font-medium ml-auto">${formatCurrency(item.price)}</p>
                     </a>
                 </li>
-            `).join("");
+                `).join("");
         });
 
-        
         formSearch.addEventListener("submit", (e) => {
             e.preventDefault();
             const keyword = formControlSearch.value;
@@ -186,6 +174,7 @@ const Header = {
                 document.location.href = `/#/product/search/${keyword}`;
             }
         });
+
         formSearchMobile.addEventListener("submit", (e) => {
             e.preventDefault();
 
@@ -197,16 +186,19 @@ const Header = {
                 document.location.href = `/#/product/search/${keyword}`;
             }
         });
-       
 
-       
+        // click button ds sp yêu thích
+        const userLogged = getUser();
+        const btnHeart = document.querySelector(".header-icon-heart");
+        btnHeart.addEventListener("click", () => {
+            if (!userLogged) {
+                toastr.info("Vui lòng đăng nhập để xem danh sách yêu thích");
+            } else {
+                reRender(WishList, "#wishlist")
+                    .then(() => document.querySelector("#wishlist").classList.add("active"));
+            }
+        });
     },
-
-
 };
-
-
-
-
 
 export default Header;

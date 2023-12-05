@@ -1,7 +1,10 @@
 import CartNav from "../../../components/user/cartNav";
 import Footer from "../../../components/user/footer";
 import Header from "../../../components/user/header";
-
+import {finishOrder} from "../../../utils/cart";
+import toastr from "toastr";
+import qs from 'qs';
+import {update} from "../../../api/order";
 const ThanksPage = {
     getTitle() {
         return "Thank you - Trà Sữa TOCOMOCO";
@@ -48,7 +51,25 @@ const ThanksPage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+
+        const queryParams = qs.parse(window.location.hash, { ignoreQueryPrefix: true });
+
+        if (queryParams.vnp_ResponseCode === '00') {
+            finishOrder(() => {
+
+                const idOrder = parseInt(queryParams.vnp_OrderInfo, 10); 
+                var order = {
+                    checkBanking: 1
+                }
+                const { data } = update(idOrder,order);
+                console.log(idOrder);
+                toastr.success("Đặt hàng thành công");
+                window.location.href = "/#/cart-thanks";
+            });
+        } else {
+            console.log('Payment failed');
+        }
+        
     },
 };
 

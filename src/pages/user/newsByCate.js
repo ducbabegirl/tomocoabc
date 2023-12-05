@@ -1,5 +1,7 @@
 import Footer from "../../components/user/footer";
 import Header from "../../components/user/header";
+import { getAllByCate } from "../../api/news";
+import NewsHeader from "../../components/user/news/newsHeader";
 import { get } from "../../api/cateNews";
 
 const NewsByCatePage = {
@@ -16,6 +18,7 @@ const NewsByCatePage = {
         };
 
         // ds tất cả bài viết
+        const { data } = await getAllByCate(cateId);
 
         // phân trang
         const limit = 8; // limit
@@ -30,6 +33,7 @@ const NewsByCatePage = {
         const start = (currentPage - 1) * limit;
 
         // get sp dựa trên limit
+        const { data: newsList } = await getAllByCate(cateId, start, limit);
 
         let htmlPagination = "";
         // eslint-disable-next-line no-plusplus
@@ -46,6 +50,7 @@ const NewsByCatePage = {
 
         <!-- content -->
         <main>
+            ${await NewsHeader.render(+cateId)}
 
             <section class="py-16 bg-[#EFE8DE] mt-6 min-h-[500px]">
                 <div class="container max-w-6xl mx-auto px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="news__list">
@@ -106,7 +111,7 @@ const NewsByCatePage = {
     },
     afterRender() {
         Header.afterRender();
-        Footer.afterRender();
+       
     },
 };
 
