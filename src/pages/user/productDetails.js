@@ -8,7 +8,7 @@ import { formatCurrency, getUser, reRender } from "../../utils";
 import { getAll, get as getTopping } from "../../api/topping";
 import { getAll as getAllSize, get as getSize } from "../../api/size";
 import { addToCart } from "../../utils/cart";
-import { checkOrderDetailByIdProduct as check , checkOrderByIdOrderAndStatus as checkOrder, handleCheckComment as checkCommentByIdProAndIdUser} from "../../api/comment";
+import { checkOrderDetailByIdProduct as check, checkOrderByIdOrderAndStatus as checkOrder, handleCheckComment as checkCommentByIdProAndIdUser } from "../../api/comment";
 import CartLabel from "../../components/user/cartLabel";
 import CommentList from "../../components/user/products/commentList";
 // eslint-disable-next-line import/no-cycle
@@ -35,36 +35,36 @@ const ProductDetailPage = {
         // get info current user
         const userLogged = getUser();
 
-        const checkComment  = await check(id);
+        const checkComment = await check(id);
         const dataCheckComment = checkComment.data;
         const orderDetailIds = [];
         for (let i = 0; i < dataCheckComment.length; i++) {
             orderDetailIds.push(dataCheckComment[i].orderId);
         }
-        
+
 
         const dataOrders = [];
         for (let j = 0; j < orderDetailIds.length; j++) {
-            const xv = await checkOrder(orderDetailIds[j],userLogged.id);
-            if(xv.data.length > 0){
+            const xv = await checkOrder(orderDetailIds[j], userLogged.id);
+            if (xv.data.length > 0) {
                 dataOrders.push(xv.data);
             }
         }
 
-        if(dataOrders.length <= 0){
+        if (dataOrders.length <= 0) {
             a = false;
         }
 
-        
-        if(dataOrders.flat().length > 0){
-            const resCheckComment = await checkCommentByIdProAndIdUser(id,userLogged.id);
+
+        if (dataOrders.flat().length > 0) {
+            const resCheckComment = await checkCommentByIdProAndIdUser(id, userLogged.id);
             console.log(resCheckComment);
-            if(resCheckComment.data.length > 0){
+            if (resCheckComment.data.length > 0) {
                 a = false;
-            }   
+            }
         }
-   
-        
+
+
 
         const renderRating = (listRating) => {
             let htmlRating = "";
@@ -249,7 +249,7 @@ const ProductDetailPage = {
                                     <div class="flex mt-2 items-center">
                                         <div class="flex items-center h-9">
                                             <button type="button" id="form__add-cart-qnt-minus" class="px-2 bg-gray-100 border-gray-200 h-full border-l border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">-</button>
-                                            <input type="text" id="form__add-cart-qnt" class="border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="1" disabled>
+                                            <input type="text" id="form__add-cart-qnt" class="border border-gray-200 h-full w-10 text-center outline-none shadow-[inset_0_1px_2px_rgba(0,0,0,0.1)] hover:shadow-none focus:shadow-[0_0_5px_#ccc]" value="1" >
                                             <button type="button" id="form__add-cart-qnt-plus" class="px-2 bg-gray-100 border-gray-200 h-full border-r border-y transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">+</button>
                                         </div>
                                         <button id="form__add-cart-btn" class="ml-2 px-3 py-2 bg-orange-400 font-semibold uppercase text-white text-sm transition ease-linear duration-300 hover:shadow-[inset_0_0_100px_rgba(0,0,0,0.2)]">Thêm vào giỏ hàng</button>
@@ -288,8 +288,12 @@ const ProductDetailPage = {
                 </div>
             </section>
 
-            <!-- tab -->
+
+            
+
+            
             <section class="container max-w-6xl mx-auto px-3">
+            
                 <ul class="flex border-t">
                     <li class="transition ease-linear duration-200 font-bold cursor-pointer hover:border-t-[#D9A953] hover:text-black uppercase pt-2 border-t-2 border-t-transparent pr-2 text-gray-400 text-xs">Mô tả</li>
                     <li class="transition ease-linear duration-200 font-bold cursor-pointer hover:border-t-[#D9A953] hover:text-black uppercase pt-2 border-t-2 border-t-[#D9A953] pr-2 text-black text-xs">Đánh giá</li>
@@ -302,9 +306,9 @@ const ProductDetailPage = {
                 
 
                 ${a
-                    ? userLogged
-                      ? await FormComment.render(id)
-                      : /* html */ `
+                ? userLogged
+                    ? await FormComment.render(id)
+                    : /* html */ `
                           <div class="mt-5">
                               Vui lòng
                               <a href="/#/login">
@@ -312,7 +316,7 @@ const ProductDetailPage = {
                               </a>
                               để nhận xét
                           </div>`
-                    : /* html */ ''}
+                : /* html */ ''}
 
 
                 <div id="list-comment">
@@ -334,7 +338,7 @@ const ProductDetailPage = {
     },
     afterRender(id) {
         Header.afterRender();
-      
+
         Related.afterRender();
         FormComment.afterRender(+id);
         CommentList.afterRender(+id);
@@ -460,23 +464,23 @@ const ProductDetailPage = {
             btnResetForm.classList.add("hidden");
         });
 
-        $(document).ready(function(){
-            $("#form__add-cart-qnt").change(function(){
+        $(document).ready(function () {
+            $("#form__add-cart-qnt").change(function () {
                 var quantity = $("#form__add-cart-qnt").val();
-                if(quantity <= 0){
+                if (quantity <= 0) {
                     $("#form__add-cart-qnt").val(1);
                 }
             });
 
-            $("#form__add-cart-qnt").on('keypress', function(e){
+            $("#form__add-cart-qnt").on('keypress', function (e) {
                 var charCode = (e.which) ? e.which : e.keyCode;
-        
+
                 if (charCode < 48 || charCode > 57) {
                     e.preventDefault();
                 }
             });
         })
-        
+
     },
 };
 
