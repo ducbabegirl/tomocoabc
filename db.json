@@ -173,7 +173,7 @@
       "price": 42000,
       "description": "<p>Sự kết hợp giữa vị chua của Cam cùng sự ngọt ngào của trái Vải. Dư vị thanh mát của hồng tra tô điểm hoản hảo cho một chút vị chua, một chút ngọt của của 2 loại trái cây, cho một thức uống trái cây bắt mắt và vừa miệng khó cưỡng.</p>",
       "status": 1,
-      "view": 249,
+      "view": 250,
       "favorites": 14,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2022-02-18T08:23:16.641Z",
@@ -379,8 +379,13 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
       "view": 194,
       "favorites": 6,
+
+      
+
+
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2022-02-18T08:44:59.658Z",
       "id": 39,
@@ -419,8 +424,7 @@
       "price": 25000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
-      "status": 1,
-      "view": 116,
+
       "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2022-02-18T08:45:49.967Z",
@@ -448,6 +452,8 @@
       "categoryId": 2,
       "status": 1,
       "view": 319,
+
+
       "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2022-02-18T08:46:32.004Z",
@@ -2041,6 +2047,25 @@
       "id": 35
     },
     {
+
+      "userId": 21,
+      "customer_name": "Admin",
+      "address": "xom2, Xã Xín Cái, Huyện Mèo Vạc, Tỉnh Hà Giang",
+      "phone": "0987654345",
+      "email": "tocomoco@gmail.com",
+      "total_price": 140000,
+      "price_decrease": 70000,
+      "message": "",
+      "status": 3,
+      "voucher": [
+        5
+      ],
+      "createdAt": "2023-11-06T14:15:00.711Z",
+      "updatedAt": "2023-11-06T14:16:45.817Z",
+      "id": 36
+    },
+    {
+
       "userId": 0,
       "customer_name": "Lê Quang Minh",
       "address": "OKOK, Phường Đồng Xuân, Quận Hoàn Kiếm, Thành phố Hà Nội",
@@ -2383,11 +2408,9 @@
       "price_decrease": 0,
       "message": "",
       "status": 0,
-      "voucher": [],
-      "checkBanking": 0,
-      "createdAt": "2023-11-12T13:33:41.175Z",
-      "updatedAt": "2023-11-12T13:33:41.175Z",
-      "id": 54
+      "voucher": []
+
+
     },
     {
       "userId": 21,
@@ -2395,6 +2418,8 @@
       "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
       "phone": "0987654345",
       "email": "tocomoco@gmail.com",
+
+
       "total_price": 4240000,
       "price_decrease": 0,
       "message": "",
@@ -2438,6 +2463,7 @@
       "createdAt": "2023-11-17T15:12:13.774Z",
       "updatedAt": "2023-11-17T15:14:07.999Z",
       "id": 57
+
     }
   ],
   "orderDetails": [
@@ -2533,6 +2559,33 @@
       "id": 22
     },
     {
+      "orderId": 39,
+      "productId": 39,
+      "productPrice": 40000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 23
+    },
+    {
+      "orderId": 40,
+      "productId": 34,
+      "productPrice": 35000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 24
+    },
+    {
+
       "orderId": 41,
       "productId": 37,
       "productPrice": 45000,
