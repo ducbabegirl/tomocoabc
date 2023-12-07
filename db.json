@@ -94,6 +94,12 @@
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264940/oztivpsd0y504lqt03or.jpg",
       "createdAt": "2023-11-29T13:35:41.481Z",
       "id": 16
+    },
+    {
+      "name": "Bakery 1",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701416805/yvihu2femlfv4xdipuiz.jpg",
+      "createdAt": "2023-12-01T07:46:45.788Z",
+      "id": 17
     }
   ],
   "cateNews": [
@@ -114,6 +120,30 @@
       "createdAt": "2022-02-12T14:13:41.269Z",
       "updatedAt": "2022-02-12T14:13:41.269Z",
       "id": 3
+    },
+    {
+      "name": "tin tức",
+      "createdAt": "2023-12-01T07:44:59.901Z",
+      "updatedAt": "2023-12-01T07:44:59.901Z",
+      "id": 4
+    },
+    {
+      "name": "tin tức",
+      "createdAt": "2023-12-01T07:45:04.299Z",
+      "updatedAt": "2023-12-01T07:45:04.299Z",
+      "id": 5
+    },
+    {
+      "name": "tin tức",
+      "createdAt": "2023-12-01T07:57:22.629Z",
+      "updatedAt": "2023-12-01T07:57:22.629Z",
+      "id": 6
+    },
+    {
+      "name": "tin tức",
+      "createdAt": "2023-12-01T07:57:28.925Z",
+      "updatedAt": "2023-12-01T07:57:28.925Z",
+      "id": 7
     }
   ],
   "products": [
@@ -686,23 +716,13 @@
       "id": 41
     },
     {
-      "name": "Hồng trà macchiato1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701265102/ddapswrbxdnsnglgl79e.jpg",
-      "price": 123123,
-      "description": "<p>ứdfwesdg</p>",
-      "categoryId": 15,
-      "status": 1,
-      "view": 0,
-      "favorites": 0,
-      "createdAt": "2023-11-29T13:38:22.907Z",
-      "updatedAt": "2023-11-29T13:38:22.907Z",
       "name": "trà",
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699970449/rhwrrnn871dmtac6napi.jpg",
       "price": 99,
       "description": "<p>hi</p>",
       "categoryId": 4,
       "status": 1,
-      "view": 1,
+      "view": 2,
       "favorites": 0,
       "createdAt": "2023-11-14T14:00:48.873Z",
       "updatedAt": "2023-11-14T14:00:48.873Z",
@@ -909,6 +929,13 @@
       "createdAt": "2023-11-29T13:43:17.557Z",
       "updatedAt": "2023-11-29T16:10:46.079Z",
       "id": 4
+    },
+    {
+      "name": "M",
+      "priceIncrease": 12000,
+      "createdAt": "2023-12-01T07:47:05.503Z",
+      "updatedAt": "2023-12-01T07:47:05.503Z",
+      "id": 5
     }
   ],
   "toppings": [
@@ -1088,17 +1115,6 @@
       "id": 8
     },
     {
-      "code": "MINHLE",
-      "quantity": 1000,
-      "condition": 1,
-      "conditionNumber": 100000,
-      "status": 1,
-      "timeStart": "2023-11-29T22:23",
-      "timeEnd": "2025-11-07T22:23",
-      "user_ids": [],
-      "createdAt": "2023-11-29T15:23:17.348Z",
-      "updatedAt": "2023-11-29T15:49:29.865Z",
-      "id": 9,
       "code": "NOEL",
       "quantity": 20,
       "condition": 0,
