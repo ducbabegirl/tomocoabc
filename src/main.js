@@ -10,6 +10,7 @@ import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import CartPage from "./pages/user/cart";
 import HomePage from "./pages/user/home";
+import IntroPage from "./pages/user/intro";
 import UpdateInfoPage from "./pages/user/my-account";
 import MyAccUpdatePass from "./pages/user/my-account/updatePass";
 import ProductsPage from "./pages/user/products";
@@ -40,7 +41,7 @@ import AdminAddNewsPage from "./pages/admin/news/add";
 
 import AdminEditNewsPage from "./pages/admin/news/edit";
 import NewsPage from "./pages/user/news";
-
+import NewsDetailsPage from "./pages/user/newsDetails";
 
 import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";

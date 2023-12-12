@@ -5,7 +5,7 @@ import Header from "../../components/user/header";
 
 const RegisterPage = {
     getTitle() {
-        return "Đăng ký - Trà Sữa Tomocoabc";
+        return "Đăng ký - Trà Sữa Cocomoco";
     },
     async render() {
         return /* html */ `

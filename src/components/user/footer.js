@@ -67,8 +67,8 @@ const Footer = {
                         </ul>
                     </div>
                     <div class="overflow-hidden">
-                        <h3 class="text-white text-xl uppercase font-semibold mb-3">Kết nối với chúng tôi</h3>
-                            <p> hihi</p>
+                        <h3 class="text- white text-xl uppercase font-semibold mb-3">Kết nối với chúng tôi</h3>
+                            <p> Giờ mở cửa 8:00 - 21:30</p>
                         </div>
                     </div>
                 </div>
