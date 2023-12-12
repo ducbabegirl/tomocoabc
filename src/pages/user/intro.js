@@ -78,7 +78,7 @@ const IntroPage = {
             
             <section class="py-14">
                 <div class="container max-w-6xl mx-auto flex flex-wrap">
-                    <div class="w-full min-h-60 md:w-1/2 bg-cover bg-center bg-no-repeat md:rounded-l-xl" style="background-image: url(https://res.cloudinary.com/dizzurnqo/image/upload/v1702304946/intro_io4cgs.jpg)"></div>
+                    <div class="w-full min-h-60 md:w-1/2 bg-cover bg-center bg-no-repeat md:rounded-l-xl" style="background-image: url(http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377228/c16xo9drztxxioo10ey1.jpg)"></div>
                     <div class="w-full md:w-1/2 px-10 py-16 bg-[#D9A953] text-white md:rounded-r-xl">
                         <h2 class="text-2xl font-semibold uppercase">SỨ MỆNH</h2>
                         <p class="text-justify mt-3">
