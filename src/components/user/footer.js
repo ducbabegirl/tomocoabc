@@ -55,7 +55,7 @@ const Footer = {
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 Email:
-                                <a href="mailto:hongdtph14095">&nbsp hongdtph14095@fpt.edu.vn</a>
+                                <a href="mailto:hongdtph14095">&nbsp cocomoco@fpt.edu.vn</a>
                             </li>
                             <li class="flex">
                                 <div class="min-w-[25px]">
