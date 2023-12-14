@@ -59,7 +59,7 @@ const Products = {
         <section class="container max-w-6xl mx-auto py-9 px-3">
             <div class="text-center">
                 <h2 class="uppercase text-[#D9A953] text-2xl font-semibold">SẢN PHẨM NỔI BẬT</h2>
-                <p>Chào mừng bạn đến với thiên đường vị giác của Yotea. Menu Yotea rất đa dạng món uống, đủ để đáp ứng khẩu vị “ưa chua chuộng béo” của bạn. Order và thưởng thức ngay nhé.</p>
+                <p>Chào mừng bạn đến với thiên đường vị giác của Cocomoco. Menu  rất đa dạng món uống, đủ để đáp ứng khẩu vị “ưa chua chuộng béo” của bạn. Order và thưởng thức ngay nhé.</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">

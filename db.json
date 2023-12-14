@@ -12,7 +12,7 @@
       "id": 2
     },
     {
-      "name": "Coffee",
+      "name": "Kem chesse",
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597350/ftaabnjhrczpjerzhiil.jpg",
       "createdAt": "2022-02-08T12:06:48.706Z",
       "id": 3
@@ -22,84 +22,6 @@
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597281/fum8e1vjiloksgkhmetg.jpg",
       "createdAt": "2023-12-03T09:50:16.602Z",
       "id": 4
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701262360/eodtjbfpfmpoe24irmnf.jpg",
-      "createdAt": "2023-11-29T12:52:41.288Z",
-      "id": 5
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263389/j594hjyckyym7evzglii.jpg",
-      "createdAt": "2023-11-29T13:09:50.884Z",
-      "id": 6
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263390/k2fqe7c3hej31ixfay1k.jpg",
-      "createdAt": "2023-11-29T13:09:51.606Z",
-      "id": 7
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263444/rhvwo7iuwpvssow1ylgi.jpg",
-      "createdAt": "2023-11-29T13:10:45.186Z",
-      "id": 8
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263556/jbksum84q94zoz80bafx.jpg",
-      "createdAt": "2023-11-29T13:12:37.922Z",
-      "id": 9
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263772/ympbv8q0ofponbgzgwqt.jpg",
-      "createdAt": "2023-11-29T13:16:12.957Z",
-      "id": 10
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263804/upvxm8mzkpmvo2peu4hd.jpg",
-      "createdAt": "2023-11-29T13:16:45.687Z",
-      "id": 11
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701263862/uspao5okivvipexwinor.jpg",
-      "createdAt": "2023-11-29T13:17:43.810Z",
-      "id": 12
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264142/opduc6l8iqybo5kza0qe.jpg",
-      "createdAt": "2023-11-29T13:22:23.633Z",
-      "id": 13
-    },
-    {
-      "name": "Bakery111",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264704/ppgjocbccsapoiwpfkav.jpg",
-      "createdAt": "2023-11-29T13:31:45.280Z",
-      "id": 14
-    },
-    {
-      "name": "Bakery1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264883/wi9okyfrhdxxyv64acya.jpg",
-      "createdAt": "2023-11-29T13:34:44.646Z",
-      "id": 15
-    },
-    {
-      "name": "Bakery11232",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701264940/oztivpsd0y504lqt03or.jpg",
-      "createdAt": "2023-11-29T13:35:41.481Z",
-      "id": 16
-    },
-    {
-      "name": "Bakery 1",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701416805/yvihu2femlfv4xdipuiz.jpg",
-      "createdAt": "2023-12-01T07:46:45.788Z",
-      "id": 17
     }
   ],
   "cateNews": [
@@ -116,34 +38,10 @@
       "updatedAt": "2022-02-12T14:13:29.413Z"
     },
     {
-      "name": "Yotea Story",
-      "createdAt": "2022-02-12T14:13:41.269Z",
-      "updatedAt": "2023-12-05T08:24:37.548Z",
+      "name": "Sản Phẩm",
+      "createdAt": "2023-12-12T10:15:49.215Z",
+      "updatedAt": "2023-12-12T10:15:49.215Z",
       "id": 3
-    },
-    {
-      "name": "tin tức",
-      "createdAt": "2023-12-01T07:44:59.901Z",
-      "updatedAt": "2023-12-01T07:44:59.901Z",
-      "id": 4
-    },
-    {
-      "name": "tin tức",
-      "createdAt": "2023-12-01T07:45:04.299Z",
-      "updatedAt": "2023-12-01T07:45:04.299Z",
-      "id": 5
-    },
-    {
-      "name": "tin tức",
-      "createdAt": "2023-12-01T07:57:22.629Z",
-      "updatedAt": "2023-12-01T07:57:22.629Z",
-      "id": 6
-    },
-    {
-      "name": "tin tức",
-      "createdAt": "2023-12-01T07:57:28.925Z",
-      "updatedAt": "2023-12-01T07:57:28.925Z",
-      "id": 7
     }
   ],
   "products": [
@@ -173,7 +71,7 @@
       "price": 42000,
       "description": "<p>Sự kết hợp giữa vị chua của Cam cùng sự ngọt ngào của trái Vải. Dư vị thanh mát của hồng tra tô điểm hoản hảo cho một chút vị chua, một chút ngọt của của 2 loại trái cây, cho một thức uống trái cây bắt mắt và vừa miệng khó cưỡng.</p>",
       "status": 1,
-      "view": 250,
+      "view": 251,
       "favorites": 14,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2023-12-03T11:15:48.622Z",
@@ -227,17 +125,19 @@
       "price": 42000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p><p><br>&nbsp;</p>",
       "status": 1,
-      "view": 90,
-      "favorites": 13,
+      "view": 91,
+      "favorites": 14,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2023-12-03T11:14:04.225Z",
       "id": 5,
       "categoryId": 1,
       "category": {
-        "name": "Milk Tea",
-        "image": "http://res.cloudinary.com/levantuan/image/upload/v1644757239/assignment-js/sjh5kfx67ixrpav4rwet.png",
-        "id": 2
-      }
+        "id": 1,
+        "name": "Tea",
+        "createdAt": "2022-03-13T05:07:46.346Z",
+        "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701597578/kk0ysomdnuousvmctj65.jpg"
+      },
+      "ratings": []
     },
     {
       "name": "Sữa chua thanh long dưa lưới dằm",
@@ -379,8 +279,10 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-      "view": 215,
+
+      "view": 218,
       "favorites": 7,
+
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2023-12-03T09:16:31.848Z",
       "id": 39,
@@ -419,8 +321,9 @@
       "price": 25000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
+
       "status": 1,
-      "view": 120,
+      "view": 125,
       "favorites": 4,
       "createdAt": "2022-02-18T08:45:34.389Z",
       "updatedAt": "2023-12-03T09:19:00.303Z",
@@ -447,7 +350,9 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
+
       "view": 323,
+
       "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2023-12-03T09:26:05.421Z",
@@ -487,43 +392,17 @@
       }
     },
     {
-      "name": "Cà phê Macchiato",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596458/s4twzxs7m2ernygcotx8.png",
-      "price": 32000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "name": "Trà 1",
+      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645411631/assignment-js/bl8ukr5uvtezwaavwx9k.jpg",
+      "price": 123,
+      "description": "<p>abc</p>",
       "categoryId": 3,
-      "status": 1,
-      "view": 3,
+      "status": 0,
+      "view": 1,
       "favorites": 0,
-      "createdAt": "2022-02-18T09:00:33.976Z",
-      "updatedAt": "2023-12-03T09:40:56.770Z",
-      "id": 24
-    },
-    {
-      "name": "Cà phê sữa xay",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596317/rgkcunypkcga2lp79aa6.png",
-      "price": 35000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 3,
-      "status": 1,
-      "view": 2,
-      "favorites": 0,
-      "createdAt": "2022-02-18T09:01:40.108Z",
-      "updatedAt": "2023-12-03T09:38:36.503Z",
-      "id": 26
-    },
-    {
-      "name": "Cà phê sữa đá Sài Gòn",
-      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596249/jval9sagkmsiglog4j8s.png",
-      "price": 25000,
-      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
-      "categoryId": 3,
-      "status": 1,
-      "view": 18,
-      "favorites": 0,
-      "createdAt": "2022-02-18T09:02:12.743Z",
-      "updatedAt": "2023-12-03T09:37:28.241Z",
-      "id": 27
+      "createdAt": "2022-02-21T02:47:10.990Z",
+      "updatedAt": "2023-12-01T07:46:49.950Z",
+      "id": 40
     },
     {
       "name": "Cà phê đen xay",
@@ -531,11 +410,11 @@
       "price": 38000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
-      "status": 1,
+      "status": 0,
       "view": 2,
       "favorites": 0,
       "createdAt": "2022-02-18T09:02:49.854Z",
-      "updatedAt": "2023-12-03T09:36:57.125Z",
+      "updatedAt": "2023-12-12T10:26:06.754Z",
       "id": 28
     },
     {
@@ -544,11 +423,11 @@
       "price": 50000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
-      "status": 1,
-      "view": 38,
+      "status": 0,
+      "view": 39,
       "favorites": 0,
       "createdAt": "2022-02-18T09:03:52.323Z",
-      "updatedAt": "2023-12-03T09:31:55.988Z",
+      "updatedAt": "2023-12-12T10:25:39.658Z",
       "id": 30
     },
     {
@@ -557,11 +436,13 @@
       "price": 45000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
-      "status": 1,
+
+      "status": 0,
       "view": 41,
+
       "favorites": 1,
       "createdAt": "2022-02-18T09:04:27.177Z",
-      "updatedAt": "2023-12-03T09:31:24.232Z",
+      "updatedAt": "2023-12-12T10:25:51.499Z",
       "id": 31,
       "ratings": [
         {
@@ -580,19 +461,6 @@
       }
     },
     {
-      "name": "Trà 1",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645411631/assignment-js/bl8ukr5uvtezwaavwx9k.jpg",
-      "price": 123,
-      "description": "<p>abc</p>",
-      "categoryId": 3,
-      "status": 0,
-      "view": 1,
-      "favorites": 0,
-      "createdAt": "2022-02-21T02:47:10.990Z",
-      "updatedAt": "2023-12-01T07:46:49.950Z",
-      "id": 40
-    },
-    {
       "name": "DEmoeee",
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1698070988/bc0jzgeeyyntmsf2h6vy.jpg",
       "price": 123,
@@ -606,18 +474,18 @@
       "id": 41
     },
     {
+
       "name": "trà",
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699970449/rhwrrnn871dmtac6napi.jpg",
       "price": 99,
       "description": "<p>hi</p>",
       "categoryId": 4,
       "status": 0,
-      "view": 1,
-      "status": 1,
       "view": 2,
       "favorites": 0,
       "createdAt": "2023-11-14T14:00:48.873Z",
-      "updatedAt": "2023-12-05T07:23:33.386Z",
+      "updatedAt": "2023-12-12T10:24:25.961Z",
+
       "id": 42
     }
   ],
@@ -687,17 +555,6 @@
       "createdAt": "2022-02-18T10:00:20.601Z",
       "updatedAt": "2023-12-05T08:59:02.270Z",
       "id": 6
-    },
-    {
-      "title": "Kinh doanh đồ uống cạnh tranh nhưng luôn là xu thế",
-      "thumbnail": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701766692/dxj0emmguvjacps33q9p.jpg",
-      "description": "<h2>Thị trường kinh doanh đồ uống chưa bao giờ hạ nhiệt, nhất là khi đời sống người dân càng được nâng cao, con người càng có xu hướng tiêu dùng và mua sắm xa xỉ và đa dạng. Thưởng thức đồ uống luôn là nhu cầu thiết yếu của người Việt. Nhu cầu đa dạng cũng là cơ hội cho hàng loạt thương hiệu đồ uống thành lập và phát triển, gây nên sự cạnh tranh gay gắt, nhưng trước sự thay đổi và gia tăng về nhu cầu của người tiêu dùng, thị trường kinh doanh đồ uống</h2>",
-      "content": "<p><strong>Thị trường kinh doanh đồ uống chưa bao giờ hạ nhiệt, nhất là khi đời sống người dân càng được nâng cao, con người càng có xu hướng tiêu dùng và mua sắm xa xỉ và đa dạng. Thưởng thức đồ uống luôn là nhu cầu thiết yếu của người Việt. Nhu cầu đa dạng cũng là cơ hội cho hàng loạt thương hiệu đồ uống thành lập và phát triển, gây nên sự cạnh tranh gay gắt, nhưng trước sự thay đổi và gia tăng về nhu cầu của người tiêu dùng, thị trường kinh doanh đồ uống</strong></p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-300x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-300x300.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-150x150.jpg 150w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-768x768.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-1024x1024.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-600x600.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/gong-cha-thai-ha-100x100.jpg 100w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Kinh doanh đồ uống luôn là xu thế</strong></h2><p>Nhu cầu thưởng thức về đồ uống và đồ ăn của người Việt ngày càng cao trong xã hội hiện đại. Nền kinh tế càng phát triển, đời sống của người dân Việt đi lên, nhu cầu tiệu dùng cũng thay đổi. Ngoài giá trị cốt lõi là thỏa mãn nhu cầu giải khát. Khách hàng còn mong muốn nhiều hơn đó là giá trị gia tăng của sản phẩm là chất lượng dịch vụ và không gian cửa hàng đồ uống. Một không gian đẹp đẽ với thiết kế bắt mắt sẽ thu hút được khách hàng ghé thăm, họ có nhu cầu checkin , thư giãn và trò chuyện tán ngẫu. Khách hàng cũng đánh giá cao và có thiện cảm với chất lượng dịch vụ tại cửa hàng. Cửa hàng nào nhân viên ưa nhìn, nhã nhặn sẽ tạo được thiện cảm với khách hàng. Họ sẵn sàng mua một ly đồ uống với giá cao để đổi lại không chỉ hương vị đồ uống mà còn là sự trải nghiệm về không gian và chất lượng dịch vụ tại cửa hàng.</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2-600x450.jpg 600w, https://yotea.vn/wp-content/uploads/2019/11/68170dc71427f279ab36-2.jpg 1280w\" sizes=\"100vw\" width=\"600\"></figure><h2><strong>Thay đổi để phù hợp với định hướng tiêu dùng của người Việt</strong></h2><p>Từ đó, các nhãn hàng cần phải có những chiến dịch thay đổi để đáp ứng được nhu cầu ngày càng đa dạng của khách hàng: những khó khăn phải đối mặt khi kinh doanh đồ uống như : chương trình khuyến mãi để hấp dẫn khách hàng , cải thiện sản phẩm để đa dạng phù hợp với thị hiếu của khách hàng, chất lượng đào tạo và quy chuẩn dịch vụ chuyên nghiệp và chuẩn chính. Để làm được những điều này đòi hỏi người kinh doanh phải am hiểu về thị trường, đối thủ cạnh tranh và các xu hướng kinh doanh hiện tại để có thể xây dựng các chương trình marketing , xúc tiến bán sao cho phù hợp. Có được sự thay đổi thường xuyên liên tục sẽ giúp thương hiệu đáp ứng được nhu cầu và thị hiếu của người tiêu dùng luôn biến động. Đây là một bài toán khó đòi hỏi người làm kinh doanh phải đi tìm lời giải để tạo được vị thế trên thị trường và thu hút được khách hàng</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1-238x300.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1-238x300.jpg 238w, https://yotea.vn/wp-content/uploads/2019/11/40d370498c41f3069ea9459db0befc18-1.jpg 564w\" sizes=\"100vw\" width=\"600\"></figure><p>Đối với những người không có nhiều kinh nghiệm trong kinh doanh, thiếu hụt kiến thức chuyên môn về ngành hàng thì đây là một trở ngại lớn và đòi hỏi nguồn lực khá cao để giải quyết hết tất cả những vấn đề trên. Chính vì thế mà không ít những người kinh doanh nhỏ lẻ lựa chọn cho mình hướng đi sử dụng mô hình nhượng quyền thương hiệu</p><figure class=\"image\"><img src=\"https://yotea.vn/wp-content/uploads/2019/11/Y2-300x225.jpg\" alt=\"\" srcset=\"https://yotea.vn/wp-content/uploads/2019/11/Y2-300x225.jpg 300w, https://yotea.vn/wp-content/uploads/2019/11/Y2-768x576.jpg 768w, https://yotea.vn/wp-content/uploads/2019/11/Y2-1024x768.jpg 1024w, https://yotea.vn/wp-content/uploads/2019/11/Y2-600x450.jpg 600w\" sizes=\"100vw\" width=\"600\"></figure><p>Khó khăn sẽ được gỡ nút khi hợp tác kinh doanh nhượng quyền: được hỗ trợ từ A – Z từ phía nhãn hàng và hưởng lợi ích từ thương hiệu. Thương hiệu Cocomoco được thành lập từ năm 2014, với cửa hàng đầu tiên tại Royal City, nhận thấy sự thành công từ cửa hàng đầu tiên, Founder của thương hiệu đã mở hàng loạt các cửa hàng tại các thành phố lớn Hà Nội, Thành phố Hồ Chí Minh , Bình Dương,.. Đến nay, YoTea đã có hơn 10 cửa hàng trên khắp cả nước. Trong thời điểm hiện tại, nhận thấy được sự thành công khi kinh doanh tại lĩnh vực trà và cà phê, thương hiệu <strong>Cocomoco </strong>đang muốn tìm đối tác kinh doanh nhượng quyền trên toàn quốc nhằm mang thương hiệu trà và cà phê sạch, an toàn và quy trình dịch vụ chuyên nghiệp đến hàng ngàn khách hàng trên toàn quốc.</p><p>Tìm hiểu thêm tại <a href=\"http://nhuongquyen.yotea.vn/\"><strong>Đây</strong></a></p>",
-      "cateNewId": 3,
-      "status": 1,
-      "createdAt": "2022-02-18T10:01:25.350Z",
-      "updatedAt": "2023-12-05T08:58:11.868Z",
-      "id": 7
     },
     {
       "title": "Cơ hội kinh doanh tiềm năng tại Vincom Mega Mall",
@@ -806,20 +663,6 @@
       "createdAt": "2023-10-26T16:03:03.532Z",
       "updatedAt": "2023-10-26T16:25:08.947Z",
       "id": 3
-    },
-    {
-      "name": "LM",
-      "priceIncrease": 44444,
-      "createdAt": "2023-11-29T13:43:17.557Z",
-      "updatedAt": "2023-11-29T16:10:46.079Z",
-      "id": 4
-    },
-    {
-      "name": "M",
-      "priceIncrease": 12000,
-      "createdAt": "2023-12-01T07:47:05.503Z",
-      "updatedAt": "2023-12-01T07:47:05.503Z",
-      "id": 5
     }
   ],
   "toppings": [
@@ -847,11 +690,6 @@
       "name": "Hạt Sen Vàng",
       "price": 20000,
       "id": 6
-    },
-    {
-      "name": "Hạt Sen Vàng 22",
-      "price": 5000,
-      "id": 7
     }
   ],
   "contact": [
@@ -948,13 +786,15 @@
     },
     {
       "code": "TEST",
-      "quantity": 9,
+      "quantity": 8,
       "condition": 0,
       "conditionNumber": 50,
       "status": 1,
       "timeStart": "2023-10-28T15:00",
       "timeEnd": "2024-11-10T15:00",
-      "user_ids": [],
+      "user_ids": [
+        20
+      ],
       "createdAt": "2023-10-29T06:19:50.500Z",
       "updatedAt": "2023-11-29T15:09:56.065Z",
       "id": 5
@@ -992,12 +832,12 @@
       "quantity": 66,
       "condition": 0,
       "conditionNumber": 10,
-      "status": 1,
+      "status": 0,
       "timeStart": "2023-11-07T20:46",
       "timeEnd": "2023-12-03T20:46",
       "user_ids": [],
       "createdAt": "2023-11-29T13:46:20.605Z",
-      "updatedAt": "2023-11-29T16:06:33.695Z",
+      "updatedAt": "2023-12-08T13:57:08.832Z",
       "id": 8
     },
     {
@@ -1366,13 +1206,29 @@
       "active": 1,
       "createdAt": "2023-11-30T07:26:43.455Z",
       "id": 24
+    },
+    {
+      "email": "an123@gmail.com",
+      "password": "$2a$10$./HvN/Vb7ukWJQKxMHVDwuGQgk1B3CiCTVUKJfa.1lhSblkZ6zedi",
+      "username": "mai",
+      "fullName": "an",
+      "phone": "0987654321",
+      "wardsCode": 0,
+      "districtCode": 0,
+      "provinceCode": 0,
+      "address": "",
+      "avatar": "",
+      "role": 0,
+      "active": 1,
+      "createdAt": "2023-12-11T09:01:22.879Z",
+      "id": 25
     }
   ],
   "stores": [
     {
       "id": 1,
       "name": "Cocomoco Bắc Giang",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177222/assignment-js/ekkpofluy69wvmzhgwde.jpg",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377257/cw3boueez2rq7numjfjx.jpg",
       "address": "Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
       "phone": "0347568965",
       "timeStart": "08:00",
@@ -1382,7 +1238,7 @@
     {
       "id": 2,
       "name": "Cocomoco Bắc Ninh",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644595526/assignment-js/kqcvijzpvdgmrq6uu5mh.jpg",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377246/k4i7ajltkfondcheakvk.jpg",
       "address": "544W+Q72, Phượng Mao, Quế Võ, Bắc Ninh, Việt Nam",
       "phone": "0345632563",
       "timeStart": "08:03",
@@ -1391,7 +1247,7 @@
     },
     {
       "name": "Cocomoco Hà Nội",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1645177345/assignment-js/dvmfu4bmhxa71a1ocewp.jpg",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377236/gzewhzfiz2ag1mhf5jek.jpg",
       "address": "320 Đ. Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội",
       "phone": "0345236589",
       "timeStart": "08:30",
@@ -1401,7 +1257,7 @@
     },
     {
       "name": "Cocomoco Hà Giang",
-      "image": "http://res.cloudinary.com/levantuan/image/upload/v1644632614/assignment-js/z5qrp7yxl8bav29bfstt.jpg",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377228/c16xo9drztxxioo10ey1.jpg",
       "address": "247 Nguyễn Thái Học, P. Trần Phú, Hà Giang",
       "phone": "0347888888",
       "timeStart": "08:00",
@@ -1443,38 +1299,6 @@
     }
   ],
   "orders": [
-    {
-      "userId": 1,
-      "customer_name": "admin",
-      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-      "phone": "0347562365",
-      "email": "admin@gmail.com",
-      "total_price": 62728,
-      "price_decrease": 6272.8,
-      "message": "",
-      "status": 3,
-      "voucher": [
-        3
-      ],
-      "createdAt": "2023-02-17T12:28:57.357Z",
-      "updatedAt": "2023-02-17T17:06:36.086Z",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "customer_name": "admin",
-      "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
-      "phone": "0347562365",
-      "email": "admin@gmail.com",
-      "total_price": 25000,
-      "price_decrease": 0,
-      "message": "",
-      "status": 3,
-      "voucher": [],
-      "createdAt": "2023-02-18T07:24:03.835Z",
-      "updatedAt": "2023-02-18T07:24:03.835Z",
-      "id": 2
-    },
     {
       "userId": 1,
       "customer_name": "admin",
@@ -1915,21 +1739,8 @@
       "id": 35
     },
     {
-      "userId": 0,
-      "customer_name": "Lê Quang Minh",
-      "address": "OKOK, Phường Đồng Xuân, Quận Hoàn Kiếm, Thành phố Hà Nội",
-      "phone": "0326677811",
-      "email": "minhaz23122002@gmail.com",
-      "total_price": 42000,
-      "price_decrease": 0,
-      "message": "okkook",
-      "status": 0,
-      "voucher": [],
-      "createdAt": "2023-11-09T06:55:25.562Z",
-      "updatedAt": "2023-11-09T06:55:25.562Z",
-      "id": 36
-    },
-    {
+
+
       "userId": 1,
       "customer_name": "admin",
       "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
@@ -2256,18 +2067,12 @@
       "total_price": 4240000,
       "price_decrease": 0,
       "message": "",
+
+
       "status": 0,
       "voucher": []
     },
-    {
-      "userId": 21,
-      "customer_name": "Admin",
-      "address": "xom2, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội",
-      "phone": "0987654345",
-      "email": "tocomoco@gmail.com",
-      "total_price": 4240000,
-      "price_decrease": 0,
-      "message": "",
+
       "status": 1,
       "voucher": [],
       "checkBanking": 1,
@@ -2331,6 +2136,7 @@
       "price_decrease": 0,
       "message": "",
       "status": 3,
+
       "voucher": [],
       "createdAt": "2023-11-17T13:48:39.689Z",
       "updatedAt": "2023-11-17T13:49:18.991Z",
@@ -2410,7 +2216,9 @@
       "createdAt": "2023-11-19T14:25:54.621Z",
       "updatedAt": "2023-11-19T14:26:47.690Z",
       "id": 64
+
     },
+
     {
       "userId": 21,
       "customer_name": "Admin",
@@ -2474,22 +2282,69 @@
       "createdAt": "2023-12-03T14:23:06.936Z",
       "updatedAt": "2023-12-03T14:23:28.229Z",
       "id": 68
+    },
+    {
+      "userId": 23,
+      "customer_name": "vanh ",
+      "address": "xom2, Xã Tân Phú, Huyện Vĩnh Tường, Tỉnh Vĩnh Phúc",
+      "phone": "0987543123",
+      "email": "vanh123@gmail.com",
+      "total_price": 45000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-06T13:48:56.491Z",
+      "updatedAt": "2023-12-11T09:12:56.804Z",
+      "id": 69
+    },
+    {
+      "userId": 23,
+      "customer_name": "vanh ",
+      "address": "xom2, Phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội",
+      "phone": "0987543123",
+      "email": "vanh123@gmail.com",
+      "total_price": 45000,
+      "price_decrease": 0,
+      "message": "ok",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-11T09:06:40.362Z",
+      "updatedAt": "2023-12-11T09:08:41.270Z",
+      "id": 70
+    },
+    {
+      "userId": 23,
+      "customer_name": "vanh ",
+      "address": "xom2, Xã Tân Phú, Huyện Vĩnh Tường, Tỉnh Vĩnh Phúc",
+      "phone": "0987543123",
+      "email": "vanh123@gmail.com",
+      "total_price": 4500000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-11T09:14:33.158Z",
+      "updatedAt": "2023-12-11T09:19:17.145Z",
+      "id": 71
+    },
+    {
+      "userId": 23,
+      "customer_name": "vanh ",
+      "address": "xom2, Xã Tân Phú, Huyện Vĩnh Tường, Tỉnh Vĩnh Phúc",
+      "phone": "0987543123",
+      "email": "vanh123@gmail.com",
+      "total_price": 3000000,
+      "price_decrease": 0,
+      "message": "",
+      "status": 3,
+      "voucher": [],
+      "createdAt": "2023-12-11T09:16:12.453Z",
+      "updatedAt": "2023-12-11T09:16:30.478Z",
+      "id": 72
     }
   ],
   "orderDetails": [
-    {
-      "orderId": 2,
-      "productId": 6,
-      "productPrice": 10000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 1,
-      "ice": 0,
-      "sugar": 30,
-      "toppingId": 1,
-      "toppingPrice": 5000,
-      "id": 3
-    },
     {
       "orderId": 11,
       "productId": 31,
@@ -2504,19 +2359,7 @@
       "id": 18
     },
     {
-      "orderId": 36,
-      "productId": 39,
-      "productPrice": 40000,
-      "sizeId": 2,
-      "sizePrice": 10000,
-      "quantity": 2,
-      "ice": 100,
-      "sugar": 100,
-      "toppingId": 6,
-      "toppingPrice": 20000,
-      "id": 20
-    },
-    {
+
       "orderId": 41,
       "productId": 37,
       "productPrice": 45000,
@@ -2571,8 +2414,10 @@
       "ice": 100,
       "sugar": 100,
       "toppingId": 6,
+
       "toppingPrice": 0,
       "id": 24
+
     },
     {
       "orderId": 57,
@@ -2656,13 +2501,6 @@
       "productId": 30,
       "createdAt": "2022-02-18T13:20:02.783Z",
       "id": 13
-    },
-    {
-      "userId": 1,
-      "content": "rất ok",
-      "productId": 26,
-      "createdAt": "2022-02-19T05:55:37.859Z",
-      "id": 16
     },
     {
       "userId": 1,
@@ -2761,13 +2599,6 @@
       "ratingNumber": 5,
       "createdAt": "2022-02-18T13:17:10.794Z",
       "id": 5
-    },
-    {
-      "userId": 1,
-      "productId": 26,
-      "ratingNumber": 4,
-      "createdAt": "2022-02-19T05:55:37.800Z",
-      "id": 7
     },
     {
       "userId": 1,
