@@ -1,6 +1,8 @@
 import toastr from "toastr";
 import CartLabel from "./cartLabel";
+
 import Nav from "./nav"
+
 import { search } from "../../api/product";
 import { formatCurrency, getUser, reRender } from "../../utils";
 import WishList from "./wishlist";

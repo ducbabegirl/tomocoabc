@@ -41,7 +41,7 @@ import AdminAddNewsPage from "./pages/admin/news/add";
 
 import AdminEditNewsPage from "./pages/admin/news/edit";
 import NewsPage from "./pages/user/news";
-
+import NewsDetailsPage from "./pages/user/newsDetails";
 
 import AdminProfilePage from "./pages/admin/profile";
 import AdminUpdatePassPage from "./pages/admin/profile/updatePass";
