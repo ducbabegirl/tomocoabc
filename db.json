@@ -91,7 +91,7 @@
       "price": 42000,
       "description": "<p>Trà cam kim quất là sự kết hợp giữa vị chua chua của tắc, vị đậm của trà và kết hợp giữa hương thơm và vị ngọt ngọt của cam. Một ly hồng trà cam tắc sẽ giúp bạn giải khát và thư giãn hiệu quả.</p>",
       "status": 1,
-      "view": 52,
+      "view": 54,
       "favorites": 12,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2023-12-03T11:15:21.365Z",
@@ -167,7 +167,7 @@
       "price": 37000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "status": 1,
-      "view": 6,
+      "view": 9,
       "favorites": 0,
       "createdAt": "2022-02-09T14:58:57.401Z",
       "updatedAt": "2023-12-03T11:11:44.139Z",
@@ -283,9 +283,8 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-
       "view": 218,
+      "view": 224,
       "favorites": 7,
 
 
@@ -358,11 +357,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-
-      "view": 323,
-
-
+      "view": 327,
       "favorites": 3,
       "createdAt": "2022-02-18T08:46:32.004Z",
       "updatedAt": "2023-12-03T09:26:05.421Z",
@@ -389,9 +384,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
       "status": 1,
-
-      "view": 24,
-
+      "view": 28,
       "favorites": 1,
       "createdAt": "2022-02-18T08:47:04.929Z",
       "updatedAt": "2023-12-03T09:27:25.324Z",
@@ -414,7 +407,34 @@
       "view": 1,
 
       "favorites": 0,
-      "createdAt": "2022-02-21T02:47:10.990Z",
+      "createdAt": "2022-02-18T09:00:33.976Z",
+      "updatedAt": "2023-12-03T09:40:56.770Z",
+      "id": 24
+    },
+    {
+      "name": "Cà phê sữa xay",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596317/rgkcunypkcga2lp79aa6.png",
+      "price": 35000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 2,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:01:40.108Z",
+      "updatedAt": "2023-12-03T09:38:36.503Z",
+      "id": 26
+    },
+    {
+      "name": "Cà phê sữa đá Sài Gòn",
+      "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1701596249/jval9sagkmsiglog4j8s.png",
+      "price": 25000,
+      "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
+      "categoryId": 3,
+      "status": 1,
+      "view": 20,
+      "favorites": 0,
+      "createdAt": "2022-02-18T09:02:12.743Z",
+      "id": 27,
       "updatedAt": "2023-12-01T07:46:49.950Z",
       "id": 40
     },
@@ -437,8 +457,8 @@
       "price": 50000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
-      "status": 0,
-      "view": 39,
+      "status": 1,
+      "view": 41,
       "favorites": 0,
       "createdAt": "2022-02-18T09:03:52.323Z",
       "updatedAt": "2023-12-12T10:25:39.658Z",
@@ -450,12 +470,8 @@
       "price": 45000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
-
-
-      "status": 0,
-      "view": 41,
-
-
+      "status": 1,
+      "view": 44,
       "favorites": 1,
       "createdAt": "2022-02-18T09:04:27.177Z",
       "updatedAt": "2023-12-12T10:25:51.499Z",
@@ -497,8 +513,8 @@
       "price": 99,
       "description": "<p>hi</p>",
       "categoryId": 4,
-      "status": 0,
-      "view": 2,
+      "status": 1,
+      "view": 4,
       "favorites": 0,
       "createdAt": "2023-11-14T14:00:48.873Z",
       "updatedAt": "2023-12-12T10:24:25.961Z",
@@ -811,7 +827,7 @@
       "timeStart": "2023-10-28T15:00",
       "timeEnd": "2024-11-10T15:00",
       "user_ids": [
-        20
+        19
       ],
       "createdAt": "2023-10-29T06:19:50.500Z",
       "updatedAt": "2023-11-29T15:09:56.065Z",
@@ -2112,14 +2128,6 @@
       "status": 0,
       "voucher": []
     },
-
-      "status": 1,
-      "voucher": [],
-      "checkBanking": 1,
-      "createdAt": "2023-11-12T13:33:50.351Z",
-      "updatedAt": "2023-11-12T13:35:13.346Z",
-      "id": 55
-    },
     {
       "userId": 23,
       "customer_name": "vanh ",
@@ -2373,49 +2381,55 @@
       "id": 68
     },
     {
-      "userId": 23,
-      "customer_name": "vanh ",
-      "address": "xom2, Xã Tân Phú, Huyện Vĩnh Tường, Tỉnh Vĩnh Phúc",
-      "phone": "0987543123",
-      "email": "vanh123@gmail.com",
-      "total_price": 45000,
+      "userId": 0,
+      "customer_name": "vanh",
+      "address": "hihihihih, Phường Hội Hợp, Thành phố Vĩnh Yên, Tỉnh Vĩnh Phúc",
+      "phone": "0987665224",
+      "email": "test66666@gmail.com",
+      "total_price": 25000,
       "price_decrease": 0,
       "message": "",
       "status": 3,
       "voucher": [],
-      "createdAt": "2023-12-06T13:48:56.491Z",
-      "updatedAt": "2023-12-11T09:12:56.804Z",
+      "createdAt": "2023-12-09T04:41:58.133Z",
+      "updatedAt": "2023-12-09T04:54:43.844Z",
       "id": 69
     },
     {
-
       "userId": 23,
       "customer_name": "vanh ",
       "address": "xom2, Phường Trúc Bạch, Quận Ba Đình, Thành phố Hà Nội",
       "phone": "0987543123",
       "email": "vanh123@gmail.com",
+      "userId": 19,
+      "customer_name": "việt anh",
+      "address": "hii, Phường Phúc Xá, Quận Ba Đình, Thành phố Hà Nội",
+      "phone": "0985673815",
+      "email": "lingbong12@gmail.com",
       "total_price": 45000,
-      "price_decrease": 0,
-      "message": "ok",
+      "price_decrease": 22500,
+      "message": "",
       "status": 3,
-      "voucher": [],
-      "createdAt": "2023-12-11T09:06:40.362Z",
-      "updatedAt": "2023-12-11T09:08:41.270Z",
+      "voucher": [
+        5
+      ],
+      "createdAt": "2023-12-09T04:46:18.548Z",
+      "updatedAt": "2023-12-09T04:49:43.932Z",
       "id": 70
     },
     {
-      "userId": 23,
-      "customer_name": "vanh ",
-      "address": "xom2, Xã Tân Phú, Huyện Vĩnh Tường, Tỉnh Vĩnh Phúc",
-      "phone": "0987543123",
-      "email": "vanh123@gmail.com",
-      "total_price": 4500000,
+      "userId": 0,
+      "customer_name": "hong",
+      "address": "tétttttttttttt, Phường Ninh Dương, Thành phố Móng Cái, Tỉnh Quảng Ninh",
+      "phone": "0985435343",
+      "email": "ngoo23@gmail.com",
+      "total_price": 43000,
       "price_decrease": 0,
       "message": "",
-      "status": 3,
+      "status": 0,
       "voucher": [],
-      "createdAt": "2023-12-11T09:14:33.158Z",
-      "updatedAt": "2023-12-11T09:19:17.145Z",
+      "createdAt": "2023-12-12T14:58:35.173Z",
+      "updatedAt": "2023-12-12T14:58:35.173Z",
       "id": 71
 
     },
@@ -2547,8 +2561,6 @@
       "toppingId": 1,
       "toppingPrice": 5000,
       "id": 33
-
-
     },
     {
       "orderId": 57,
@@ -2567,6 +2579,11 @@
       "orderId": 65,
       "productId": 42,
       "productPrice": 123123,
+    },
+    {
+      "orderId": 69,
+      "productId": 27,
+      "productPrice": 25000,
       "sizeId": 0,
       "sizePrice": 0,
       "quantity": 1,
@@ -2627,7 +2644,33 @@
       "toppingId": 0,
       "toppingPrice": 0,
       "id": 41
-
+      "id": 36
+    },
+    {
+      "orderId": 70,
+      "productId": 27,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 70,
+      "sugar": 50,
+      "toppingId": 6,
+      "toppingPrice": 20000,
+      "id": 37
+    },
+    {
+      "orderId": 71,
+      "productId": 7,
+      "productPrice": 37000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 70,
+      "sugar": 70,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 38
     }
   ],
   "comments": [
