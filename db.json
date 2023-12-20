@@ -284,9 +284,8 @@
       "categoryId": 2,
       "status": 1,
       "view": 218,
+      "view": 227,
       "favorites": 7,
-
-
       "createdAt": "2022-02-18T08:44:59.658Z",
       "updatedAt": "2023-12-03T09:16:31.848Z",
       "id": 39,
@@ -325,8 +324,6 @@
       "price": 25000,
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 2,
-
-
       "status": 1,
       "view": 125,
       "favorites": 4,
@@ -429,10 +426,9 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-      "view": 20,
+      "view": 22,
       "favorites": 0,
       "createdAt": "2022-02-18T09:02:12.743Z",
-      "id": 27,
       "updatedAt": "2023-12-01T07:46:49.950Z",
       "id": 40
     },
@@ -456,7 +452,7 @@
       "description": "<p>Vào những ngày trời mưa bất thường của mùa thu, cơ thể chúng ta rất khó thích nghi và dễ dàng bị cảm lạnh. Vì vậy, một ly trà đào gừng mang hương vị của đào kết hợp mùi thơm của gừng chính là sự lựa chọn hoàn hảo cho bạn hoặc trong những ngày hè nắng nóng thức uống này được để lạnh kết hợp cùng đá viên, hương vị tuyết gừng sẽ càng mát lạnh và tuyệt vời.</p>",
       "categoryId": 3,
       "status": 1,
-      "view": 41,
+      "view": 42,
       "favorites": 0,
       "createdAt": "2022-02-18T09:03:52.323Z",
       "updatedAt": "2023-12-12T10:25:39.658Z",
@@ -504,20 +500,16 @@
       "id": 41
     },
     {
-
-
       "name": "trà",
       "image": "http://res.cloudinary.com/ddxwrjamy/image/upload/v1699970449/rhwrrnn871dmtac6napi.jpg",
       "price": 99,
       "description": "<p>hi</p>",
       "categoryId": 4,
       "status": 1,
-      "view": 4,
+      "view": 5,
       "favorites": 0,
       "createdAt": "2023-11-14T14:00:48.873Z",
       "updatedAt": "2023-12-12T10:24:25.961Z",
-
-
       "id": 42
     },
     {
@@ -1801,26 +1793,6 @@
       "id": 35
     },
     {
-
-
-
-      "userId": 21,
-      "customer_name": "Admin",
-      "address": "xom2, Xã Xín Cái, Huyện Mèo Vạc, Tỉnh Hà Giang",
-      "phone": "0987654345",
-      "email": "tocomoco@gmail.com",
-      "total_price": 140000,
-      "price_decrease": 70000,
-      "message": "",
-      "status": 3,
-      "voucher": [
-        5
-      ],
-      "createdAt": "2023-11-06T14:15:00.711Z",
-      "updatedAt": "2023-11-06T14:16:45.817Z",
-      "id": 36
-    },
-
       "userId": 1,
       "customer_name": "admin",
       "address": "Bắc Giang, Thị trấn Vôi, Huyện Lạng Giang, Tỉnh Bắc Giang",
@@ -2147,8 +2119,6 @@
       "total_price": 4240000,
       "price_decrease": 0,
       "message": "",
-
-
       "status": 0,
       "voucher": []
     },
@@ -2287,57 +2257,7 @@
       "createdAt": "2023-11-19T14:25:54.621Z",
       "updatedAt": "2023-11-19T14:26:47.690Z",
       "id": 64
-
     },
-    {
-      "userId": 25,
-      "customer_name": "userD",
-      "address": "612 La thanh, Phường Vĩnh Phúc, Quận Ba Đình, Thành phố Hà Nội",
-      "phone": "0395852788",
-      "email": "u@gmail.com",
-      "total_price": 123123,
-      "price_decrease": 0,
-      "message": "",
-      "status": 4,
-      "voucher": [],
-      "createdAt": "2023-12-08T14:49:47.957Z",
-      "updatedAt": "2023-12-08T14:49:57.443Z",
-      "id": 65
-    },
-    {
-      "userId": 0,
-      "customer_name": "",
-      "address": ", -- Chọn Xã/Phường --, -- Chọn Quận/Huyện --, -- Chọn Tỉnh/TP --",
-      "phone": "",
-      "email": "",
-      "total_price": 87000,
-      "price_decrease": 0,
-      "message": "",
-      "status": 0,
-      "voucher": [],
-      "checkBanking": 0,
-      "createdAt": "2023-12-12T14:51:10.895Z",
-      "updatedAt": "2023-12-12T14:51:10.895Z",
-      "id": 66
-    },
-    {
-      "userId": 0,
-      "customer_name": "Duy",
-      "address": "115 núi trúc, Phường Ngọc Hà, Quận Ba Đình, Thành phố Hà Nội",
-      "phone": "0395852788",
-      "email": "duyng1032003@gmail.com",
-      "total_price": 87000,
-      "price_decrease": 0,
-      "message": "",
-      "status": 4,
-      "voucher": [],
-      "createdAt": "2023-12-12T14:51:51.703Z",
-      "updatedAt": "2023-12-12T14:55:03.387Z",
-      "id": 67
-    }
-  ],
-  "orderDetails": [
-
     {
       "userId": 21,
       "customer_name": "Admin",
@@ -2669,10 +2589,8 @@
       "ice": 100,
       "sugar": 100,
       "toppingId": 6,
-
       "toppingPrice": 0,
       "id": 24
-
     },
     {
       "orderId": 57,
@@ -2712,6 +2630,115 @@
       "toppingId": 1,
       "toppingPrice": 5000,
       "id": 33
+    },
+    {
+      "orderId": 57,
+      "productId": 33,
+      "productPrice": 28000,
+      "sizeId": 2,
+      "sizePrice": 10000,
+      "quantity": 35,
+      "ice": 0,
+      "sugar": 100,
+      "toppingId": 3,
+      "toppingPrice": 7000,
+      "id": 34
+    },
+    {
+      "orderId": 65,
+      "productId": 42,
+      "productPrice": 123123
+    },
+    {
+      "orderId": 69,
+      "productId": 27,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 37
+    },
+    {
+      "orderId": 66,
+      "productId": 31,
+      "productPrice": 45000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 38
+    },
+    {
+      "orderId": 66,
+      "productId": 2,
+      "productPrice": 42000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 39
+    },
+    {
+      "orderId": 67,
+      "productId": 31,
+      "productPrice": 45000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 40
+    },
+    {
+      "orderId": 67,
+      "productId": 2,
+      "productPrice": 42000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 100,
+      "sugar": 100,
+      "toppingId": 0,
+      "toppingPrice": 0,
+      "id": 41
+    },
+    {
+      "orderId": 70,
+      "productId": 27,
+      "productPrice": 25000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 70,
+      "sugar": 50,
+      "toppingId": 6,
+      "toppingPrice": 20000,
+      "id": 37
+    },
+    {
+      "orderId": 71,
+      "productId": 7,
+      "productPrice": 37000,
+      "sizeId": 0,
+      "sizePrice": 0,
+      "quantity": 1,
+      "ice": 70,
+      "sugar": 70,
+      "toppingId": 4,
+      "toppingPrice": 6000,
+      "id": 38
     }
   ],
   "comments": [
@@ -2808,7 +2835,7 @@
       "createdAt": "2023-11-15T16:23:14.302Z",
       "id": 42
     },
-
+    {
       "content": "ok",
       "productId": 39,
       "createdAt": "2023-11-06T14:30:45.467Z",
@@ -2915,7 +2942,7 @@
       "createdAt": "2023-11-15T15:57:25.853Z",
       "id": 18
     },
-
+    {
       "productId": 39,
       "ratingNumber": 5,
       "createdAt": "2023-11-06T14:30:45.453Z",
