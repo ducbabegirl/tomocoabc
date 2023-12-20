@@ -3,7 +3,9 @@ import Footer from "../../components/user/footer";
 
 const IntroPage = {
     getTitle() {
+
         return "Về chúng tôi - Trà Sữa Cocomoco";
+
     },
     async render() {
         return /* html */ `
@@ -11,6 +13,7 @@ const IntroPage = {
 
         <!-- content -->
         <main>
+
         <section class="container max-w-6xl mx-auto px-3 py-9">
             <h2 class="uppercase text-[#D9A953] text-2xl font-semibold">Về Cocomoco</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2">
@@ -50,6 +53,7 @@ const IntroPage = {
         </div>
     </section>
     <section class="bg-[#EFE8DE] py-20">
+
                 <div class="container max-w-6xl mx-auto">
                     <h2 class="uppercase text-[#D9A953] text-2xl font-semibold text-center">Tầm nhìn chiến lược</h2>
 
@@ -64,7 +68,9 @@ const IntroPage = {
                             <div class="w-24 h-24 inline-flex text-5xl text-[#D9A953] shadow-sm items-center justify-center rounded-full bg-white">
                                 <i class="fas fa-medal"></i>
                             </div>
+
                             <p class="mt-3">Đưa thương hiệu Cocomoco ra nước ngoài và mở rộng thị trường quốc tế.</p>
+
                         </div>
                         <div class="text-center">
                             <div class="w-24 h-24 inline-flex text-5xl text-[#D9A953] shadow-sm items-center justify-center rounded-full bg-white">
@@ -75,16 +81,20 @@ const IntroPage = {
                     </div>
                 </div>
             </section>
+
             
             <section class="py-14">
                 <div class="container max-w-6xl mx-auto flex flex-wrap">
                     <div class="w-full min-h-60 md:w-1/2 bg-cover bg-center bg-no-repeat md:rounded-l-xl" style="background-image: url(http://res.cloudinary.com/ddxwrjamy/image/upload/v1702377228/c16xo9drztxxioo10ey1.jpg)"></div>
+
                     <div class="w-full md:w-1/2 px-10 py-16 bg-[#D9A953] text-white md:rounded-r-xl">
                         <h2 class="text-2xl font-semibold uppercase">SỨ MỆNH</h2>
                         <p class="text-justify mt-3">
                             Với châm ngôn tuyệt đối không sử dụng nguyên liệu
+
                             không rõ nguồn gốc xuất xứ, trà sữa Cocomoco tự hào mang
                             lại cho khách hàng những sản phẩm chất lượng nhất và Cocomoco
+
                             luôn cảm kích vì sự tin dùng và yêu thương của quý khách hàng.
                         </p>
                     </div>
